@@ -1,6 +1,6 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
+title: "Notas de Aula em Genética de Populações"
+author: "Thiago S. de Paula"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
