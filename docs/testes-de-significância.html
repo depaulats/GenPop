@@ -161,6 +161,11 @@
 <li class="chapter" data-level="7.1" data-path="testes-de-significância.html"><a href="testes-de-significância.html#significância-estatística"><i class="fa fa-check"></i><b>7.1</b> Significância estatística</a></li>
 <li class="chapter" data-level="7.2" data-path="testes-de-significância.html"><a href="testes-de-significância.html#testes-de-ajuste-do-chi-quadrado"><i class="fa fa-check"></i><b>7.2</b> Testes de ajuste do chi-quadrado</a><ul>
 <li class="chapter" data-level="7.2.1" data-path="testes-de-significância.html"><a href="testes-de-significância.html#um-exemplo-simples"><i class="fa fa-check"></i><b>7.2.1</b> Um exemplo simples</a></li>
+<li class="chapter" data-level="7.2.2" data-path="testes-de-significância.html"><a href="testes-de-significância.html#os-dados-de-weldon"><i class="fa fa-check"></i><b>7.2.2</b> Os dados de Weldon</a></li>
+<li class="chapter" data-level="7.2.3" data-path="testes-de-significância.html"><a href="testes-de-significância.html#os-dados-de-labby"><i class="fa fa-check"></i><b>7.2.3</b> Os dados de Labby</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="testes-de-significância.html"><a href="testes-de-significância.html#teste-do-qui-quadrado-de-pearson"><i class="fa fa-check"></i><b>7.3</b> Teste do qui-quadrado de Pearson</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="testes-de-significância.html"><a href="testes-de-significância.html#graus-de-liberdade"><i class="fa fa-check"></i><b>7.3.1</b> Graus de liberdade</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="deriva-genética.html"><a href="deriva-genética.html"><i class="fa fa-check"></i><b>8</b> Deriva Genética</a></li>
@@ -207,10 +212,18 @@
 <h2><span class="header-section-number">7.1</span> Significância estatística<a href="testes-de-significância.html#significância-estatística" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Em qualquer experimento ou observação que envolva obter uma amostra de uma população, sempre há a possibilidade de que um efeito observado tenha ocorrido devido apenas ao erro de amostragem.</p>
 <p>Em um teste estatístico de hipótese, um resultado tem significância estatística quando é muito improvável que tenha ocorrido dada a hipótese nula.</p>
-<p>Mas se a probabilidade de um efeito observado for menor que (ou igual a) o nível de significância assumido para o estudo, um investigador pode concluir que o efeito reflete os parâmetros de toda a população, rejeitando assim a hipótese nula.</p>
 <blockquote>
 <p>O termo significância não implica importância, e o termo significância estatística não é o mesmo que significância para pesquisa, teórica ou prática.</p>
 </blockquote>
+.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:infestat"></span>
+<img src="figs/09/inferencia_estatistica.png" alt="A inferência estatística é o ato de generalizar de uma amostra para uma população, a partir de dados obtidos desta, com um calculado nível de certeza." width="600px" />
+<p class="caption">
+Figure 7.1: A inferência estatística é o ato de generalizar de uma amostra para uma população, a partir de dados obtidos desta, com um calculado nível de certeza.
+</p>
+</div>
+<p>.</p>
+<p>Mas se a probabilidade de um efeito observado for menor que (ou igual a) o nível de significância assumido para o estudo, um investigador pode concluir que o efeito reflete os parâmetros de toda a população, rejeitando assim a hipótese nula.</p>
 <p>Mais precisamente:</p>
 <ul>
 <li><p>o nível de significância de um estudo (<span class="math inline">\(\alpha\)</span>) é a probabilidade de o estudo rejeitar a hipótese nula, dado que a hipótese nula foi assumida como verdadeira; e</p></li>
@@ -235,7 +248,7 @@ O nível de significância de um teste definido como 0,05 (5%) implica que é ac
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:errostipos"></span>
 <img src="figs/09/erro_estatistico.png" alt="Relações entre verdade/falsidade da hipótese nula e resultados de um teste statístico." width="600px" />
 <p class="caption">
-Figure 7.1: Relações entre verdade/falsidade da hipótese nula e resultados de um teste statístico.
+Figure 7.2: Relações entre verdade/falsidade da hipótese nula e resultados de um teste statístico.
 </p>
 </div>
 <p>.</p>
@@ -253,16 +266,18 @@ Figure 7.1: Relações entre verdade/falsidade da hipótese nula e resultados de
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:dados"></span>
 <img src="figs/09/dice.png" alt="Em um dado perfeito (sem viés), a chance de cada lado cair com a face para cima é igual a $1/6$." width="200px" />
 <p class="caption">
-Figure 7.2: Em um dado perfeito (sem viés), a chance de cada lado cair com a face para cima é igual a <span class="math inline">\(1/6\)</span>.
+Figure 7.3: Em um dado perfeito (sem viés), a chance de cada lado cair com a face para cima é igual a <span class="math inline">\(1/6\)</span>.
 </p>
 </div>
 <p>.</p>
-<p><strong>Os dados de Weldon</strong></p>
+</div>
+<div id="os-dados-de-weldon" class="section level3 hasAnchor">
+<h3><span class="header-section-number">7.2.2</span> Os dados de Weldon<a href="testes-de-significância.html#os-dados-de-weldon" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 .
 <div class="figure" style="text-align: right"><span style="display:block;" id="fig:weldon"></span>
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Weldon_Walter_F_R.jpg" alt="[W. F. Raphael Weldon](https://en.wikipedia.org/wiki/Raphael_Weldon) (1860-1906) \linebreak{}biólogo evolucionista inglês." width="300px" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Weldon_Walter_F_R.jpg" alt="[W. F. Raphael Weldon](https://en.wikipedia.org/wiki/Raphael_Weldon) (1860-1906), biólogo evolucionista inglês." width="300px" />
 <p class="caption">
-Figure 7.3: <a href="https://en.wikipedia.org/wiki/Raphael_Weldon">W. F. Raphael Weldon</a> (1860-1906) biólogo evolucionista inglês.
+Figure 7.4: <a href="https://en.wikipedia.org/wiki/Raphael_Weldon">W. F. Raphael Weldon</a> (1860-1906), biólogo evolucionista inglês.
 </p>
 </div>
 <p>.</p>
@@ -271,6 +286,75 @@ Figure 7.3: <a href="https://en.wikipedia.org/wiki/Raphael_Weldon">W. F. Raphael
 <p>Ele coletou os dados em parte, “para julgar se as diferenças entre uma série de frequências de grupo e uma lei teórica, considerada como um todo, eram ou não mais do que poderiam ser atribuídas às flutuações fortuitas da amostragem aleatória”.</p>
 <p>Weldon observou que 5s ou 6s ocorreram com mais frequência do que o esperado*.</p>
 <p>Os dados de dados de Weldon foram usados por Karl Pearson em seu artigo pioneiro sobre a estatística qui-quadrado, e ele hipotetizou que o desvio se devia à construção dos dados da época (a face com 6 e 5 pontos seria mais leve do que as faces opostas, que tem apenas 1e 2 pontos).</p>
+</div>
+<div id="os-dados-de-labby" class="section level3 hasAnchor">
+<h3><span class="header-section-number">7.2.3</span> Os dados de Labby<a href="testes-de-significância.html#os-dados-de-labby" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+.
+<div class="figure" style="text-align: right"><span style="display:block;" id="fig:labbym"></span>
+<img src="figs/09/Zacariah_Labby.png" alt="Zacariah Labby e [máquina de rolar dados](https://ehttps://www.youtube.com/watch?v=95EErdouO2w)." width="300px" />
+<p class="caption">
+Figure 7.5: Zacariah Labby e <a href="https://ehttps://www.youtube.com/watch?v=95EErdouO2w">máquina de rolar dados</a>.
+</p>
+</div>
+<p>.</p>
+<p>Em <a href="https://doi.org/10.1007/s00144-009-0036-8">2009</a>, Zacariah Labby da Universidade de Chicago, repetiu o experimento de Weldon.</p>
+<p>Como parte de um projeto para um curso de História da Estatística, ele construiu uma máquina para lançar dados e contar automaticamente os pontos em cada dado.</p>
+<p>O processo de geração de imagem contínua demorou cerca de 20 segundos por rolagem.</p>
+<p>Cada dia havia ∼150 imagens para processar manualmente. Nesse ritmo, o experimento de Weldon foi repetido em pouco mais de seis dias inteiros.</p>
+<p>Os dados resultantes permitiram que Labby repetisse as investigações originais de Weldon e Pearson, bem como se aprofundasse na análise.</p>
+<p>Labby não observou o mesmo fenômeno que Weldon observou (frequência mais alta de 5s e 6s).</p>
+<p>A automação permitiu que Labby coletasse mais dados do que Weldon em 1894, em vez de registrar “sucessos” e “falhas”, Labby registrou o número individual de pontos em cada dado.</p>
+.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:labbyg"></span>
+<img src="figs/09/Labby_graph.png" alt="Probabilidade de observar cada face de um dado em 12 ralagens, em um total de 26.306 rolagens ([Labby 2009](https://doi.org/10.1007/s00144-009-0036-8))." width="400px" />
+<p class="caption">
+Figure 7.6: Probabilidade de observar cada face de um dado em 12 ralagens, em um total de 26.306 rolagens (<a href="https://doi.org/10.1007/s00144-009-0036-8">Labby 2009</a>).
+</p>
+</div>
+<p>.</p>
+</div>
+</div>
+<div id="teste-do-qui-quadrado-de-pearson" class="section level2 hasAnchor">
+<h2><span class="header-section-number">7.3</span> Teste do qui-quadrado de Pearson<a href="testes-de-significância.html#teste-do-qui-quadrado-de-pearson" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>O valor da estatística <span class="math inline">\(\chi^2\)</span> é:</p>
+<p><span class="math display">\[\chi^2=\displaystyle\sum_{i-1}^{n}\frac{(O_i-E_i)^2}{E_i} \]</span></p>
+<p>onde:
+<span class="math inline">\(n\)</span> é o número total de observações;
+<span class="math inline">\(O_i\)</span> é o número de observações do tipo <span class="math inline">\(i\)</span>; e
+<span class="math inline">\(E_i\)</span> é a contagem esperada (teórica) do tipo <span class="math inline">\(i\)</span>.</p>
+<p>A estatística do qui-quadrado pode então ser usada para calcular um valor-p comparando o valor da estatística a uma distribuição qui-quadrada.</p>
+<div id="graus-de-liberdade" class="section level3 hasAnchor">
+<h3><span class="header-section-number">7.3.1</span> Graus de liberdade<a href="testes-de-significância.html#graus-de-liberdade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A distribuição qui-quadrada tem apenas um parâmetro denominado <strong>grau de liberdade</strong> (<span class="math inline">\(gl\)</span>), que influencia o formato, o centro e a extensão da distribuição.</p>
+<p>Grau de liberdade faz referência ao número de maneiras independentes pelas quais um sistema dinâmico pode se mover, sem violar qualquer restrição imposta a ele.</p>
+<p>Em outras palavras, o número de graus de liberdade pode ser definido como o número mínimo de coordenadas independentes que podem especificar a posição do sistema completamente.</p>
+<p>Matematicamente, grau de liberdade é o número de dimensões do domínio de um vetor aleatório, ou essencialmente o número de componentes "livres“, isto é, quantos componentes precisam ser conhecidos antes que o vetor seja totalmente determinado.</p>
+.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:gl"></span>
+<img src="figs/09/grau_liberdade.png" alt="Os graus de liberdade ($gl$) de um corpo rígido são definidos como o número de movimentos independentes que ele possui." width="400px" />
+<p class="caption">
+Figure 7.7: Os graus de liberdade (<span class="math inline">\(gl\)</span>) de um corpo rígido são definidos como o número de movimentos independentes que ele possui.
+</p>
+</div>
+<p>.</p>
+<p>Cada grau de liberdade apresenta um função densidade de probabilidade, onde os valores de <span class="math inline">\(\chi^2\)</span> (eixo x) apresentam diferentes frequências (eixo y).</p>
+.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:glgraph"></span>
+<img src="figs/09/grau_liberdade_graph.png" alt="Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade ($gl$)." width="400px" />
+<p class="caption">
+Figure 7.8: Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade (<span class="math inline">\(gl\)</span>).
+</p>
+</div>
+<p>.</p>
+<p>A partir da função densidade de probabilidade, é possível calcular a probabilidade p de um evento cujo valor de <span class="math inline">\(\chi^2\)</span> é conhecido.</p>
+.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:glprob"></span>
+<img src="figs/09/grau_liberdade_prob.png" alt="A probabilidade de observar valores maiores ou iguals a estatística $\chi^2$ é cumulativa à função densidade de probabilidade ($pdf$, _probability density function_)." width="400px" />
+<p class="caption">
+Figure 7.9: A probabilidade de observar valores maiores ou iguals a estatística <span class="math inline">\(\chi^2\)</span> é cumulativa à função densidade de probabilidade (<span class="math inline">\(pdf\)</span>, <em>probability density function</em>).
+</p>
+</div>
+<p>.</p>
 
 </div>
 </div>

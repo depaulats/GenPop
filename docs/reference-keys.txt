@@ -1,6 +1,12 @@
+fig:infestat
 fig:errostipos
 fig:dados
 fig:weldon
+fig:labbym
+fig:labbyg
+fig:gl
+fig:glgraph
+fig:glprob
 eq:endogamia
 eq:autozigotos
 eq:alozigotos
@@ -73,6 +79,10 @@ testes-de-significância
 significância-estatística
 testes-de-ajuste-do-chi-quadrado
 um-exemplo-simples
+os-dados-de-weldon
+os-dados-de-labby
+teste-do-qui-quadrado-de-pearson
+graus-de-liberdade
 deriva-genética
 endogamia
 causas-de-endogamia

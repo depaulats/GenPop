@@ -6,9 +6,15 @@ Em qualquer experimento ou observação que envolva obter uma amostra de uma pop
 
 Em um teste estatístico de hipótese, um resultado tem significância estatística quando é muito improvável que tenha ocorrido dada a hipótese nula.
 
-Mas se a probabilidade de um efeito observado for menor que (ou igual a) o nível de significância assumido para o estudo, um investigador pode concluir que o efeito reflete os parâmetros de toda a população, rejeitando assim a hipótese nula.
-
 >O termo significância não implica importância, e o termo significância estatística não é o mesmo que significância para pesquisa, teórica ou prática. 
+
+.\linebreak
+```{r infestat, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A inferência estatística é o ato de generalizar de uma amostra para uma população, a partir de dados obtidos desta, com um calculado nível de certeza."} 
+knitr::include_graphics("figs/09/inferencia_estatistica.png")
+```
+.\linebreak
+
+Mas se a probabilidade de um efeito observado for menor que (ou igual a) o nível de significância assumido para o estudo, um investigador pode concluir que o efeito reflete os parâmetros de toda a população, rejeitando assim a hipótese nula.
 
 Mais precisamente:
 
@@ -66,7 +72,7 @@ knitr::include_graphics("figs/09/dice.png")
 ```
 .\linebreak
 
-**Os dados de Weldon**
+#### Os dados de Weldon
 
 .\linebreak
 ```{r weldon, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="[W. F. Raphael Weldon](https://en.wikipedia.org/wiki/Raphael_Weldon) (1860-1906), biólogo evolucionista inglês."} 
@@ -85,6 +91,82 @@ Weldon observou que 5s ou 6s ocorreram com mais frequência do que o esperado*.
 Os dados de dados de Weldon foram usados por Karl Pearson em seu artigo pioneiro sobre a estatística qui-quadrado, e ele hipotetizou que o desvio se devia à  construção dos dados da época (a face com 6 e 5 pontos seria mais leve do que as faces opostas, que tem apenas 1e 2 pontos).
 
 
+#### Os dados de Labby
+
+.\linebreak
+```{r labbym, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="Zacariah Labby e [máquina de rolar dados](https://ehttps://www.youtube.com/watch?v=95EErdouO2w)."} 
+knitr::include_graphics("figs/09/Zacariah_Labby.png")
+```
+.\linebreak
+
+Em [2009](https://doi.org/10.1007/s00144-009-0036-8), Zacariah Labby da Universidade de Chicago, repetiu o experimento de Weldon.
+
+Como parte de um projeto para um curso de História da Estatística, ele construiu uma máquina para lançar dados e contar automaticamente os pontos em cada dado. 
+
+O processo de geração de imagem contínua demorou cerca de 20 segundos por rolagem.
+
+
+Cada dia havia ∼150 imagens para processar manualmente. Nesse ritmo, o experimento de Weldon foi repetido em pouco mais de seis dias inteiros.
+
+Os dados resultantes permitiram que Labby repetisse as investigações originais de Weldon e Pearson, bem como se aprofundasse na análise.
+
+Labby não observou o mesmo fenômeno que Weldon observou (frequência mais alta de 5s e 6s).
+
+A automação permitiu que Labby coletasse mais dados do que Weldon em 1894, em vez de registrar “sucessos” e “falhas”, Labby registrou o número individual de pontos em cada dado.
+
+
+.\linebreak
+```{r labbyg, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Probabilidade de observar cada face de um dado em 12 ralagens, em um total de 26.306 rolagens ([Labby 2009](https://doi.org/10.1007/s00144-009-0036-8))."} 
+knitr::include_graphics("figs/09/Labby_graph.png")
+```
+.\linebreak
+
+### Teste do qui-quadrado de Pearson
+
+O valor da estatística $\chi^2$ é:
+
+$$\chi^2=\displaystyle\sum_{i-1}^{n}\frac{(O_i-E_i)^2}{E_i} $$
+
+onde:
+$n$ é o número total de observações;
+$O_i$ é o número de observações do tipo $i$; e
+$E_i$ é a contagem esperada (teórica) do tipo $i$. 
+
+A estatística do qui-quadrado pode então ser usada para calcular um valor-p comparando o valor da estatística a uma distribuição qui-quadrada. 
+
+
+### Graus de liberdade
+
+A distribuição qui-quadrada tem apenas um parâmetro denominado **grau de liberdade** ($gl$), que influencia o formato, o centro e a extensão da distribuição.
+
+Grau de liberdade faz referência ao número de maneiras independentes pelas quais um sistema dinâmico pode se mover, sem violar qualquer restrição imposta a ele. 
+
+Em outras palavras, o número de graus de liberdade pode ser definido como o número mínimo de coordenadas independentes que podem especificar a posição do sistema completamente.
+
+Matematicamente, grau de liberdade é o número de dimensões do domínio de um vetor aleatório, ou essencialmente o número de componentes "livres“, isto é, quantos componentes precisam ser conhecidos antes que o vetor seja totalmente determinado.
+
+.\linebreak
+```{r gl, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Os graus de liberdade ($gl$) de um corpo rígido são definidos como o número de movimentos independentes que ele possui."} 
+knitr::include_graphics("figs/09/grau_liberdade.png")
+```
+.\linebreak
+
+
+Cada grau de liberdade apresenta um função densidade de probabilidade, onde os valores de $\chi^2$ (eixo x) apresentam diferentes frequências (eixo y).
+
+.\linebreak
+```{r glgraph, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade ($gl$)."} 
+knitr::include_graphics("figs/09/grau_liberdade_graph.png")
+```
+.\linebreak
+
+A partir da função densidade de probabilidade, é possível calcular a probabilidade p de um evento cujo valor de $\chi^2$  é conhecido.
+
+.\linebreak
+```{r glprob, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="A probabilidade de observar valores maiores ou iguals a estatística $\\chi^2$ é cumulativa à função densidade de probabilidade ($pdf$, _probability density function_)."} 
+knitr::include_graphics("figs/09/grau_liberdade_prob.png")
+```
+.\linebreak
 
 
 
