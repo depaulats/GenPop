@@ -1,3 +1,6 @@
+eq:endogamia
+eq:autozigotos
+eq:alozigotos
 introdução
 o-dna-pode-replicar
 o-dna-pode-replicar-1
@@ -65,8 +68,19 @@ literature
 literature-1
 literature-2
 literature-3
+endogamia
+causas-de-endogamia
+endogamia-intencional
+endogamia-acidental
+freqüências-genotípicas-sob-endogamia
+coeficiente-de-endogamia
+autozigotos-e-alozigotos
+endogamia-em-genealogias
+eendogamia-ao-longo-das-gerações
+depressão-endogâmica
+evitando-a-endogamia
+exercícios
 literature-4
 literature-5
 literature-6
 literature-7
-literature-8

@@ -1,3 +1,122 @@
-# Literature
+# Endogamia
 
-Here is a review of existing methods.
+Endogamia é a produção de descendentes do cruzamento de indivíduos ou organismos relacionados geneticamente.
+
+O que leva a um aumento da frequência de genótipos homozigotos em relação a frequência esperada em cruzamentos aleatórios.
+
+A homozigose de alelos raros (a maioria recessivos) pode levar ao aparecimento de traços deletérios (depressão endogâmica).
+
+imagem
+
+## Causas de endogamia
+
+### Endogamia intencional
+
+Estoques de laboratório
+
+O endocruzamento sucessivo de animais tem sido usado para estabelecer linhagens genéticas "puras" para a pesquisa científica. Os experimentos conduzidos nesses assuntos são valiosos porque a variação genética não pode distorcer os resultados.
+
+imagem
+Instituto de Citologia e Genética em Novosibirsk, Rússia
+
+Rader 2004. 
+
+Taft et al. 2006. 
+
+Estoques para melhoramento animal e vegetal
+
+Em animais domésticos, o endocruzamento geralmente resulta em uma troca em que uma característica desejável é ampliada às custas de outra. Por exemplo, a endogamia de gado leiteiro holandês (Holstein-Frísia) levou ao aumento da produção de leite, mas as vacas são mais difíceis de criar.
+
+Zenger et al. 2007. doi: 10.1111/j.1365-2052.2006.01543.x [link](https://doii.org/10.1111/j.1365-2052.2006.01543.x ) 
+
+Utsunomiya et al. 2013. doi: 10.1371/journal.pone.0064280 [link](https://doii.org/10.1371/journal.pone.0064280)
+
+Mrode et al. 2019. doi: 10.1371/journal.pone.0064280 [link](https://doii.org/10.1371/journal.pone.0064280)
+
+### Endogamia acidental
+
+Populações pequenas
+
+Acasalamento preferencial
+
+Autofertilização
+
+## Freqüências genotípicas sob endogamia
+
+## Coeficiente de endogamia
+
+A quantidade de endogamia em uma população pode ser medida pela redução na heterozigosidade.
+O **Coeficiente de Endogamia** ($F$) compara a proporção real de genótipos heterozigotos ($H_O$) com proporção genótipos heterozigotos esperada caso a população cruze aleatoriamente ($H_E$), de forma que:
+
+\begin{equation} 
+  F=\frac{(H_E - H_O)}{H_E}
+  (\#eq:endogamia)
+\end{equation} 
+
+que é o mesmo que:
+
+$$F=1 - \left( \frac{H_O}{H_E} \right)$$
+
+O coeficiente de endogamia (F) pode ser interpretado como a probabilidade de que dois alelos em um determinado locus sejam aleatoriamente idênticos por descendência (IBD).
+
+**Não há endogamia ...**
+
+... quando a população se reproduz ao acaso, pois $H_O=H_E$, e assim:
+
+$$F=0$$
+
+**Há endogamia completa ...**
+
+... quando não há heterozigotos na população, pois $H_O=0$, e assim: 
+
+$$F=1$$
+
+**Há endogamia parcial ...**
+
+... quando há heterozigotos na população, mas menos do que o esperado ao acaso, pois $H_O\ne0$ e $H_O<H_E$, e assim: 
+
+$$0<F<1$$
+
+**Também não há endogamia ...**
+
+... quando há excesso de heterozigotos na população, pois .
+
+## Autozigotos e alozigotos
+
+Na fecundação, podemos categorizar os zigotos em dois tipos quanto à origem dos alelos em um locus gênico:
+
+**Autozigotos** — formado por dois alelos que se originam de um ancestral comum por meio de acasalamento não-aleatório, i.e., **idênticos por descendência** (IBD).
+
+**Alozigotos** — formado por dois alelos que provêm de diferentes fontes (até onde a descendência pode ser estabelecida), ou **idênticos por estado** (IBS).
+
+A chance de formação de autozigotos em uma geração depende da chance de encontros de gamates no pool gênico, que intrensecamente depende do tamanho da amostra, de forma que:
+
+\begin{equation}
+  P(Autozigotos)=\frac{1}{2N_e}
+  (\#eq:autozigotos)
+\end{equation}
+
+Todos os demais cruzamentos retultam em alozigotos, sejam eles heterozigotos ou homozigotos idênticos por estado, de forma que:
+
+\begin{equation} 
+   P(Alozigotos)= 1-\left(\frac{1}{2N_e}\right)
+   (\#eq:alozigotos)
+\end{equation} 
+
+## Endogamia em genealogias
+
+xxx
+
+## EEndogamia ao longo das gerações
+
+xxx
+
+## Depressão endogâmica
+
+xxx
+
+## Evitando a endogamia
+
+xxx
+
+## Exercícios
