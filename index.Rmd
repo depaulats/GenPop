@@ -13,6 +13,8 @@ output:
     number_sections: true
   pdf_document:
     number_sections: true
+  tufte::tufte_handout: default
+  tufte::tufte_html: default
 
 ---
 
