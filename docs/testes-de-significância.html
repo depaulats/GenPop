@@ -72,11 +72,12 @@
 <li><a href="./">GenPop</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefácio</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#por-que-ler-este-livro"><i class="fa fa-check"></i>Por que ler este livro</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#estrutura-do-livro"><i class="fa fa-check"></i>Estrutura do Livro</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#agradecimentos"><i class="fa fa-check"></i>Agradecimentos</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#sobre-o-autor"><i class="fa fa-check"></i>Sobre o autor</a></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="prefácio.html"><a href="prefácio.html"><i class="fa fa-check"></i>Prefácio</a><ul>
+<li class="chapter" data-level="" data-path="prefácio.html"><a href="prefácio.html#por-que-ler-este-livro"><i class="fa fa-check"></i>Por que ler este livro</a></li>
+<li class="chapter" data-level="" data-path="prefácio.html"><a href="prefácio.html#estrutura-do-livro"><i class="fa fa-check"></i>Estrutura do Livro</a></li>
+<li class="chapter" data-level="" data-path="prefácio.html"><a href="prefácio.html#agradecimentos"><i class="fa fa-check"></i>Agradecimentos</a></li>
+<li class="chapter" data-level="" data-path="prefácio.html"><a href="prefácio.html#sobre-o-autor"><i class="fa fa-check"></i>Sobre o autor</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="introdução.html"><a href="introdução.html"><i class="fa fa-check"></i><b>1</b> Introdução</a><ul>
 <li class="chapter" data-level="1.1" data-path="introdução.html"><a href="introdução.html#o-dna-pode-replicar"><i class="fa fa-check"></i><b>1.1</b> O DNA pode replicar</a></li>
@@ -230,10 +231,10 @@ O nível de significância de um teste definido como 0,05 (5%) implica que é ac
 <li><p>um erro do tipo II corresponde à absolvição de um criminoso.</p></li>
 </ul>
 <p>Esses dois tipos de erro são compensados entre si: para qualquer conjunto de amostra, o esforço para reduzir um tipo de erro geralmente resulta no aumento do outro tipo de erro.</p>
-<div class="figure">
-<img src="figs/09/erro_estatistico.png" alt="Relações entre verdade/falsidade da hipótese nula e resultados de um teste statístico." width="80%" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:errostipos"></span>
+<img src="figs/09/erro_estatistico.png" alt="Relações entre verdade/falsidade da hipótese nula e resultados de um teste statístico." width="600px" />
 <p class="caption">
-(#fig:fig:erro_estatistico)Relações entre verdade/falsidade da hipótese nula e resultados de um teste statístico.
+Figure 7.1: Relações entre verdade/falsidade da hipótese nula e resultados de um teste statístico.
 </p>
 </div>
 </div>
@@ -245,12 +246,20 @@ O nível de significância de um teste definido como 0,05 (5%) implica que é ac
 <div id="um-exemplo-simples" class="section level3 hasAnchor">
 <h3><span class="header-section-number">7.2.1</span> Um exemplo simples<a href="testes-de-significância.html#um-exemplo-simples" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Um exemplo simples é a hipótese de que um dado comum de seis lados é “justo” (ou seja, todos os seis resultados são igualmente prováveis de ocorrer).</p>
-<div class="figure">
-<img src="figs/09/dice.png" alt="Em um dado perfeito (sem viés), a chance de cada lado cair com a face para cima é igual a 1/6 ." />
-<p class="caption">Em um dado perfeito (sem viés), a chance de cada lado cair com a face para cima é igual a 1/6 .</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:dados"></span>
+<img src="figs/09/dice.png" alt="Em um dado perfeito (sem viés), a chance de cada lado cair com a face para cima é igual a $1/6$." width="200px" />
+<p class="caption">
+Figure 7.2: Em um dado perfeito (sem viés), a chance de cada lado cair com a face para cima é igual a <span class="math inline">\(1/6\)</span>.
+</p>
 </div>
 <p><strong>Os dados de Weldon</strong></p>
-<p><a href="https://en.wikipedia.org/wiki/Raphael_Weldon">Raphael Weldon</a> foi um biólogo evolucionista inglês e fundador da biometria. Ele foi o editor co-fundador do periódico Biometrika, com Francis Galton e Karl Pearson.</p>
+<div class="figure" style="text-align: right"><span style="display:block;" id="fig:weldon"></span>
+<img src="figs/09/Weldon_Walter_F_R.png" alt="[W. F. Raphael Weldon](https://en.wikipedia.org/wiki/Raphael_Weldon)(1860-1906), biólogo evolucionista inglês." width="300px" />
+<p class="caption">
+Figure 7.3: <a href="https://en.wikipedia.org/wiki/Raphael_Weldon">W. F. Raphael Weldon</a>(1860-1906), biólogo evolucionista inglês.
+</p>
+</div>
+<p>Raphael Weldon foi um dos fundadores da biometria, e editor e co-fundador do periódico Biometrika (juntamente com Francis Galton e Karl Pearson).</p>
 <p>Em 1894, Weldon lançou um conjunto de 12 dados 26.306 vezes, e registrou o número de 5s ou 6s (que considerou um sucesso).</p>
 <p>Ele coletou os dados em parte, “para julgar se as diferenças entre uma série de frequências de grupo e uma lei teórica, considerada como um todo, eram ou não mais do que poderiam ser atribuídas às flutuações fortuitas da amostragem aleatória”.</p>
 <p>Weldon observou que 5s ou 6s ocorreram com mais frequência do que o esperado*.</p>

@@ -18,22 +18,9 @@ output:
 
 ---
 
-# Prefácio {-}
+# {-}
+
+![v.2022](figs/capa_2022.png)
 
 xxx
 
-## Por que ler este livro {-}
-
-xxx
-
-## Estrutura do Livro {-}
-
-xxx
-
-## Agradecimentos {-}
-
-xxx
-
-## Sobre o autor {-}
-
-xxx

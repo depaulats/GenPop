@@ -1,3 +1,6 @@
+fig:errostipos
+fig:dados
+fig:weldon
 eq:endogamia
 eq:autozigotos
 eq:alozigotos

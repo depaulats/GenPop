@@ -44,7 +44,7 @@ O pool gênico associado a um deme é descrito mensurando os números e frequên
 
 Assim, 
 
-	“Evolução é a mudança ao longo do tempo nas frequências dos genes ou combinações destes no pool gênico”.
+>Evolução é a mudança ao longo do tempo nas frequências dos genes ou combinações destes no pool gênico.
 
 A evolução é uma propriedade emergente de populações de indivíduos que se reproduzem, que não se manifesta nos próprios indivíduos que as compõem.
 
