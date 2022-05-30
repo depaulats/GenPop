@@ -1,0 +1,68 @@
+# Histórico
+
+Histórico da Genética de Populações
+
+## Evolução do pensamento evolutivo
+
+## Linha do tempo
+
+## Principais pensadores
+
+### Darwin
+
+Charles Darwin (1809-1882)
+
+Sobre a Origem das Espécies por Meio da Seleção Natural, ou a Preservação de Raças Favorecidas na Luta pela Vida (1859).
+
+As espécies evoluem gradualmente por seleção natural.
+
+### Mendel
+
+Gregor Mendel (1822-1884)
+
+Experimentos em Hibridização de Plantas (1865)
+
+Leis da hereditariedade.
+
+### Redescoberta de Mendel
+
+Erich von Tschermak (1871-1962)
+
+Hugo de Vries (1848-1935)
+
+Carl Correns (1864-1933)
+
+William J. Spillman (1863-1931)
+
+Redescoberta do trabalho de Mendel no início do século XX.
+
+Confirmação da hereditariedade particulada 30 anos depois.
+
+### Fisher 
+
+Sir Ronald A. Fisher (1890-1962)
+
+A teoria genética da seleção natural (1930)
+
+Genética quantitativa
+
+### Haldane 
+
+J. B. S. Haldane (1892-1964)
+
+Uma teoria matemática da seleção natural e artificial (1924)
+
+Melanismo industrial em Biston betularia
+
+“Na consideração da evolução, uma teoria matemática pode ser considerada como um tipo de andaime dentro do qual uma teoria razoavelmente segura, expressável em palavras, pode ser construída.” (Perspect Biol Med 1964; 7:343-359)
+
+### Wrigth
+
+Sewall Wright (1889-1988)
+
+Evolução em populações mendelianas (1931)
+
+Deriva gênica > Seleção natural
+
+Paisagem adaptativa.
+

@@ -1,0 +1,316 @@
+# Variação e Diversidade Genética
+
+## Genética mendeliana
+
+Estuda o comportamento de um ou mais loci gênicos em cruzamentos simples.
+
+Dois parentais contribuem com um alelo por locus.
+
+Os resultados esperados são proporções características.
+
+Por exemplo, para um locus gênico:
+
+### Sem dominância
+
+
+### Com dominância
+
+## Genética de populações
+
+Comportamento de um ou mais loci gênicos em múltiplos cruzamentos.
+
+Aspectos populacionais:
+
+pool gênico (uma unidade genética) =
+	todos os alelos em um (único) locus gênico
+
+deme (uma unidade ecológica ou demográfica) =
+	todos os indivíduos em uma área
+
+unidade panmítica (uma unidade reprodutiva) =
+	um grupo de indivíduos intercruzantes ao acaso
+
+amostra (uma unidade numérica) =
+	um subconjunto estatístico de tamanho N
+
+## Frequências genotípicas
+
+Considere um locus autossômico diplóide com dois alelos, sem dominância. 
+
+Em uma amostra N, deixe ser o número de indivíduos dos genótipos:
+
+AA = x
+
+Aa = y
+
+aa = z
+
+Assim,
+
+N = x + y + z
+
+Logo, as frequências genotípicas,
+
+f(AA) = x / N
+
+f(Aa) = y / N
+
+f(aa) = z / N
+
+## Frequências alélicas
+
+As frequências alélicas (ou gênicas) podem ser definidas como:
+
+f(A)   =   (2x + y) / 2N   =   f(AA) + ½ f(Aa)   =    p
+
+f(a)   =   (2z + y) / 2N   =   f(aa) + ½ f(Aa)   =    q
+
+Assim,
+
+p + q = 1
+
+As frequências p e q são intercambiáveis em relação aos alelos A e a.
+	
+O q é geralmente usado para alelos raros, recessivos ou desvantajosos.
+
+Mas perceba que:
+	comum e raro são propriedades estatísticas
+	dominante e recessivo são propriedades fenotípicas
+	vantajoso e desvantajoso são propriedades evolutivas
+	
+## Generalização das frequências genotípicas e alélicas
+
+Considere um locus autossômico diplóide com X alelos, sem dominância. 
+
+As frequências genotípicas,
+
+f(AA) = N1 / N
+
+f(AB) = N2 / N
+
+f(BB) = N3 / N
+…
+
+	As frequências alélicas,
+
+	f(A)  = a =   f(AA) + ½ f(AB) + … + ½ f(AX)
+
+	f(B)  = b =   f(BB) + ½ f(AB) + … + ½ f(BX)
+	…
+
+	f(X)  = x =   f(XX) + ½ f(AX) + … + ½ f(X-1X)
+	
+
+	Sendo,
+		a + b + … + x = 1
+
+## Heterozigoside e Homozigosidade
+
+A heterozigosidade observada (HObs) é a freqüência de heterozigotos em um dado locus gênico.
+
+Logo, 
+
+HObs   =   y / N   =   f(Aa)   =   1 – f(AA) – f(aa)
+
+
+Esta estimativa é muito útil para avaliarmos a diversidade genética de uma população natural, uma vez que:
+ 
+alta heterozigosidade ⇒ muita variabilidade genética 
+
+baixa heterozigosidade ⇒ pouca variabilidade genética. 
+
+O nível de heterozigosidade observada (HObs) é comparado com o nível de heterozigosidade esperada (HEsp) de acordo com o equilíbrio de Hardy-Weinberg (Aula 04). 
+
+A heterozigosidade esperada (HEsp) pode ser interpretada como a probabilidade de que um indivíduo seja heterozigoto para um determinado locus gênico.
+
+Assim,
+HEsp   =   2pq   =   1 – p2 – q2
+
+
+Se HObs ≠ HEsp forças evolutivas podem estar atuando nas populações.
+
+## Diversidade gênética
+
+A diferença em um ou alguns traços do organismo é chamada de variabilidade. 
+
+Na linguagem comum, a variabilidade genética e a diversidade genética são erroneamente consideradas sinônimos entre si. 
+
+A variabilidade genética é a variação nos alelos dos genes ou nas sequências de DNA no pool gênico de uma espécie ou população. Isso se expressa em termos de formas alternativas no fenótipo. 
+
+Diversidade genética, por outro lado, é um termo amplo que abrange toda a variabilidade que ocorre entre os diferentes genótipos relacionados a uma única espécie ou entre espécies. 
+
+Ou como definido por Swingland (2013), é a variação de características hereditárias presentes em uma população da mesma espécie; podendo essa variação se expressar na forma de alterações na morfologia, anatomia, comportamento fisiológico ou características bioquímicas. 
+
+A diversidade genética pode ser medida contando o número de genes diferentes em um pool genético. Por sua vez, a variação genética só pode ocorrer e não pode ser medida,  podendo ser considerada como unidade básica da diversidade genética. 
+
+Quando há variação nos elementos ...
+
+... o conjunto é diverso.
+
+Alguns autores consideram a diversidade genética (D) de um locus como a sua heterozigosidade esperada (HEsp), i.e., a proporção de genótipos heterozigotos esperados sob o princípio de Hardy-Weinberg (próximo capítulo).
+
+A diversidade genética é composta de dois parâmetros:
+
+	1) o número de alelos na população
+	2) a abundância (ou uniformidade) dos alelos
+
+### Exemplo 
+
+Se uma população consiste em um excesso de homozigotos para diferentes alelos, isso leva a uma baixa heterozigose observada, mas não afeta a heterozigose esperada.
+
+População 1 = {AA, BB, CC, DD} 
+
+f(A) = f(B) = f(C) = f(D) = 0,25
+
+HObs  = 0,00
+	 
+HEsp  = 1 – 4∙(0,25)2   = 0,75
+
+População 2 = {AB, AB, AB, AB}
+
+f(A) = f(B) = 0,50
+
+HObs  = 1,00
+	 
+HEsp  = 1 – 2∙(0,5)2   = 0,50
+
+## Determinantes da diversidade genética
+
+### Extratégias reprodutivas
+
+Animais estrategistas r são mais polimórficos do que estrategistas K. A correlação negativa apresentada no gráfico reflete uma compensação entre a quantidade e o tamanho da prole. 
+
+### Ligação gênica
+
+Efeito da seleção ligada na diversidade genética (nucleotídica) em torno dos genes ou outros elementos funcionais. 
+
+Nos painéis inferiores, as linhas contínuas indicam a variação local no nível de diversidade nucleotídica, e as linhas tracejadas indicam a diversidade média em toda a região em questão. 
+
+Em regiões com uma alta densidade de alvos de seleção (a), a seleção ligada é generalizada e reduz significativamente a diversidade em comparação com regiões com uma densidade mais baixa de alvos de seleção (b). Quando a taxa de recombinação é alta (c), o efeito da seleção ligada torna-se menos prevalente, permitindo a manutenção de altos níveis de diversidade naquela região.
+
+## Medidas de Diversidade em loci diplóides
+
+### Nível de polimorfismo
+
+Nível de polimorfismo (P)
+
+P = np / nt
+
+Onde, 
+np = número loci polimórficos observados, e
+nt  = número total de loci examinados.
+
+Exemplo,
+
+### Riqueza alélica
+
+Riqueza alélica (A)
+
+Onde, 
+A = número de alelos polimórficos observados em cada loci.
+
+Exemplo,
+
+### Número médio de alelos
+
+Número médio de alelos por locus (n)
+
+n = ∑ ni / K
+
+Onde,
+K = número de loci gênicos examinados, e
+ni = número de alelos polimórficos observados no i-nésimo locus gênico. 
+
+Exemplo,
+
+### Número efetivo de alelos
+
+Número efetivo de alelos (Ae)
+
+Ae  =  1 / (1 − HEsp)  =  1 / ∑ pi2
+
+Onde,
+pi = frequência do i-nésimo alelo em um locus gênico. 
+
+## Medidas de Diversidade em loci haplóides
+
+### Número de haplótipos
+
+Número de haplótipos (h)
+
+Onde, 
+h = número de haplótipos diferentes observados.
+
+Exemplo,
+
+### Diversidade haplotípica
+
+Diversidade haplotípica (Hd)
+
+Hd = (N / N − 1) * (1 − ∑pi2)
+
+Onde, 
+N = tamanho da amostra, e
+pi = frequência do i-nésimo haplótipo.
+
+Exemplo,
+
+### Número de sítios segregantes
+
+Número de sítios segregantes ou polimórficos (S)
+
+Onde, 
+S = número de sítios polimórficos observados.
+
+Exemplo,
+
+### Número de sítios invariantes
+
+Número de sítios invariantes (I)
+
+Onde, 
+I = número de sítios invariantes observados.
+
+Exemplo,
+
+### Número total de mutações
+
+Número total de mutações (η; Eta)
+
+Onde, 
+η = número de sítios de nucleotídeos nos quais as bases menos frequentes são observadas.
+
+Exemplo,
+
+### Número médio de diferenças nucleotídicas
+
+Número médio de diferenças nucleotídicas (k)
+
+k = ∑ ∑ kij / (  )
+
+Onde, 
+kij = número de nucleotídeos diferentes entre as i-nésima e j-nésima sequência de nucleotídeos.
+
+Exemplo,
+
+### Diversidade nucleotídica 
+
+Diversidade nucleotídica ou número médio de substituições por sítio de nucleotídeo (π; pi) 
+
+π = ∑ ∑ πij / (n_2)
+
+Onde, 
+πij = proporção de nucleotídeos diferentes entre as i-nésima e j-nésima sequência de nucleotídeos.
+
+
+Exemplo,
+
+Note que a diversidade nucleotídica (π) pode ser estimada da seguinte forma:
+
+π = k / L
+
+Onde, 
+k = número médio de diferenças nucleotídicas
+L = o tamanho, em pares de bases, do haplótipo (se todos indivíduos apresentarem sequências com o mesmo tamanho)
+
+

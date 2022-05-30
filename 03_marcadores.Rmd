@@ -1,0 +1,197 @@
+# Polimorfismo Genéticos e Marcadores Moleculares
+
+Uma mutação é uma variante nova, tendo aparecido recentemente na linha germinativa.
+
+Uma variantes é dita mutante quando direta e abertamente causa uma doença e/ou reduz a aptidão.
+
+Um polimorfismo é uma variante ancestral em uma população, herdada intacta dos parentais.
+
+Uma variante é dita mutante polimórfica quando não causa doença, é neutra, ou influência levemente características quantitativas.
+
+Uma mutação em uma população pode se tornar um polimorfismo em outra se conferir uma vantagem seletiva e aumentar em freqüência.
+
+Arbitrariamente, uma variante de DNA com frequência em uma população
+> 1% = polimorfismo
+<1% = mutação
+
+### Genética mendeliana
+
+(Fenótipo x Genótipo)
+
+Restrita a um pequeno número de espécies modelo.
+
+N° reduzido de características disponíveis (normalmente associadas à características deletérias).
+
+Polimorfismos genéticos = A ocorrência em uma população (ou entre populações) de várias formas fenotípicas associadas a alelos de um gene ou homólogos de um cromossomo.
+
+### Genética molecular
+
+(Análise genética direta)
+
+Pode abranger todas as espécies.
+
+N° enorme de marcadores disponíveis permitindo a análise de regiões expressas e não expressas do genoma.
+
+Marcadores moleculares = Todo e qualquer fenótipo molecular oriundo de um gene expresso (RNA ou proteína) ou de um segmento de DNA que corresponde a regiões codificantes ou não de um genoma.
+
+## Dinâmica evolutiva e ecológica dos polimorfismos
+
+## Evolução dos polimorfismos em diferentes escalas
+
+Microevolução = Polimorfismos dizem respeito a variantes encontradas em populações de uma mesma espécie, e são utilizadas em genética de populações.
+
+Evolução dentro de um ramo evolutivo (Anagênese)
+
+Macroevolução = Polimorfismos encontrados em regiões gênicas homólogas de diferentes espécies (ortólogas) podem ser utilizados em filogenética.
+
+Evolução entre ramos evolutivos (Cladogênese)
+
+A evolução de sequências de DNA, e dos produtos por elas codificados, é produto dos padrões e taxas de mudança ao longo do tempo evolutivo.
+
+Assim, diferentes questões podem e devem ser abordadas por diferentes regiões gênicas. 
+
+Estudos multi-loci evidenciam conflitos e corroboram congruências entre as histórias evolutivas das diferentes regiões gênicas.
+
+## Padrões de herança
+
+A localização genômica de uma região gênica pode determinar diferentes padrões de herança.
+
+### Herança biparental
+
+Autossomos
+Regiões pseudo-autossômicas
+Co-dominantes
+
+### Herança uniparental
+
+DNAmt (matrilinear)
+Cromossomo Y (patrilinear)
+Dominantes
+
+## Taxas de mutação
+
+A função ou estrutura de uma região gênica pode determinar diferentes taxas de mutação.
+
+Regiões codificantes ou funcionais sofrem uma alta pressão seletiva sobre mutações dependente da importância de sua função (positivo ou negativo).
+
+Regiões não-codificantes ou não-funcionais tendem a apresentar um rápido acúmulo de mutações devido às baixas pressões seletivas (neutros).
+
+Regiões que apresentam sequências repetidas in tandem podem evoluir por slippage na replicacão.
+
+## Marcadores moleculares
+
+### Aloenzimas e Isoenzimas
+
+A análise baseia-se na migração diferencial em eletroforese de enzimas de uma mesma espécie mas com cargas e tamanhos diferentes (devido a modificações na sequência de bases do gene). 
+
+Enzimas de um mesmo tipo são reveladas por coloração histoquímica, pois catalisam o mesmo substrato.
+
+Aloenzimas = enzimas de diferentes alelos do mesmo gene
+Isoenzimas = enzimas de diferentes genes que processam ou catalisam a mesma reação.
+
+A análise baseia-se na migração diferencial em eletroforese de enzimas de uma mesma espécie mas com cargas e tamanhos diferentes (devido a modificações na sequência de bases do gene). 
+
+Como marcadores moleculares, são co-dominantes.
+
+Estes polimorfismos podem ou não ocorrer em regiões codificantes, podendo ser neutros ou com efeitos positivos ou negativos no fenótipo do indivíduo. 
+
+### RFLP
+
+Polimorfismos de Tamanho de Fragmento de Restrição
+
+Polimorfismos detectados gerados por digestão enzimática com endonucleases de DNA genômico ou amplificado por PCR. 
+
+Como marcadores moleculares, são tipicamente neutros e podem ser co-dominantes ou dominantes.
+
+Diferentes endonucleases apresentam sítios de ligação e corte do DNA diferentes.
+
+Análise direta de mutações nos sítios de reconhecimento de endonucleases por meio de mudanças no tamanho dos fragmentos gerados em padrões eletroforéticos
+
+### Sequência de nucleotídeos
+
+Cada posição da sequência pode ser informacional.
+
+As sequências de DNA são marcadores tipicamente neutros e dominantes, que podem ser utilizados para análises populacionais e filogenéticas.
+
+Estas podem definir alelos ou haplótipos, e as posições podem ser usadas para tabular caractéres, onde cada nucleotídeo corresponde a um estado de caráter.
+
+Sequenciamento de DNA
+
+Sequenciamento de última geração (NGS)
+
+### SNPs
+
+Polimorfismos de nucleotídeo único ou Polimorfismos de um único nucleotídeo
+
+Representam uma variação de um único* par de base em uma região gênica específica. 
+
+alguns autores consideram substituições de poucos nucleotídeos ou mesmo inserções e deleções como SNPs.
+
+Como marcadores moleculares, são co-dominantes.
+
+Estes polimorfismos podem ou não ocorrer em regiões codificantes, podendo ser neutros ou com efeitos positivos ou negativos no fenótipo do indivíduo. 
+
+SNPs são muito numerosos no genoma (ca. 1:300 pb em humanos). Estima-se que 90% da variação genética intraespecífica se deva a estes polimorfismos e que cada indivíduo apresente um arranjo genômico único em relação a eles.
+
+### Microssatelites
+
+Repetições de Sequências Simples (SSRs) ou 
+Repetições Curtas em Série (STR)
+
+São regiões gênicas polimórficas que consistem de unidades de 2-6 pb repetidas in tandem. 
+
+Como marcadores moleculares, são co-dominantes e geralmente neutros.
+
+As frequências de um locus microssatélite com n repetições geralmente apresentam uma alta variância (evolução por mutações dinâmicas; slippage) e forte caráter populacional. 
+
+Sendo assim, a análise multi-loci microssatélite permite inferência em nível individual (fingerprinting) e aplicações como marcadores para estudos de parentesco e populacionais.
+
+## Vantagens e Desvantagens
+
+## Principais marcadores moleculares
+
+## Tipo de dados
+
+### Sequências de DNA
+
+> 0 ACACCCAACACGGCC
+> 0 ACACAAAACACGGCC
+> 1 ACACAAAACACGGCC
+> 1 ATACCCAGCACGGCC
+
+### Microssatélites
+
+> 0 6.5 37.31 18.18 
+> 0 6.6 37.33 18.16 
+> 1 4.5 35.?  18.18 
+> 1 4.4 35.31 20.18
+
+### SNPs
+
+> 0 CC TC GG TT 
+> 0 CC TC GG TT
+> 1 CC TC AG TA
+> 1 CC TT AG TA
+
+## Bancos de dados públicos
+
+GenBank
+https://www.ncbi.nlm.nih.gov/genbank/
+
+Barcode of Life Data Systems
+http://www.boldsystems.org/
+
+1000 Genomes Project
+http://www.internationalgenome.org/
+
+SNP Database
+https://www.ncbi.nlm.nih.gov/projects/SNP/
+
+
+
+
+
+
+
+
+

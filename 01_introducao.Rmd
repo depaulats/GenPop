@@ -1,0 +1,128 @@
+# Introdução
+
+A Genética de Populações é uma subárea da Genética que lida com as diferenças dentro e entre as populações.
+
+Compreende a origem, quantidade e distribuição da variação genética presente em populações de organismos, ao longo do tempo e do espaço.
+
+A variação dos genes no tempo e no espaço constitui a base fundamental da mudança evolutiva (microevolução).
+
+## O DNA pode replicar
+
+A replicação do DNA permite que um gene, ou sequência de nucleotídeos: 
+	seja passado de uma geração para a próxima, e  
+	exista em múltiplas cópias em diferentes indivíduos.
+
+
+Os gene possuem uma existência no tempo e no espaço que transcende os indivíduos que temporariamente os carregam.
+
+
+A existência biológica dos genes no tempo e no espaço é a base física da evolução.
+
+A continuidade de um gene no tempo e através do espaço se manifesta físicamente por meio de uma população de indivíduos se reproduzindo.
+
+Indivíduos não possuem continuidade no tempo e no espaço; indivíduos são eventos únicos que vivem e morrem e não podem evoluir. 
+
+Os genes carregados pelos indivíduos são virtualmente imortais por meio da replicação do DNA.
+
+A evolução é possível somente no nível de uma população se reproduzindo, e não no nível dos indivíduos contidos dentro da população.
+
+A genética de populações pode operar em diferentes níveis hierárquicos populacionais dentro de uma espécie.
+
+Comumente ela foca a população local, ou deme, uma coleção intercruzante de indivíduos da mesma espécie que vivem em proximidade suficiente para compartilhar um sistema de cruzamento.
+
+Uma vez que o deme é uma população que se reproduz, indivíduos são continuamente substituídos por nascimentos e mortes, mas a população local é uma entidade dinâmica que persiste através do espaço e do tempo além dos indivíduos que temporariamente à compõe.
+
+Associada a cada população local de indivíduos há uma população local de genes correspondentes, chamada fundo gênico (pool gene) .
+
+O pool gênico pode ter duas definições:
+
+Empiricamente = o conjunto de genes coletivamente partilhado pelos indivíduos de um deme.
+
+Teoricamente = a população potencial de gametas produzidos por todos os indivíduos de um deme.
+
+O pool gênico associado a um deme é descrito mensurando os números e frequências de vários tipos de genes ou combinações de genes no pool.
+
+Assim, 
+
+	“Evolução é a mudança ao longo do tempo nas frequências dos genes ou combinações destes no pool gênico”.
+
+A evolução é uma propriedade emergente de populações de indivíduos que se reproduzem, que não se manifesta nos próprios indivíduos que as compõem.
+
+
+
+## O DNA pode replicar
+
+Evolução requer mudança, que somente pode ocorrer quando existem alternativas. 
+
+Um prérequisito necessário para a evolução é a diversidade genética, cuja fonte última é a mutação.
+
+Há diferentes formas de mutações, as quais criam diversidade na população de genes presentes no pool gênico.
+
+Mutações criam diversidade alélica.
+
+Alelos são simplesmente formas alternativas de um gene. 
+
+Em alguns casos são focadas regiões do DNA que podem não ser um gene no sentido clássico. O termo haplótipo se refere a uma forma alternativa (sequência específica de nucleotídeos) entre as cópias homólogas de uma região definida do DNA, ou locus gênico.
+
+A diversidade genética criada pela mutação pode ser amplificada por mecanismos genéticos de recombinação e diploidia. 
+
+A reprodução sexuada e a diploidia podem ser pensadas como mecanismos que criam novas combinações de genes.
+
+Recombinação compreende basicamente os eventos meióticos tanto de crossing-over quanto de segregação independente. 
+
+Mas pode incluir eventos não-meióticos que criam novas combinações de genes nos dos gametas, passível de ser transmitida para as próximas gerações.
+
+A distinção entre mutação e recombinação muitas vezes é borrada uma vez que uma recombinação pode ocorrer dentro de um gene de dessa forma criar novos alelos ou haplótipos.
+
+
+
+## O DNA interage com o ambiente e produz fenótipos
+
+Um fenótipo é um caráter mensurável de um indivíduo.
+
+No passado, os genes podiam ser identificados somente por meio de seus efeitos no fenótipo. 
+
+O gene era nomeado pelo seu efeito fenotípico, levando a uma equação simplória e errônea entre genes e fenótipos.
+
+As informações contidas no DNA controlam processos dinâmicos, que sempre ocorrem em um contexto ambiental.
+
+É a interação da informação genética com as variáveis ambientais através dos processos de desenvolvimento que geram os fenótipos.
+
+Fenótipos emergem de processos dinâmicos geneticamente influenciados cujos resultados dependem de um contexto ambiental.
+
+Considere os seguintes fenótipos de um organismo:
+
+a) Estar-vivo x Estar-morto: o fenótipo da viabilidade (a habilidade do indivíduo de sobreviver ao ambiente)
+
+Uma vez estando vivo,
+
+b) Ter reproduzido x não ter reproduzido (a habilidade de um indivíduo vivo de encontrar um parceiro e reproduzir no ambiente)
+
+Uma vez estando vivo, e tendo se reproduzido,
+
+c) O número de descententes produzidos (o número de descentes que um indivíduo vivo e reprodutivo pode produzir no ambiente)
+
+Sobrevivência, sucesso reprodutivo e fecundidade são três fenótipos fundamentais na teoria microevolutiva uma vez que coletivamente determinam as chances de um indivíduo passar seu DNA para a próxima geração no contexto do ambiente.
+
+O fenótipo coletivo, produzido pelos três componentes, é chamado de adaptabilidade reprodutiva (ou fitness).
+
+O fenótipo do fitness une a premissa 3 (o DNA interage com o ambiente e produz fenótipos) com a premissa 1 (o DNA pode replicar). 
+
+O DNA somente pode se replicar no contexto de um indivíduo sobrevivendo em um ambiente, reproduzindo em um ambiente, e produzindo descentes em um ambiente.
+
+Esta unificação de premissas implica que a probabilidade da replicação do DNA é determinada por como o genótipo interage com o ambiente.
+
+Numa população de indivíduos geneticamente diversos, possível devido a premissa 2 (o DNA pode mutar e recombinar), é possível que alguns genótipos irão interagir com o ambiente de forma a produzir mais ou menos atos de replicação com o DNA que outros genótipos.
+
+Assim, o ambiente influencia as chances relativas para vários genótipos de replicar seu DNA.
+
+A influência do ambiente (premissa 3) sobre a replicação do DNA (premissa 1) em populações geneticamente variáveis (premissa 2) é a base da seleção natural, e uma das maiores características emergentes da microevolução: adaptação ao ambiente.
+
+ Adaptação = atributos e características dos organismos que os ajuda a sobreviver, reproduzir e deixar descendentes em ambientes específicos.
+
+
+
+
+
+
+
