@@ -41,9 +41,11 @@ Fazendo analogia à um tribunal, onde todos são inocentes ($H_0$) até que se p
 
 Esses dois tipos de erro são compensados entre si: para qualquer conjunto de amostra, o esforço para reduzir um tipo de erro geralmente resulta no aumento do outro tipo de erro.
 
+.\linebreak
 ```{r errostipos, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="Relações entre verdade/falsidade da hipótese nula e resultados de um teste statístico."} 
 knitr::include_graphics("figs/09/erro_estatistico.png")
 ```
+.\linebreak
 
 ## Testes de ajuste do chi-quadrado
 
@@ -52,20 +54,25 @@ O teste do qui-quadrado de Pearson ($χ^2$; [Pearson 1900](https://doi.org/10.10
 Ele testa uma hipótese nula declarando que a distribuição de freqüência de certos eventos observados em uma amostra é consistente com uma distribuição teórica específica. 
 
 Os eventos considerados devem ser mutuamente exclusivos e ter probabilidade total igual a 1.
+.\linebreak
 
 ### Um exemplo simples
 
 Um exemplo simples é a hipótese de que um dado comum de seis lados é "justo" (ou seja, todos os seis resultados são igualmente prováveis de ocorrer).
 
+.\linebreak
 ```{r dados, echo = FALSE, fig.align = 'center', out.width="200px", fig.cap="Em um dado perfeito (sem viés), a chance de cada lado cair com a face para cima é igual a $1/6$."} 
 knitr::include_graphics("figs/09/dice.png")
 ```
+.\linebreak
 
 **Os dados de Weldon**
 
-```{r weldon, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="[W. F. Raphael Weldon](https://en.wikipedia.org/wiki/Raphael_Weldon)(1860-1906), biólogo evolucionista inglês."} 
-knitr::include_graphics("figs/09/Weldon_Walter_F_R.png")
+.\linebreak
+```{r weldon, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="[W. F. Raphael Weldon](https://en.wikipedia.org/wiki/Raphael_Weldon) (1860-1906), biólogo evolucionista inglês."} 
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/c/c7/Weldon_Walter_F_R.jpg')
 ```
+.\linebreak
 
 Raphael Weldon foi um dos fundadores da biometria, e editor e co-fundador do periódico Biometrika (juntamente com Francis Galton e Karl Pearson).
 

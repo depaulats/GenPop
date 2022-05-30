@@ -15,7 +15,8 @@ output:
     number_sections: true
   tufte::tufte_handout: default
   tufte::tufte_html: default
-
+header-includes: 
+- \usepackage{caption}
 ---
 
 # {-}
