@@ -21,7 +21,7 @@ header-includes:
 
 # {-}
 
-![v.2022](figs/capa_2022.png)
+![v.2022](figs/capa_v.2022.svg)
 
 xxx
 

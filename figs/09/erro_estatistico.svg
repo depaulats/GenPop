@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100mm"
+   height="65.876999mm"
+   viewBox="0 0 100 65.876999"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="erro_estatistico.svg">
+  <defs
+     id="defs2">
+    <clipPath
+       id="clip0">
+      <rect
+         id="rect4518"
+         height="510"
+         width="780"
+         y="79"
+         x="-7" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="279.50171"
+     inkscape:cy="54.942456"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-231.123)">
+    <g
+       id="g4653"
+       transform="translate(-51.998495,196.5039)">
+      <rect
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         id="rect4623"
+         stroke-miterlimit="10"
+         height="14.268254"
+         width="30.651199"
+         y="41.527676"
+         x="90.214523"
+         style="fill:#cdeeff;fill-opacity:1;stroke:#ffffff;stroke-width:0.70555645;stroke-linejoin:round;stroke-miterlimit:10" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         transform="scale(1.0009476,0.99905331)"
+         y="47.807259"
+         x="91.744637"
+         id="text4633"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:3.08795118px;font-family:Arial, Arial_MSFontService, sans-serif;stroke-width:0.26458332">A hipótese nula (<tspan
+   id="tspan4625"
+   y="47.807259"
+   x="114.73353"
+   font-size="24"
+   font-style="italic"
+   style="font-style:italic;font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">H</tspan>
+<tspan
+   id="tspan4627"
+   y="48.450581"
+   x="116.9638"
+   font-size="16"
+   font-style="italic"
+   style="font-style:italic;font-size:2.05863404px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">0</tspan>
+<tspan
+   id="tspan4629"
+   y="47.807259"
+   x="117.99312"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">)</tspan>
+<tspan
+   id="tspan4631"
+   y="51.538536"
+   x="96.805435"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">é verdadeira</tspan>
+</text>
+      <rect
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         id="rect4635"
+         stroke-miterlimit="10"
+         height="14.139711"
+         width="30.779987"
+         y="41.527676"
+         x="120.86573"
+         style="fill:#cdeeff;fill-opacity:1;stroke:#ffffff;stroke-width:0.70555645;stroke-linejoin:round;stroke-miterlimit:10" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         transform="scale(1.0009476,0.99905331)"
+         y="47.807259"
+         x="122.46268"
+         id="text4645"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:3.08795118px;font-family:Arial, Arial_MSFontService, sans-serif;stroke-width:0.26458332">A hipótese nula (<tspan
+   id="tspan4637"
+   y="47.807259"
+   x="145.45157"
+   font-size="24"
+   font-style="italic"
+   style="font-style:italic;font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">H</tspan>
+<tspan
+   id="tspan4639"
+   y="48.450581"
+   x="147.68184"
+   font-size="16"
+   font-style="italic"
+   style="font-style:italic;font-size:2.05863404px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">0</tspan>
+<tspan
+   id="tspan4641"
+   y="47.807259"
+   x="148.71117"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">)</tspan>
+<tspan
+   id="tspan4643"
+   y="51.538536"
+   x="131.55498"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">é falsa</tspan>
+</text>
+      <rect
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         id="rect4647"
+         stroke-miterlimit="10"
+         height="6.5556841"
+         width="61.43119"
+         y="34.972"
+         x="90.214523"
+         style="fill:#66ccff;fill-opacity:1;stroke:#ffffff;stroke-width:0.70555645;stroke-linejoin:round;stroke-miterlimit:10" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         transform="scale(1.0009476,0.99905331)"
+         y="39.315395"
+         x="110.24944"
+         id="text4649"
+         font-size="24"
+         font-weight="700"
+         style="font-weight:700;font-size:3.08795118px;font-family:Arial, Arial_MSFontService, sans-serif;stroke-width:0.26458332">A REALIDADE</text>
+      <rect
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         id="rect4523"
+         stroke-miterlimit="10"
+         height="22.366451"
+         width="30.651199"
+         y="77.776756"
+         x="90.214523"
+         style="fill:#ffadad;fill-opacity:1;stroke:#ffffff;stroke-width:0.70555645;stroke-linejoin:round;stroke-miterlimit:10" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         transform="scale(1.0009476,0.99905331)"
+         y="82.675377"
+         x="95.948105"
+         id="text4539"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:3.08795118px;font-family:Arial, Arial_MSFontService, sans-serif;stroke-width:0.26458332">Falso positivo<tspan
+   id="tspan4525"
+   y="86.406647"
+   x="98.092522"
+   font-size="24"
+   font-weight="700"
+   style="font-weight:700;font-size:3.08795118px;stroke-width:0.26458332">Erro tipo I</tspan>
+<tspan
+   id="tspan4527"
+   y="93.869202"
+   x="99.207611"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">risco</tspan>
+<tspan
+   id="tspan4529"
+   y="93.869202"
+   x="106.58439"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">alfa</tspan>
+<tspan
+   id="tspan4531"
+   y="97.471809"
+   x="100.95573"
+   font-size="24"
+   style="font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">(</tspan>
+<tspan
+   id="tspan4533"
+   y="97.471809"
+   x="101.98505"
+   font-size="24"
+   font-style="italic"
+   style="font-style:italic;font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">p =</tspan>
+<tspan
+   id="tspan4535"
+   y="97.471809"
+   x="107.15309"
+   font-size="24"
+   font-style="italic"
+   style="font-style:italic;font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">α</tspan>
+<tspan
+   id="tspan4537"
+   y="97.471809"
+   x="108.78283"
+   font-size="24"
+   style="font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">)</tspan>
+</text>
+      <rect
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         id="rect4541"
+         stroke-miterlimit="10"
+         height="22.366451"
+         width="30.779987"
+         y="77.776756"
+         x="120.86573"
+         style="fill:#dcf0c6;fill-opacity:1;stroke:#ffffff;stroke-width:0.70555645;stroke-linejoin:round;stroke-miterlimit:10" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         transform="scale(1.0009476,0.99905331)"
+         y="82.675377"
+         x="122.97771"
+         id="text4557"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:3.08795118px;font-family:Arial, Arial_MSFontService, sans-serif;stroke-width:0.26458332">Positivo verdadeiro<tspan
+   id="tspan4543"
+   y="86.406647"
+   x="124.52169"
+   font-size="24"
+   font-weight="700"
+   style="font-weight:700;font-size:3.08795118px;stroke-width:0.26458332">Decisão correta</tspan>
+<tspan
+   id="tspan4545"
+   y="93.869202"
+   x="132.15579"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">poder</tspan>
+<tspan
+   id="tspan4547"
+   y="97.471809"
+   x="129.40065"
+   font-size="24"
+   style="font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">(</tspan>
+<tspan
+   id="tspan4549"
+   y="97.471809"
+   x="130.42998"
+   font-size="24"
+   font-style="italic"
+   style="font-style:italic;font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">p = 1</tspan>
+<tspan
+   id="tspan4551"
+   y="97.471809"
+   x="137.914"
+   font-size="24"
+   font-style="italic"
+   style="font-style:italic;font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">–</tspan>
+<tspan
+   id="tspan4553"
+   y="97.471809"
+   x="140.22997"
+   font-size="24"
+   font-style="italic"
+   style="font-style:italic;font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">β</tspan>
+<tspan
+   id="tspan4555"
+   y="97.471809"
+   x="141.77394"
+   font-size="24"
+   style="font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">)</tspan>
+</text>
+      <rect
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         id="rect4559"
+         stroke-miterlimit="10"
+         height="22.366451"
+         width="30.651199"
+         y="55.410297"
+         x="90.214523"
+         style="fill:#dcf0c6;fill-opacity:1;stroke:#ffffff;stroke-width:0.70555645;stroke-linejoin:round;stroke-miterlimit:10" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         transform="scale(1.0009476,0.99905331)"
+         y="60.287727"
+         x="91.573509"
+         id="text4579"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:3.08795118px;font-family:Arial, Arial_MSFontService, sans-serif;stroke-width:0.26458332">Negativo verdadeiro<tspan
+   id="tspan4561"
+   y="64.019005"
+   x="93.803696"
+   font-size="24"
+   font-weight="700"
+   style="font-weight:700;font-size:3.08795118px;stroke-width:0.26458332">Decisão correta</tspan>
+<tspan
+   id="tspan4563"
+   y="71.481552"
+   x="92.945938"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">nível</tspan>
+<tspan
+   id="tspan4565"
+   y="71.481552"
+   x="100.32271"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">de</tspan>
+<tspan
+   id="tspan4567"
+   y="71.481552"
+   x="104.61148"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">confiança</tspan>
+<tspan
+   id="tspan4569"
+   y="75.08416"
+   x="98.639771"
+   font-size="24"
+   style="font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">(</tspan>
+<tspan
+   id="tspan4571"
+   y="75.08416"
+   x="99.66909"
+   font-size="24"
+   font-style="italic"
+   style="font-style:italic;font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">p = 1</tspan>
+<tspan
+   id="tspan4573"
+   y="75.08416"
+   x="107.15312"
+   font-size="24"
+   font-style="italic"
+   style="font-style:italic;font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">–</tspan>
+<tspan
+   id="tspan4575"
+   y="75.08416"
+   x="109.46909"
+   font-size="24"
+   font-style="italic"
+   style="font-style:italic;font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">α</tspan>
+<tspan
+   id="tspan4577"
+   y="75.08416"
+   x="111.09875"
+   font-size="24"
+   style="font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">)</tspan>
+</text>
+      <rect
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         id="rect4581"
+         stroke-miterlimit="10"
+         height="22.366451"
+         width="30.779987"
+         y="55.410297"
+         x="120.86573"
+         style="fill:#ffadad;fill-opacity:1;stroke:#ffffff;stroke-width:0.70555645;stroke-linejoin:round;stroke-miterlimit:10" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         transform="scale(1.0009476,0.99905331)"
+         y="60.287727"
+         x="126.06567"
+         id="text4597"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:3.08795118px;font-family:Arial, Arial_MSFontService, sans-serif;stroke-width:0.26458332">Falso negativo<tspan
+   id="tspan4583"
+   y="64.019005"
+   x="128.38162"
+   font-size="24"
+   font-weight="700"
+   style="font-weight:700;font-size:3.08795118px;stroke-width:0.26458332">Erro tipo II</tspan>
+<tspan
+   id="tspan4585"
+   y="71.481552"
+   x="129.41095"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">risco</tspan>
+<tspan
+   id="tspan4587"
+   y="71.481552"
+   x="136.78773"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">beta</tspan>
+<tspan
+   id="tspan4589"
+   y="75.08416"
+   x="131.71661"
+   font-size="24"
+   style="font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">(</tspan>
+<tspan
+   id="tspan4591"
+   y="75.08416"
+   x="132.74594"
+   font-size="24"
+   font-style="italic"
+   style="font-style:italic;font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">p =</tspan>
+<tspan
+   id="tspan4593"
+   y="75.08416"
+   x="137.91397"
+   font-size="24"
+   font-style="italic"
+   style="font-style:italic;font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">β</tspan>
+<tspan
+   id="tspan4595"
+   y="75.08416"
+   x="139.45798"
+   font-size="24"
+   style="font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">)</tspan>
+</text>
+      <rect
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         id="rect4599"
+         stroke-miterlimit="10"
+         height="22.366451"
+         width="30.779987"
+         y="77.776756"
+         x="59.434551"
+         style="fill:#cdeeff;fill-opacity:1;stroke:#ffffff;stroke-width:0.70555645;stroke-linejoin:round;stroke-miterlimit:10" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         transform="scale(1.0009476,0.99905331)"
+         y="88.207954"
+         x="61.798946"
+         id="text4609"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:3.08795118px;font-family:Arial, Arial_MSFontService, sans-serif;stroke-width:0.26458332">Rejeitar a hipótese <tspan
+   id="tspan4601"
+   y="91.939224"
+   x="68.661057"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">nula (</tspan>
+<tspan
+   id="tspan4603"
+   y="91.939224"
+   x="76.380898"
+   font-size="24"
+   font-style="italic"
+   style="font-style:italic;font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">H</tspan>
+<tspan
+   id="tspan4605"
+   y="92.58255"
+   x="78.611168"
+   font-size="16"
+   font-style="italic"
+   style="font-style:italic;font-size:2.05863404px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">0</tspan>
+<tspan
+   id="tspan4607"
+   y="91.939224"
+   x="79.640488"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">)</tspan>
+</text>
+      <rect
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         id="rect4611"
+         stroke-miterlimit="10"
+         height="22.366451"
+         width="30.779987"
+         y="55.410297"
+         x="59.434551"
+         style="fill:#cdeeff;fill-opacity:1;stroke:#ffffff;stroke-width:0.70555645;stroke-linejoin:round;stroke-miterlimit:10" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         transform="scale(1.0009476,0.99905331)"
+         y="65.820305"
+         x="62.313602"
+         id="text4621"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:3.08795118px;font-family:Arial, Arial_MSFontService, sans-serif;stroke-width:0.26458332">Aceitar a hipótese <tspan
+   id="tspan4613"
+   y="69.551582"
+   x="68.661057"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">nula (</tspan>
+<tspan
+   id="tspan4615"
+   y="69.551582"
+   x="76.380898"
+   font-size="24"
+   font-style="italic"
+   style="font-style:italic;font-size:3.08795118px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">H</tspan>
+<tspan
+   id="tspan4617"
+   y="70.194908"
+   x="78.611168"
+   font-size="16"
+   font-style="italic"
+   style="font-style:italic;font-size:2.05863404px;font-family:'Times New Roman', 'Times New Roman_MSFontService', sans-serif;stroke-width:0.26458332">0</tspan>
+<tspan
+   id="tspan4619"
+   y="69.551582"
+   x="79.64048"
+   font-size="24"
+   style="font-size:3.08795118px;stroke-width:0.26458332">)</tspan>
+</text>
+      <rect
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         id="rect4651"
+         stroke-miterlimit="10"
+         height="44.732903"
+         width="7.0832734"
+         y="55.410297"
+         x="52.351273"
+         style="fill:#66ccff;fill-opacity:1;stroke:#ffffff;stroke-width:0.70555645;stroke-linejoin:round;stroke-miterlimit:10" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         y="56.901093"
+         x="-93.483208"
+         id="text4653"
+         transform="matrix(0,-0.99905331,1.0009476,0,0,0)"
+         font-size="24"
+         font-weight="700"
+         style="font-weight:700;font-size:3.08795118px;font-family:Arial, Arial_MSFontService, sans-serif;stroke-width:0.26458332">A DECISÃO TOMADA</text>
+    </g>
+  </g>
+</svg>

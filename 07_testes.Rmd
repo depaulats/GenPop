@@ -10,7 +10,7 @@ Em um teste estatístico de hipótese, um resultado tem significância estatíst
 
 .\linebreak
 ```{r infestat, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A inferência estatística é o ato de generalizar de uma amostra para uma população, a partir de dados obtidos desta, com um calculado nível de certeza."} 
-knitr::include_graphics("figs/09/inferencia_estatistica.png")
+knitr::include_graphics("figs/09/inferencia_estatistica.svg")
 ```
 .\linebreak
 
@@ -49,7 +49,7 @@ Esses dois tipos de erro são compensados entre si: para qualquer conjunto de am
 
 .\linebreak
 ```{r errostipos, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="Relações entre verdade/falsidade da hipótese nula e resultados de um teste statístico."} 
-knitr::include_graphics("figs/09/erro_estatistico.png")
+knitr::include_graphics("figs/09/erro_estatistico.svg")
 ```
 .\linebreak
 
@@ -68,7 +68,7 @@ Um exemplo simples é a hipótese de que um dado comum de seis lados é "justo" 
 
 .\linebreak
 ```{r dados, echo = FALSE, fig.align = 'center', out.width="200px", fig.cap="Em um dado perfeito (sem viés), a chance de cada lado cair com a face para cima é igual a $1/6$."} 
-knitr::include_graphics("figs/09/dice.png")
+knitr::include_graphics("figs/09/dice.svg")
 ```
 .\linebreak
 
@@ -117,7 +117,7 @@ A automação permitiu que Labby coletasse mais dados do que Weldon em 1894, em 
 
 .\linebreak
 ```{r labbyg, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Probabilidade de observar cada face de um dado em 12 ralagens, em um total de 26.306 rolagens ([Labby 2009](https://doi.org/10.1007/s00144-009-0036-8))."} 
-knitr::include_graphics("figs/09/Labby_graph.png")
+knitr::include_graphics("figs/09/Labby_results.svg")
 ```
 .\linebreak
 
@@ -125,7 +125,10 @@ knitr::include_graphics("figs/09/Labby_graph.png")
 
 O valor da estatística $\chi^2$ é:
 
-$$\chi^2=\displaystyle\sum_{i-1}^{n}\frac{(O_i-E_i)^2}{E_i} $$
+\begin{equation} 
+\chi^2=\displaystyle\sum_{i-1}^{n}\frac{(O_i-E_i)^2}{E_i} 
+  (\#eq:quiquadrado)
+\end{equation} 
 
 Onde, $n$ é o número total de observações, $O_i$ é o número de observações do tipo $i$, e $E_i$ é a contagem esperada (teórica) do tipo $i$. 
 
@@ -144,7 +147,7 @@ Matematicamente, grau de liberdade é o número de dimensões do domínio de um 
 
 .\linebreak
 ```{r gl, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Os graus de liberdade ($gl$) de um corpo rígido são definidos como o número de movimentos independentes que ele possui."} 
-knitr::include_graphics("figs/09/grau_liberdade.png")
+knitr::include_graphics("figs/09/gl_mecanismo.svg")
 ```
 .\linebreak
 
@@ -152,25 +155,45 @@ knitr::include_graphics("figs/09/grau_liberdade.png")
 Cada grau de liberdade apresenta um função densidade de probabilidade, onde os valores de $\chi^2$ (eixo x) apresentam diferentes frequências (eixo y).
 
 .\linebreak
-```{r glgraph, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade ($gl$)."} 
-knitr::include_graphics("figs/09/grau_liberdade_graph.png")
+```{r glgraph, echo = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade."} 
+library("ggplot2")
+ggplot(data.frame(x = c(0, 15)), aes(x = x)) + 
+  stat_function(fun = dchisq, args = list(df = 1), aes(colour = "gl = 1"), lwd = 1) +
+  stat_function(fun = dchisq, args = list(df = 2), aes(colour = "gl = 2"), lwd = 1) +
+  stat_function(fun = dchisq, args = list(df = 3), aes(colour = "gl = 3"), lwd = 1) +
+  stat_function(fun = dchisq, args = list(df = 5), aes(colour = "gl = 5"), lwd = 1) +
+  stat_function(fun = dchisq, args = list(df = 9), aes(colour = "gl = 9"), lwd = 1) +
+  labs(x = "Qui-quadrado", y = "Densidade de probabilidade") + 
+  scale_color_manual(name = "Graus de\nLiberdade", values = c("firebrick2", "chocolate", "royalblue3", "green4", "deepskyblue3")) +
+  theme(legend.position = c(.9, .7))
 ```
 .\linebreak
 
 A partir da função densidade de probabilidade, é possível calcular a probabilidade p de um evento cujo valor de $\chi^2$  é conhecido.
 
 .\linebreak
-```{r glprob, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="A probabilidade de observar valores maiores ou iguals a estatística $\\chi^2$ é cumulativa à função densidade de probabilidade ($pdf$, _probability density function_)."} 
-knitr::include_graphics("figs/09/grau_liberdade_prob.png")
+```{r glprob, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade."} 
+library("ggplot2")
+library("latex2exp")
+ggplot(data.frame(x = c(0, 15)), aes(x = x)) + 
+  stat_function(fun = dchisq, geom = "area", args = list(df = 5), fill = "lightgreen", xlim = c(7, 15)) +
+  stat_function(fun = dchisq, geom = "line", args = list(df = 5), colour = "green4", lwd = 1) +
+  labs(x = "Qui-quadrado", y = "Densidade de probabilidade") + 
+  annotate(geom='text', x=9, y=.015, parse = TRUE, color="black", label=TeX("$p = Pr \\left [ X \\geq \\chi^2 \\right ]$"))
+
 ```
 .\linebreak
 
 No teste de ajuste do qui-quadrado o número de graus de liberdade é igual ao número classes de observações ($k$) menos 1 menos o número parâmetros independentes estimados para o modelo ($p$).
 
-$$gl=k-1-p$$
+\begin{equation} 
+gl=k-1-p
+  (\#eq:gl)
+\end{equation} 
 
 .\linebreak
 ```{r, echo = FALSE}
+library(kableExtra)
 chi_table <- read.csv("tables/chi_square.csv", sep=",", check.names = FALSE)
 knitr::kable(chi_table, align = "cccccccccc", booktabs = TRUE, caption = "Tabela de distribuição de qui-quadrado", "html")
 ```
@@ -211,8 +234,43 @@ De forma que:
 gl = (\text{# genótipos}) - (\text{# alelos})
 \end{equation} 
 
-#### Exemplo
+### Tabela de contingência (RxC)
 
+Uma tabela de contingência (também conhecida como tabulação cruzada) é um tipo de tabela em formato de matriz que exibe a distribuição de frequência das variáveis (Pearson 1904).
+
+Elas fornecem uma imagem básica da inter-relação entre duas variáveis e podem ajudar a encontrar interações entre elas. 
+
+.\linebreak
+```{r tabelarc, echo = FALSE, fig.align = 'center', out.width = "300px", fig.cap="Tabela de contingência (2x2)"} 
+knitr::include_graphics("figs/09/tabela_rc.svg")
+```
+.\linebreak
+
+
+#### Razão de chances
+
+A medida mais simples de associação para uma tabela de contingência 2 × 2 é a razão de chances ($OR$, _odds ratio_). 
+
+Dados dois eventos, $A$ e $B$, a razão de chances é definida como a razão das chances de $A$ na presença de $B$ e as chances de $A$ na ausência de $B$, ou equivalentemente (devido à simetria), a razão das chances de $B$ na presença de $A$ e as chances de $B$ na ausência de $A$. 
+
+Dois eventos são independentes se $OR=1$; se $OR>1$, os eventos estão associados positivamente; e se $OR<1$, os eventos estão associados negativamente.
+
+A razão de chances tem uma expressão simples em termos de probabilidades; dada a distribuição de probabilidade conjunta:
+
+\begin{equation} 
+OR = \frac{p_00\cdot p_11}{p_01\cdot p_10}
+  (\#eq:or)
+\end{equation} 
+
+
+
+
+## Exercícios e Atividades
+
+## Exercício 1
+
+
+.\linebreak
 ```{r, echo = FALSE}
 Genotipo <- c("Individuos")
 BB <- c(1469)
@@ -223,5 +281,6 @@ data09 <- data.frame(Genotipo,BB,Bb,bb,N)
 knitr::kable(data09, align = "ccccc", booktabs = TRUE, caption = "Polimorfismo de cor na asa da traça de tigre escarlate
 (_Callimorpha dominula_)", "html")
 ```
+.\linebreak
 
 

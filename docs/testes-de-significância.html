@@ -164,7 +164,10 @@
 <li class="chapter" data-level="7.2.2" data-path="testes-de-significância.html"><a href="testes-de-significância.html#teste-do-qui-quadrado-de-pearson"><i class="fa fa-check"></i><b>7.2.2</b> Teste do qui-quadrado de Pearson</a></li>
 <li class="chapter" data-level="7.2.3" data-path="testes-de-significância.html"><a href="testes-de-significância.html#graus-de-liberdade"><i class="fa fa-check"></i><b>7.2.3</b> Graus de liberdade</a></li>
 <li class="chapter" data-level="7.2.4" data-path="testes-de-significância.html"><a href="testes-de-significância.html#testando-a-significância-do-princípio-de-hardy-weinberg"><i class="fa fa-check"></i><b>7.2.4</b> Testando a significância do Princípio de Hardy-Weinberg</a></li>
+<li class="chapter" data-level="7.2.5" data-path="testes-de-significância.html"><a href="testes-de-significância.html#tabela-de-contingência-rxc"><i class="fa fa-check"></i><b>7.2.5</b> Tabela de contingência (RxC)</a></li>
 </ul></li>
+<li class="chapter" data-level="7.3" data-path="testes-de-significância.html"><a href="testes-de-significância.html#exercícios-e-atividades"><i class="fa fa-check"></i><b>7.3</b> Exercícios e Atividades</a></li>
+<li class="chapter" data-level="7.4" data-path="testes-de-significância.html"><a href="testes-de-significância.html#exercício-1"><i class="fa fa-check"></i><b>7.4</b> Exercício 1</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="deriva-genética.html"><a href="deriva-genética.html"><i class="fa fa-check"></i><b>8</b> Deriva Genética</a></li>
 <li class="chapter" data-level="9" data-path="endogamia.html"><a href="endogamia.html"><i class="fa fa-check"></i><b>9</b> Endogamia</a><ul>
@@ -215,7 +218,7 @@
 </blockquote>
 .
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:infestat"></span>
-<img src="figs/09/inferencia_estatistica.png" alt="A inferência estatística é o ato de generalizar de uma amostra para uma população, a partir de dados obtidos desta, com um calculado nível de certeza." width="600px" />
+<img src="figs/09/inferencia_estatistica.svg" alt="A inferência estatística é o ato de generalizar de uma amostra para uma população, a partir de dados obtidos desta, com um calculado nível de certeza." width="600px" />
 <p class="caption">
 Figure 7.1: A inferência estatística é o ato de generalizar de uma amostra para uma população, a partir de dados obtidos desta, com um calculado nível de certeza.
 </p>
@@ -244,7 +247,7 @@ O nível de significância de um teste definido como 0,05 (5%) implica que é ac
 <p>Esses dois tipos de erro são compensados entre si: para qualquer conjunto de amostra, o esforço para reduzir um tipo de erro geralmente resulta no aumento do outro tipo de erro.</p>
 .
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:errostipos"></span>
-<img src="figs/09/erro_estatistico.png" alt="Relações entre verdade/falsidade da hipótese nula e resultados de um teste statístico." width="600px" />
+<img src="figs/09/erro_estatistico.svg" alt="Relações entre verdade/falsidade da hipótese nula e resultados de um teste statístico." width="600px" />
 <p class="caption">
 Figure 7.2: Relações entre verdade/falsidade da hipótese nula e resultados de um teste statístico.
 </p>
@@ -262,7 +265,7 @@ Figure 7.2: Relações entre verdade/falsidade da hipótese nula e resultados de
 <p>Um exemplo simples é a hipótese de que um dado comum de seis lados é “justo” (ou seja, todos os seis resultados são igualmente prováveis de ocorrer).</p>
 .
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:dados"></span>
-<img src="figs/09/dice.png" alt="Em um dado perfeito (sem viés), a chance de cada lado cair com a face para cima é igual a $1/6$." width="200px" />
+<img src="figs/09/dice.svg" alt="Em um dado perfeito (sem viés), a chance de cada lado cair com a face para cima é igual a $1/6$." width="200px" />
 <p class="caption">
 Figure 7.3: Em um dado perfeito (sem viés), a chance de cada lado cair com a face para cima é igual a <span class="math inline">\(1/6\)</span>.
 </p>
@@ -303,7 +306,7 @@ Figure 7.5: Zacariah Labby e <a href="https://ehttps://www.youtube.com/watch?v=9
 <p>A automação permitiu que Labby coletasse mais dados do que Weldon em 1894, em vez de registrar “sucessos” e “falhas”, Labby registrou o número individual de pontos em cada dado.</p>
 .
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:labbyg"></span>
-<img src="figs/09/Labby_graph.png" alt="Probabilidade de observar cada face de um dado em 12 ralagens, em um total de 26.306 rolagens ([Labby 2009](https://doi.org/10.1007/s00144-009-0036-8))." width="400px" />
+<img src="figs/09/Labby_results.svg" alt="Probabilidade de observar cada face de um dado em 12 ralagens, em um total de 26.306 rolagens ([Labby 2009](https://doi.org/10.1007/s00144-009-0036-8))." width="400px" />
 <p class="caption">
 Figure 7.6: Probabilidade de observar cada face de um dado em 12 ralagens, em um total de 26.306 rolagens (<a href="https://doi.org/10.1007/s00144-009-0036-8">Labby 2009</a>).
 </p>
@@ -314,7 +317,10 @@ Figure 7.6: Probabilidade de observar cada face de um dado em 12 ralagens, em um
 <div id="teste-do-qui-quadrado-de-pearson" class="section level3 hasAnchor">
 <h3><span class="header-section-number">7.2.2</span> Teste do qui-quadrado de Pearson<a href="testes-de-significância.html#teste-do-qui-quadrado-de-pearson" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>O valor da estatística <span class="math inline">\(\chi^2\)</span> é:</p>
-<p><span class="math display">\[\chi^2=\displaystyle\sum_{i-1}^{n}\frac{(O_i-E_i)^2}{E_i} \]</span></p>
+<p><span class="math display" id="eq:quiquadrado">\[\begin{equation} 
+\chi^2=\displaystyle\sum_{i-1}^{n}\frac{(O_i-E_i)^2}{E_i} 
+  \tag{7.1}
+\end{equation}\]</span></p>
 <p>Onde, <span class="math inline">\(n\)</span> é o número total de observações, <span class="math inline">\(O_i\)</span> é o número de observações do tipo <span class="math inline">\(i\)</span>, e <span class="math inline">\(E_i\)</span> é a contagem esperada (teórica) do tipo <span class="math inline">\(i\)</span>.</p>
 <p>A estatística do qui-quadrado pode então ser usada para calcular um valor-p comparando o valor da estatística a uma distribuição qui-quadrada.</p>
 </div>
@@ -326,7 +332,7 @@ Figure 7.6: Probabilidade de observar cada face de um dado em 12 ralagens, em um
 <p>Matematicamente, grau de liberdade é o número de dimensões do domínio de um vetor aleatório, ou essencialmente o número de componentes "livres“, isto é, quantos componentes precisam ser conhecidos antes que o vetor seja totalmente determinado.</p>
 .
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:gl"></span>
-<img src="figs/09/grau_liberdade.png" alt="Os graus de liberdade ($gl$) de um corpo rígido são definidos como o número de movimentos independentes que ele possui." width="400px" />
+<img src="figs/09/gl_mecanismo.svg" alt="Os graus de liberdade ($gl$) de um corpo rígido são definidos como o número de movimentos independentes que ele possui." width="400px" />
 <p class="caption">
 Figure 7.7: Os graus de liberdade (<span class="math inline">\(gl\)</span>) de um corpo rígido são definidos como o número de movimentos independentes que ele possui.
 </p>
@@ -335,27 +341,30 @@ Figure 7.7: Os graus de liberdade (<span class="math inline">\(gl\)</span>) de u
 <p>Cada grau de liberdade apresenta um função densidade de probabilidade, onde os valores de <span class="math inline">\(\chi^2\)</span> (eixo x) apresentam diferentes frequências (eixo y).</p>
 .
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:glgraph"></span>
-<img src="figs/09/grau_liberdade_graph.png" alt="Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade ($gl$)." width="400px" />
+<img src="bookdownproj_files/figure-html/glgraph-1.png" alt="Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade." width="600px" />
 <p class="caption">
-Figure 7.8: Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade (<span class="math inline">\(gl\)</span>).
+Figure 7.8: Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade.
 </p>
 </div>
 <p>.</p>
 <p>A partir da função densidade de probabilidade, é possível calcular a probabilidade p de um evento cujo valor de <span class="math inline">\(\chi^2\)</span> é conhecido.</p>
 .
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:glprob"></span>
-<img src="figs/09/grau_liberdade_prob.png" alt="A probabilidade de observar valores maiores ou iguals a estatística $\chi^2$ é cumulativa à função densidade de probabilidade ($pdf$, _probability density function_)." width="400px" />
+<img src="bookdownproj_files/figure-html/glprob-1.png" alt="Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade." width="600px" />
 <p class="caption">
-Figure 7.9: A probabilidade de observar valores maiores ou iguals a estatística <span class="math inline">\(\chi^2\)</span> é cumulativa à função densidade de probabilidade (<span class="math inline">\(pdf\)</span>, <em>probability density function</em>).
+Figure 7.9: Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade.
 </p>
 </div>
 <p>.</p>
 <p>No teste de ajuste do qui-quadrado o número de graus de liberdade é igual ao número classes de observações (<span class="math inline">\(k\)</span>) menos 1 menos o número parâmetros independentes estimados para o modelo (<span class="math inline">\(p\)</span>).</p>
-<p><span class="math display">\[gl=k-1-p\]</span></p>
+<p><span class="math display" id="eq:gl">\[\begin{equation} 
+gl=k-1-p
+  \tag{7.2}
+\end{equation}\]</span></p>
 .
 <table>
 <caption>
-<span id="tab:unnamed-chunk-7">Table 7.1: </span>Tabela de distribuição de qui-quadrado
+<span id="tab:unnamed-chunk-1">Table 7.1: </span>Tabela de distribuição de qui-quadrado
 </caption>
 <thead>
 <tr>
@@ -743,11 +752,41 @@ Grau de liberdade (gl)
 gl = (\text{# genótipos}) - (\text{# alelos})
 \end{equation}\]</span></p>
 </div>
-<div id="exemplo-1" class="section level4 hasAnchor">
-<h4><span class="header-section-number">7.2.4.4</span> Exemplo<a href="testes-de-significância.html#exemplo-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="tabela-de-contingência-rxc" class="section level3 hasAnchor">
+<h3><span class="header-section-number">7.2.5</span> Tabela de contingência (RxC)<a href="testes-de-significância.html#tabela-de-contingência-rxc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Uma tabela de contingência (também conhecida como tabulação cruzada) é um tipo de tabela em formato de matriz que exibe a distribuição de frequência das variáveis (Pearson 1904).</p>
+<p>Elas fornecem uma imagem básica da inter-relação entre duas variáveis e podem ajudar a encontrar interações entre elas.</p>
+.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:tabelarc"></span>
+<img src="figs/09/tabela_rc.svg" alt="Tabela de contingência (2x2)" width="300px" />
+<p class="caption">
+Figure 7.10: Tabela de contingência (2x2)
+</p>
+</div>
+<p>.</p>
+<div id="razão-de-chances" class="section level4 hasAnchor">
+<h4><span class="header-section-number">7.2.5.1</span> Razão de chances<a href="testes-de-significância.html#razão-de-chances" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A medida mais simples de associação para uma tabela de contingência 2 × 2 é a razão de chances (<span class="math inline">\(OR\)</span>, <em>odds ratio</em>).</p>
+<p>Dados dois eventos, <span class="math inline">\(A\)</span> e <span class="math inline">\(B\)</span>, a razão de chances é definida como a razão das chances de <span class="math inline">\(A\)</span> na presença de <span class="math inline">\(B\)</span> e as chances de <span class="math inline">\(A\)</span> na ausência de <span class="math inline">\(B\)</span>, ou equivalentemente (devido à simetria), a razão das chances de <span class="math inline">\(B\)</span> na presença de <span class="math inline">\(A\)</span> e as chances de <span class="math inline">\(B\)</span> na ausência de <span class="math inline">\(A\)</span>.</p>
+<p>Dois eventos são independentes se <span class="math inline">\(OR=1\)</span>; se <span class="math inline">\(OR&gt;1\)</span>, os eventos estão associados positivamente; e se <span class="math inline">\(OR&lt;1\)</span>, os eventos estão associados negativamente.</p>
+<p>A razão de chances tem uma expressão simples em termos de probabilidades; dada a distribuição de probabilidade conjunta:</p>
+<p><span class="math display" id="eq:or">\[\begin{equation} 
+OR = \frac{p_00\cdot p_11}{p_01\cdot p_10}
+  \tag{7.3}
+\end{equation}\]</span></p>
+</div>
+</div>
+</div>
+<div id="exercícios-e-atividades" class="section level2 hasAnchor">
+<h2><span class="header-section-number">7.3</span> Exercícios e Atividades<a href="testes-de-significância.html#exercícios-e-atividades" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="exercício-1" class="section level2 hasAnchor">
+<h2><span class="header-section-number">7.4</span> Exercício 1<a href="testes-de-significância.html#exercício-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+.
 <table>
 <caption>
-<span id="tab:unnamed-chunk-8">Table 7.2: </span>Polimorfismo de cor na asa da traça de tigre escarlate
+<span id="tab:unnamed-chunk-2">Table 7.2: </span>Polimorfismo de cor na asa da traça de tigre escarlate
 (<em>Callimorpha dominula</em>)
 </caption>
 <thead>
@@ -789,9 +828,8 @@ Individuos
 </tr>
 </tbody>
 </table>
+<p>.</p>
 
-</div>
-</div>
 </div>
 </div>
             </section>
