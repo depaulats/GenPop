@@ -355,7 +355,7 @@ Figure 7.9: A probabilidade de observar valores maiores ou iguals a estatística
 .
 <table>
 <caption>
-<span id="tab:unnamed-chunk-1">Table 7.1: </span>Tabela de distribuição de qui-quadrado
+<span id="tab:unnamed-chunk-7">Table 7.1: </span>Tabela de distribuição de qui-quadrado
 </caption>
 <thead>
 <tr>
@@ -726,15 +726,71 @@ Grau de liberdade (gl)
 </ul>
 <p>E o número de graus de liberdade dependerá do número de genótipos e alelos presentes no modelo do estudo.</p>
 <p>De forma que, para um dado locus gênicos,<span class="math inline">\(k\)</span> é o número de genótipos, e <span class="math inline">\(p\)</span> é o número de alelos, diminuído em um.</p>
+<div id="graus-de-liberdade-com-dois-alelos" class="section level4 hasAnchor">
+<h4><span class="header-section-number">7.2.4.1</span> Graus de liberdade com dois alelos<a href="testes-de-significância.html#graus-de-liberdade-com-dois-alelos" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="graus-de-liberdade-com-três-alelos" class="section level4 hasAnchor">
+<h4><span class="header-section-number">7.2.4.2</span> Graus de liberdade com três alelos<a href="testes-de-significância.html#graus-de-liberdade-com-três-alelos" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="graus-de-liberdade-com-n-alelos" class="section level4 hasAnchor">
+<h4><span class="header-section-number">7.2.4.3</span> Graus de liberdade com <span class="math inline">\(n\)</span> alelos<a href="testes-de-significância.html#graus-de-liberdade-com-n-alelos" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Assim temos que:</p>
 <p><span class="math display">\[\begin{equation} 
   gl = (\text{# genótipos}) – 1 − (\text{# alelos} – 1)
 \end{equation}\]</span></p>
-<p>Simplificando, temos que:</p>
+<p>De forma que:</p>
 <p><span class="math display">\[\begin{equation} 
 gl = (\text{# genótipos}) - (\text{# alelos})
 \end{equation}\]</span></p>
+</div>
+<div id="exemplo-1" class="section level4 hasAnchor">
+<h4><span class="header-section-number">7.2.4.4</span> Exemplo<a href="testes-de-significância.html#exemplo-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<table>
+<caption>
+<span id="tab:unnamed-chunk-8">Table 7.2: </span>Polimorfismo de cor na asa da traça de tigre escarlate
+(<em>Callimorpha dominula</em>)
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Genotipo
+</th>
+<th style="text-align:center;">
+BB
+</th>
+<th style="text-align:center;">
+Bb
+</th>
+<th style="text-align:center;">
+bb
+</th>
+<th style="text-align:center;">
+N
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+Individuos
+</td>
+<td style="text-align:center;">
+1469
+</td>
+<td style="text-align:center;">
+138
+</td>
+<td style="text-align:center;">
+5
+</td>
+<td style="text-align:center;">
+1612
+</td>
+</tr>
+</tbody>
+</table>
 
+</div>
 </div>
 </div>
 </div>

@@ -190,18 +190,38 @@ E o número de graus de liberdade dependerá do número de genótipos e alelos p
 
 De forma que, para um dado locus gênicos,$k$ é o número de genótipos, e $p$ é o número de alelos, diminuído em um.
 
+
+#### Graus de liberdade com dois alelos
+
+
+#### Graus de liberdade com três alelos
+
+
+#### Graus de liberdade com $n$ alelos
+
 Assim temos que:
 
 \begin{equation} 
   gl = (\text{# genótipos}) – 1 − (\text{# alelos} – 1)
 \end{equation} 
 
-Simplificando, temos que: 
+De forma que: 
 
 \begin{equation} 
 gl = (\text{# genótipos}) - (\text{# alelos})
 \end{equation} 
 
+#### Exemplo
 
+```{r, echo = FALSE}
+Genotipo <- c("Individuos")
+BB <- c(1469)
+Bb <- c(138)
+bb <- c(5)
+N <- c(1612)
+data09 <- data.frame(Genotipo,BB,Bb,bb,N)
+knitr::kable(data09, align = "ccccc", booktabs = TRUE, caption = "Polimorfismo de cor na asa da traça de tigre escarlate
+(_Callimorpha dominula_)", "html")
+```
 
 
