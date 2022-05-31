@@ -9,6 +9,8 @@
 
 - [ ] 4. If it looks good, commit and push all changed files to GitHub. 
 
+- [ ] 5. Go to GitHub, using 'usethis::browse_github()'
+
 (You will need to repeat steps 2 and 4 every time you wish to update the book online.)
 
 ### Edit README

@@ -127,10 +127,7 @@ O valor da estatística $\chi^2$ é:
 
 $$\chi^2=\displaystyle\sum_{i-1}^{n}\frac{(O_i-E_i)^2}{E_i} $$
 
-onde:
-$n$ é o número total de observações;
-$O_i$ é o número de observações do tipo $i$; e
-$E_i$ é a contagem esperada (teórica) do tipo $i$. 
+Onde, $n$ é o número total de observações, $O_i$ é o número de observações do tipo $i$, e $E_i$ é a contagem esperada (teórica) do tipo $i$. 
 
 A estatística do qui-quadrado pode então ser usada para calcular um valor-p comparando o valor da estatística a uma distribuição qui-quadrada. 
 
@@ -167,6 +164,44 @@ A partir da função densidade de probabilidade, é possível calcular a probabi
 knitr::include_graphics("figs/09/grau_liberdade_prob.png")
 ```
 .\linebreak
+
+No teste de ajuste do qui-quadrado o número de graus de liberdade é igual ao número classes de observações ($k$) menos 1 menos o número parâmetros independentes estimados para o modelo ($p$).
+
+$$gl=k-1-p$$
+
+.\linebreak
+```{r, echo = FALSE}
+chi_table <- read.csv("tables/chi_square.csv", sep=",", check.names = FALSE)
+knitr::kable(chi_table, align = "cccccccccc", booktabs = TRUE, caption = "Tabela de distribuição de qui-quadrado", "html")
+```
+.\linebreak
+
+### Testando a significância do Princípio de Hardy-Weinberg
+
+O teste de ajuste do qui-quadrado pode ser utilizado para saber se uma população segue o Princípio de Hardy-Weinberg, _i.e._, para saber se esta está em equilíbrio.
+
+Para tal, utilizamos a estatística $\chi^2$ para estimar a significância do desvio entre:
+
+- o número observado de indivíduos de um determinado genótipo (obtidos a partir dos dados); e 
+
+- o número esperado de indivíduos daquele genótipo de acordo com o o Princípio de Hardy-Weinberg (estimado a partir do modelo).
+
+E o número de graus de liberdade dependerá do número de genótipos e alelos presentes no modelo do estudo.
+
+De forma que, para um dado locus gênicos,$k$ é o número de genótipos, e $p$ é o número de alelos, diminuído em um.
+
+Assim temos que:
+
+\begin{equation} 
+  gl = (\text{# genótipos}) – 1 − (\text{# alelos} – 1)
+\end{equation} 
+
+Simplificando, temos que: 
+
+\begin{equation} 
+gl = (\text{# genótipos}) - (\text{# alelos})
+\end{equation} 
+
 
 
 

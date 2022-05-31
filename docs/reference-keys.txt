@@ -7,6 +7,7 @@ fig:labbyg
 fig:gl
 fig:glgraph
 fig:glprob
+tab:unnamed-chunk-1
 eq:endogamia
 eq:autozigotos
 eq:alozigotos
@@ -83,6 +84,7 @@ os-dados-de-weldon
 os-dados-de-labby
 teste-do-qui-quadrado-de-pearson
 graus-de-liberdade
+testando-a-significância-do-princípio-de-hardy-weinberg
 deriva-genética
 endogamia
 causas-de-endogamia
