@@ -1,5 +1,7 @@
 # Testes de Significância
 
+.\linebreak
+
 ## Significância estatística
 
 Em qualquer experimento ou observação que envolva obter uma amostra de uma população, sempre há a possibilidade de que um efeito observado tenha ocorrido devido apenas ao erro de amostragem. 
@@ -60,6 +62,7 @@ O teste do qui-quadrado de Pearson ($χ^2$; [Pearson 1900](https://doi.org/10.10
 Ele testa uma hipótese nula declarando que a distribuição de freqüência de certos eventos observados em uma amostra é consistente com uma distribuição teórica específica. 
 
 Os eventos considerados devem ser mutuamente exclusivos e ter probabilidade total igual a 1.
+
 .\linebreak
 
 ### Um exemplo simples
@@ -90,6 +93,7 @@ Weldon observou que 5s ou 6s ocorreram com mais frequência do que o esperado*.
 
 Os dados de dados de Weldon foram usados por Karl Pearson em seu artigo pioneiro sobre a estatística qui-quadrado, e ele hipotetizou que o desvio se devia à  construção dos dados da época (a face com 6 e 5 pontos seria mais leve do que as faces opostas, que tem apenas 1e 2 pontos).
 
+.\linebreak
 
 #### Os dados de Labby
 
@@ -114,7 +118,6 @@ Labby não observou o mesmo fenômeno que Weldon observou (frequência mais alta
 
 A automação permitiu que Labby coletasse mais dados do que Weldon em 1894, em vez de registrar “sucessos” e “falhas”, Labby registrou o número individual de pontos em cada dado.
 
-
 .\linebreak
 ```{r labbyg, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Probabilidade de observar cada face de um dado em 12 ralagens, em um total de 26.306 rolagens ([Labby 2009](https://doi.org/10.1007/s00144-009-0036-8))."} 
 knitr::include_graphics("figs/09/Labby_results.svg")
@@ -134,6 +137,7 @@ Onde, $n$ é o número total de observações, $O_i$ é o número de observaçõ
 
 A estatística do qui-quadrado pode então ser usada para calcular um valor-p comparando o valor da estatística a uma distribuição qui-quadrada. 
 
+.\linebreak
 
 ### Graus de liberdade
 
@@ -150,7 +154,6 @@ Matematicamente, grau de liberdade é o número de dimensões do domínio de um 
 knitr::include_graphics("figs/09/gl_mecanismo.svg")
 ```
 .\linebreak
-
 
 Cada grau de liberdade apresenta um função densidade de probabilidade, onde os valores de $\chi^2$ (eixo x) apresentam diferentes frequências (eixo y).
 
@@ -213,26 +216,124 @@ E o número de graus de liberdade dependerá do número de genótipos e alelos p
 
 De forma que, para um dado locus gênicos,$k$ é o número de genótipos, e $p$ é o número de alelos, diminuído em um.
 
+.\linebreak
 
 #### Graus de liberdade com dois alelos
 
+Considerando um lócus gênico com dois alelos $A$ e $B$, cujas frequências $p+q=1$.
+
+.\linebreak
+```{r gl2alelos, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Quadrado de Punnett para 2 alelos"} 
+knitr::include_graphics("figs/09/punnett_2alelles.svg")
+```
+.\linebreak
+
+Temos:
+
+**Classes de observações** -- Os três genótipos possíveis: $AA$, $Aa$ e $aa$.
+
+$$k=3$$
+
+.\linebreak
+
+**Parâmetros independentes** -- A frequência alélica independente $F(A)=p$, pois $F(a)=q=1-p$.
+
+$$p=1$$
+
+.\linebreak
+
+**Graus de liberdade** -- Considerando que $gl=3-1-1$.
+
+$$gl=1$$
+
+.\linebreak
 
 #### Graus de liberdade com três alelos
 
+Considerando um lócus gênico com três alelos $A$, $B$ e $C$, cujas frequências $p+q+r=1$.
 
-#### Graus de liberdade com $n$ alelos
+.\linebreak
+```{r gl3alelos, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Quadrado de Punnett para 3 alelos"} 
+knitr::include_graphics("figs/09/punnett_3alelles.svg")
+```
+.\linebreak
 
-Assim temos que:
+Temos:
 
-\begin{equation} 
-  gl = (\text{# genótipos}) – 1 − (\text{# alelos} – 1)
-\end{equation} 
+**Classes de observações** -- Os seis genótipos possíveis: $AA$, $BB$, $CC$, $AB$, $AC$ e $BC$
 
-De forma que: 
+$$k=6$$
+
+.\linebreak
+
+**Parâmetros independentes** -- As frequências alélicas independentes $F(A)=p$ e $F(B)=q$, pois $F(C)=r=1-p-q$.
+
+$$p=2$$
+
+.\linebreak
+
+**Graus de liberdade** -- Considerando que $gl=6-1-2$.
+
+$$gl=3$$
+
+
+.\linebreak
+
+#### Graus de liberdade com quatro alelos
+
+Considerando um lócus gênico com três alelos $A$, $B$, $C$ e $D$ cujas frequências $p+q+r+s=1$.
+
+.\linebreak
+```{r gl4alelos, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Quadrado de Punnett para 4 alelos"} 
+knitr::include_graphics("figs/09/punnett_4alelles.svg")
+```
+.\linebreak
+
+Temos:
+
+**Classes de observações** -- Os dez genótipos possíveis: $AA$, $BB$, $CC$, $DD$, $AB$, $AC$, $AD$, $BC$, $BD$ e $CD$.
+
+$$k=10$$
+
+.\linebreak
+
+**Parâmetros independentes** -- As frequências alélicas independentes $F(A)=p$, $F(B)=q$ e $F(C)=r$, pois $F(D)=s=1-p-q-r$.
+
+$$p=3$$
+
+.\linebreak
+
+**Graus de liberdade** -- Considerando que $gl=6-1-2$.
+
+$$gl=6$$
+.\linebreak
+
+#### Graus de liberdade com $i$ alelos
+
+Considerando um lócus gênico com $i$ alelos $A1$, $A2$, ..., $Ai$, cujas frequências $p_1+p_2+...+p_i=1$.
+
+Temos:
+
+**Classes de observações** -- Os genótipos possíveis dada a combinação par-a-par em um lócus diplóide.
+
+$$k=\binom{i}{2} = \frac{n!}{k!\left ( n-k \right )!}$$
+
+.\linebreak
+
+
+**Parâmetros independentes** -- O número de alelos $i$ menos um. 
+
+$$p=i-1$$
+
+.\linebreak
+
+**Graus de liberdade** -- Considerando que $gl=\binom{i}{2}-1-(i-1)$.
 
 \begin{equation} 
 gl = (\text{# genótipos}) - (\text{# alelos})
 \end{equation} 
+
+.\linebreak
 
 ### Tabela de contingência (RxC)
 
@@ -264,8 +365,11 @@ OR = \frac{p_00\cdot p_11}{p_01\cdot p_10}
 
 
 
+.\linebreak
 
 ## Exercícios e Atividades
+
+.\linebreak
 
 ## Exercício 1
 

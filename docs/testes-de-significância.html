@@ -209,6 +209,7 @@
             <section class="normal" id="section-">
 <div id="testes-de-significância" class="section level1 hasAnchor">
 <h1><span class="header-section-number">Capítulo 7</span> Testes de Significância<a href="testes-de-significância.html#testes-de-significância" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>.</p>
 <div id="significância-estatística" class="section level2 hasAnchor">
 <h2><span class="header-section-number">7.1</span> Significância estatística<a href="testes-de-significância.html#significância-estatística" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Em qualquer experimento ou observação que envolva obter uma amostra de uma população, sempre há a possibilidade de que um efeito observado tenha ocorrido devido apenas ao erro de amostragem.</p>
@@ -258,8 +259,8 @@ Figure 7.2: Relações entre verdade/falsidade da hipótese nula e resultados de
 <h2><span class="header-section-number">7.2</span> Testes de ajuste do chi-quadrado<a href="testes-de-significância.html#testes-de-ajuste-do-chi-quadrado" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>O teste do qui-quadrado de Pearson (<span class="math inline">\(χ^2\)</span>; <a href="https://doi.org/10.1080/14786440009463897">Pearson 1900</a>) é um teste estatístico aplicado a conjuntos de dados categóricos para avaliar a probabilidade de que qualquer diferença observada entre os conjuntos tenha surgido por acaso.</p>
 <p>Ele testa uma hipótese nula declarando que a distribuição de freqüência de certos eventos observados em uma amostra é consistente com uma distribuição teórica específica.</p>
-<p>Os eventos considerados devem ser mutuamente exclusivos e ter probabilidade total igual a 1.
-.</p>
+<p>Os eventos considerados devem ser mutuamente exclusivos e ter probabilidade total igual a 1.</p>
+<p>.</p>
 <div id="um-exemplo-simples" class="section level3 hasAnchor">
 <h3><span class="header-section-number">7.2.1</span> Um exemplo simples<a href="testes-de-significância.html#um-exemplo-simples" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Um exemplo simples é a hipótese de que um dado comum de seis lados é “justo” (ou seja, todos os seis resultados são igualmente prováveis de ocorrer).</p>
@@ -286,6 +287,7 @@ Figure 7.4: <a href="https://en.wikipedia.org/wiki/Raphael_Weldon">W. F. Raphael
 <p>Ele coletou os dados em parte, “para julgar se as diferenças entre uma série de frequências de grupo e uma lei teórica, considerada como um todo, eram ou não mais do que poderiam ser atribuídas às flutuações fortuitas da amostragem aleatória”.</p>
 <p>Weldon observou que 5s ou 6s ocorreram com mais frequência do que o esperado*.</p>
 <p>Os dados de dados de Weldon foram usados por Karl Pearson em seu artigo pioneiro sobre a estatística qui-quadrado, e ele hipotetizou que o desvio se devia à construção dos dados da época (a face com 6 e 5 pontos seria mais leve do que as faces opostas, que tem apenas 1e 2 pontos).</p>
+<p>.</p>
 </div>
 <div id="os-dados-de-labby" class="section level4 hasAnchor">
 <h4><span class="header-section-number">7.2.1.2</span> Os dados de Labby<a href="testes-de-significância.html#os-dados-de-labby" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -323,6 +325,7 @@ Figure 7.6: Probabilidade de observar cada face de um dado em 12 ralagens, em um
 \end{equation}\]</span></p>
 <p>Onde, <span class="math inline">\(n\)</span> é o número total de observações, <span class="math inline">\(O_i\)</span> é o número de observações do tipo <span class="math inline">\(i\)</span>, e <span class="math inline">\(E_i\)</span> é a contagem esperada (teórica) do tipo <span class="math inline">\(i\)</span>.</p>
 <p>A estatística do qui-quadrado pode então ser usada para calcular um valor-p comparando o valor da estatística a uma distribuição qui-quadrada.</p>
+<p>.</p>
 </div>
 <div id="graus-de-liberdade" class="section level3 hasAnchor">
 <h3><span class="header-section-number">7.2.3</span> Graus de liberdade<a href="testes-de-significância.html#graus-de-liberdade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -735,22 +738,88 @@ Grau de liberdade (gl)
 </ul>
 <p>E o número de graus de liberdade dependerá do número de genótipos e alelos presentes no modelo do estudo.</p>
 <p>De forma que, para um dado locus gênicos,<span class="math inline">\(k\)</span> é o número de genótipos, e <span class="math inline">\(p\)</span> é o número de alelos, diminuído em um.</p>
+<p>.</p>
 <div id="graus-de-liberdade-com-dois-alelos" class="section level4 hasAnchor">
 <h4><span class="header-section-number">7.2.4.1</span> Graus de liberdade com dois alelos<a href="testes-de-significância.html#graus-de-liberdade-com-dois-alelos" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Considerando um lócus gênico com dois alelos <span class="math inline">\(A\)</span> e <span class="math inline">\(B\)</span>, cujas frequências <span class="math inline">\(p+q=1\)</span>.</p>
+.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:gl2alelos"></span>
+<img src="figs/09/punnett_2alelles.svg" alt="Quadrado de Punnett para 2 alelos" width="400px" />
+<p class="caption">
+Figure 7.10: Quadrado de Punnett para 2 alelos
+</p>
+</div>
+<p>.</p>
+<p>Temos:</p>
+<p><strong>Classes de observações</strong> – Os três genótipos possíveis: <span class="math inline">\(AA\)</span>, <span class="math inline">\(Aa\)</span> e <span class="math inline">\(aa\)</span>.</p>
+<p><span class="math display">\[k=3\]</span></p>
+<p>.</p>
+<p><strong>Parâmetros independentes</strong> – A frequência alélica independente <span class="math inline">\(F(A)=p\)</span>, pois <span class="math inline">\(F(a)=q=1-p\)</span>.</p>
+<p><span class="math display">\[p=1\]</span></p>
+<p>.</p>
+<p><strong>Graus de liberdade</strong> – Considerando que <span class="math inline">\(gl=3-1-1\)</span>.</p>
+<p><span class="math display">\[gl=1\]</span></p>
+<p>.</p>
 </div>
 <div id="graus-de-liberdade-com-três-alelos" class="section level4 hasAnchor">
 <h4><span class="header-section-number">7.2.4.2</span> Graus de liberdade com três alelos<a href="testes-de-significância.html#graus-de-liberdade-com-três-alelos" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Considerando um lócus gênico com três alelos <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> e <span class="math inline">\(C\)</span>, cujas frequências <span class="math inline">\(p+q+r=1\)</span>.</p>
+.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:gl3alelos"></span>
+<img src="figs/09/punnett_3alelles.svg" alt="Quadrado de Punnett para 3 alelos" width="400px" />
+<p class="caption">
+Figure 7.11: Quadrado de Punnett para 3 alelos
+</p>
 </div>
-<div id="graus-de-liberdade-com-n-alelos" class="section level4 hasAnchor">
-<h4><span class="header-section-number">7.2.4.3</span> Graus de liberdade com <span class="math inline">\(n\)</span> alelos<a href="testes-de-significância.html#graus-de-liberdade-com-n-alelos" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>Assim temos que:</p>
-<p><span class="math display">\[\begin{equation} 
-  gl = (\text{# genótipos}) – 1 − (\text{# alelos} – 1)
-\end{equation}\]</span></p>
-<p>De forma que:</p>
+<p>.</p>
+<p>Temos:</p>
+<p><strong>Classes de observações</strong> – Os seis genótipos possíveis: <span class="math inline">\(AA\)</span>, <span class="math inline">\(BB\)</span>, <span class="math inline">\(CC\)</span>, <span class="math inline">\(AB\)</span>, <span class="math inline">\(AC\)</span> e <span class="math inline">\(BC\)</span></p>
+<p><span class="math display">\[k=6\]</span></p>
+<p>.</p>
+<p><strong>Parâmetros independentes</strong> – As frequências alélicas independentes <span class="math inline">\(F(A)=p\)</span> e <span class="math inline">\(F(B)=q\)</span>, pois <span class="math inline">\(F(C)=r=1-p-q\)</span>.</p>
+<p><span class="math display">\[p=2\]</span></p>
+<p>.</p>
+<p><strong>Graus de liberdade</strong> – Considerando que <span class="math inline">\(gl=6-1-2\)</span>.</p>
+<p><span class="math display">\[gl=3\]</span></p>
+<p>.</p>
+</div>
+<div id="graus-de-liberdade-com-quatro-alelos" class="section level4 hasAnchor">
+<h4><span class="header-section-number">7.2.4.3</span> Graus de liberdade com quatro alelos<a href="testes-de-significância.html#graus-de-liberdade-com-quatro-alelos" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Considerando um lócus gênico com três alelos <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, <span class="math inline">\(C\)</span> e <span class="math inline">\(D\)</span> cujas frequências <span class="math inline">\(p+q+r+s=1\)</span>.</p>
+.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:gl4alelos"></span>
+<img src="figs/09/punnett_4alelles.svg" alt="Quadrado de Punnett para 4 alelos" width="400px" />
+<p class="caption">
+Figure 7.12: Quadrado de Punnett para 4 alelos
+</p>
+</div>
+<p>.</p>
+<p>Temos:</p>
+<p><strong>Classes de observações</strong> – Os dez genótipos possíveis: <span class="math inline">\(AA\)</span>, <span class="math inline">\(BB\)</span>, <span class="math inline">\(CC\)</span>, <span class="math inline">\(DD\)</span>, <span class="math inline">\(AB\)</span>, <span class="math inline">\(AC\)</span>, <span class="math inline">\(AD\)</span>, <span class="math inline">\(BC\)</span>, <span class="math inline">\(BD\)</span> e <span class="math inline">\(CD\)</span>.</p>
+<p><span class="math display">\[k=10\]</span></p>
+<p>.</p>
+<p><strong>Parâmetros independentes</strong> – As frequências alélicas independentes <span class="math inline">\(F(A)=p\)</span>, <span class="math inline">\(F(B)=q\)</span> e <span class="math inline">\(F(C)=r\)</span>, pois <span class="math inline">\(F(D)=s=1-p-q-r\)</span>.</p>
+<p><span class="math display">\[p=3\]</span></p>
+<p>.</p>
+<p><strong>Graus de liberdade</strong> – Considerando que <span class="math inline">\(gl=6-1-2\)</span>.</p>
+<p><span class="math display">\[gl=6\]</span>
+.</p>
+</div>
+<div id="graus-de-liberdade-com-i-alelos" class="section level4 hasAnchor">
+<h4><span class="header-section-number">7.2.4.4</span> Graus de liberdade com <span class="math inline">\(i\)</span> alelos<a href="testes-de-significância.html#graus-de-liberdade-com-i-alelos" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Considerando um lócus gênico com <span class="math inline">\(i\)</span> alelos <span class="math inline">\(A1\)</span>, <span class="math inline">\(A2\)</span>, …, <span class="math inline">\(Ai\)</span>, cujas frequências <span class="math inline">\(p_1+p_2+...+p_i=1\)</span>.</p>
+<p>Temos:</p>
+<p><strong>Classes de observações</strong> – Os genótipos possíveis dada a combinação par-a-par em um lócus diplóide.</p>
+<p><span class="math display">\[k=\binom{i}{2} = \frac{n!}{k!\left ( n-k \right )!}\]</span></p>
+<p>.</p>
+<p><strong>Parâmetros independentes</strong> – O número de alelos <span class="math inline">\(i\)</span> menos um.</p>
+<p><span class="math display">\[p=i-1\]</span></p>
+<p>.</p>
+<p><strong>Graus de liberdade</strong> – Considerando que <span class="math inline">\(gl=\binom{i}{2}-1-(i-1)\)</span>.</p>
 <p><span class="math display">\[\begin{equation} 
 gl = (\text{# genótipos}) - (\text{# alelos})
 \end{equation}\]</span></p>
+<p>.</p>
 </div>
 </div>
 <div id="tabela-de-contingência-rxc" class="section level3 hasAnchor">
@@ -761,7 +830,7 @@ gl = (\text{# genótipos}) - (\text{# alelos})
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:tabelarc"></span>
 <img src="figs/09/tabela_rc.svg" alt="Tabela de contingência (2x2)" width="300px" />
 <p class="caption">
-Figure 7.10: Tabela de contingência (2x2)
+Figure 7.13: Tabela de contingência (2x2)
 </p>
 </div>
 <p>.</p>
@@ -775,11 +844,13 @@ Figure 7.10: Tabela de contingência (2x2)
 OR = \frac{p_00\cdot p_11}{p_01\cdot p_10}
   \tag{7.3}
 \end{equation}\]</span></p>
+<p>.</p>
 </div>
 </div>
 </div>
 <div id="exercícios-e-atividades" class="section level2 hasAnchor">
 <h2><span class="header-section-number">7.3</span> Exercícios e Atividades<a href="testes-de-significância.html#exercícios-e-atividades" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>.</p>
 </div>
 <div id="exercício-1" class="section level2 hasAnchor">
 <h2><span class="header-section-number">7.4</span> Exercício 1<a href="testes-de-significância.html#exercício-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>

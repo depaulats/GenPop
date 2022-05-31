@@ -10,6 +10,9 @@ fig:glgraph
 fig:glprob
 eq:gl
 tab:unnamed-chunk-1
+fig:gl2alelos
+fig:gl3alelos
+fig:gl4alelos
 fig:tabelarc
 eq:or
 tab:unnamed-chunk-2
@@ -92,7 +95,8 @@ graus-de-liberdade
 testando-a-significância-do-princípio-de-hardy-weinberg
 graus-de-liberdade-com-dois-alelos
 graus-de-liberdade-com-três-alelos
-graus-de-liberdade-com-n-alelos
+graus-de-liberdade-com-quatro-alelos
+graus-de-liberdade-com-i-alelos
 tabela-de-contingência-rxc
 razão-de-chances
 exercícios-e-atividades
