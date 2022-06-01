@@ -12,3 +12,62 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+/* -----------div tips------------- */
+
+  div.reference {
+    padding: 1em;
+    margin: 1em 0;
+    padding-left: 75px;
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    min-height: 60px;
+    color: #000000;
+    background-color: #f5f7f9;
+    border-left: 7px solid #3771c8;
+    background-image: url("figs/css_reference.svg")
+  }
+  
+    div.hint {
+    padding: 1em;
+    margin: 1em 0;
+    padding-left: 75px;
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    min-height: 60px;
+    color: #000000;
+    background-color: #f5f7f9;
+    border-left: 7px solid #ed9122;
+    background-image: url("figs/css_hint.svg")
+  }
+  
+    div.success {
+    padding: 1em;
+    margin: 1em 0;
+    padding-left: 75px;
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    min-height: 60px;
+    color: #000000;
+    background-color: #f5f7f9;
+    border-left: 7px solid #2ca02c;
+    background-image: url("figs/css_success.svg")
+  }
+  
+    div.warning {
+    padding: 1em;
+    margin: 1em 0;
+    padding-left: 75px;
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    min-height: 60px;
+    color: #000000;
+    background-color: #f5f7f9; 
+    border-left: 7px solid #c83737;
+    background-image: url("figs/css_warning.svg")
+  }
+  

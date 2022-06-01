@@ -174,6 +174,7 @@
 <li class="chapter" data-level="7.4" data-path="testes-de-significância.html"><a href="testes-de-significância.html#exercícios-e-atividades"><i class="fa fa-check"></i><b>7.4</b> Exercícios e Atividades</a><ul>
 <li class="chapter" data-level="7.4.1" data-path="testes-de-significância.html"><a href="testes-de-significância.html#exercício-1-traça-de-tigre-escarlate"><i class="fa fa-check"></i><b>7.4.1</b> Exercício 1 – Traça de tigre escarlate</a></li>
 <li class="chapter" data-level="7.4.2" data-path="testes-de-significância.html"><a href="testes-de-significância.html#exercício-2-urso-de-kermode"><i class="fa fa-check"></i><b>7.4.2</b> Exercício 2 – Urso de Kermode</a></li>
+<li class="chapter" data-level="7.4.3" data-path="testes-de-significância.html"><a href="testes-de-significância.html#exercício-3-equilíbrio-de-ligação"><i class="fa fa-check"></i><b>7.4.3</b> Exercício 3 – Equilíbrio de LIgação</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="deriva-genética.html"><a href="deriva-genética.html"><i class="fa fa-check"></i><b>8</b> Deriva Genética</a></li>
@@ -221,9 +222,13 @@
 <h2><span class="header-section-number">7.1</span> Significância estatística<a href="testes-de-significância.html#significância-estatística" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Em qualquer experimento ou observação que envolva obter uma amostra de uma população, sempre há a possibilidade de que um efeito observado tenha ocorrido devido apenas ao erro de amostragem.</p>
 <p>Em um teste estatístico de hipótese, um resultado tem significância estatística quando é muito improvável que tenha ocorrido dada a hipótese nula.</p>
-<blockquote>
 <p>O termo significância não implica importância, e o termo significância estatística não é o mesmo que significância para pesquisa, teórica ou prática.</p>
-</blockquote>
+<p>.</p>
+<div class="reference">
+<p>Sokal &amp; Rohlf 2011. ISBN: 978-0716786047</p>
+<p>Dancey et al. 2012. ISBN: 978-1849203364</p>
+<p>Herzog et al. 2019. doi: <a href="https://doi.org/10.1007/978-3-030-03499-3">10.1007/978-3-030-03499-3</a></p>
+</div>
 .
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:infestat"></span>
 <img src="figs/inferencia_estatistica.svg" alt="A inferência estatística é o ato de generalizar de uma amostra para uma população, a partir de dados obtidos desta, com um calculado nível de certeza." width="600px" />
@@ -895,7 +900,7 @@ Figure 7.15: Relação entre frequências haplotípicas e alélicas
 <p>.</p>
 <div id="alternativa-teste-exato-de-fisher" class="section level4 hasAnchor">
 <h4><span class="header-section-number">7.3.4.1</span> Alternativa: Teste exato de Fisher<a href="testes-de-significância.html#alternativa-teste-exato-de-fisher" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>O teste exato de Fisher <a href="https://doi.org/10.2307/2340521">Fisher 1922</a> é válido para todos os tamanhos de amostra, e se torna exato no limite à medida que o tamanho da amostra cresce até o infinito, como acontece com muitos testes estatísticos.</p>
+<p>O teste exato de Fisher é válido para todos os tamanhos de amostra, e se torna exato no limite à medida que o tamanho da amostra cresce até o infinito, como acontece com muitos testes estatísticos.</p>
 <p>Fisher (<a href="https://doi.org/10.2307/2340521">1922</a>) mostrou que condicionalmente nas margens da tabela de contingência (ver Figura <a href="testes-de-significância.html#fig:tabelarc">7.13</a>), <span class="math inline">\(a\)</span> é distribuído de forma hipergeométrica com <span class="math inline">\(a+c\)</span> retiradas de uma população, sendo destes <span class="math inline">\(a+b\)</span> sucessos e <span class="math inline">\(c+d\)</span> fracassos.</p>
 <p>Assim, a probabilidade de obter tal conjunto de valores é dada por:</p>
 <p><span class="math display" id="eq:testefisher">\[\begin{equation}
@@ -917,13 +922,11 @@ Figure 7.15: Relação entre frequências haplotípicas e alélicas
 .
 <table>
 <caption>
-<span id="tab:unnamed-chunk-2">Table 7.2: </span>Polimorfismo de cor na asa da traça de tigre escarlate
-(<em>Callimorpha dominula</em>).
+<span id="tab:tableA09">Table 7.2: </span>Polimorfismo de cor na asa da traça de tigre escarlate (<em>Callimorpha dominula</em>).
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;">
-Genotipo
 </th>
 <th style="text-align:center;">
 BB
@@ -942,7 +945,7 @@ N
 <tbody>
 <tr>
 <td style="text-align:left;">
-Individuos
+<strong>Indivíduos</strong>
 </td>
 <td style="text-align:center;">
 1469
@@ -968,21 +971,20 @@ Individuos
 .
 <table>
 <caption>
-<span id="tab:unnamed-chunk-3">Table 7.3: </span>Frequências dos genótipos para o polimorfismo MC1R em populações das ilhas da Colúmbia Britânica do urso de Kermode (<em>Ursus americanus kermodei</em>).
+<span id="tab:tableB09">Table 7.3: </span>Frequências dos genótipos para o polimorfismo MC1R em populações das ilhas da Colúmbia Britânica do urso de Kermode (<em>Ursus americanus kermodei</em>).
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;">
-Genotipo
 </th>
 <th style="text-align:center;">
-BB
+AA
 </th>
 <th style="text-align:center;">
-Bb
+AG
 </th>
 <th style="text-align:center;">
-bb
+GG
 </th>
 <th style="text-align:center;">
 N
@@ -992,25 +994,79 @@ N
 <tbody>
 <tr>
 <td style="text-align:left;">
-Individuos
+<strong>Indivíduos</strong>
 </td>
 <td style="text-align:center;">
-1469
+83
 </td>
 <td style="text-align:center;">
-138
+28
 </td>
 <td style="text-align:center;">
-5
+21
 </td>
 <td style="text-align:center;">
-1612
+132
 </td>
 </tr>
 </tbody>
 </table>
 <p>.</p>
-<p>Este polimorfismo segue o princípio de Hardy-Weinberg?</p>
+<ul>
+<li>Este polimorfismo segue o princípio de Hardy-Weinberg?</li>
+</ul>
+<p>.</p>
+</div>
+<div id="exercício-3-equilíbrio-de-ligação" class="section level3 hasAnchor">
+<h3><span class="header-section-number">7.4.3</span> Exercício 3 – Equilíbrio de LIgação<a href="testes-de-significância.html#exercício-3-equilíbrio-de-ligação" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>O estudo de uma variação em um sítio de restrição na região do gene álcool desidrogenase (<span class="math inline">\(Adh\)</span>) em moscas-da-fruta capturadas em um mercado na Holanda (<a href="https://doi.org/10.1007/BF00499097">Cross &amp; Birley 1986</a>) revelou os seguintes dados:</p>
+<ul>
+<li><p>As duas regiões gênicas estão em equilíbrio de ligação?</p></li>
+<li><p>Qual o coeficiente de desequilíbrio de ligação normalizado (D’) entre os dois pares de alelos?</p></li>
+</ul>
+.
+<table>
+<caption>
+<span id="tab:tableC09">Table 7.4: </span>Frequências dos haplótipos entre o gene álcool desidrogenase (<span class="math inline">\(Adh\)</span>) e um sítio de restrição (<span class="math inline">\(EcoRI\)</span>) 3.5 kb à jusante do mesmo.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(EcoRI^+\)</span>
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(EcoRI^-\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<span class="math inline">\(Adh^F\)</span>
+</td>
+<td style="text-align:center;">
+22
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<span class="math inline">\(Adh^S\)</span>
+</td>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+5
+</td>
+</tr>
+</tbody>
+</table>
+<p>.</p>
 
 </div>
 </div>

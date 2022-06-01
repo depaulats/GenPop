@@ -8,7 +8,18 @@ Em qualquer experimento ou observação que envolva obter uma amostra de uma pop
 
 Em um teste estatístico de hipótese, um resultado tem significância estatística quando é muito improvável que tenha ocorrido dada a hipótese nula.
 
->O termo significância não implica importância, e o termo significância estatística não é o mesmo que significância para pesquisa, teórica ou prática. 
+O termo significância não implica importância, e o termo significância estatística não é o mesmo que significância para pesquisa, teórica ou prática. 
+
+.\linebreak
+
+:::reference
+Sokal & Rohlf 2011. ISBN: 978-0716786047
+ 
+Dancey et al. 2012. ISBN: 978-1849203364
+ 
+Herzog et al. 2019. doi: [10.1007/978-3-030-03499-3](https://doi.org/10.1007/978-3-030-03499-3)
+:::
+
 
 .\linebreak
 ```{r infestat, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A inferência estatística é o ato de generalizar de uma amostra para uma população, a partir de dados obtidos desta, com um calculado nível de certeza."} 
@@ -418,7 +429,7 @@ $$gl=1$$
 
 #### Alternativa: Teste exato de Fisher
 
-O teste exato de Fisher [Fisher 1922](https://doi.org/10.2307/2340521) é válido para todos os tamanhos de amostra, e se torna exato no limite à medida que o tamanho da amostra cresce até o infinito, como acontece com muitos testes estatísticos.
+O teste exato de Fisher é válido para todos os tamanhos de amostra, e se torna exato no limite à medida que o tamanho da amostra cresce até o infinito, como acontece com muitos testes estatísticos.
 
 Fisher ([1922](https://doi.org/10.2307/2340521)) mostrou que condicionalmente nas margens da tabela de contingência (ver Figura \@ref(fig:tabelarc)), $a$ é distribuído de forma hipergeométrica com $a+c$ retiradas de uma população, sendo destes $a+b$ sucessos e $c+d$ fracassos.
 
@@ -445,15 +456,14 @@ Apesar do teste de Fisher fornecer valores de $p$ exatos, alguns autores argumen
 
 
 .\linebreak
-```{r, echo = FALSE}
-Genotipo <- c("Individuos")
-BB <- c(1469)
-Bb <- c(138)
-bb <- c(5)
-N <- c(1612)
-data09_1 <- data.frame(Genotipo,BB,Bb,bb,N)
-knitr::kable(data09, align = "lcccc", booktabs = TRUE, caption = "Polimorfismo de cor na asa da traça de tigre escarlate
-(_Callimorpha dominula_).", "html")
+```{r tableA09, echo = FALSE}
+A09BB <- c(1469)
+A09Bb <- c(138)
+A09bb <- c(5)
+A09N <- c(1612)
+data0901 <- data.frame(A09BB, A09Bb, A09bb, A09N)
+rownames(data0901) <- c("**Indivíduos**")
+knitr::kable(data0901, align = "cccc", booktabs = TRUE, col.names = c("BB", "Bb", "bb", "N"), caption = "Polimorfismo de cor na asa da traça de tigre escarlate (_Callimorpha dominula_).", "html")
 ```
 .\linebreak
 
@@ -464,18 +474,41 @@ Nas ilhas costeiras da Colúmbia Britânica, muitos membros da subespécie urso 
 Esses ursos não são híbridos com ursos polares, nem são albinos, eles são homozigotos para uma mudança recessiva no gene $MC1R$, com indivíduos homozigotos mutantes ($GG$) sendo brancos e indivíduos portando o alelo selvagem ($AA$ e $AG$) sendo negros. Considere as frequências genotípicas observadas abaixo:
 
 .\linebreak
-```{r, echo = FALSE}
-Genotipo <- c("Individuos")
-AA <- c(83)
-AG <- c(28)
-GG <- c(21)
-N <- c(132)
-data09_2 <- data.frame(Genotipo,AA,AG,GG,N)
-knitr::kable(data09, align = "lcccc", booktabs = TRUE, caption = "Frequências dos genótipos para o polimorfismo MC1R em populações das ilhas da Colúmbia Britânica do urso de Kermode (_Ursus americanus kermodei_).", "html")
+```{r tableB09, echo = FALSE}
+B09AA <- c(83)
+B09AG <- c(28)
+B09GG <- c(21)
+B09N <- c(132)
+data0902 <- data.frame(B09AA, B09AG, B09GG, B09N)
+rownames(data0902) <- c("**Indivíduos**")
+knitr::kable(data0902, align = "cccc", booktabs = TRUE, col.names = c("AA", "AG", "GG", "N"), caption = "Frequências dos genótipos para o polimorfismo MC1R em populações das ilhas da Colúmbia Britânica do urso de Kermode (_Ursus americanus kermodei_).")
 ```
 .\linebreak
 
-Este polimorfismo segue o princípio de Hardy-Weinberg?
+- Este polimorfismo segue o princípio de Hardy-Weinberg?
+
+.\linebreak
+
+### Exercício 3 -- Equilíbrio de LIgação
+
+O estudo de uma variação em um sítio de restrição na região do gene álcool desidrogenase ($Adh$) em moscas-da-fruta capturadas em um mercado na Holanda ([Cross & Birley 1986](https://doi.org/10.1007/BF00499097)) revelou os seguintes dados:
+
+- As duas regiões gênicas estão em equilíbrio de ligação?
+
+- Qual o coeficiente de desequilíbrio de ligação normalizado (D’) entre os dois pares de alelos?
+
+.\linebreak
+```{r tableC09, echo = FALSE}
+C09Ecoplus <- c(22, 4)
+C09Ecominus <- c(3, 5)
+data0903 <- data.frame(C09Ecoplus, C09Ecominus)
+rownames(data0903) <- c("$Adh^F$", "$Adh^S$")
+knitr::kable(data0903, "html", align = "cc", col.names = c("$EcoRI^+$", "$EcoRI^-$"), booktabs = TRUE, escape = FALSE, caption = "Frequências dos haplótipos entre o gene álcool desidrogenase ($Adh$) e um sítio de restrição ($EcoRI$) 3.5 kb à jusante do mesmo.")
+```
+.\linebreak
+
+
+
 
 
 
