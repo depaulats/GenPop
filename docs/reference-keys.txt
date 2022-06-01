@@ -15,7 +15,11 @@ fig:gl3alelos
 fig:gl4alelos
 fig:tabelarc
 eq:or
+fig:freqhapobs
+fig:freqhapesp
+eq:testefisher
 tab:unnamed-chunk-2
+tab:unnamed-chunk-3
 eq:endogamia
 eq:autozigotos
 eq:alozigotos
@@ -99,8 +103,13 @@ graus-de-liberdade-com-quatro-alelos
 graus-de-liberdade-com-i-alelos
 tabela-de-contingência-rxc
 razão-de-chances
+frequências-haplotípicas-observadas
+frequências-haplotípicas-esperadas
+testado-a-significância-de-tabelas-de-contingência
+alternativa-teste-exato-de-fisher
 exercícios-e-atividades
-exercício-1
+exercício-1-traça-de-tigre-escarlate
+exercício-2-urso-de-kermode
 deriva-genética
 endogamia
 causas-de-endogamia

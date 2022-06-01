@@ -12,7 +12,7 @@ Em um teste estatístico de hipótese, um resultado tem significância estatíst
 
 .\linebreak
 ```{r infestat, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A inferência estatística é o ato de generalizar de uma amostra para uma população, a partir de dados obtidos desta, com um calculado nível de certeza."} 
-knitr::include_graphics("figs/09/inferencia_estatistica.svg")
+knitr::include_graphics("figs/inferencia_estatistica.svg")
 ```
 .\linebreak
 
@@ -51,7 +51,7 @@ Esses dois tipos de erro são compensados entre si: para qualquer conjunto de am
 
 .\linebreak
 ```{r errostipos, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="Relações entre verdade/falsidade da hipótese nula e resultados de um teste statístico."} 
-knitr::include_graphics("figs/09/erro_estatistico.svg")
+knitr::include_graphics("figs/erro_estatistico.svg")
 ```
 .\linebreak
 
@@ -71,7 +71,7 @@ Um exemplo simples é a hipótese de que um dado comum de seis lados é "justo" 
 
 .\linebreak
 ```{r dados, echo = FALSE, fig.align = 'center', out.width="200px", fig.cap="Em um dado perfeito (sem viés), a chance de cada lado cair com a face para cima é igual a $1/6$."} 
-knitr::include_graphics("figs/09/dice.svg")
+knitr::include_graphics("figs/dice.svg")
 ```
 .\linebreak
 
@@ -99,7 +99,7 @@ Os dados de dados de Weldon foram usados por Karl Pearson em seu artigo pioneiro
 
 .\linebreak
 ```{r labbym, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="Zacariah Labby e [máquina de rolar dados](https://ehttps://www.youtube.com/watch?v=95EErdouO2w)."} 
-knitr::include_graphics("figs/09/Zacariah_Labby.png")
+knitr::include_graphics("figs/Zacariah_Labby.png")
 ```
 .\linebreak
 
@@ -120,7 +120,7 @@ A automação permitiu que Labby coletasse mais dados do que Weldon em 1894, em 
 
 .\linebreak
 ```{r labbyg, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Probabilidade de observar cada face de um dado em 12 ralagens, em um total de 26.306 rolagens ([Labby 2009](https://doi.org/10.1007/s00144-009-0036-8))."} 
-knitr::include_graphics("figs/09/Labby_results.svg")
+knitr::include_graphics("figs/Labby_results.svg")
 ```
 .\linebreak
 
@@ -151,7 +151,7 @@ Matematicamente, grau de liberdade é o número de dimensões do domínio de um 
 
 .\linebreak
 ```{r gl, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Os graus de liberdade ($gl$) de um corpo rígido são definidos como o número de movimentos independentes que ele possui."} 
-knitr::include_graphics("figs/09/gl_mecanismo.svg")
+knitr::include_graphics("figs/gl_mecanismo.svg")
 ```
 .\linebreak
 
@@ -224,7 +224,7 @@ Considerando um lócus gênico com dois alelos $A$ e $B$, cujas frequências $p+
 
 .\linebreak
 ```{r gl2alelos, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Quadrado de Punnett para 2 alelos"} 
-knitr::include_graphics("figs/09/punnett_2alelles.svg")
+knitr::include_graphics("figs/punnett_2alelles.svg")
 ```
 .\linebreak
 
@@ -254,7 +254,7 @@ Considerando um lócus gênico com três alelos $A$, $B$ e $C$, cujas frequênci
 
 .\linebreak
 ```{r gl3alelos, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Quadrado de Punnett para 3 alelos"} 
-knitr::include_graphics("figs/09/punnett_3alelles.svg")
+knitr::include_graphics("figs/punnett_3alelles.svg")
 ```
 .\linebreak
 
@@ -285,7 +285,7 @@ Considerando um lócus gênico com três alelos $A$, $B$, $C$ e $D$ cujas frequ�
 
 .\linebreak
 ```{r gl4alelos, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Quadrado de Punnett para 4 alelos"} 
-knitr::include_graphics("figs/09/punnett_4alelles.svg")
+knitr::include_graphics("figs/punnett_4alelles.svg")
 ```
 .\linebreak
 
@@ -303,7 +303,7 @@ $$p=3$$
 
 .\linebreak
 
-**Graus de liberdade** -- Considerando que $gl=6-1-2$.
+**Graus de liberdade** -- Considerando que $gl=6-1-3$.
 
 $$gl=6$$
 .\linebreak
@@ -335,7 +335,7 @@ gl = (\text{# genótipos}) - (\text{# alelos})
 
 .\linebreak
 
-### Tabela de contingência (RxC)
+## Tabela de contingência (RxC)
 
 Uma tabela de contingência (também conhecida como tabulação cruzada) é um tipo de tabela em formato de matriz que exibe a distribuição de frequência das variáveis (Pearson 1904).
 
@@ -343,12 +343,12 @@ Elas fornecem uma imagem básica da inter-relação entre duas variáveis e pode
 
 .\linebreak
 ```{r tabelarc, echo = FALSE, fig.align = 'center', out.width = "300px", fig.cap="Tabela de contingência (2x2)"} 
-knitr::include_graphics("figs/09/tabela_rc.svg")
+knitr::include_graphics("figs/tabela_rc.svg")
 ```
 .\linebreak
 
 
-#### Razão de chances
+### Razão de chances
 
 A medida mais simples de associação para uma tabela de contingência 2 × 2 é a razão de chances ($OR$, _odds ratio_). 
 
@@ -363,7 +363,77 @@ OR = \frac{p_00\cdot p_11}{p_01\cdot p_10}
   (\#eq:or)
 \end{equation} 
 
+### Frequências haplotípicas observadas
 
+As relações entre as frequências haplotípicas e as frequências alélicas podem ser ilustradas por uma tabela de contingência entre pares de alelos de dois loci gênicos:
+
+
+.\linebreak
+```{r freqhapobs, echo = FALSE, fig.align = 'center', out.width = "350px", fig.cap="Relação entre frequências haplotípicas e alélicas"} 
+knitr::include_graphics("figs/freq_haplotipica_observada.svg")
+```
+.\linebreak
+
+### Frequências haplotípicas esperadas
+
+A expectativa, de acordo com o princípio de Hardy-Weinberg, é que os alelos nos dois loci gênicos se combinem aleatoriamente, e assim, as frequências dos haplótipos seriam igual ao produto das frequências alélicas individuais.
+
+.\linebreak
+```{r freqhapesp, echo = FALSE, fig.align = 'center', out.width = "350px", fig.cap="Relação entre frequências haplotípicas e alélicas"} 
+knitr::include_graphics("figs/freq_haplotipica_esperada.svg")
+```
+.\linebreak
+
+
+### Testado a significância de tabelas de contingência
+
+Assim é possível estimar a significância da associação entre pares de alelos, expressa em uma tabela de contingência, por meio da estatística χ2.
+
+Esse teste é uma maneira de determinar a significância do desequilíbrio de ligação entre um par de alelos ligados.
+
+Assim, temos:
+
+**Valores observados** -- As frequências dos haplótipos $p_A$, $p_a$, $p_b$ e $p_b$. 
+**Valores esperados** -- As frequências das associações $p_A p_B$, $p_A p_b$, $p_a p_B$ e $p_a p_b$. 
+
+**Classes de observações** -- Os quatro haplótipos possíveis: $AB$, $Ab$, $aB$ e $aa$.
+
+$$k=4$$
+
+.\linebreak
+
+**Parâmetros independentes** -- As duas frequências alélicas independentes $F(A)=p_A$ e $F(B)=p_B$, pois $F(a)=p_a=1-p_A$ e $F(b)=p_b=1-p_B$.
+
+
+$$p=2$$
+
+.\linebreak
+
+**Graus de liberdade** -- Considerando que $gl=4-1-2$.
+
+$$gl=1$$
+
+.\linebreak
+
+
+#### Alternativa: Teste exato de Fisher
+
+O teste exato de Fisher [Fisher 1922](https://doi.org/10.2307/2340521) é válido para todos os tamanhos de amostra, e se torna exato no limite à medida que o tamanho da amostra cresce até o infinito, como acontece com muitos testes estatísticos.
+
+Fisher ([1922](https://doi.org/10.2307/2340521)) mostrou que condicionalmente nas margens da tabela de contingência (ver Figura \@ref(fig:tabelarc)), $a$ é distribuído de forma hipergeométrica com $a+c$ retiradas de uma população, sendo destes $a+b$ sucessos e $c+d$ fracassos.
+
+Assim, a probabilidade de obter tal conjunto de valores é dada por:
+
+\begin{equation}
+   p = \frac{\binom{a+b}{a}\binom{c+d}{c}}{\binom{n}{a+c}}=\frac{\binom{a+b}{b}\binom{c+d}{d}}{\binom{n}{b+d}}=\frac{ \left( a+b \right)! \left( c+d \right)! \left( a+c  \right)! \left( b+d  \right)! }{a! \ b! \  c! \ d! \ n!}
+  (\#eq:testefisher)
+\end{equation}
+
+De forma que, se os totais marginais (ou seja, $a + b$, $c + d$, $a + c$ e $b + d$ são conhecidos, resta apenas um único grau de liberdade ($gl$): o valor e.g. de um {\displaystyle a} a é suficiente para deduzir os outros valores. 
+
+Agora, $p = p ( a )$ é a probabilidade de que $a$ elementos sejam positivos em uma seleção aleatória (sem substituição) de $a + c$ de um conjunto maior contendo $n$ elementos no total, dos quais $a + b$, que é precisamente a definição da distribuição hipergeométrica.
+
+Apesar do teste de Fisher fornecer valores de $p$ exatos, alguns autores argumentam que este é conservador, ou seja, que sua taxa de rejeição real está abaixo do nível de significância nominal.
 
 .\linebreak
 
@@ -371,7 +441,7 @@ OR = \frac{p_00\cdot p_11}{p_01\cdot p_10}
 
 .\linebreak
 
-## Exercício 1
+### Exercício 1 -- Traça de tigre escarlate
 
 
 .\linebreak
@@ -381,10 +451,31 @@ BB <- c(1469)
 Bb <- c(138)
 bb <- c(5)
 N <- c(1612)
-data09 <- data.frame(Genotipo,BB,Bb,bb,N)
-knitr::kable(data09, align = "ccccc", booktabs = TRUE, caption = "Polimorfismo de cor na asa da traça de tigre escarlate
-(_Callimorpha dominula_)", "html")
+data09_1 <- data.frame(Genotipo,BB,Bb,bb,N)
+knitr::kable(data09, align = "lcccc", booktabs = TRUE, caption = "Polimorfismo de cor na asa da traça de tigre escarlate
+(_Callimorpha dominula_).", "html")
 ```
 .\linebreak
+
+### Exercício 2 -- Urso de Kermode
+
+Nas ilhas costeiras da Colúmbia Britânica, muitos membros da subespécie urso de preto, urso de Kermode (_Ursus americanus kermodei_), são brancos (tradicionalmente chamados de ursos espirituais). 
+
+Esses ursos não são híbridos com ursos polares, nem são albinos, eles são homozigotos para uma mudança recessiva no gene $MC1R$, com indivíduos homozigotos mutantes ($GG$) sendo brancos e indivíduos portando o alelo selvagem ($AA$ e $AG$) sendo negros. Considere as frequências genotípicas observadas abaixo:
+
+.\linebreak
+```{r, echo = FALSE}
+Genotipo <- c("Individuos")
+AA <- c(83)
+AG <- c(28)
+GG <- c(21)
+N <- c(132)
+data09_2 <- data.frame(Genotipo,AA,AG,GG,N)
+knitr::kable(data09, align = "lcccc", booktabs = TRUE, caption = "Frequências dos genótipos para o polimorfismo MC1R em populações das ilhas da Colúmbia Britânica do urso de Kermode (_Ursus americanus kermodei_).", "html")
+```
+.\linebreak
+
+Este polimorfismo segue o princípio de Hardy-Weinberg?
+
 
 
