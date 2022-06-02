@@ -363,7 +363,7 @@ Figure 5.5: Os cruzamentos entre os indivíduos dos diferentes genótipos da pop
 <p><span class="math display">\[\left( p + q \right)^2 = p^2 +2pq + q^2 = 1\]</span></p>
 .
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:hwgraph"></span>
-<img src="figs/hardy_weinberg_graph.svg" alt="Uma população que siga as premissas do princípio de Hardy-Weinberg apresenta genótipos previstos de acordo com o modelo $(p + q)^2$" width="400px" />
+<img src="figs/hardy_weinberg_graph.svg" alt="Uma população que siga as premissas do princípio de Hardy-Weinberg apresenta genótipos previstos de acordo com o modelo $(p + q)^2$" width="600px" />
 <p class="caption">
 Figure 5.6: Uma população que siga as premissas do princípio de Hardy-Weinberg apresenta genótipos previstos de acordo com o modelo <span class="math inline">\((p + q)^2\)</span>
 </p>
@@ -387,31 +387,126 @@ Figure 5.6: Uma população que siga as premissas do princípio de Hardy-Weinber
 <p>.</p>
 <p>A expectativa das frequências genotípicas dado um <em>pool</em> gênico pode ser vista também por meio de um quadrado de Punnett se os lados dos quadrados são proporcionais as frequências dos alelos. Desta forma, as freqüências genotípicas corresponderão às áreas dos retângulos formados pelos cruzamentos dos gametas.</p>
 .
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:hwpunnet"></span>
-<img src="figs/punnett_2alelles.svg" alt="Quadrado de Punnet para um _pool_ gênico com 2 alelos ($p+q=1$)." width="400px" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:hwpunnet2"></span>
+<img src="figs/punnett_2alelles.svg" alt="Quadrado de Punnet para um lócus gênico com 2 alelos relativo ao _pool_ gênico ($p+q=1$)." width="400px" />
 <p class="caption">
-Figure 5.7: Quadrado de Punnet para um <em>pool</em> gênico com 2 alelos (<span class="math inline">\(p+q=1\)</span>).
+Figure 5.7: Quadrado de Punnet para um lócus gênico com 2 alelos relativo ao <em>pool</em> gênico (<span class="math inline">\(p+q=1\)</span>).
 </p>
 </div>
 <p>.</p>
 </div>
 <div id="generalização-para-três-alelos" class="section level3 hasAnchor">
 <h3><span class="header-section-number">5.2.2</span> Generalização para três alelos<a href="princípio-de-hardy-weinberg.html#generalização-para-três-alelos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Se o <em>pool</em> gênico de uma população apresentar, em um lócus gênico, três alelos <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> e <span class="math inline">\(C\)</span>, cujas frequências sejam, por exemplo, <span class="math inline">\(F(A) = p = 0.5\)</span>, <span class="math inline">\(F(B) = q = 0.3\)</span> e <span class="math inline">\(F(C) = r = 0.2\)</span>.</p>
+<p>Teremos então que:</p>
+<p><span class="math display">\[p + q +r = 1\]</span></p>
+<p>.</p>
+<p>De forma que, as frequências do genótipos na geração seguinte corresponderão a:</p>
+<p><span class="math display">\[\left( p + q + r\right)^2 = p^2 + q^2 + r^2 + 2pq + 2pr + 2qr = 1\]</span></p>
+<p>.</p>
+<p>Assim, as frequências esperadas, por exemplo:</p>
+<ul>
+<li>para o genótipo homozigoto <span class="math inline">\(CC\)</span>:</li>
+</ul>
+<p><span class="math display">\[F_{Esp}(CC) = r^2 = (0.2)^2 = 0.2 \times 0.2 = 0.04\]</span>
+.</p>
+<ul>
+<li>e para o genótipo heterozigoto <span class="math inline">\(AC\)</span>:</li>
+</ul>
+<p><span class="math display">\[F_{Esp}(AC) = 2pr = 2 \times 0.5 \times 0.2 = 0.2\]</span></p>
+.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:hwpunnet3"></span>
+<img src="figs/punnett_3alelles.svg" alt="Quadrado de Punnet para um lócus gênico com 3 alelos relativo ao _pool_ gênico ($p+q+r=1$)." width="400px" />
+<p class="caption">
+Figure 5.8: Quadrado de Punnet para um lócus gênico com 3 alelos relativo ao <em>pool</em> gênico (<span class="math inline">\(p+q+r=1\)</span>).
+</p>
+</div>
+<p>.</p>
 </div>
 <div id="generalização-para-quatro-alelos" class="section level3 hasAnchor">
 <h3><span class="header-section-number">5.2.3</span> Generalização para quatro alelos<a href="princípio-de-hardy-weinberg.html#generalização-para-quatro-alelos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Se no entanto o <em>pool</em> gênico de uma população apresentar, em um lócus gênico, quatro alelos <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, <span class="math inline">\(C\)</span> e <span class="math inline">\(D\)</span> , cujas frequências sejam, por exemplo, <span class="math inline">\(F(A) = p = 0.4\)</span>, <span class="math inline">\(F(B) = q = 0.2\)</span>, <span class="math inline">\(F(C) = r = 0.2\)</span> e <span class="math inline">\(F(D) = s = 0.2\)</span>.</p>
+<p>Teremos então que:</p>
+<p><span class="math display">\[p + q + r + s = 1\]</span></p>
+<p>.</p>
+<p>De forma que, as frequências do genótipos na geração seguinte corresponderão a:</p>
+<p><span class="math display">\[\left( p + q + r +s \right)^2 = p^2 + q^2 + r^2 + s^2 + 2pq + 2pr + 2ps + 2qr + 2qs + 2rs = 1\]</span></p>
+<p>.</p>
+<p>Assim, as frequências esperadas, por exemplo:</p>
+<ul>
+<li>do genótipo homozigoto <span class="math inline">\(DD\)</span>:</li>
+</ul>
+<p><span class="math display">\[F_{Esp}(DD) = r^2 = (0.2)^2 = 0.2 \times 0.2 = 0.04\]</span></p>
+<p>.</p>
+<ul>
+<li>e para o genótipo heterozigoto <span class="math inline">\(BD\)</span>:</li>
+</ul>
+<p><span class="math display">\[F_{Esp}(DB) = 2pr = 2 \times 0.2 \times 0.2 = 0.08\]</span></p>
+.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:hwpunnet4"></span>
+<img src="figs/punnett_4alelles.svg" alt="Quadrado de Punnet para um lócus gênico com 4 alelos relativo ao _pool_ gênico ($p+q+r+s=1$)." width="400px" />
+<p class="caption">
+Figure 5.9: Quadrado de Punnet para um lócus gênico com 4 alelos relativo ao <em>pool</em> gênico (<span class="math inline">\(p+q+r+s=1\)</span>).
+</p>
+</div>
+<p>.</p>
 </div>
 <div id="generalização-para-n-alelos" class="section level3 hasAnchor">
 <h3><span class="header-section-number">5.2.4</span> Generalização para <span class="math inline">\(n\)</span> alelos<a href="princípio-de-hardy-weinberg.html#generalização-para-n-alelos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Desta forma, uma população que apresenta, em um lócus gênico, <span class="math inline">\(n\)</span> alelos <span class="math inline">\(A_1\)</span>, <span class="math inline">\(A_2\)</span>, …, <span class="math inline">\(A_n\)</span>, cuja frequência do <span class="math inline">\(i\)</span>-nésimo alelo seja <span class="math inline">\(F(A_i) = p_i\)</span>, teremos então que:</p>
+<p><span class="math display">\[p_1 + p_2 + ... + p_n = 1\]</span></p>
+<p>.</p>
+<p>As chances de encontro de alelos nos cruzamentos a partir deste <em>pool</em> gênico resultarão assim nas frequências genotípicas da próxima geração, correspondendo a:</p>
+<p><span class="math display">\[(p_1 + p_2 + ... + p_n)^2 = 1\]</span></p>
+<p>.</p>
+<p>E assim:</p>
+<ul>
+<li>para todo homozigoto:</li>
+</ul>
+<p><span class="math display">\[f(A_{i}A_{i}) = p_i^2\]</span></p>
+<p>.</p>
+<ul>
+<li>e para todo heterozigoto:</li>
+</ul>
+<p><span class="math display">\[f(A_{i}A_{j})  = 2p_{i}p_{j}\]</span></p>
+<p>.</p>
 </div>
 <div id="generalização-para-triploidia" class="section level3 hasAnchor">
 <h3><span class="header-section-number">5.2.5</span> Generalização para triploidia<a href="princípio-de-hardy-weinberg.html#generalização-para-triploidia" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Considerando um lócus gênico triplóide – no qual a herança dos alelos sejam independente, como por exemplo na poliespermia de gametas <span class="math inline">\(n\)</span> (como a fecundação dupla de um oócito por dois espermatozóides) – com dois alelos <span class="math inline">\(A\)</span>, <span class="math inline">\(a\)</span>, cujas frequências sejam, por exemplo, <span class="math inline">\(F(A) = p = 0.6\)</span>, <span class="math inline">\(F(a) = q = 0.4\)</span>.</p>
+<p>Teremos ainda que:</p>
+<p><span class="math display">\[p + q = 1\]</span></p>
+<p>Contudo, por carregar informação em carga tripla, os cruzamentos neste lócus irão corresponder a um binômio de terceira potência, e assim, as chances de encontro de alelos, e as frequências genotípicas esperadas para a geração, corresponderão a:</p>
+<p><span class="math display">\[\left( p + q \right)^3 = p^3 + 3qp^2 + 3pq^2 + q^3 = 1\]</span></p>
+<p>Assim, as frequências esperadas deste exemplo serão:</p>
+<ul>
+<li>para o genótipo <span class="math inline">\(AAA\)</span>:</li>
+</ul>
+<p><span class="math display">\[F_{Esp}(AAA) = p^3 = (0.6)^3 = 0.6 \times 0.6 \times 0.6 = 0.216\]</span>
+.</p>
+<ul>
+<li>para o genótipo heterozigoto <span class="math inline">\(AAa\)</span>:</li>
+</ul>
+<p><span class="math display">\[F_{Esp}(AAa) = 3qp^2 = 3 \times 0.4 \times (0.6)^2 = 0.432\]</span>
+.</p>
+<ul>
+<li>para o genótipo heterozigoto <span class="math inline">\(Aaa\)</span>:</li>
+</ul>
+<p><span class="math display">\[F_{Esp}(Aaa) = 3pq^2 = 3 \times 0.6 \times (0.4)^2 = 0.288\]</span></p>
+<p>.</p>
+<ul>
+<li>e para o genótipo heterozigoto <span class="math inline">\(aaa\)</span>:</li>
+</ul>
+<p><span class="math display">\[F_{Esp}(aaa) = q^3 = (0.4)^3 = 0.4 \times 0.4 \times 0.4 = 0.064\]</span>
+.</p>
 </div>
 </div>
 <div id="exercícios" class="section level2 hasAnchor">
 <h2><span class="header-section-number">5.3</span> Exercícios<a href="princípio-de-hardy-weinberg.html#exercícios" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>.</p>
 <div id="exercício-1-as-ervilhas-de-mendel" class="section level3 hasAnchor">
 <h3><span class="header-section-number">5.3.1</span> Exercício 1 – As ervilhas de Mendel<a href="princípio-de-hardy-weinberg.html#exercício-1-as-ervilhas-de-mendel" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>.</p>
 </div>
 <div id="exercício-2-tremoço-anão" class="section level3 hasAnchor">
 <h3><span class="header-section-number">5.3.2</span> Exercício 2 – Tremoço-anão<a href="princípio-de-hardy-weinberg.html#exercício-2-tremoço-anão" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -419,29 +514,46 @@ Figure 5.7: Quadrado de Punnet para um <em>pool</em> gênico com 2 alelos (<span
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:lnanus"></span>
 <img src="https://www.bolster.eu/media/images/5620_dbweb.jpg" alt="Polimorfismo da coloração das flores no tremoço-anão (_Lupinus nanus_)." width="400px" />
 <p class="caption">
-Figure 5.8: Polimorfismo da coloração das flores no tremoço-anão (<em>Lupinus nanus</em>).
+Figure 5.10: Polimorfismo da coloração das flores no tremoço-anão (<em>Lupinus nanus</em>).
 </p>
 </div>
 <p>.</p>
 <p>O tremoço-anão (<em>Lupinus nanus</em>), uma planta silvestre nativa dos estados unidos, normalmente apresenta flores azuis, mas plantas com flores rosa são ocasionalmente observadas em populações selvagens. A cor da flor é controlada em um único locus, com o alelo rosa completamente recessivo ao alelo azul.</p>
 <p>O estudo de Harding (<a href="https://doi.org/10.1111/j.1558-5646.1970.tb01744.x">1970</a>) nas cordilheiras da Califórniana, revelou os seguintes dados para uma dada população:</p>
-<p>.</p>
+.
 <table>
-<caption><span id="tab:tableB05">Table 5.1: </span>Frequências fenotípicas para o polimorfismo de cor das flores do tremoço-anão (<em>Lupinus nanus</em>) de uma população da Planície Espanhola, Califórnia, EUA.</caption>
+<caption>
+<span id="tab:tableB05">Table 5.1: </span>Frequências fenotípicas para o polimorfismo de cor das flores do tremoço-anão (<em>Lupinus nanus</em>) de uma população da Planície Espanhola, Califórnia, EUA.
+</caption>
 <thead>
-<tr class="header">
-<th align="left"></th>
-<th align="center">Flores azuis</th>
-<th align="center">Flores rosas</th>
-<th align="center">N</th>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:center;">
+Flores azuis
+</th>
+<th style="text-align:center;">
+Flores rosas
+</th>
+<th style="text-align:center;">
+N
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left"><strong>Indivíduos</strong></td>
-<td align="center">3291</td>
-<td align="center">25</td>
-<td align="center">3316</td>
+<tr>
+<td style="text-align:left;">
+<strong>Indivíduos</strong>
+</td>
+<td style="text-align:center;">
+3291
+</td>
+<td style="text-align:center;">
+25
+</td>
+<td style="text-align:center;">
+3316
+</td>
 </tr>
 </tbody>
 </table>
@@ -457,52 +569,95 @@ Figure 5.8: Polimorfismo da coloração das flores no tremoço-anão (<em>Lupinu
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:familialbino"></span>
 <img src="https://i.pinimg.com/originals/aa/a9/c4/aaa9c48bc7d6a49b0633733558515844.jpg" alt="As crianças Vijay, 25, Ramkishan, 19, e Shankar, 24 (fila de trás), juntamente com as filhas Pooja, 18 (esquerda) e Deepa, 21 (direita) herdaram o albinismo de seus pais Rosetauri e Mani Pullan (centro)." width="600px" />
 <p class="caption">
-Figure 5.9: As crianças Vijay, 25, Ramkishan, 19, e Shankar, 24 (fila de trás), juntamente com as filhas Pooja, 18 (esquerda) e Deepa, 21 (direita) herdaram o albinismo de seus pais Rosetauri e Mani Pullan (centro).
+Figure 5.11: As crianças Vijay, 25, Ramkishan, 19, e Shankar, 24 (fila de trás), juntamente com as filhas Pooja, 18 (esquerda) e Deepa, 21 (direita) herdaram o albinismo de seus pais Rosetauri e Mani Pullan (centro).
 </p>
 </div>
 <p>.</p>
 <p>O albinismo oculocutâneo tirosinase-positivo (OCA, tipo II; <a href="https://www.omim.org/entry/203200">OMIM 203200</a>) é um distúrbio autossômico recessivo no qual a biossíntese do pigmento melanina é reduzida na pele, cabelos e olhos.</p>
 <p>A prevalência deste distúrbio varia largamente entre as diversas populações humanas.</p>
-<p>.</p>
+.
 <table>
-<caption><span id="tab:tableC05">Table 5.2: </span>Prevalência de albinismo tipo 2 em diferentes populações humanas</caption>
+<caption>
+<span id="tab:tableC05">Table 5.2: </span>Prevalência de albinismo tipo 2 em diferentes populações humanas
+</caption>
 <thead>
-<tr class="header">
-<th align="left"></th>
-<th align="center">Prevalência</th>
-<th align="right">Referência</th>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:center;">
+Prevalência
+</th>
+<th style="text-align:right;">
+Referência
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left"><strong>Estados Unidos (geral)</strong></td>
-<td align="center">1:36.000</td>
-<td align="right"><a href="https://doi.org/10.1056/NEJM199402243300803">Lee et al. 1994</a></td>
+<tr>
+<td style="text-align:left;">
+<strong>Estados Unidos (geral)</strong>
+</td>
+<td style="text-align:center;">
+1:36.000
+</td>
+<td style="text-align:right;">
+<a href="https://doi.org/10.1056/NEJM199402243300803">Lee et al. 1994</a>
+</td>
 </tr>
-<tr class="even">
-<td align="left"><strong>Estados Unidos (afro-americanos)</strong></td>
-<td align="center">1:10.000</td>
-<td align="right">’’</td>
+<tr>
+<td style="text-align:left;">
+<strong>Estados Unidos (afro-americanos)</strong>
+</td>
+<td style="text-align:center;">
+1:10.000
+</td>
+<td style="text-align:right;">
+’’
+</td>
 </tr>
-<tr class="odd">
-<td align="left"><strong>South Africa (negros)</strong></td>
-<td align="center">1:3.900</td>
-<td align="right"><a href="https://pubmed.ncbi.nlm.nih.gov/7064008/">Kromberg &amp; Jenkins 1982</a>, <a href="https://doi.org/10.1017/S0021932000014838">1984</a></td>
+<tr>
+<td style="text-align:left;">
+<strong>South Africa (negros)</strong>
+</td>
+<td style="text-align:center;">
+1:3.900
+</td>
+<td style="text-align:right;">
+<a href="https://pubmed.ncbi.nlm.nih.gov/7064008/">Kromberg &amp; Jenkins 1982</a>, <a href="https://doi.org/10.1017/S0021932000014838">1984</a>
+</td>
 </tr>
-<tr class="even">
-<td align="left"><strong>Zimbabwe (Harare)</strong></td>
-<td align="center">1:2.833</td>
-<td align="right"><a href="http://dx.doi.org/10.1136/jmg.32.11.859">Kagore &amp; Lund 1995</a></td>
+<tr>
+<td style="text-align:left;">
+<strong>Zimbabwe (Harare)</strong>
+</td>
+<td style="text-align:center;">
+1:2.833
+</td>
+<td style="text-align:right;">
+<a href="http://dx.doi.org/10.1136/jmg.32.11.859">Kagore &amp; Lund 1995</a>
+</td>
 </tr>
-<tr class="odd">
-<td align="left"><strong>Nigeria (Ibo)</strong></td>
-<td align="center">1:1.100</td>
-<td align="right"><a href="https://doi.org/10.1111/j.1365-2133.1975.tb03116.x">Okoro 1975</a></td>
+<tr>
+<td style="text-align:left;">
+<strong>Nigeria (Ibo)</strong>
+</td>
+<td style="text-align:center;">
+1:1.100
+</td>
+<td style="text-align:right;">
+<a href="https://doi.org/10.1111/j.1365-2133.1975.tb03116.x">Okoro 1975</a>
+</td>
 </tr>
-<tr class="even">
-<td align="left"><strong>Jemez (ameríndios)</strong></td>
-<td align="center">1:140</td>
-<td align="right"><a href="https://pubmed.ncbi.nlm.nih.gov/14255554/">Woolf 1965</a>; <a href="https://doi.org/10.1126/science.164.3875.30">Woolf &amp; Dukepoo 1969</a></td>
+<tr>
+<td style="text-align:left;">
+<strong>Jemez (ameríndios)</strong>
+</td>
+<td style="text-align:center;">
+1:140
+</td>
+<td style="text-align:right;">
+<a href="https://pubmed.ncbi.nlm.nih.gov/14255554/">Woolf 1965</a>; <a href="https://doi.org/10.1126/science.164.3875.30">Woolf &amp; Dukepoo 1969</a>
+</td>
 </tr>
 </tbody>
 </table>

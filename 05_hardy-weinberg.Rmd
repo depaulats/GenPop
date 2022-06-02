@@ -186,7 +186,7 @@ $$F_{Esp}(aa) = q^2 = (0.4)^2 = 0.4 \times 0.4 = 0.16$$
 A expectativa das frequências genotípicas dado um _pool_ gênico pode ser vista também por meio de um quadrado de Punnett se os lados dos quadrados são proporcionais as frequências dos alelos. Desta forma, as freqüências genotípicas corresponderão às áreas dos retângulos formados pelos cruzamentos dos gametas.
 
 .\linebreak
-```{r hwpunnet, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap = "Quadrado de Punnet para um _pool_ gênico com 2 alelos ($p+q=1$)."}
+```{r hwpunnet2, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap = "Quadrado de Punnet para um lócus gênico com 2 alelos relativo ao _pool_ gênico ($p+q=1$)."}
 knitr::include_graphics("figs/punnett_2alelles.svg")
 ```
 .\linebreak
@@ -194,23 +194,149 @@ knitr::include_graphics("figs/punnett_2alelles.svg")
 
 ### Generalização para três alelos
 
+Se o _pool_ gênico de uma população apresentar, em um lócus gênico, três alelos $A$, $B$ e $C$, cujas frequências sejam, por exemplo, $F(A) = p = 0.5$, $F(B) = q = 0.3$ e $F(C) = r = 0.2$.
+
+Teremos então que: 
+
+$$p + q +r = 1$$
+
+.\linebreak
+
+De forma que, as frequências do genótipos na geração seguinte corresponderão a:
+
+$$\left( p + q + r\right)^2 = p^2 + q^2 + r^2 + 2pq + 2pr + 2qr = 1$$
+
+.\linebreak
+
+Assim, as frequências esperadas, por exemplo:
+
+- para o genótipo homozigoto $CC$:
+
+$$F_{Esp}(CC) = r^2 = (0.2)^2 = 0.2 \times 0.2 = 0.04$$
+.\linebreak
+
+- e para o genótipo heterozigoto $AC$: 
+
+$$F_{Esp}(AC) = 2pr = 2 \times 0.5 \times 0.2 = 0.2$$
+
+
+.\linebreak
+```{r hwpunnet3, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap = "Quadrado de Punnet para um lócus gênico com 3 alelos relativo ao _pool_ gênico ($p+q+r=1$)."}
+knitr::include_graphics("figs/punnett_3alelles.svg")
+```
+.\linebreak
+
 
 ### Generalização para quatro alelos
+
+Se no entanto o _pool_ gênico de uma população apresentar, em um lócus gênico, quatro alelos $A$, $B$, $C$ e $D$ , cujas frequências sejam, por exemplo, $F(A) = p = 0.4$, $F(B) = q = 0.2$, $F(C) = r = 0.2$ e $F(D) = s = 0.2$. 
+
+Teremos então que: 
+
+$$p + q + r + s = 1$$
+
+.\linebreak
+
+De forma que, as frequências do genótipos na geração seguinte corresponderão a:
+
+$$\left( p + q + r +s \right)^2 = p^2 + q^2 + r^2 + s^2 + 2pq + 2pr + 2ps + 2qr + 2qs + 2rs = 1$$
+
+.\linebreak
+
+Assim, as frequências esperadas, por exemplo:
+
+- do genótipo homozigoto $DD$:
+
+$$F_{Esp}(DD) = r^2 = (0.2)^2 = 0.2 \times 0.2 = 0.04$$
+
+.\linebreak
+
+- e para o genótipo heterozigoto $BD$: 
+
+$$F_{Esp}(DB) = 2pr = 2 \times 0.2 \times 0.2 = 0.08$$
+
+
+.\linebreak
+```{r hwpunnet4, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap = "Quadrado de Punnet para um lócus gênico com 4 alelos relativo ao _pool_ gênico ($p+q+r+s=1$)."}
+knitr::include_graphics("figs/punnett_4alelles.svg")
+```
+.\linebreak
+
 
 
 ### Generalização para $n$ alelos
 
+Desta forma, uma população que apresenta, em um lócus gênico, $n$ alelos $A_1$, $A_2$, ..., $A_n$, cuja frequência do $i$-nésimo alelo seja $F(A_i) = p_i$, teremos então que: 
+
+$$p_1 + p_2 + ... + p_n = 1$$
+
+.\linebreak
+
+As chances de encontro de alelos nos cruzamentos a partir deste _pool_ gênico resultarão assim nas frequências genotípicas da próxima geração, correspondendo a:
+
+$$(p_1 + p_2 + ... + p_n)^2 = 1$$
+
+.\linebreak
+
+E assim:
+
+- para todo homozigoto:
+
+$$f(A_{i}A_{i}) = p_i^2$$
+
+.\linebreak
+
+- e para todo heterozigoto:
+
+$$f(A_{i}A_{j})  = 2p_{i}p_{j}$$
+
+.\linebreak
 
 ### Generalização para triploidia
 
 
+Considerando um lócus gênico triplóide -- no qual a herança dos alelos sejam independente, como por exemplo na poliespermia de gametas $n$ (como a fecundação dupla de um oócito por dois espermatozóides) -- com dois alelos $A$, $a$, cujas frequências sejam, por exemplo, $F(A) = p = 0.6$, $F(a) = q = 0.4$.
+
+Teremos ainda que: 
+
+$$p + q = 1$$
+
+Contudo, por carregar informação em carga tripla, os cruzamentos neste lócus irão corresponder a um binômio de terceira potência, e assim, as chances de encontro de alelos, e as frequências genotípicas esperadas para a geração, corresponderão a:
+
+$$\left( p + q \right)^3 = p^3 + 3qp^2 + 3pq^2 + q^3 = 1$$
+
+Assim, as frequências esperadas deste exemplo serão:
+
+- para o genótipo $AAA$:
+
+$$F_{Esp}(AAA) = p^3 = (0.6)^3 = 0.6 \times 0.6 \times 0.6 = 0.216$$
+.\linebreak
+
+- para o genótipo heterozigoto $AAa$: 
+
+$$F_{Esp}(AAa) = 3qp^2 = 3 \times 0.4 \times (0.6)^2 = 0.432$$
+.\linebreak
+
+- para o genótipo heterozigoto $Aaa$: 
+
+$$F_{Esp}(Aaa) = 3pq^2 = 3 \times 0.6 \times (0.4)^2 = 0.288$$
+
+.\linebreak
+
+
+- e para o genótipo heterozigoto $aaa$: 
+
+$$F_{Esp}(aaa) = q^3 = (0.4)^3 = 0.4 \times 0.4 \times 0.4 = 0.064$$
+.\linebreak
+
 
 ## Exercícios
 
+.\linebreak
 
 ### Exercício 1 -- As ervilhas de Mendel
 
-
+.\linebreak
 
 ### Exercício 2 -- Tremoço-anão
 

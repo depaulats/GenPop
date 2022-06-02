@@ -4,7 +4,9 @@ fig:weinberg
 fig:poppool
 fig:cruzapop
 fig:hwgraph
-fig:hwpunnet
+fig:hwpunnet2
+fig:hwpunnet3
+fig:hwpunnet4
 fig:lnanus
 tab:tableB05
 fig:familialbino
