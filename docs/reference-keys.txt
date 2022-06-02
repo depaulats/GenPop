@@ -2,6 +2,12 @@ fig:amoebahw
 fig:hardy
 fig:weinberg
 fig:poppool
+fig:cruzapop
+fig:hwgraph
+fig:lnanus
+tab:tableB05
+fig:familialbino
+tab:tableC05
 fig:infestat
 fig:errostipos
 fig:dados
@@ -94,6 +100,12 @@ diversidade-nucleotídica
 princípio-de-hardy-weinberg
 hardy-e-weinberg
 demostração-do-modelo
+o-princípio-de-hardy-weinberg-dado-o-pool-gênico
+exercícios
+exercício-1-as-ervilhas-de-mendel
+exercício-2-tremoço-anão
+exercício-3-albinismo-em-humanos
+exercício-4
 desequilíbrio-de-ligação
 testes-de-significância
 significância-estatística
@@ -130,7 +142,7 @@ endogamia-em-genealogias
 eendogamia-ao-longo-das-gerações
 depressão-endogâmica
 evitando-a-endogamia
-exercícios
+exercícios-1
 estruturação-populacional
 migração-e-fluxo-gênico
 mutação

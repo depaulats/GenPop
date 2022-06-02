@@ -492,10 +492,6 @@ knitr::kable(data0902, align = "cccc", booktabs = TRUE, col.names = c("AA", "AG"
 
 O estudo de uma variação em um sítio de restrição na região do gene álcool desidrogenase ($Adh$) em moscas-da-fruta capturadas em um mercado na Holanda ([Cross & Birley 1986](https://doi.org/10.1007/BF00499097)) revelou os seguintes dados:
 
-- As duas regiões gênicas estão em equilíbrio de ligação?
-
-- Qual o coeficiente de desequilíbrio de ligação normalizado (D’) entre os dois pares de alelos?
-
 .\linebreak
 ```{r tableC09, echo = FALSE}
 C09Ecoplus <- c(22, 4)
@@ -505,6 +501,11 @@ rownames(data0903) <- c("$Adh^F$", "$Adh^S$")
 knitr::kable(data0903, "html", align = "cc", col.names = c("$EcoRI^+$", "$EcoRI^-$"), booktabs = TRUE, escape = FALSE, caption = "Frequências dos haplótipos entre o gene álcool desidrogenase ($Adh$) e um sítio de restrição ($EcoRI$) 3.5 kb à jusante do mesmo.")
 ```
 .\linebreak
+
+- As duas regiões gênicas estão em equilíbrio de ligação?
+
+- Qual o coeficiente de desequilíbrio de ligação normalizado (D’) entre os dois pares de alelos?
+
 
 
 
