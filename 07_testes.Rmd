@@ -1,6 +1,10 @@
 # Testes de Significância
 
 .\linebreak
+```{r infestat, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A inferência estatística é o ato de generalizar de uma amostra para uma população, a partir de dados obtidos desta, com um calculado nível de certeza."} 
+knitr::include_graphics("figs/inferencia_estatistica.svg")
+```
+.\linebreak
 
 ## Significância estatística
 
@@ -9,24 +13,6 @@ Em qualquer experimento ou observação que envolva obter uma amostra de uma pop
 Em um teste estatístico de hipótese, um resultado tem significância estatística quando é muito improvável que tenha ocorrido dada a hipótese nula.
 
 O termo significância não implica importância, e o termo significância estatística não é o mesmo que significância para pesquisa, teórica ou prática. 
-
-.\linebreak
-
-:::quote
-Sokal & Rohlf 2011. ISBN: 978-0716786047
- 
-Dancey et al. 2012. ISBN: 978-1849203364
- 
-Herzog et al. 2019. doi: [10.1007/978-3-030-03499-3](https://doi.org/10.1007/978-3-030-03499-3)
-:::
-
-
-
-.\linebreak
-```{r infestat, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A inferência estatística é o ato de generalizar de uma amostra para uma população, a partir de dados obtidos desta, com um calculado nível de certeza."} 
-knitr::include_graphics("figs/inferencia_estatistica.svg")
-```
-.\linebreak
 
 Mas se a probabilidade de um efeito observado for menor que (ou igual a) o nível de significância assumido para o estudo, um investigador pode concluir que o efeito reflete os parâmetros de toda a população, rejeitando assim a hipótese nula.
 
@@ -65,7 +51,19 @@ Esses dois tipos de erro são compensados entre si: para qualquer conjunto de am
 ```{r errostipos, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="Relações entre verdade/falsidade da hipótese nula e resultados de um teste statístico."} 
 knitr::include_graphics("figs/erro_estatistico.svg")
 ```
+
 .\linebreak
+
+:::reference
+Sokal & Rohlf 2011. ISBN: 978-0716786047
+ 
+Dancey et al. 2012. ISBN: 978-1849203364
+ 
+Herzog et al. 2019. doi: [10.1007/978-3-030-03499-3](https://doi.org/10.1007/978-3-030-03499-3)
+:::
+
+.\linebreak
+
 
 ## Testes de ajuste do chi-quadrado
 

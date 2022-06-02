@@ -1,3 +1,7 @@
+fig:amoebahw
+fig:hardy
+fig:weinberg
+fig:poppool
 fig:infestat
 fig:errostipos
 fig:dados
@@ -88,6 +92,8 @@ número-total-de-mutações
 número-médio-de-diferenças-nucleotídicas
 diversidade-nucleotídica
 princípio-de-hardy-weinberg
+hardy-e-weinberg
+demostração-do-modelo
 desequilíbrio-de-ligação
 testes-de-significância
 significância-estatística
@@ -129,3 +135,8 @@ estruturação-populacional
 migração-e-fluxo-gênico
 mutação
 seleção-natural
+resolução-dos-exercícios
+capítulo-1
+exercício-1
+exercício-2
+exercício-3

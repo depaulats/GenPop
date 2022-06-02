@@ -1,3 +1,82 @@
 # Princípio de Hardy-Weinberg
 
-Here is a review of existing methods.
+.\linebreak
+
+
+```{r amoebahw, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A natureza probabilística princípio de Hardy-Weinberg torna a análise de cenários evolutivos enganosamente difícil para os alunos, bem como para professores que não são especificamente treinado em análises quantitativas. Veja este vídeo [aqui](https://www.youtube.com/watch?v=7S4WMwesMts)"}
+knitr::include_graphics("figs/amoeba_sisters_HW.png")
+```
+
+.\linebreak
+
+## Hardy e Weinberg
+
+.\linebreak
+```{r hardy, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="[Geoffrey H. Hardy](https://en.wikipedia.org/wiki/G._H._Hardy) (1877-1947), matemático inglês."} 
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/3/35/Ghhardy%4072.jpg')
+```
+
+.\linebreak
+
+```{r weinberg, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="[Wilhelm Weinberg]() (1862-1937), médico alemão."} 
+knitr::include_graphics('https://assets.sutori.com/user-uploads/image/5ebbe88a-0058-4307-bf1b-8236eb3793ca/0d0f9915fa3e3b8b91c7584f4b7fe06c.jpeg')
+```
+.\linebreak
+
+Desenvolvido independentemente por G. H. Hardy e Wilhelm Weinberg, no início de 1900, o **princípio de Hardy-Weinberg** (PHW) é a pedra angular da genética de populações, e consiste em um modelo matemático que relaciona frequências alélicas a frequências genotípicas.
+
+De acordo com o princípio (ou equilíbrio, modelo, teorema e lei) de Hardy-Weinberg, as freqüências gênicas e genótípicas em uma população permanecerão constantes, de geração em geração, desde que respeitadas suas premissas teóricas.
+
+Como a maioria dos modelos, o princípio de Hardy-Weinberg é uma simplificação das complexidades do mundo real, mas tem um surpreendente poder explicativo.
+
+As premissas subjacentes ao princípio de Hardy-Weinberg são:
+
+- Organismos diplóides
+
+- Reprodução sexual
+
+- Gerações não-sobrepostas
+
+- Acasalamento aleatório
+
+- Tamanho infinito da população
+
+- Frequências alélicas iguais entre os sexos
+
+- Ausência de forças evolutivas 
+
+:::quote
+**Força evolutiva** -- Incluindo, mas não limitado a, deriva genética, escolha de parceiro, acasalamento seletivo, seleção natural, seleção sexual, mutação, fluxo gênico, impulso meiótico, carona genética, gargalo populacional, efeito fundador e endogamia.
+:::
+
+## Demostração do modelo
+
+Considere um lócus com dois alelos $A$ e $a$ no _pool_ gênico de uma população.
+
+.\linebreak
+```{r poppool, echo = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Representação do _pool_ gênico de uma população."} 
+knitr::include_graphics("figs/population_pool_gene.svg")
+```
+.\linebreak
+
+Os possíveis cruzamentos (união de gametas) neste _pool_ gênico são:
+
+
+
+
+
+
+
+
+
+
+:::reference
+
+Mertens 1992. doi: [10.2307/4449417](https://doi.org/10.2307/4449417)
+
+Masel 2012. doi: [10.1002/bies.201100178](https://doi.org/10.1002/bies.201100178)
+
+Brewer & Gardner 2013. doi: [10.1525/abt.2013.75.7.6](https://doi.org/10.1002/bies.201100178)
+
+:::
+
