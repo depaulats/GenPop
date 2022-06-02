@@ -12,13 +12,14 @@ O termo significância não implica importância, e o termo significância estat
 
 .\linebreak
 
-:::reference
+:::quote
 Sokal & Rohlf 2011. ISBN: 978-0716786047
  
 Dancey et al. 2012. ISBN: 978-1849203364
  
 Herzog et al. 2019. doi: [10.1007/978-3-030-03499-3](https://doi.org/10.1007/978-3-030-03499-3)
 :::
+
 
 
 .\linebreak

@@ -13,7 +13,21 @@ pre code {
   white-space: inherit;
 }
 
+
 /* -----------div tips------------- */
+
+  div.quote {
+    padding: 1em;
+    margin: 1em 0;
+    padding-left: 15px;
+    background-size: 0px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    min-height: 0px;
+    color: #000000;
+    background-color: #f5f7f9;
+    border-left: 7px solid #BEBEBE;
+  }
 
   div.reference {
     padding: 1em;
