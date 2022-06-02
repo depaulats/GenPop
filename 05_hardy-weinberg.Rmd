@@ -158,17 +158,50 @@ De forma que:
 $$\left( p + q \right)^2 = p^2 +2pq + q^2 = 1$$
 
 .\linebreak
-```{r hwgraph, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap = "Uma população que siga as premissas do princípio de Hardy-Weinberg apresenta genótipos previstos de acordo com o modelo $(p + q)^2$"}
+```{r hwgraph, echo = FALSE, fig.align = 'center', out.width = "600px", fig.cap = "Uma população que siga as premissas do princípio de Hardy-Weinberg apresenta genótipos previstos de acordo com o modelo $(p + q)^2$"}
 knitr::include_graphics("figs/hardy_weinberg_graph.svg")
 ```
 .\linebreak
 
+Por exemplo, dadas as frequências alélicas $F(A) = p = 0.6$ e $F(a) = q = 0.4$, as freqüências genotípicas esperadas pela princípio de Hardy-Weinberg serão:
+
+- para os homozigotos dominantes:
+
+$$F_{Esp}(AA) = p^2 = (0.6)^2 = 0.6 \times 0.6 = 0.36$$
+
+.\linebreak
+
+- para os heterzigotos:
+
+$$F_{Esp}(Aa) = 2pq = 2 \times 0.6 \times 0.4 = 0.48$$
+
+.\linebreak
+
+- para os homozigotos recessivos:
+
+$$F_{Esp}(aa) = q^2 = (0.4)^2 = 0.4 \times 0.4 = 0.16$$
+
+.\linebreak
+
+A expectativa das frequências genotípicas dado um _pool_ gênico pode ser vista também por meio de um quadrado de Punnett se os lados dos quadrados são proporcionais as frequências dos alelos. Desta forma, as freqüências genotípicas corresponderão às áreas dos retângulos formados pelos cruzamentos dos gametas.
+
+.\linebreak
+```{r hwpunnet, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap = "Quadrado de Punnet para um _pool_ gênico com 2 alelos ($p+q=1$)."}
+knitr::include_graphics("figs/punnett_2alelles.svg")
+```
+.\linebreak
 
 
+### Generalização para três alelos
 
 
+### Generalização para quatro alelos
 
 
+### Generalização para $n$ alelos
+
+
+### Generalização para triploidia
 
 
 

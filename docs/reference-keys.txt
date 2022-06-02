@@ -4,6 +4,7 @@ fig:weinberg
 fig:poppool
 fig:cruzapop
 fig:hwgraph
+fig:hwpunnet
 fig:lnanus
 tab:tableB05
 fig:familialbino
@@ -101,6 +102,10 @@ princípio-de-hardy-weinberg
 hardy-e-weinberg
 demostração-do-modelo
 o-princípio-de-hardy-weinberg-dado-o-pool-gênico
+generalização-para-três-alelos
+generalização-para-quatro-alelos
+generalização-para-n-alelos
+generalização-para-triploidia
 exercícios
 exercício-1-as-ervilhas-de-mendel
 exercício-2-tremoço-anão
