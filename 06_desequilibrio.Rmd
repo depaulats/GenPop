@@ -1,3 +1,2 @@
 # Desequilíbrio de Ligação
 
-Here is a review of existing methods.

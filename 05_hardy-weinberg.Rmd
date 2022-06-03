@@ -2,7 +2,7 @@
 
 .\linebreak
 
-```{r amoebahw, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A natureza probabilística princípio de Hardy-Weinberg torna a análise de cenários evolutivos enganosamente difícil para os alunos, bem como para professores que não são especificamente treinado em análises quantitativas. Veja este vídeo [aqui](https://www.youtube.com/watch?v=7S4WMwesMts)"}
+```{r amoebahw, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A natureza probabilística princípio de Hardy-Weinberg torna a análise de cenários evolutivos enganosamente difícil para os alunos, bem como para professores que não são especificamente treinado em análises quantitativas. Veja também este [vídeo](https://www.youtube.com/watch?v=7S4WMwesMts)"}
 knitr::include_graphics("figs/amoeba_sisters_HW.png")
 ```
 
@@ -21,7 +21,7 @@ Brewer & Gardner 2013. doi: [10.1525/abt.2013.75.7.6](https://doi.org/10.1002/bi
 
 .\linebreak
 
-## Hardy e Weinberg
+## HIstórico e premissas
 
 .\linebreak
 ```{r hardy, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="[Geoffrey H. Hardy](https://en.wikipedia.org/wiki/G._H._Hardy) (1877-1947), matemático inglês."} 
@@ -61,12 +61,16 @@ As premissas subjacentes ao princípio de Hardy-Weinberg são:
 **Força evolutiva** -- Incluindo, mas não limitado a, deriva genética, escolha de parceiro, acasalamento seletivo, seleção natural, seleção sexual, mutação, fluxo gênico, impulso meiótico, carona genética, gargalo populacional, efeito fundador e endogamia.
 :::
 
-## Demostração do modelo
+## Modelando o princípio de Hardy-Weinberg
+
+.\linebreak
+
+### Segundo os cruzamentos
 
 Considere um lócus com dois alelos $A$ e $a$ no _pool_ gênico de uma população.
 
 .\linebreak
-```{r poppool, echo = FALSE, fig.align = 'center', out.width = "800px", fig.cap="Representação do _pool_ gênico de uma população."} 
+```{r poppool, echo = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Representação do _pool_ gênico de uma população."} 
 knitr::include_graphics("figs/population_pool_gene.svg")
 ```
 .\linebreak
@@ -94,7 +98,7 @@ Por outro lado, a chance de um cruzamento entre parentais de genótipos diferent
 $$Pr_{cruzamento(M_D \times F_H \ or \ M_H \times F_D)} = \left( D \cdot H \right) + \left( H \cdot D \right) = 2DH$$
 
 .\linebreak
-```{r cruzapop, echo = FALSE, fig.align = 'center', out.width = "800px", fig.cap="Os cruzamentos entre os indivíduos dos diferentes genótipos da população na geração atual ($F_0$) determinarão os genótipos dos descentes, e assim, a frequência dos genótipos na próxima geração ($F_1$)."} 
+```{r cruzapop, echo = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Os cruzamentos entre os indivíduos dos diferentes genótipos da população na geração atual ($F_0$) determinarão os genótipos dos descentes, e assim, a frequência dos genótipos na próxima geração ($F_1$)."} 
 knitr::include_graphics("figs/freq_cruzamentos_HW.svg")
 ```
 .\linebreak
@@ -119,7 +123,7 @@ $$R' = R^2 + \frac {2HR}{2} + \frac {H^2}{4} = \left( R + \frac {H}{2} \right)^2
 
 .\linebreak
 
-### O princípio de Hardy-Weinberg dado o _pool_ gênico
+### Segundo o _pool_ gênico
 
 Como visto no capítulo anterior (seção (ref)), a frequência dos alelos no _pool_ gênico, podem ser expressas por meio das frequências genotípicas, tal que:
 
@@ -158,7 +162,7 @@ De forma que:
 $$\left( p + q \right)^2 = p^2 +2pq + q^2 = 1$$
 
 .\linebreak
-```{r hwgraph, echo = FALSE, fig.align = 'center', out.width = "600px", fig.cap = "Uma população que siga as premissas do princípio de Hardy-Weinberg apresenta genótipos previstos de acordo com o modelo $(p + q)^2$"}
+```{r hwgraph, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap = "Uma população que siga as premissas do princípio de Hardy-Weinberg apresenta genótipos previstos de acordo com o modelo $(p + q)^2$"}
 knitr::include_graphics("figs/hardy_weinberg_graph.svg")
 ```
 .\linebreak
@@ -191,6 +195,10 @@ knitr::include_graphics("figs/punnett_2alelles.svg")
 ```
 .\linebreak
 
+
+## Generalizações do modelo
+
+.\linebreak
 
 ### Generalização para três alelos
 
@@ -327,7 +335,276 @@ $$F_{Esp}(Aaa) = 3pq^2 = 3 \times 0.6 \times (0.4)^2 = 0.288$$
 - e para o genótipo heterozigoto $aaa$: 
 
 $$F_{Esp}(aaa) = q^3 = (0.4)^3 = 0.4 \times 0.4 \times 0.4 = 0.064$$
+
 .\linebreak
+
+### Hardy-Weinberg em genes ligados ao sexo
+
+O Princípio de Hardy-Weinberg como formulado originalmente se aplica a genes autossômicos.
+Genes situados nos cromossomos sexuais atingem uma situação de equilíbrio ligeiramente diferente.
+O sexo homogamético possui dois cromossomossexuais X (XX, ZZ) e o sexo heterogaméticoapresenta somente um cromossomo X ou Z (XY, X0,ZW). 
+
+
+Assim, no sistema XX/XY, considerando-se um locus gênico ligado ao cromossomo X com dois alelos “A” e “a”, temos:
+
+1) Quando a população está em equilíbrio, 
+
+os genótipos dos indivíduos do sexo heterogamético (XAY e XaY) corresponderão às frequências gênicas (p e q) 
+
+os genótipos dos indivíduos do sexo homogamético (XAXA, XAXa e XaXa) corresponderão às proporções de Hardy-Weinberg (p2, 2pq e q2).
+2) Em populações que não estejam em equilíbrio, 
+
+se as frequências dos genótipos dos indivíduos do sexo heterogamético (XAY e XaY) correponderem as frequências gênicas (p e q), a população atingirá o equilíbrio após algumas gerações de acasalamento ao acaso 
+
+Obs.: No caso de características recessivas ligadas ao X, o númerode machos afetados é maior que o de fêmeas (q > q2). 
+
+
+.\linebreak
+
+## Ligação gênica
+
+A ligação gênica é a tendência de genes localizados no mesmo cromossomo serem herdados em conjunto durante a meiose. 
+
+Genes ditos estarem geneticamente ligados correspondem a loci que estão perto um do outro, sendo menos susceptíveis de ser separados em diferentes cromátides por recombinação genética.
+
+Considera-se recombinação genética toda e qualquer produção de uma nova combinação de alelos em dois ou mais loci gênicos. Em organismos diplóides, isto se dá principalmente por meio do mecanismo de _crossing over_.
+
+Assim sendo, a proporção de descendentes que sofreram um evento de recombinação entre dois loci gênicos é medida pela *taxa de recombinação genética* ($r$).
+
+Desta forma que, os descendentes herdarão cromossomos:
+
+- iguais ao de um dos parentais, em uma taxa $1 − r$; ou
+
+- que são uma recombinação dos cromossomos dos parentais, em uma taxa $r$.
+
+Uma vez que a recombinação por _crossing over_ só ocorre entre os dois cromossomos homólogos pareados da tétrade na meiose, o maior valor que a taxa de recombinação genética pode alcançar é igual a $1/2$, que é igual o mesmo que chance de encontro de alelos em loci em cromossomos diferentes, _i. e._, segregando independentemente.
+
+.\linebreak
+```{r tester, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="Medição empírica da taxa de recombinação -- Linhagens parentais ($F_0$) puras são cruzadas para produzir indivíduos heterozigotos no dois loci gênicos (diíbridos), cuja variação entre os alelos esteja ligada nos cromossomos parentais (_cis_), os quais são cruzados com uma outra linhagem pura (testador) para quantificar os tipos parentais e recombinantes produzidos."} 
+knitr::include_graphics("figs/recombination_tester.svg")
+```
+.\linebreak
+
+### Frequências haplotípicas
+
+:::quote
+
+Haplótipo -- **1**. coleção de alelos específicos em um agrupamento de genes fortemente ligados em um cromossomo, que provavelmente serão herdados juntos; **2**. um conjunto de alelos de polimorfismo de nucleotídeo único (SNP) ligados que tendem a sempre ocorrer juntos, _i.e._, que estão associados estatisticamente.
+
+:::
+
+Considere os haplótipos produzidos por dois loci gênicos $A$ e $B$, com dois alelos cada, com taxa de recombinação $r$ entre si.
+
+A gametogênese dos indivíduos do genótipo $AB/ab$ produzirá os seguintes haplótipos:
+
+.\linebreak
+
+| Haplótipo   | Frequência     | Tipo             |
+| :---:       | :---:          | :---:            |
+| $AB$        | $(1-r)/2$      | Parental         |
+| $ab$        | $(1-r)/2$      | Parental         |
+| $Ab$        | $r/2$          | **Recombinante** |
+| $aB$        | $r/2$          | **Recombinante** |
+
+.\linebreak
+
+Enquanto que a gametogênese de um genótipo $Ab/aB$ produzirá os seguintes haplótipos:
+
+.\linebreak
+
+| Haplótipo   | Frequência     | Tipo             |
+| :---:       | :---:          | :---:            |
+| $AB$        | $r/2$          | **Recombinante** |
+| $ab$        | $r/2$          | **Recombinante** |
+| $Ab$        | $(1-r)/2$      | Parental         |
+| $aB$        | $(1-r)/2$      | Parental         |
+
+.\linebreak
+
+Sendo a frequência observada dos haplótipos dos loci gênicos $A$ e $B$:
+
+.\linebreak
+
+| Haplótipo   | Frequência   |
+| :---:       | :---:        |
+| $AB$        | $p_{AB}$     |
+| $ab$        | $p_{ab}$     |
+| $Ab$        | $p_{Ab}$     |
+| $aB$        | $p_{aB}$     |
+
+.\linebreak
+
+De forma que,
+
+$$p_{AB} + p_{ab} + p_{Ab} + p_{aB} = 1$$
+
+.\linebreak
+
+Note que estas são frequências relativas, que determinam as frequências alélicas:
+
+.\linebreak
+
+| Alelo      | Frequência                    |
+| :---:      | :---:                         |
+| $A$        | $p_{A} = p_{AB} + p_{Ab}$     |
+| $a$        | $p_{A} = p_{ab} + p_{aB}$     |
+| $B$        | $p_{A} = p_{AB} + p_{aB}$     |
+| $b$        | $p_{A} = p_{ab} + p_{Ab}$     |
+
+.\linebreak
+
+### Desequilíbrio de ligação
+
+O termo desequilíbrio de ligação (LD, _linkage disequilibrium_) foi usado pela primeira vez por Lewontin e Kojima ([1960](https://doi.org/10.1111/j.1558-5646.1960.tb03113.x)) para indicar uma associação não-aleatória de alelos em dois ou mais loci. 
+
+Dado suficiente tempo evolutivo... 
+
+- a ocorrência de eventos de recombinação aleatória em um cromossomo resultará em uma distribuição de equilíbrio de alelos em cada locus; e
+
+- a frequência de um alelo em particular em um determinado locus será independente da frequência de alelos em outros loci ligados.
+
+Nesse sentido, seria alcançado um equilíbrio de ligação, e a frequência do haplótipo entre um par de alelos será igual ao produto das frequências alélicas individuais, de forma que:
+
+$$p_{AB} = p_{A} \cdot p_{B}$$
+
+.\linebreak
+
+Assim sendo, o desequilíbrio de ligação é definido como a diferença entre a frequência observada de uma combinação particular de alelos em dois loci gênicos e a frequência esperada para a associação aleatória (esperada no equilíbrio). 
+
+$$D_{AB} = p_{AB} - p_{A}p_{B}$$
+
+.\linebreak
+
+A medida $D_{AB}$ é o **coeficiente de desequilíbrio de ligação**.
+
+O coeficiente de desequilíbrio de ligação é definido para um par específico de alelos, no caso $A$ e $B$, e não depende de quantos outros alelos estão nos dois loci -- cada par de alelos tem seu próprio coeficiente.
+
+Na ausência de forças evolutivas, o coeficiente de desequilíbrio de ligação ($D$) convergirá para zero ao longo do tempo (atingindo o equilíbrio de ligação), e o tempo ($t$), em termos de número de gerações, que levará para tal convergência ocorrer irá depender da magnitude da taxa de recombinação ($r$) entre os dois loci.
+
+Assim, a taxa de recombinação irá mudar a frequência do haplótipo da próxima geração ($p_{AB}'$) de forma que:
+
+$$p_{AB}' = \left( 1-r \right) p_{AB} + rp_{A}p_{B}$$
+
+.\linebreak
+
+onde $(1-r)$ e $r$ são as chances de formação de haplótipos não-recombinantes e recombinantes, respectivamente.
+
+
+A equação acima pode ser reescrita (_viz._, subtraindo $p_{A}p_{B}$ dos dois lados) como:
+
+
+$$p_{AB}' - p_{A}p_{B} = \left( 1-r \right) \left( p_{AB} - p_{A}p_{B} \right)$$
+
+.\linebreak
+
+Sendo $D_{AB}$ o coeficiente de desequilíbrio da geração atual, e $D_{AB}'$ o coeficiente de desequilíbrio da próxima geração, temos então que:
+
+$$D_{AB}' = \left( 1-r \right) D_{AB}$$
+
+.\linebreak
+
+Desta forma, para qualquer par de alelos em dois loci gênicos ligados, de uma geração para a seguinte, temos:
+
+$$D_{t+1} = \left( 1-r \right) D_{t}$$
+
+.\linebreak
+
+E assim, partir desta, temos:
+
+$$D_{t} = \left( 1-r \right)^t D_{0}$$
+
+y = (((1-0)^x)*0.25)
+
+0.25*((1-0)^x)
+
+.\linebreak
+
+Logo, se $t → ∞$, então $D_t → 0$.
+
+
+.\linebreak
+```{r LDgraph, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "600px", fig.cap="O coeficiente de desequilíbrio de ligação ($D$) ao longo das gerações sob diferentes taxas de recombinação ($r$)."} 
+library("ggplot2")
+library("latex2exp")
+ggplot(data.frame(x = c(0, 25)), aes(x = x)) + 
+  stat_function(fun = function(x) 0.25*(1-0)^x, color = "firebrick2", lwd = 1) +
+  stat_function(fun = function(x) 0.25*(1-0.01)^x, color = "chocolate", lwd = 1) +
+  stat_function(fun = function(x) 0.25*(1-0.05)^x, color = "royalblue3", lwd = 1) +
+  stat_function(fun = function(x) 0.25*(1-0.1)^x, color = "green4", lwd = 1) +
+  stat_function(fun = function(x) 0.25*(1-0.5)^x, color = "deepskyblue3", lwd = 1) +
+  labs(x = "Geração", y = "Coeficiente de \ndesequilíbrio de ligação") + 
+  annotate(geom='text', x=24, y=0.24, parse = TRUE, color="firebrick2", label=TeX("$r=0$")) +
+  annotate(geom='text', x=24, y=0.18, parse = TRUE, color="chocolate", label=TeX("$r=0.01$")) +
+  annotate(geom='text', x=24, y=0.09, parse = TRUE, color="royalblue3", label=TeX("$r=0.05$")) +
+  annotate(geom='text', x=24, y=0.04, parse = TRUE, color="green4", label=TeX("$r=0.1$")) +
+  annotate(geom='text', x=20, y=0.01, parse = TRUE, color="deepskyblue3", label=TeX("$r=0.5$"))
+```
+.\linebreak
+
+O coeficiente de desequilíbrio de ligação é usado geralmente para indicar que dois genes estão fisicamente ligados.
+
+No entanto, a detecção de um desequilíbrio de ligação não assegura a existência de ligação gênica ou falta de equilíbrio, podendo alternativamente refletir:
+
+A ocorrência de LD pode refletir... 
+
+- no genoma, como um todo:
+
+	- histórias populacionais, 
+	
+	- sistemas de acasalamento,
+	
+	- padrões de subdivisão geográfica
+
+-e em regiões gênicas específicas:
+
+	- seleção natural, 
+	
+	- convergência gênica, 
+	
+	- mutação, 
+	
+	- e outras forças que promovem mudança nas nas freqüências gênicas.
+
+Como esses fatores afetam o equilíbrio de ligação entre um par particular de locos ou em uma região genômica depende das taxas locais de recombinação.
+
+
+### coeficiente de desequilíbrio de ligação normalizado
+
+O coeficiente de desequilíbrio de ligação ($D$) nem sempre é uma medida conveniente, porque o seu intervalo de valores possíveis depende das frequências dos alelos a que se refere.
+
+Isso dificulta a comparação do nível de desequilíbrio de ligação entre diferentes pares de alelos.
+
+O coeficiente D pode ser normalizado dividindo-o pela diferença máxima teórica entre as frequências de haplótipos observadas e esperadas como:
+
+\begin{equation}
+D’ = \frac{D}{D_{max}}
+(\#eq:dnorm)
+\end{equation}
+
+.\linebreak
+
+
+Onde,
+
+\begin{equation}
+D_{max} = \min
+\begin{cases} 
+\left \{p_A(1-p_B) , (1 – p_A)p_B \right \} & \text{se } D > 0 \\
+\left \{p_Ap_B , (1 – p_A)(1 – p_B) \right \} & \text{se } D < 0 \\
+\end{cases}
+(\#eq:dmax)
+\end{equation}
+
+.\linebreak
+
+
+
+
+
+
+
+
+
 
 
 ## Exercícios

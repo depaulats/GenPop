@@ -168,17 +168,21 @@ knitr::include_graphics("figs/gl_mecanismo.svg")
 Cada grau de liberdade apresenta um função densidade de probabilidade, onde os valores de $\chi^2$ (eixo x) apresentam diferentes frequências (eixo y).
 
 .\linebreak
-```{r glgraph, echo = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade."} 
+```{r glgraph, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade."} 
 library("ggplot2")
 ggplot(data.frame(x = c(0, 15)), aes(x = x)) + 
-  stat_function(fun = dchisq, args = list(df = 1), aes(colour = "gl = 1"), lwd = 1) +
-  stat_function(fun = dchisq, args = list(df = 2), aes(colour = "gl = 2"), lwd = 1) +
-  stat_function(fun = dchisq, args = list(df = 3), aes(colour = "gl = 3"), lwd = 1) +
-  stat_function(fun = dchisq, args = list(df = 5), aes(colour = "gl = 5"), lwd = 1) +
-  stat_function(fun = dchisq, args = list(df = 9), aes(colour = "gl = 9"), lwd = 1) +
+  stat_function(fun = dchisq, args = list(df = 1), color = "firebrick2", lwd = 1) +
+  stat_function(fun = dchisq, args = list(df = 2), color = "chocolate", lwd = 1) +
+  stat_function(fun = dchisq, args = list(df = 3), color = "royalblue3", lwd = 1) +
+  stat_function(fun = dchisq, args = list(df = 5), color = "green4", lwd = 1) +
+  stat_function(fun = dchisq, args = list(df = 9), color = "deepskyblue3", lwd = 1) +
   labs(x = "Qui-quadrado", y = "Densidade de probabilidade") + 
-  scale_color_manual(name = "Graus de\nLiberdade", values = c("firebrick2", "chocolate", "royalblue3", "green4", "deepskyblue3")) +
-  theme(legend.position = c(.9, .7))
+  annotate(geom='text', x=1, y=0.9, parse = TRUE, color="firebrick2", label=TeX("$gl=1$")) +
+  annotate(geom='text', x=1.5, y=0.35, parse = TRUE, color="chocolate", label=TeX("$gl=2$")) +
+  annotate(geom='text', x=2.7, y=0.25, parse = TRUE, color="royalblue3", label=TeX("$gl=3$")) +
+  annotate(geom='text', x=4.8, y=0.18, parse = TRUE, color="green4", label=TeX("$gl=5$")) +
+  annotate(geom='text', x=7.5, y=0.15, parse = TRUE, color="deepskyblue3", label=TeX("$gl=10$"))
+  
 ```
 .\linebreak
 
