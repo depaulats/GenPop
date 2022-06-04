@@ -1,6 +1,17 @@
 # Prefácio{-}
 
 
+## Licença de uso {-}
+
+© 2022 Thiago S. de Paula
+
+Este livro de notas está licenciado sob a Licença _Creative Commons_ Atribuição-NãoComercial-CompartilhaIgual 4.0 (CC BY-NC-SA 4.0). Para ver uma cópia desta licença, visite https://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+```{r copyright, echo = FALSE, fig.align = 'left', out.width="100px"}
+knitr::include_graphics("https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png")
+```
+\linebreak
+
 ## Por que ler este livro {-}
 
 xxx

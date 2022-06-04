@@ -1,3 +1,8 @@
+fig:liguus
+fig:mendeliano
+eq:freqp
+eq:freqq
+eq:poolgene
 fig:amoebahw
 fig:hardy
 fig:weinberg
@@ -83,10 +88,7 @@ microssatélites
 snps-1
 bancos-de-dados-públicos
 variação-e-diversidade-genética
-genética-mendeliana-1
-sem-dominância
-com-dominância
-genética-de-populações
+genética-mendeliana-times-genética-de-populações
 frequências-genotípicas
 frequências-alélicas
 generalização-das-frequências-genotípicas-e-alélicas

@@ -1,83 +1,128 @@
 # Variação e Diversidade Genética
 
-## Genética mendeliana
+<br>
 
-Estuda o comportamento de um ou mais loci gênicos em cruzamentos simples.
+```{r liguus, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="A distribuição de alelos e a baixa diversidade genética no caramujo da Flórida (_Liguus fasciatus_) apóia a visão de uma única espécie parcialmente autofecundante que se diversificou na Flórida após um único evento fundador. Ver Hillis et al ([1991](https://doi.org/10.1093/oxfordjournals.jhered.a111087))"} 
+knitr::include_graphics("figs/Liguus_fasciatus_Hillis.png")
+```
 
-Dois parentais contribuem com um alelo por locus.
+<br>
 
-Os resultados esperados são proporções características.
+## Genética mendeliana $\times$ Genética de populações
 
-Por exemplo, para um locus gênico:
+A **genética mendeliana** estuda o comportamento de um ou mais loci gênicos em cruzamentos simples.
 
-### Sem dominância
+Nesta, dois parentais intercruzantes contribuem cada com um alelo por locus, e Os resultados esperados são proporções mendelianas das características fenotípicas.
 
+<br>
 
-### Com dominância
+```{r mendeliano, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="Exemplos de proporções mendelianas em características co-dominantes (1:2:1) e dominantes (3:1)."} 
+knitr::include_graphics("figs/traços_mendelianos.svg")
+```
 
-## Genética de populações
+<br>
 
-Comportamento de um ou mais loci gênicos em múltiplos cruzamentos.
+Por outro lado, a **genética de populações** visa estudar o comportamento de um ou mais loci gênicos em múltiplos cruzamentos, _i. e._, em proporções populacionais.
 
-Aspectos populacionais:
+Para tal, as informações genéticas do **_pool_ gênico** de um ou mais **demes** constituindo **unidades panmíticas** são analisados a partir de **amostras** populacionais. 
 
-pool gênico (uma unidade genética) =
-	todos os alelos em um (único) locus gênico
+<br>
 
-deme (uma unidade ecológica ou demográfica) =
-	todos os indivíduos em uma área
+:::quote
 
-unidade panmítica (uma unidade reprodutiva) =
-	um grupo de indivíduos intercruzantes ao acaso
+**_pool_ gênico** --  (Unidade genética) Todos os alelos em um ou mais loci gênicos.
+	
+**deme** -- (Unidade ecológica ou demográfica) Grupo de indivíduos em uma dada área geográfica.
 
-amostra (uma unidade numérica) =
-	um subconjunto estatístico de tamanho N
+**unidade panmítica** -- (Unidade reprodutiva) Grupo de indivíduos intercruzantes ao acaso.
+
+**amostra** -- (Unidade estatística) Subconjunto de tamanho $n$ de uma população de tamanho $N$, a partir do qual  parâmatros são estimados, e inferências são feitas. 
+
+:::
+
+<br>
 
 ## Frequências genotípicas
 
-Considere um locus autossômico diplóide com dois alelos, sem dominância. 
+Considere um locus autossômico diplóide com dois alelos $A$ e $a$, sem dominância. 
 
-Em uma amostra N, deixe ser o número de indivíduos dos genótipos:
+Em uma população $N$, deixe ser o número de indivíduos dos genótipos $AA = x$, $Aa = y$ e $aa = z$, de forma que:
 
-AA = x
+$$x + y + z = N$$
 
-Aa = y
+<br>
 
-aa = z
+Logo, as frequências genotípicas observadas na população serão:
 
-Assim,
+- para os homozigotos dominates ($AA$):
 
-N = x + y + z
+$$f_{Obs}(AA) = \frac{x}{N}$$
 
-Logo, as frequências genotípicas,
+<br>
 
-f(AA) = x / N
+- para os heterozigotos ($Aa$):
 
-f(Aa) = y / N
+$$f_{Obs}(Aa) = \frac{y}{N}$$
 
-f(aa) = z / N
+<br>
+
+- e para os homozigotos recessivos ($aa$):
+
+$$f_{Obs}(aa) = \frac{z}{N}$$
+
+<br>
 
 ## Frequências alélicas
 
 As frequências alélicas (ou gênicas) podem ser definidas como:
 
-f(A)   =   (2x + y) / 2N   =   f(AA) + ½ f(Aa)   =    p
+\begin{equation} 
+f(A) = p = \frac{2x + y}{2N} = f(AA) + ½f(Aa)
+  (\#eq:freqp)
+\end{equation} 
 
-f(a)   =   (2z + y) / 2N   =   f(aa) + ½ f(Aa)   =    q
+<br>
 
-Assim,
+e
 
+\begin{equation} 
+f(a) = q = \frac{2z + y}{2N} = f(aa) + ½f(Aa)
+  (\#eq:freqq)
+\end{equation} 
+
+<br>
+
+De forma que,
+
+\begin{equation} 
 p + q = 1
+  (\#eq:poolgene)
+\end{equation} 
 
-As frequências p e q são intercambiáveis em relação aos alelos A e a.
-	
-O q é geralmente usado para alelos raros, recessivos ou desvantajosos.
+<br>
 
-Mas perceba que:
-	comum e raro são propriedades estatísticas
-	dominante e recessivo são propriedades fenotípicas
-	vantajoso e desvantajoso são propriedades evolutivas
+As frequências $p$ e $q$ são convenções, intercambiáveis em relação aos alelos $A$ e $a$.
 	
+Contudo, $q$ é geralmente usado para alelos recessivos, mutantes, raros ou desvantajosos.
+
+<br>
+
+:::quote
+
+**Dominante e recessivo** -- propriedades fenotípicas.
+
+**Selvagem e mutante** -- propriedades ontológicas.
+
+**Comum e raro** -- propriedades estatísticas.
+
+**Vantajoso e desvantajoso** -- propriedades evolutivas.
+
+:::
+
+<br>
+
+\linebreak
+
 ## Generalização das frequências genotípicas e alélicas
 
 Considere um locus autossômico diplóide com X alelos, sem dominância. 
