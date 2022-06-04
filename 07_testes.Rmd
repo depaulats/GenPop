@@ -455,8 +455,29 @@ Apesar do teste de Fisher fornecer valores de $p$ exatos, alguns autores argumen
 
 .\linebreak
 
-### Exercício 1 -- Traça de tigre escarlate
+### Exercício 1 -- Ervilhas de Mendel
 
+Considere as frequências fenotípicas dos traços das ervilhas ervilhas (_Pisum_ spp.) estudadas por Mendel mostradas na Figura \@ref(fig:peatrait).
+
+.\linebreak
+```{r peatrait, echo = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Os sete traços fenotípicos das ervilhas (_Pisum_ spp.) cujos padrões de herança foram estudados por Mendel ([1865](http://www.mendelweb.org/Mendel.html))."} 
+knitr::include_graphics("figs/mendel_pea_traits.svg")
+```
+.\linebreak
+
+- Os traços fenotípicos das ervilhas de Mendel seguem as esperadas frequências mendelianas ($3:1$)?
+
+.\linebreak
+
+### Exercício 2 -- Traça de tigre escarlate
+
+.\linebreak
+```{r callimorpha, echo = FALSE, fig.align = 'center', out.width = "800px", fig.cap="Polimorfismo de cor na asa da traça de tigre escarlate (_Callimorpha dominula_)."} 
+knitr::include_graphics('https://slideplayer.com/slide/13126368/79/images/7/Figure+26.2+Early+evolutionary+geneticists+were+forced+to+rely+on+the+phenotypic+traits+that+had+a+simple+genetic+basis..jpg')
+```
+.\linebreak
+
+Considere os dados abaixo:
 
 .\linebreak
 ```{r tableA09, echo = FALSE}
@@ -466,11 +487,22 @@ A09bb <- c(5)
 A09N <- c(1612)
 data0901 <- data.frame(A09BB, A09Bb, A09bb, A09N)
 rownames(data0901) <- c("**Indivíduos**")
-knitr::kable(data0901, align = "cccc", booktabs = TRUE, col.names = c("BB", "Bb", "bb", "N"), caption = "Polimorfismo de cor na asa da traça de tigre escarlate (_Callimorpha dominula_).", "html")
+knitr::kable(data0901, align = "cccc", booktabs = TRUE, col.names = c("BB", "Bb", "bb", "N"), caption = "Frequências genotípicas observadas em uma população de traça de tigre escarlate (_Callimorpha dominula_) para o polimorfismos de cor das asas.", "html")
 ```
 .\linebreak
 
-### Exercício 2 -- Urso de Kermode
+- Essa população segue o princípio de Hardy-Weinberg?
+
+.\linebreak
+
+### Exercício 3 -- Urso de Kermode
+
+.\linebreak
+```{r kermode, echo = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Um filhote de urso de Kermode se aconchegando com seu irmão (Colúmbia Britânica)."} 
+knitr::include_graphics('https://img.peapix.com/eeb011ee41bc4e618088779e9a966227.jpg?attachment&modal')
+```
+.\linebreak
+
 
 Nas ilhas costeiras da Colúmbia Britânica, muitos membros da subespécie urso de preto, urso de Kermode (_Ursus americanus kermodei_), são brancos (tradicionalmente chamados de ursos espirituais). 
 
@@ -492,7 +524,7 @@ knitr::kable(data0902, align = "cccc", booktabs = TRUE, col.names = c("AA", "AG"
 
 .\linebreak
 
-### Exercício 3 -- Equilíbrio de LIgação
+### Exercício 4 -- Equilíbrio de LIgação
 
 O estudo de uma variação em um sítio de restrição na região do gene álcool desidrogenase ($Adh$) em moscas-da-fruta capturadas em um mercado na Holanda ([Cross & Birley 1986](https://doi.org/10.1007/BF00499097)) revelou os seguintes dados:
 
@@ -506,9 +538,11 @@ knitr::kable(data0903, "html", align = "cc", col.names = c("$EcoRI^+$", "$EcoRI^
 ```
 .\linebreak
 
+- Qual o coeficiente de desequilíbrio de ligação normalizado (D’) entre os dois pares de alelos?
+
 - As duas regiões gênicas estão em equilíbrio de ligação?
 
-- Qual o coeficiente de desequilíbrio de ligação normalizado (D’) entre os dois pares de alelos?
+
 
 
 

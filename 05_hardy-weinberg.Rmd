@@ -453,6 +453,13 @@ Note que estas são frequências relativas, que determinam as frequências alél
 
 .\linebreak
 
+:::quote
+**Acoplamento gênico** -- Quando ambos os alelos do tipo selvagem estão em um cromossomo homólogo, e ambos os alelos mutantes estão no outro (_e. g._, $AB/ab$). Também conhecido como configuração _cis_. 
+
+**Repulsão gênica** -- Quando um alelo do tipo selvagem e um alelo mutante estão em um cromossomo homólogo, e o oposto no outro (_e. g._, $Ab/aB$). Também conhecido como configuração _trans_. 
+:::
+
+
 ### Desequilíbrio de ligação
 
 O termo desequilíbrio de ligação (LD, _linkage disequilibrium_) foi usado pela primeira vez por Lewontin e Kojima ([1960](https://doi.org/10.1111/j.1558-5646.1960.tb03113.x)) para indicar uma associação não-aleatória de alelos em dois ou mais loci. 
@@ -513,14 +520,9 @@ E assim, partir desta, temos:
 
 $$D_{t} = \left( 1-r \right)^t D_{0}$$
 
-y = (((1-0)^x)*0.25)
-
-0.25*((1-0)^x)
-
 .\linebreak
 
 Logo, se $t → ∞$, então $D_t → 0$.
-
 
 .\linebreak
 ```{r LDgraph, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "600px", fig.cap="O coeficiente de desequilíbrio de ligação ($D$) ao longo das gerações sob diferentes taxas de recombinação ($r$)."} 
@@ -567,6 +569,7 @@ A ocorrência de LD pode refletir...
 
 Como esses fatores afetam o equilíbrio de ligação entre um par particular de locos ou em uma região genômica depende das taxas locais de recombinação.
 
+.\linebreak
 
 ### coeficiente de desequilíbrio de ligação normalizado
 
@@ -574,7 +577,7 @@ O coeficiente de desequilíbrio de ligação ($D$) nem sempre é uma medida conv
 
 Isso dificulta a comparação do nível de desequilíbrio de ligação entre diferentes pares de alelos.
 
-O coeficiente D pode ser normalizado dividindo-o pela diferença máxima teórica entre as frequências de haplótipos observadas e esperadas como:
+O coeficiente de desequilíbrio de ligação pode ser normalizado ($D'$) se dividindo-o pela diferença máxima teórica entre as frequências de haplótipos observadas e esperadas como:
 
 \begin{equation}
 D’ = \frac{D}{D_{max}}
@@ -582,7 +585,6 @@ D’ = \frac{D}{D_{max}}
 \end{equation}
 
 .\linebreak
-
 
 Onde,
 
@@ -597,21 +599,60 @@ D_{max} = \min
 
 .\linebreak
 
+Uma forma alternativa de expressar o desequilíbrio de ligação entre pares de alelos é por meio do coeficiente de correlação ($r^2$), expresso como:
 
+$$r^2 = \frac{(D_{AB}^2)}{p_A(1-p_A)p_B(1-p_B)}$$
 
+.\linebreak
 
+As medidas do coeficiente de correlação $r^2$ e do coeficiente de correlação normalizado $D'$ têm seus intervalos de valores limitados, e não abrangem todos os valores de $0$ a $1$ para todos os pares de loci.
 
+O valor máximo de $r^2$ depende das frequências alélicas nos dois loci sendo comparados, e só pode variar totalmente de $0$ a $1$ quando as frequências alélicas em ambos os loci são iguais, $p_A = p_B$, se $D_{AB} > 0$, ou quando as frequências alélicas têm a relação $p_{A}=1-P_{B}$, se $D_{AB} < 0$.
 
+Por sua vez, $D'$ sempre poderá ter um valor máximo teórico de $1$, mas seu valor mínimo para dois loci será igual a $| r |$ para esses loci.
 
+.\linebreak
 
+:::reference
+Lewontin 1964. doi: [10.1093/genetics/49.1.49](https://doi.org/10.1093/genetics/49.1.49)
 
+Hill & Robertson 1968. [10.1007/BF01245622](https://doi.org/10.1007/BF01245622) 
 
+Slatkin 2008. [10.1038/nrg2361](https://doi.org/10.1038/nrg2361)
+
+Smith 2020. doi: [10.1016/j.tpb.2020.02.005](https://doi.org/10.1016/j.tpb.2020.02.005)
+:::
+
+.\linebreak
+
+O desequilíbrio de ligação decai com a distância física entre as regiões gênicas, como mostrado pela correlação (r2) nos diversos cromossomos do sorgo (Sorghum bicolor). Perceba que raças tradicionais (RT) apresentam uma taxa de decaimento maior do que linhagens endocruzantes recombinantes (LER). 
+
+.\linebreak
+```{r LDsorghum, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="O desequilíbrio de ligação decai com a distância física entre as regiões gênicas, como mostrado pela correlação (r2) nos diversos cromossomos do sorgo (Sorghum bicolor). Perceba que raças tradicionais (RT) apresentam uma taxa de decaimento maior do que linhagens endocruzantes recombinantes (LER). Ver Hu et al [2019](https://doi.org/10.3835/plantgenome2018.06.0044)."} 
+knitr::include_graphics('https://acsess.onlinelibrary.wiley.com/cms/asset/72da5c7a-6c96-450d-b9d1-20d9e0bad237/tpg2plantgenome2018060044-fig-0003-m.jpg')
+```
+.\linebreak
+
+:::quote
+**Linhagem Endocruzante Recombinante** -- Um organismo com cromossomos que incorporam um conjunto essencialmente permanente de eventos de recombinação entre cromossomos herdados de duas ou mais linhagens endocruzantes.
+
+**Raça Tradicional** -- Uma variedade tradicional domesticada e adaptada localmente de uma espécie de animal ou planta que se desenvolveu ao longo do tempo, por meio da adaptação ao seu ambiente natural e cultural de agricultura ou pastorícia, e devido ao isolamento de outras populações da espécie.
+:::
+
+.\linebreak
 
 ## Exercícios
 
 .\linebreak
 
-### Exercício 1 -- As ervilhas de Mendel
+### Exercício 1 -- ???
+
+
+
+
+
+
+
 
 .\linebreak
 
@@ -671,6 +712,24 @@ Assumindo que esta deficiência seja devida a um único gene autossômico recess
 
 .\linebreak
 
-### Exercício 4 -- 
+### Exercício 4 -- Ligação gênica em SNPs
+
+Considere os sequintes Polimorfismos de nucleotídeo único (SNPs) abaixo:
+
+.\linebreak
+```{r tableD05, echo = FALSE}
+D05SNP1 <- c("A/A", "A/G", "A/G", "A/A", "G/G")
+D05SNP2 <- c("C/C", "C/T", "C/T", "C/C", "T/T")
+D05SNP3 <- c("A/A", "A/A", "A/C", "A/A", "C/C")
+D05SNP4 <- c("T/T", "G/G", "T/G", "G/G", "G/T")
+dataD05 <- data.frame(D05SNP1, D05SNP2, D05SNP3, D05SNP4)
+rownames(dataD05) <- c("**Indivíduo 1**", "**Indivíduo 2**", "**Indivíduo 3**", "**Indivíduo 4**", "**Indivíduo 5**")
+knitr::kable(dataD05, align = "cccc", booktabs = TRUE, col.names = c("SNP1", "SNP2", "SNP3", "SNP4"), caption = "Polimorfismos de nucleotídeo único (SNPs) em quatro loci gênicos hipotéticos.", "html")
+```
+.\linebreak
+
+- Qual é o coeficiente de desequilíbrio de ligação normalizado ($D'$) entre esses loci gênicos?
+
+- Qual é o coeficiente de correlação ($r^2$) entre esses loci gênicos?
 
 
