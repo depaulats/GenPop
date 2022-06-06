@@ -376,9 +376,11 @@ p + q = 1
 <p><br></p>
 <p><span class="math display">\[f(A_2)  = a_2 =   f(A_2A_2) + ½ f(A_1A_2) + … + ½ f(A_2A_i)\]</span></p>
 <p><br></p>
+<p><span class="math display">\[...\]</span></p>
+<p><br></p>
 <p><span class="math display">\[f(A_i)  = a_i =   f(A_iA_i) + ½ f(A_1A_i) + … + ½ f(A_iA_i)\]</span>
 De forma que:</p>
-<p><span class="math display">\[a_1 + a_2 + ... + a_i = 1\]</span></p>
+<p><span class="math display">\[a_1 \ + a_2 \ + \ ... \ + \ a_i = 1\]</span></p>
 <p><br></p>
 </div>
 <div id="heterozigoside" class="section level2 hasAnchor" number="4.5">
@@ -387,13 +389,9 @@ De forma que:</p>
 <p>Dada as definições de frequências <a href="variação-e-diversidade-genética.html#frequências-genotípicas">genotípicas</a> e <a href="variação-e-diversidade-genética.html#frequências-genotípicas">alélicas</a>, para um lócus bialélico, temos que:</p>
 <p><span class="math display">\[H_{Obs} = \frac{y}{N} = f(Aa) =  1 – f(AA) – f(aa)\]</span></p>
 <p><br></p>
-<p>Esta estimativa é muito útil para avaliarmos a diversidade genética de uma população natural, uma vez que:</p>
-<p><span class="math display">\[↑{heterozigosidade}  \ ⇒  \ ↑{variabilidade \ genética}\]</span></p>
-<p><br></p>
-<p><span class="math display">\[↓{heterozigosidade}  \ ⇒  \ ↓{variabilidade \ genética}\]</span></p>
-<p><br></p>
-<p>O valores de heterozigosidade observada (<span class="math inline">\(H_{Obs}\)</span>) são geralmente contrastados com o os valores de heterozigosidade dada a expectativa do <a href="princípio-de-hardy-weinberg.html#princípio-de-hardy-weinberg">princípio de Hardy-Weinberg</a>.</p>
-<p>A heterozigosidade esperada (<span class="math inline">\(H_{Esp}\)</span>) pode ser interpretada como a probabilidade de que um indivíduo seja heterozigoto para um determinado locus gênico.</p>
+<p>Esta estimativa é muito útil para avaliarmos a diversidade genética de uma população natural, uma vez que uma alta heterozigosidade quase sempre está relacionada a uma alta variabilidade genética, e vice-versa.</p>
+<p>A heterozigosidade observada (<span class="math inline">\(H_{Obs}\)</span>) é geralmente contrastada com a expectativa da heterozigosidade dado o <a href="princípio-de-hardy-weinberg.html#princípio-de-hardy-weinberg">princípio de Hardy-Weinberg</a>.</p>
+<p>Essa heterozigosidade esperada (<span class="math inline">\(H_{Esp}\)</span>) pelo princípio de Hardy-Weinberg pode ser interpretada como a probabilidade de que um indivíduo seja heterozigoto para um determinado locus gênico (ver <a href="princípio-de-hardy-weinberg.html#modelando-o-princípio-de-hardy-weinberg">Modelando o princípio de Hardy-Weinberg</a>{Modelando o princípio de Hardy-Weinberg})</p>
 <p>Sendo,</p>
 <p><span class="math display">\[H_{Esp} = 2pq =  1 – p^2 – q^2\]</span></p>
 <p><br></p>
@@ -402,7 +400,6 @@ De forma que:</p>
 </div>
 <div id="diversidade-gênética" class="section level2 hasAnchor" number="4.6">
 <h2><span class="header-section-number">4.6</span> Diversidade gênética<a href="variação-e-diversidade-genética.html#diversidade-gênética" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>A diferença em um ou alguns traços do organismo é chamada de variabilidade.</p>
 <p>Na linguagem comum, a variabilidade genética e a diversidade genética são erroneamente consideradas sinônimos entre si.</p>
 <p>A <strong>variabilidade genética</strong> é a variação nos alelos dos genes ou nas sequências de DNA no pool gênico de uma espécie ou população. Isso se expressa em termos de formas alternativas no fenótipo.</p>
 <p>A <strong>Diversidade genética</strong>, por outro lado, é um termo amplo que abrange toda a variabilidade que ocorre entre os diferentes genótipos relacionados a uma única espécie ou entre espécies.</p>
@@ -410,7 +407,7 @@ De forma que:</p>
 <p>A diversidade genética pode ser medida contando o número de genes diferentes em um pool gênico. Por sua vez, a variação genética só pode ocorrer e não pode ser medida, podendo ser considerada como unidade básica da diversidade genética.</p>
 <p><br></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:setXeY"></span>
-<img src="figs/setZ_ABCD.svg" alt="Exemplo de dois conjuntos com diferentes níveis de variação e diversidade. Quando há variação nos elementos ($A$, $B$, $C$ e $D$), o conjunto ($X$ e $Y$) é mais diverso" width="300px" />
+<img src="figs/setZ_ABCD.svg" alt="Exemplo de dois conjuntos com diferentes níveis de variação e diversidade. Quando há variação nos elementos ($A$, $B$, $C$ e $D$), o conjunto ($X$ e $Y$) é mais diverso" width="400px" />
 <p class="caption">
 Figure 4.3: Exemplo de dois conjuntos com diferentes níveis de variação e diversidade. Quando há variação nos elementos (<span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, <span class="math inline">\(C\)</span> e <span class="math inline">\(D\)</span>), o conjunto (<span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span>) é mais diverso
 </p>
@@ -433,25 +430,30 @@ Figure 4.3: Exemplo de dois conjuntos com diferentes níveis de variação e div
 </colgroup>
 <thead>
 <tr class="header">
-<th align="center"><span class="math inline">\({População \ 1} = \left\{ AA, BB, CC, DD \right\}\)</span></th>
-<th align="center"><span class="math inline">\({População \ 2} = \left\{ AB, AB, AB, AB \right\}\)</span></th>
+<th align="center">População 2</th>
+<th align="center">População 2</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td align="center"><span class="math inline">\(P_1 = \left\{ AA, BB, CC, DD \right\}\)</span></td>
+<td align="center"><span class="math inline">\(P_2 = \left\{ AB, AB, AB, AB \right\}\)</span></td>
+</tr>
+<tr class="even">
 <td align="center"><span class="math inline">\(f(A) = f(B) = f(C) = f(D) = 0.25\)</span></td>
 <td align="center"><span class="math inline">\(f(A) = f(B) = 0.50\)</span></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="center"><span class="math inline">\(H_{Obs} = 0.00\)</span></td>
 <td align="center"><span class="math inline">\(H_{Obs} = 1.00\)</span></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="center"><span class="math inline">\(H_{Esp} = 1 – 4(0.25)^2 = 0.75\)</span></td>
 <td align="center"><span class="math inline">\(H_{Esp} = 1 – 2(0.5)^2 = 0.50\)</span></td>
 </tr>
 </tbody>
 </table>
+<p><br></p>
 <p>Assim, se uma população apresenta um excesso de homozigotos para diferentes alelos, isso leva a uma baixa heterozigosidade observada, mas não afeta a heterozigose esperada.</p>
 <p><br></p>
 </div>
