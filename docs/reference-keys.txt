@@ -3,6 +3,7 @@ fig:mendeliano
 eq:freqp
 eq:freqq
 eq:poolgene
+fig:setXeY
 fig:amoebahw
 fig:hardy
 fig:weinberg
@@ -92,7 +93,7 @@ genética-mendeliana-times-genética-de-populações
 frequências-genotípicas
 frequências-alélicas
 generalização-das-frequências-genotípicas-e-alélicas
-heterozigoside-e-homozigosidade
+heterozigoside
 diversidade-gênética
 exemplo
 determinantes-da-diversidade-genética

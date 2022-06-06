@@ -125,101 +125,127 @@ Contudo, $q$ é geralmente usado para alelos recessivos, mutantes, raros ou desv
 
 ## Generalização das frequências genotípicas e alélicas
 
-Considere um locus autossômico diplóide com X alelos, sem dominância. 
+Considere um locus autossômico diplóide com $i$ alelos, sem dominância. 
 
-As frequências genotípicas,
+As frequências genotípicas observadas são:
 
-f(AA) = N1 / N
+$$f_{Obs}(A_1A_1) = \frac{N_{A_1A_1}}{N}$$
 
-f(AB) = N2 / N
+<br>
 
-f(BB) = N3 / N
-…
+$$f_{Obs}(A_1A_2) = \frac{N_{A_1A_2}}{N}$$
+<br>
 
-	As frequências alélicas,
+$$...$$
 
-	f(A)  = a =   f(AA) + ½ f(AB) + … + ½ f(AX)
+<br>
 
-	f(B)  = b =   f(BB) + ½ f(AB) + … + ½ f(BX)
-	…
+$$f_{Obs}(A_1A_i) = \frac{N_{A_1A_i}}{N}$$
+<br>
 
-	f(X)  = x =   f(XX) + ½ f(AX) + … + ½ f(X-1X)
-	
+$$...$$
+<br>
 
-	Sendo,
-		a + b + … + x = 1
+$$f_{Obs}(A_iA_i) = \frac{N_{A_iA_i}}{N}$$
 
-## Heterozigoside e Homozigosidade
+As frequências alélicas serão:
 
-A heterozigosidade observada (HObs) é a freqüência de heterozigotos em um dado locus gênico.
+$$f(A_1)  = a_1 =   f(A_1A_1) + ½ f(A_1A_2) + … + ½ f(A_1A_i)$$
 
-Logo, 
+<br>
 
-HObs   =   y / N   =   f(Aa)   =   1 – f(AA) – f(aa)
+$$f(A_2)  = a_2 =   f(A_2A_2) + ½ f(A_1A_2) + … + ½ f(A_2A_i)$$
 
+<br>
 
-Esta estimativa é muito útil para avaliarmos a diversidade genética de uma população natural, uma vez que:
+$$...$$
+
+<br>
+
+$$f(A_i)  = a_i =   f(A_iA_i) + ½ f(A_1A_i) + … + ½ f(A_iA_i)$$
+De forma que:
+
+$$a_1 \ + a_2 \ + \ ... \ + \ a_i = 1$$
+
+<br>
+
+## Heterozigoside
+
+A heterozigosidade (ou heterozigose) observada ($H_{Obs}$) de uma população é a freqüência de heterozigotos em um dado locus gênico.
+
+Dada as definições de frequências [genotípicas][Frequências genotípicas] e [alélicas][Frequências genotípicas], para um lócus bialélico, temos que:  
+
+$$H_{Obs} = \frac{y}{N} = f(Aa) =  1 – f(AA) – f(aa)$$
+
+<br>
+
+Esta estimativa é muito útil para avaliarmos a diversidade genética de uma população natural, uma vez que uma alta heterozigosidade quase sempre está relacionada a uma alta variabilidade genética, e vice-versa.
  
-alta heterozigosidade ⇒ muita variabilidade genética 
 
-baixa heterozigosidade ⇒ pouca variabilidade genética. 
+A heterozigosidade observada ($H_{Obs}$) é geralmente contrastada com a expectativa da heterozigosidade dado o [princípio de Hardy-Weinberg][Princípio de Hardy-Weinberg].
 
-O nível de heterozigosidade observada (HObs) é comparado com o nível de heterozigosidade esperada (HEsp) de acordo com o equilíbrio de Hardy-Weinberg (Aula 04). 
+Essa heterozigosidade esperada ($H_{Esp}$) pelo princípio de Hardy-Weinberg pode ser interpretada como a probabilidade de que um indivíduo seja heterozigoto para um determinado locus gênico (ver [Modelando o princípio de Hardy-Weinberg]{Modelando o princípio de Hardy-Weinberg})
 
-A heterozigosidade esperada (HEsp) pode ser interpretada como a probabilidade de que um indivíduo seja heterozigoto para um determinado locus gênico.
+Sendo,
 
-Assim,
-HEsp   =   2pq   =   1 – p2 – q2
+$$H_{Esp} = 2pq =  1 – p^2 – q^2$$
 
+<br>
 
-Se HObs ≠ HEsp forças evolutivas podem estar atuando nas populações.
+Quando $H_{Obs} \neq H_{Esp}$, forças evolutivas podem estar atuando nas populações.
+
+<br>
 
 ## Diversidade gênética
 
-A diferença em um ou alguns traços do organismo é chamada de variabilidade. 
-
 Na linguagem comum, a variabilidade genética e a diversidade genética são erroneamente consideradas sinônimos entre si. 
 
-A variabilidade genética é a variação nos alelos dos genes ou nas sequências de DNA no pool gênico de uma espécie ou população. Isso se expressa em termos de formas alternativas no fenótipo. 
+A **variabilidade genética** é a variação nos alelos dos genes ou nas sequências de DNA no pool gênico de uma espécie ou população. Isso se expressa em termos de formas alternativas no fenótipo. 
 
-Diversidade genética, por outro lado, é um termo amplo que abrange toda a variabilidade que ocorre entre os diferentes genótipos relacionados a uma única espécie ou entre espécies. 
+A **Diversidade genética**, por outro lado, é um termo amplo que abrange toda a variabilidade que ocorre entre os diferentes genótipos relacionados a uma única espécie ou entre espécies. 
 
-Ou como definido por Swingland (2013), é a variação de características hereditárias presentes em uma população da mesma espécie; podendo essa variação se expressar na forma de alterações na morfologia, anatomia, comportamento fisiológico ou características bioquímicas. 
+Como definido por Swingland ([2013](https://doi.org/10.1016/B978-0-12-384719-5.00009-5)), diversidade genética é a variação de características hereditárias presentes em uma população da mesma espécie; podendo essa variação se expressar na forma de alterações na morfologia, anatomia, comportamento fisiológico ou características bioquímicas. 
 
-A diversidade genética pode ser medida contando o número de genes diferentes em um pool genético. Por sua vez, a variação genética só pode ocorrer e não pode ser medida,  podendo ser considerada como unidade básica da diversidade genética. 
+A diversidade genética pode ser medida contando o número de genes diferentes em um pool gênico. Por sua vez, a variação genética só pode ocorrer e não pode ser medida, podendo ser considerada como unidade básica da diversidade genética. 
 
-Quando há variação nos elementos ...
+<br>
 
-... o conjunto é diverso.
+```{r setXeY, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="Exemplo de dois conjuntos com diferentes níveis de variação e diversidade. Quando há variação nos elementos ($A$, $B$, $C$ e $D$), o conjunto ($X$ e $Y$) é mais diverso"} 
+knitr::include_graphics("figs/setZ_ABCD.svg")
+```
 
-Alguns autores consideram a diversidade genética (D) de um locus como a sua heterozigosidade esperada (HEsp), i.e., a proporção de genótipos heterozigotos esperados sob o princípio de Hardy-Weinberg (próximo capítulo).
+<br>
 
-A diversidade genética é composta de dois parâmetros:
+Alguns autores consideram a diversidade genética ($D$) de um locus como a heterozigosidade esperada (H_{Esp}) daquele lócus, _i. e._, a proporção de genótipos heterozigotos dada a expectativa do princípio de Hardy-Weinberg.
 
-	1) o número de alelos na população
-	2) a abundância (ou uniformidade) dos alelos
+Nesse sentido, a diversidade genética é composta de dois parâmetros:
+
+- o número de alelos na população, e
+
+- a abundância (ou uniformidade) dos alelos.
+
+<br>
 
 ### Exemplo 
 
 Se uma população consiste em um excesso de homozigotos para diferentes alelos, isso leva a uma baixa heterozigose observada, mas não afeta a heterozigose esperada.
 
-População 1 = {AA, BB, CC, DD} 
+| População 2                                         |  População 2                                        |
+|                    :---:                            |                   :---:                             |
+| $P_1 = \left\{ AA, BB, CC, DD \right\}$             | $P_2 = \left\{ AB, AB, AB, AB \right\}$             |
+| $f(A) = f(B) = f(C) = f(D) = 0.25$                  | $f(A) = f(B) = 0.50$                                |
+| $H_{Obs} = 0.00$                                    | $H_{Obs} = 1.00$                                    |
+| $H_{Esp} = 1 – 4(0.25)^2 = 0.75$                    | $H_{Esp}  = 1 – 2(0.5)^2 = 0.50$                    |
 
-f(A) = f(B) = f(C) = f(D) = 0,25
+<br>
 
-HObs  = 0,00
-	 
-HEsp  = 1 – 4∙(0,25)2   = 0,75
+Assim, se uma população apresenta um excesso de homozigotos para diferentes alelos, isso leva a uma baixa heterozigosidade observada, mas não afeta a heterozigose esperada.
 
-População 2 = {AB, AB, AB, AB}
-
-f(A) = f(B) = 0,50
-
-HObs  = 1,00
-	 
-HEsp  = 1 – 2∙(0,5)2   = 0,50
+<br>
 
 ## Determinantes da diversidade genética
+
+<br>
 
 ### Extratégias reprodutivas
 

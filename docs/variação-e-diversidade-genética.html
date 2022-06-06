@@ -136,7 +136,7 @@
 <li class="chapter" data-level="4.2" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#frequências-genotípicas"><i class="fa fa-check"></i><b>4.2</b> Frequências genotípicas</a></li>
 <li class="chapter" data-level="4.3" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#frequências-alélicas"><i class="fa fa-check"></i><b>4.3</b> Frequências alélicas</a></li>
 <li class="chapter" data-level="4.4" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#generalização-das-frequências-genotípicas-e-alélicas"><i class="fa fa-check"></i><b>4.4</b> Generalização das frequências genotípicas e alélicas</a></li>
-<li class="chapter" data-level="4.5" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#heterozigoside-e-homozigosidade"><i class="fa fa-check"></i><b>4.5</b> Heterozigoside e Homozigosidade</a></li>
+<li class="chapter" data-level="4.5" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#heterozigoside"><i class="fa fa-check"></i><b>4.5</b> Heterozigoside</a></li>
 <li class="chapter" data-level="4.6" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#diversidade-gênética"><i class="fa fa-check"></i><b>4.6</b> Diversidade gênética</a>
 <ul>
 <li class="chapter" data-level="4.6.1" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#exemplo"><i class="fa fa-check"></i><b>4.6.1</b> Exemplo</a></li>
@@ -358,68 +358,107 @@ p + q = 1
 </div>
 <div id="generalização-das-frequências-genotípicas-e-alélicas" class="section level2 hasAnchor" number="4.4">
 <h2><span class="header-section-number">4.4</span> Generalização das frequências genotípicas e alélicas<a href="variação-e-diversidade-genética.html#generalização-das-frequências-genotípicas-e-alélicas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Considere um locus autossômico diplóide com X alelos, sem dominância.</p>
-<p>As frequências genotípicas,</p>
-<p>f(AA) = N1 / N</p>
-<p>f(AB) = N2 / N</p>
-<p>f(BB) = N3 / N
-…</p>
-<pre><code>As frequências alélicas,
-
-f(A)  = a =   f(AA) + ½ f(AB) + … + ½ f(AX)
-
-f(B)  = b =   f(BB) + ½ f(AB) + … + ½ f(BX)
-…
-
-f(X)  = x =   f(XX) + ½ f(AX) + … + ½ f(X-1X)
-
-
-Sendo,
-    a + b + … + x = 1</code></pre>
+<p>Considere um locus autossômico diplóide com <span class="math inline">\(i\)</span> alelos, sem dominância.</p>
+<p>As frequências genotípicas observadas são:</p>
+<p><span class="math display">\[f_{Obs}(A_1A_1) = \frac{N_{A_1A_1}}{N}\]</span></p>
+<p><br></p>
+<p><span class="math display">\[f_{Obs}(A_1A_2) = \frac{N_{A_1A_2}}{N}\]</span>
+<br></p>
+<p><span class="math display">\[...\]</span></p>
+<p><br></p>
+<p><span class="math display">\[f_{Obs}(A_1A_i) = \frac{N_{A_1A_i}}{N}\]</span>
+<br></p>
+<p><span class="math display">\[...\]</span>
+<br></p>
+<p><span class="math display">\[f_{Obs}(A_iA_i) = \frac{N_{A_iA_i}}{N}\]</span></p>
+<p>As frequências alélicas serão:</p>
+<p><span class="math display">\[f(A_1)  = a_1 =   f(A_1A_1) + ½ f(A_1A_2) + … + ½ f(A_1A_i)\]</span></p>
+<p><br></p>
+<p><span class="math display">\[f(A_2)  = a_2 =   f(A_2A_2) + ½ f(A_1A_2) + … + ½ f(A_2A_i)\]</span></p>
+<p><br></p>
+<p><span class="math display">\[f(A_i)  = a_i =   f(A_iA_i) + ½ f(A_1A_i) + … + ½ f(A_iA_i)\]</span>
+De forma que:</p>
+<p><span class="math display">\[a_1 + a_2 + ... + a_i = 1\]</span></p>
+<p><br></p>
 </div>
-<div id="heterozigoside-e-homozigosidade" class="section level2 hasAnchor" number="4.5">
-<h2><span class="header-section-number">4.5</span> Heterozigoside e Homozigosidade<a href="variação-e-diversidade-genética.html#heterozigoside-e-homozigosidade" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>A heterozigosidade observada (HObs) é a freqüência de heterozigotos em um dado locus gênico.</p>
-<p>Logo,</p>
-<p>HObs = y / N = f(Aa) = 1 – f(AA) – f(aa)</p>
+<div id="heterozigoside" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Heterozigoside<a href="variação-e-diversidade-genética.html#heterozigoside" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A heterozigosidade (ou heterozigose) observada (<span class="math inline">\(H_{Obs}\)</span>) de uma população é a freqüência de heterozigotos em um dado locus gênico.</p>
+<p>Dada as definições de frequências <a href="variação-e-diversidade-genética.html#frequências-genotípicas">genotípicas</a> e <a href="variação-e-diversidade-genética.html#frequências-genotípicas">alélicas</a>, para um lócus bialélico, temos que:</p>
+<p><span class="math display">\[H_{Obs} = \frac{y}{N} = f(Aa) =  1 – f(AA) – f(aa)\]</span></p>
+<p><br></p>
 <p>Esta estimativa é muito útil para avaliarmos a diversidade genética de uma população natural, uma vez que:</p>
-<p>alta heterozigosidade ⇒ muita variabilidade genética</p>
-<p>baixa heterozigosidade ⇒ pouca variabilidade genética.</p>
-<p>O nível de heterozigosidade observada (HObs) é comparado com o nível de heterozigosidade esperada (HEsp) de acordo com o equilíbrio de Hardy-Weinberg (Aula 04).</p>
-<p>A heterozigosidade esperada (HEsp) pode ser interpretada como a probabilidade de que um indivíduo seja heterozigoto para um determinado locus gênico.</p>
-<p>Assim,
-HEsp = 2pq = 1 – p2 – q2</p>
-<p>Se HObs ≠ HEsp forças evolutivas podem estar atuando nas populações.</p>
+<p><span class="math display">\[↑{heterozigosidade}  \ ⇒  \ ↑{variabilidade \ genética}\]</span></p>
+<p><br></p>
+<p><span class="math display">\[↓{heterozigosidade}  \ ⇒  \ ↓{variabilidade \ genética}\]</span></p>
+<p><br></p>
+<p>O valores de heterozigosidade observada (<span class="math inline">\(H_{Obs}\)</span>) são geralmente contrastados com o os valores de heterozigosidade dada a expectativa do <a href="princípio-de-hardy-weinberg.html#princípio-de-hardy-weinberg">princípio de Hardy-Weinberg</a>.</p>
+<p>A heterozigosidade esperada (<span class="math inline">\(H_{Esp}\)</span>) pode ser interpretada como a probabilidade de que um indivíduo seja heterozigoto para um determinado locus gênico.</p>
+<p>Sendo,</p>
+<p><span class="math display">\[H_{Esp} = 2pq =  1 – p^2 – q^2\]</span></p>
+<p><br></p>
+<p>Quando <span class="math inline">\(H_{Obs} \neq H_{Esp}\)</span>, forças evolutivas podem estar atuando nas populações.</p>
+<p><br></p>
 </div>
 <div id="diversidade-gênética" class="section level2 hasAnchor" number="4.6">
 <h2><span class="header-section-number">4.6</span> Diversidade gênética<a href="variação-e-diversidade-genética.html#diversidade-gênética" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>A diferença em um ou alguns traços do organismo é chamada de variabilidade.</p>
 <p>Na linguagem comum, a variabilidade genética e a diversidade genética são erroneamente consideradas sinônimos entre si.</p>
-<p>A variabilidade genética é a variação nos alelos dos genes ou nas sequências de DNA no pool gênico de uma espécie ou população. Isso se expressa em termos de formas alternativas no fenótipo.</p>
-<p>Diversidade genética, por outro lado, é um termo amplo que abrange toda a variabilidade que ocorre entre os diferentes genótipos relacionados a uma única espécie ou entre espécies.</p>
-<p>Ou como definido por Swingland (2013), é a variação de características hereditárias presentes em uma população da mesma espécie; podendo essa variação se expressar na forma de alterações na morfologia, anatomia, comportamento fisiológico ou características bioquímicas.</p>
-<p>A diversidade genética pode ser medida contando o número de genes diferentes em um pool genético. Por sua vez, a variação genética só pode ocorrer e não pode ser medida, podendo ser considerada como unidade básica da diversidade genética.</p>
-<p>Quando há variação nos elementos …</p>
-<p>… o conjunto é diverso.</p>
-<p>Alguns autores consideram a diversidade genética (D) de um locus como a sua heterozigosidade esperada (HEsp), i.e., a proporção de genótipos heterozigotos esperados sob o princípio de Hardy-Weinberg (próximo capítulo).</p>
-<p>A diversidade genética é composta de dois parâmetros:</p>
-<pre><code>1) o número de alelos na população
-2) a abundância (ou uniformidade) dos alelos</code></pre>
+<p>A <strong>variabilidade genética</strong> é a variação nos alelos dos genes ou nas sequências de DNA no pool gênico de uma espécie ou população. Isso se expressa em termos de formas alternativas no fenótipo.</p>
+<p>A <strong>Diversidade genética</strong>, por outro lado, é um termo amplo que abrange toda a variabilidade que ocorre entre os diferentes genótipos relacionados a uma única espécie ou entre espécies.</p>
+<p>Como definido por Swingland (<a href="https://doi.org/10.1016/B978-0-12-384719-5.00009-5">2013</a>), diversidade genética é a variação de características hereditárias presentes em uma população da mesma espécie; podendo essa variação se expressar na forma de alterações na morfologia, anatomia, comportamento fisiológico ou características bioquímicas.</p>
+<p>A diversidade genética pode ser medida contando o número de genes diferentes em um pool gênico. Por sua vez, a variação genética só pode ocorrer e não pode ser medida, podendo ser considerada como unidade básica da diversidade genética.</p>
+<p><br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:setXeY"></span>
+<img src="figs/setZ_ABCD.svg" alt="Exemplo de dois conjuntos com diferentes níveis de variação e diversidade. Quando há variação nos elementos ($A$, $B$, $C$ e $D$), o conjunto ($X$ e $Y$) é mais diverso" width="300px" />
+<p class="caption">
+Figure 4.3: Exemplo de dois conjuntos com diferentes níveis de variação e diversidade. Quando há variação nos elementos (<span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, <span class="math inline">\(C\)</span> e <span class="math inline">\(D\)</span>), o conjunto (<span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span>) é mais diverso
+</p>
+</div>
+<p><br></p>
+<p>Alguns autores consideram a diversidade genética (<span class="math inline">\(D\)</span>) de um locus como a heterozigosidade esperada (H_{Esp}) daquele lócus, <em>i. e.</em>, a proporção de genótipos heterozigotos dada a expectativa do princípio de Hardy-Weinberg.</p>
+<p>Nesse sentido, a diversidade genética é composta de dois parâmetros:</p>
+<ul>
+<li><p>o número de alelos na população, e</p></li>
+<li><p>a abundância (ou uniformidade) dos alelos.</p></li>
+</ul>
+<p><br></p>
 <div id="exemplo" class="section level3 hasAnchor" number="4.6.1">
 <h3><span class="header-section-number">4.6.1</span> Exemplo<a href="variação-e-diversidade-genética.html#exemplo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Se uma população consiste em um excesso de homozigotos para diferentes alelos, isso leva a uma baixa heterozigose observada, mas não afeta a heterozigose esperada.</p>
-<p>População 1 = {AA, BB, CC, DD}</p>
-<p>f(A) = f(B) = f(C) = f(D) = 0,25</p>
-<p>HObs = 0,00</p>
-<p>HEsp = 1 – 4∙(0,25)2 = 0,75</p>
-<p>População 2 = {AB, AB, AB, AB}</p>
-<p>f(A) = f(B) = 0,50</p>
-<p>HObs = 1,00</p>
-<p>HEsp = 1 – 2∙(0,5)2 = 0,50</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><span class="math inline">\({População \ 1} = \left\{ AA, BB, CC, DD \right\}\)</span></th>
+<th align="center"><span class="math inline">\({População \ 2} = \left\{ AB, AB, AB, AB \right\}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(f(A) = f(B) = f(C) = f(D) = 0.25\)</span></td>
+<td align="center"><span class="math inline">\(f(A) = f(B) = 0.50\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(H_{Obs} = 0.00\)</span></td>
+<td align="center"><span class="math inline">\(H_{Obs} = 1.00\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(H_{Esp} = 1 – 4(0.25)^2 = 0.75\)</span></td>
+<td align="center"><span class="math inline">\(H_{Esp} = 1 – 2(0.5)^2 = 0.50\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Assim, se uma população apresenta um excesso de homozigotos para diferentes alelos, isso leva a uma baixa heterozigosidade observada, mas não afeta a heterozigose esperada.</p>
+<p><br></p>
 </div>
 </div>
 <div id="determinantes-da-diversidade-genética" class="section level2 hasAnchor" number="4.7">
 <h2><span class="header-section-number">4.7</span> Determinantes da diversidade genética<a href="variação-e-diversidade-genética.html#determinantes-da-diversidade-genética" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
 <div id="extratégias-reprodutivas" class="section level3 hasAnchor" number="4.7.1">
 <h3><span class="header-section-number">4.7.1</span> Extratégias reprodutivas<a href="variação-e-diversidade-genética.html#extratégias-reprodutivas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Animais estrategistas r são mais polimórficos do que estrategistas K. A correlação negativa apresentada no gráfico reflete uma compensação entre a quantidade e o tamanho da prole.</p>
