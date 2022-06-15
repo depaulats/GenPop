@@ -2,13 +2,60 @@
 
 Histórico da Genética de Populações
 
+<br> 
+
 ## Evolução do pensamento evolutivo
+
+<br> 
 
 ## Linha do tempo
 
+| Ano        | Evento |
+| :--:       | :---   |
+| 1809       | **Jean-Baptiste Lamarck** publica _Philosophie Zoologique_, apresentando novas idéias sobre o processo de evolução. |
+| 1830--1833 | **Charles Lyell** publica _Principles of Geology_, popularizando a idéia de que a Terra foi moldada por frças de ação lenta que ainda operam hoje em dia. |
+| 1831--1836 | **Charles Darwin** serve como naturalista a bordo do HMS Beagle. |
+| 1836--1858 | Darwin desenvolve suas idéias de que a evolução pode explicar a descendência com modificação por seleção natural. |
+| 1844       | O primeiro ensaio de Darwin sobre seleção natural. |
+| 1858       | Darwin e **Alfred Russel Wallace** publicam artigos sobre seleção natural. |
+| 1859       | Darwin publica _On the Origin of Species_ |
+| 1858--1900 | O estudo da evolução dominado por estudos de palentologia, desenvolvimento e morfologia |
+| 1866       | **Gregor Mendel** publica seu artigo sobre a genética das ervilhas. Haeckel publica seu diagrama da Árvore da Vida. |
+| 1900       | Redescoberta do trabalho de Mendel por múltiplos pesquisadores. |
+| 1900--1918 | Os princícios básica da herança genética são estabelecidos. |
+| 1908       | **T. H. Morgan** estabelece seus laboratório de _Drosophila_ na Universidade da Colúmbia; esclarece o papel dos cromossomos na herança. |
+| 1918--1936 | Fundação da genética de populações por **R. A. Fisher**, **J. B. S. Haldane** e **S. Wright**. |
+| 1936--1947 | "Síntese Moderna" da genética e evolução. |
+| 1937       | **Theodosius Dobzhansky** publica _Genetics and the Origin of Species_. |
+| 1942       | **Ernst Mayr** publica _Systematics and the Origin of Species_. |
+| 1944       | **G. G. Simpson** publica _Tempo and Mode in Evolution_. |
+| 1947--1960 | Êmfase ne evolução dos cromossomos, modelos de especiação, variação geográfica, continuação do desenvolvimento da genética de populações. |
+| 1950       | **Willi Hennig** publica _Grundzüge einer Theorie der phylogenetischen Systematik_. **G. L. Stebbins** publica _Variation and Evolution in Plants_. |
+| 1953       | **James Watson** e **Francis Crick** publicam seu artigo sobre a estrutura do DNA. |
+| 1959       | **Bernhard Rensch** publica _Evolution above the Species Level_. |
+| 1960--1980 | Introdução dos estudos moleculares da variação; desenvolvimento de métodos quantitativos explícitos para análise filogenética; avanços no conhecimento sobre seleção sexual, evolução do comportamento e co-evolução. |
+| 1962       | **Emile Zuckerkandl** e **Linus Pauling** publicam sua hipótese de relógio molecular. |
+| 1968       | **Motoo Kimura** publica sua teoria neutra da evolução molecular. |
+| 1970       | **Susumu Ohno** publica _Evolution by Gene Duplication_. |
+| 1975       | **E. O. Wilson** publica _Sociobiology_. |
+| 1975--1979 | Desenvolvimento métodos rápidos para o sequênciamento de DNA. |
+| 1980--Presente | Aumento exponencial dos estudos de evolução, especialmente evolução molecular, aplicações filogenéticas, estudos experimentais e processos evolutivos do  desenvolvimento. |
+
+<br> 
+
 ## Principais pensadores
 
-### Darwin
+<br> 
+
+### Charles Darwin
+
+<br>
+
+```{r darwin, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="[Charles Darwin](https://en.wikipedia.org/wiki/Charles_Darwin) (1809--1882),naturalista inglês."} 
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Charles_Darwin_seated_crop.jpg/640px-Charles_Darwin_seated_crop.jpg')
+```
+
+<br>
 
 Charles Darwin (1809-1882)
 
@@ -16,7 +63,17 @@ Sobre a Origem das Espécies por Meio da Seleção Natural, ou a Preservação d
 
 As espécies evoluem gradualmente por seleção natural.
 
-### Mendel
+<br> 
+
+### Gregor Mendel
+
+<br>
+
+```{r mendel, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="[Gregor Mendel](https://en.wikipedia.org/wiki/Gregor_Mendel) (1822--1884), monge austríaco."} 
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Gregor_Mendel_2.jpg/640px-Gregor_Mendel_2.jpg')
+```
+
+<br>
 
 Gregor Mendel (1822-1884)
 
@@ -24,21 +81,33 @@ Experimentos em Hibridização de Plantas (1865)
 
 Leis da hereditariedade.
 
-### Redescoberta de Mendel
+<br> 
 
-Erich von Tschermak (1871-1962)
-
-Hugo de Vries (1848-1935)
-
-Carl Correns (1864-1933)
-
-William J. Spillman (1863-1931)
+### A redescoberta de Mendel
 
 Redescoberta do trabalho de Mendel no início do século XX.
 
 Confirmação da hereditariedade particulada 30 anos depois.
 
-### Fisher 
+- Erich von Tschermak (1871-1962)
+
+- Hugo de Vries (1848-1935)
+
+- Carl Correns (1864-1933)
+
+- William J. Spillman (1863-1931)
+
+<br>
+
+### Ronald A. Fisher 
+
+<br>
+
+```{r fischer, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="[Ronald A. Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher) (1890--1962), matemático britânico."} 
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/a/aa/Youngronaldfisher2.JPG')
+```
+
+<br>
 
 Sir Ronald A. Fisher (1890-1962)
 
@@ -46,7 +115,17 @@ A teoria genética da seleção natural (1930)
 
 Genética quantitativa
 
-### Haldane 
+<br> 
+
+### J. B. S. Haldane 
+
+<br>
+
+```{r haldane, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="[J. B. S. Haldane](https://en.wikipedia.org/wiki/J._B._S._Haldane) (1892--1964), geneticista britânico."} 
+knitr::include_graphics('https://www.marxists.org/portugues/haldane/img/haldane.jpg')
+```
+
+<br>
 
 J. B. S. Haldane (1892-1964)
 
@@ -56,7 +135,17 @@ Melanismo industrial em Biston betularia
 
 “Na consideração da evolução, uma teoria matemática pode ser considerada como um tipo de andaime dentro do qual uma teoria razoavelmente segura, expressável em palavras, pode ser construída.” (Perspect Biol Med 1964; 7:343-359)
 
-### Wrigth
+<br> 
+
+### Sewall Wright
+
+<br>
+
+```{r wright, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="[Sewall Wright](https://en.wikipedia.org/wiki/Sewall_Wright) (1889--1988), geneticista estadunidense."} 
+knitr::include_graphics('https://cdn.britannica.com/78/41278-004-5D2683FD/Sewall-Wright-1965.jpg')
+```
+
+<br>
 
 Sewall Wright (1889-1988)
 

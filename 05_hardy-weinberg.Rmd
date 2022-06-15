@@ -23,12 +23,13 @@ Brewer & Gardner 2013. doi: [10.1525/abt.2013.75.7.6](https://doi.org/10.1002/bi
 
 ## HIstórico e premissas
 
-.\linebreak
+<br>
+
 ```{r hardy, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="[Geoffrey H. Hardy](https://en.wikipedia.org/wiki/G._H._Hardy) (1877-1947), matemático inglês."} 
 knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/3/35/Ghhardy%4072.jpg')
 ```
 
-.\linebreak
+<br>
 
 ```{r weinberg, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="[Wilhelm Weinberg]() (1862-1937), médico alemão."} 
 knitr::include_graphics('https://assets.sutori.com/user-uploads/image/5ebbe88a-0058-4307-bf1b-8236eb3793ca/0d0f9915fa3e3b8b91c7584f4b7fe06c.jpeg')
