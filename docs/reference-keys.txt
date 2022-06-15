@@ -1,3 +1,15 @@
+fig:microevolucao
+fig:mitose
+fig:birthdeath
+fig:coalascencia
+fig:poptime
+fig:demepool
+fig:mutacao
+fig:cromossomo
+fig:meiose
+fig:simplephenotype
+fig:dynamicphenotype
+fig:fitness
 fig:liguus
 fig:mendeliano
 eq:freqp
@@ -54,7 +66,7 @@ eq:autozigotos
 eq:alozigotos
 introdução
 o-dna-pode-replicar
-o-dna-pode-replicar-1
+o-dna-pode-mutar-e-recombinar
 o-dna-interage-com-o-ambiente-e-produz-fenótipos
 histórico
 evolução-do-pensamento-evolutivo

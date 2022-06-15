@@ -1,19 +1,52 @@
 # Introdução
 
-A Genética de Populações é uma subárea da Genética que lida com as diferenças dentro e entre as populações.
+A **Genética de Populações** é uma subárea da Genética que lida com as diferenças dentro e entre as populações.
 
 Compreende a origem, quantidade e distribuição da variação genética presente em populações de organismos, ao longo do tempo e do espaço.
 
 A variação dos genes no tempo e no espaço constitui a base fundamental da mudança evolutiva (microevolução).
 
+Para tal, se baseia em três premissas básicas:
+
+- O DNA pode replicar
+
+- O DNA pode mutar e recombinar
+
+- O DNA interage com o ambiente e produz fenótipos
+
+<br>
+
+```{r microevolucao, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="A genética de populações estuda a microevolução - mudanças na frequência de um gene em uma população"} 
+knitr::include_graphics("figs/microevolution_scheme.svg")
+```
+
+<br>
+
+:::reference
+
+Hartl DL, Clark AG. 2010. Princípios de Genética de Populações. 4ª Ed. Artmed, Porto Alegre. 660 p. ISBN: 978-0-87893-3082
+
+:::
+
+<br>
+
 ## O DNA pode replicar
 
-A replicação do DNA permite que um gene, ou sequência de nucleotídeos: 
-	seja passado de uma geração para a próxima, e  
-	exista em múltiplas cópias em diferentes indivíduos.
+A replicação do DNA permite que um gene, ou sequência de nucleotídeos:
 
+- seja passado de uma geração para a próxima; e 
 
-Os gene possuem uma existência no tempo e no espaço que transcende os indivíduos que temporariamente os carregam.
+- exista em múltiplas cópias em diferentes indivíduos.
+
+<br>
+
+```{r mitose, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A informação genética contida no DNA é duplicado pela replicação (esquerda) e dividido entre as novas células pela mitose (esquerda)"} 
+knitr::include_graphics("figs/mitose_replicacao.svg")
+```
+
+<br>
+
+Os genes possuem uma existência no tempo e no espaço que transcende os indivíduos que temporariamente os carregam.
 
 
 A existência biológica dos genes no tempo e no espaço é a base física da evolução.
@@ -26,13 +59,45 @@ Os genes carregados pelos indivíduos são virtualmente imortais por meio da rep
 
 A evolução é possível somente no nível de uma população se reproduzindo, e não no nível dos indivíduos contidos dentro da população.
 
+<br>
+
+```{r birthdeath, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="A replicação do DNA permite que a informação genética persista para além da existência dos indvidíduos que a carrega."} 
+knitr::include_graphics("figs/nascimento_morte_replicacao.svg")
+```
+
+<br>
+
 A genética de populações pode operar em diferentes níveis hierárquicos populacionais dentro de uma espécie.
 
 Comumente ela foca a população local, ou deme, uma coleção intercruzante de indivíduos da mesma espécie que vivem em proximidade suficiente para compartilhar um sistema de cruzamento.
 
+<br>
+
+```{r coalascencia, echo = FALSE, fig.align = 'center', out.width="500px", fig.cap="A continuidade da informação genética ao longo das linhagens reprodutivas, e seus processos de diversificação, apresenta uma estrutura hierárquica temporal - árvore de relações evolutivas. Redesenhado de Leaché et al. ([2009](https://doi.org/10.1073/pnas.0906380106))."} 
+knitr::include_graphics("figs/coalascencia.svg")
+```
+
+<br>
+
 Uma vez que o deme é uma população que se reproduz, indivíduos são continuamente substituídos por nascimentos e mortes, mas a população local é uma entidade dinâmica que persiste através do espaço e do tempo além dos indivíduos que temporariamente à compõe.
 
-Associada a cada população local de indivíduos há uma população local de genes correspondentes, chamada fundo gênico (pool gene) .
+<br>
+
+```{r poptime, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="As relações do tipo ancestral-descendente entre indivíduos de uma geração com a outra determinam a continuidade temporal das populações."}
+knitr::include_graphics("figs/population_relation_time.svg")
+```
+
+<br>
+
+:::quote
+
+**Sistema de cruzamento** -- Conjunto de regras por meio das quais indivíduos se organizam para reproduzir sexuadamente.
+
+:::
+
+<br>
+
+Associada a cada população local de indivíduos há uma população local de genes correspondentes, chamada **fundo gênico** (_gene pool_).
 
 O pool gênico pode ter duas definições:
 
@@ -42,15 +107,23 @@ Teoricamente = a população potencial de gametas produzidos por todos os indiv�
 
 O pool gênico associado a um deme é descrito mensurando os números e frequências de vários tipos de genes ou combinações de genes no pool.
 
-Assim, 
+<br>
 
->Evolução é a mudança ao longo do tempo nas frequências dos genes ou combinações destes no pool gênico.
+```{r demepool, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="O _pool_ gênico das populações como representação teórica do número de alelos carregados coletivamente pelos indivíduos  de um deme."}
+knitr::include_graphics("figs/deme_pool_gene.svg")
+```
 
-A evolução é uma propriedade emergente de populações de indivíduos que se reproduzem, que não se manifesta nos próprios indivíduos que as compõem.
+<br>
 
+:::quote
 
+**Evolução** -- Mudança ao longo do tempo nas frequências dos genes ou combinações destes no _pool_ gênico das populações. A evolução é uma propriedade emergente das populações de indivíduos que se intercruzantes, que não se manifesta nos próprios indivíduos que as compõem.
 
-## O DNA pode replicar
+:::
+
+<br>
+
+## O DNA pode mutar e recombinar
 
 Evolução requer mudança, que somente pode ocorrer quando existem alternativas. 
 
@@ -58,11 +131,27 @@ Um prérequisito necessário para a evolução é a diversidade genética, cuja 
 
 Há diferentes formas de mutações, as quais criam diversidade na população de genes presentes no pool gênico.
 
+<br>
+
+```{r mutacao, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="Principais mutações no nível do gene e suas alterações em uma região codificante."}
+knitr::include_graphics("figs/mutation.svg")
+```
+
+<br>
+
 Mutações criam diversidade alélica.
 
 Alelos são simplesmente formas alternativas de um gene. 
 
 Em alguns casos são focadas regiões do DNA que podem não ser um gene no sentido clássico. O termo haplótipo se refere a uma forma alternativa (sequência específica de nucleotídeos) entre as cópias homólogas de uma região definida do DNA, ou locus gênico.
+
+<br>
+
+```{r cromossomo, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="O lócus (ou região) gênico em um cromossomo e sua variação alélica."}
+knitr::include_graphics("figs/chromosome_locus_alelle.svg")
+```
+
+<br>
 
 A diversidade genética criada pela mutação pode ser amplificada por mecanismos genéticos de recombinação e diploidia. 
 
@@ -74,7 +163,13 @@ Mas pode incluir eventos não-meióticos que criam novas combinações de genes 
 
 A distinção entre mutação e recombinação muitas vezes é borrada uma vez que uma recombinação pode ocorrer dentro de um gene de dessa forma criar novos alelos ou haplótipos.
 
+<br>
 
+```{r meiose, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="Os principais eventos da meiose e os eventos de recombinação genética (variabilidade)."}
+knitr::include_graphics("figs/chromosome_segregation.svg")
+```
+
+<br>
 
 ## O DNA interage com o ambiente e produz fenótipos
 
@@ -84,45 +179,73 @@ No passado, os genes podiam ser identificados somente por meio de seus efeitos n
 
 O gene era nomeado pelo seu efeito fenotípico, levando a uma equação simplória e errônea entre genes e fenótipos.
 
+<br>
+
+```{r simplephenotype, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="A relação simplória entre genótipo e fenótipo, tipicamente evocada no imaginário leigo."}
+knitr::include_graphics("figs/genotype_phenotype_oversimplified.svg")
+```
+
+<br>
+
+
 As informações contidas no DNA controlam processos dinâmicos, que sempre ocorrem em um contexto ambiental.
 
 É a interação da informação genética com as variáveis ambientais através dos processos de desenvolvimento que geram os fenótipos.
 
-Fenótipos emergem de processos dinâmicos geneticamente influenciados cujos resultados dependem de um contexto ambiental.
+Fenótipos emergem de processos dinâmicos geneticamente influenciados cujos resultados dependem de um contexto ambiental
+
+<br>
+
+```{r dynamicphenotype, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="A relação dinâmica entre genótipo e fenótipo, a partir da qual associações diretas nem sempre são possíveis."}
+knitr::include_graphics("figs/genotype_phenotype_dynamics.svg")
+```
+
+<br>
 
 Considere os seguintes fenótipos de um organismo:
 
-a) Estar-vivo x Estar-morto: o fenótipo da viabilidade (a habilidade do indivíduo de sobreviver ao ambiente)
+- Ser viável $\times$ ser inviável -- o fenótipo da **viabilidade**, a capacidade de um zigoto de completar seu desenvolvimento até a forma adulta.
 
-Uma vez estando vivo,
+Uma vez sendo viável:
 
-b) Ter reproduzido x não ter reproduzido (a habilidade de um indivíduo vivo de encontrar um parceiro e reproduzir no ambiente)
+- Estar-vivo $\times$ Estar-morto -- o fenótipo da **sobrevivência**, a habilidade do indivíduo adulto de sobreviver ao ambiente até se reproduzir.
 
-Uma vez estando vivo, e tendo se reproduzido,
+Uma vez sendo viável e estando vivo:
 
-c) O número de descententes produzidos (o número de descentes que um indivíduo vivo e reprodutivo pode produzir no ambiente)
+- Produzir gametas $\times$ não produzir gametas -- o fenótipo da **fecundidade**, a habilidade de um indivíduo adulto vivo de prozuzir gametas capazes de gerar um zigoto.
 
-Sobrevivência, sucesso reprodutivo e fecundidade são três fenótipos fundamentais na teoria microevolutiva uma vez que coletivamente determinam as chances de um indivíduo passar seu DNA para a próxima geração no contexto do ambiente.
+Uma vez sendo viável, estando vivo e produzindo gametas:
 
-O fenótipo coletivo, produzido pelos três componentes, é chamado de adaptabilidade reprodutiva (ou fitness).
+- Gerar uma prole $\times$ não gerar uma prole -- o fenótipo da **fertilidade**, o número de descentes que um indivíduo adulto vivo e fecundo pode produzir no ambiente.
 
-O fenótipo do fitness une a premissa 3 (o DNA interage com o ambiente e produz fenótipos) com a premissa 1 (o DNA pode replicar). 
+Viabilidade, sobrevivência, fecundidade e fertilidade são quatro fenótipos fundamentais na teoria microevolutiva, uma vez que coletivamente determinam as chances de um indivíduo passar seu DNA para a próxima geração no contexto do ambiente.
 
-O DNA somente pode se replicar no contexto de um indivíduo sobrevivendo em um ambiente, reproduzindo em um ambiente, e produzindo descentes em um ambiente.
+O fenótipo coletivo, produzido pelos quatro componentes, é chamado de **adaptabilidade reprodutiva** (ou _fitness_).
 
-Esta unificação de premissas implica que a probabilidade da replicação do DNA é determinada por como o genótipo interage com o ambiente.
+<br>
 
-Numa população de indivíduos geneticamente diversos, possível devido a premissa 2 (o DNA pode mutar e recombinar), é possível que alguns genótipos irão interagir com o ambiente de forma a produzir mais ou menos atos de replicação com o DNA que outros genótipos.
+```{r fitness, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="A adaptabilidade (ou _fitness_) reprodutiva é mede a viabilidade, sobrevivência, fecundidade e fertilidade diferencial dos genótipos."}
+knitr::include_graphics("figs/fitness_scheme.svg")
+```
 
-Assim, o ambiente influencia as chances relativas para vários genótipos de replicar seu DNA.
+<br>
 
-A influência do ambiente (premissa 3) sobre a replicação do DNA (premissa 1) em populações geneticamente variáveis (premissa 2) é a base da seleção natural, e uma das maiores características emergentes da microevolução: adaptação ao ambiente.
+O fenótipo do _fitness_ une a **premissa 3** ("o DNA interage com o ambiente e produz fenótipos") com a **premissa 1** ("o DNA pode replicar"). 
 
- Adaptação = atributos e características dos organismos que os ajuda a sobreviver, reproduzir e deixar descendentes em ambientes específicos.
+O DNA pode se replicar somente no contexto de um indivíduo viável, sobrevivendo em um ambiente, fecundo e fértil o suficiente para passar seus genes para a próxima geração.
 
+Esta unificação de premissas implica que a probabilidade da replicação do DNA é determinada pela interação do genótipo com o ambiente.
 
+Em uma população de indivíduos geneticamente diversos, possível devido a **premissa 2** ("o DNA pode mutar e recombinar"), é possível que algumas variantes genotípicas irão interagir com o ambiente de forma a produzir mais ou menos atos de replicação de DNA do que outras variantes.
 
+Assim, o ambiente influencia as chances relativas dos vários genótipos de replicar seu DNA.
 
+A influência do ambiente (**premissa 3**) sobre a replicação do DNA (**premissa 1**) em populações geneticamente variáveis (**premissa 2**) é a base da seleção natural, e uma das maiores características emergentes da microevolução: a adaptação ao ambiente.
 
+:::quote
+
+**Adaptação** -- atributos e características dos organismos que os ajuda a sobreviver, reproduzir e deixar descendentes em ambientes específicos.
+
+:::
 
 
