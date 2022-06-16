@@ -10,6 +10,41 @@ Histórico da Genética de Populações
 
 ## Linha do tempo
 
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1809**
+  </div>
+  <div class="flex-item-mid">
+  **Jean-Baptiste Lamarck** publica _Philosophie Zoologique_, apresentando novas idéias sobre o processo de evolução.
+  </div>
+  <div class="flex-item-right">
+```{r TLlamarck2, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Jean-Baptiste_de_Lamarck.jpg/640px-Jean-Baptiste_de_Lamarck.jpg')
+```
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1830--1833**
+  </div>
+  <div class="flex-item-mid">
+  **Charles Lyell** publica _Principles of Geology_, popularizando a idéia de que a Terra foi moldada por frças de ação lenta que ainda operam hoje em dia.
+  </div>
+  <div class="flex-item-right">
+```{r TLlyell, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://maestrovirtuale.com/wp-content/uploads/2019/10/Sir_Charles_Lyell-e1544295605323.jpg')
+```
+  </div>
+</div>
+
+
+
+
+
+<br>
+
 | Ano        | Evento |
 | :--:       | :---   |
 | 1809       | **Jean-Baptiste Lamarck** publica _Philosophie Zoologique_, apresentando novas idéias sobre o processo de evolução. |

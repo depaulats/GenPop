@@ -14,7 +14,44 @@ pre code {
 }
 
 
-/* -----------div tips------------- */
+/* -----------Flexbox------------- */
+
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item-left {
+  background-color: #FFFFFF;
+  padding: 5px;
+  flex: 15%;
+  text-align: left;
+}
+
+.flex-item-mid {
+  background-color: #FFFFFF;
+  padding: 5px;
+  flex: 70%;
+  text-align: left;
+}
+
+.flex-item-right {
+  background-color: #FFFFFF;
+  padding: 5px;
+  flex: 15%;
+  text-align: center;
+}
+
+
+
+/* -----------divs------------- */
+
+
 
   div.quote {
     padding: 1em;
