@@ -1,12 +1,12 @@
 # Princípio de Hardy-Weinberg
 
-.\linebreak
+<br>
 
 ```{r amoebahw, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A natureza probabilística princípio de Hardy-Weinberg torna a análise de cenários evolutivos enganosamente difícil para os alunos, bem como para professores que não são especificamente treinado em análises quantitativas. Veja também este [vídeo](https://www.youtube.com/watch?v=7S4WMwesMts)"}
 knitr::include_graphics("figs/amoeba_sisters_HW.png")
 ```
 
-.\linebreak
+<br>
 
 
 :::reference

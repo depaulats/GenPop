@@ -1,68 +1,122 @@
 # Polimorfismo Genéticos e Marcadores Moleculares
 
-Uma mutação é uma variante nova, tendo aparecido recentemente na linha germinativa.
+<br>
 
-Uma variantes é dita mutante quando direta e abertamente causa uma doença e/ou reduz a aptidão.
+```{r Erythrura, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="Uma pequena região gênica controla as mudanças de cor na cabeça dos tentilhões de Gould (_Erythrura gouldiae_). Ilustrado em Des Murs ([1849](https://www.biodiversitylibrary.org/item/109479#page/9/mode/1up)). Ver também Toomey et al. ([2018](https://doi.org/10.1098/rspb.2018.1788)) e Kim et al. ([2019](https://doi.org/10.1038/s41467-019-09806-6))"}
+knitr::include_graphics('https://ia800502.us.archive.org/BookReader/BookReaderImages.php?id=Iconographieorn00DesMA&itemPath=%2F26%2Fitems%2FIconographieorn00DesMA&server=ia800502.us.archive.org&page=n318_w525')
+```
 
-Um polimorfismo é uma variante ancestral em uma população, herdada intacta dos parentais.
+<br>
 
-Uma variante é dita mutante polimórfica quando não causa doença, é neutra, ou influência levemente características quantitativas.
+## Mutações $\times$ Polimorfismos 
+
+Uma **mutação** é uma variante nova, tendo aparecido recentemente na linhagem germinativa.
+
+Uma variante é dita mutante quando direta e abertamente causa uma doença e/ou reduz a aptidão.
+
+Um **polimorfismo** é uma variante ancestral em uma população, herdada intacta dos parentais.
+
+Uma variante é dita polimórfica quando não causa doença, é neutra, ou influência levemente características quantitativas.
 
 Uma mutação em uma população pode se tornar um polimorfismo em outra se conferir uma vantagem seletiva e aumentar em freqüência.
 
-Arbitrariamente, uma variante de DNA com frequência em uma população
-> 1% = polimorfismo
-<1% = mutação
+Arbitrariamente, mutações e polimorfismos são definidos com base nas suas frequêcnias em uma população, onde:
 
-### Genética mendeliana
+$${Mutação} < 1 \%$$
 
-(Fenótipo x Genótipo)
+<br>
 
-Restrita a um pequeno número de espécies modelo.
+$${Polimorfismo} > 1 \%$$
 
-N° reduzido de características disponíveis (normalmente associadas à características deletérias).
+<br>
 
-Polimorfismos genéticos = A ocorrência em uma população (ou entre populações) de várias formas fenotípicas associadas a alelos de um gene ou homólogos de um cromossomo.
+A **Genética mendeliana** aborda associações entre Fenótipo e Genótipo, estando restrita a um pequeno número de espécies modelo. Nesta somente um número reduzido de características estão disponíveis para análise por meio de **polimoefismos genéticos**, que comumente estão associadas à características recessivas deletérias.
 
-### Genética molecular
+A **Genética molecular** envolve a análise direta da informação genética, e pode abranger todas as espécies. Nesta está disponível um número enorme de **marcadores moleculares**, permitindo a análise de regiões expressas e não expressas do genoma.
 
-(Análise genética direta)
+:::quote
 
-Pode abranger todas as espécies.
+**Polimorfismos genéticos** -- A ocorrência em uma população (ou entre populações) de várias formas fenotípicas associadas a alelos de um gene ou homólogos de um cromossomo.
 
-N° enorme de marcadores disponíveis permitindo a análise de regiões expressas e não expressas do genoma.
+**Marcadores moleculares** -- Todo e qualquer fenótipo molecular oriundo de um gene expresso (RNA ou proteína) ou de um segmento de DNA que corresponde a regiões codificantes ou não de um genoma.
 
-Marcadores moleculares = Todo e qualquer fenótipo molecular oriundo de um gene expresso (RNA ou proteína) ou de um segmento de DNA que corresponde a regiões codificantes ou não de um genoma.
+:::
+
+<br>
+
+```{r polymarker, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="As informações genéticas usadas em estudos populacionais podem ser obtidas a partir de polimorfismos genéticos e marcadores moleculares."}
+knitr::include_graphics("figs/polimorfismos_marcadores.svg")
+```
+
+<br>
+
 
 ## Dinâmica evolutiva e ecológica dos polimorfismos
 
+<br>
+
+```{r evodinamica, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="Ao longo das geraçoes (tempo), variantes genéticas podem surgir (I) e desaparecer (III), enquanto sao (IV) ou não (II) estruturadas / influenciadas pelos ambientes (espaço)."}
+knitr::include_graphics("figs/dinamicas_evolutivas_tempo.svg")
+```
+
+<br>
+
+I. Surgimento de novas variantes genéticas (Mutação).
+
+II. Variantes restritas geograficamente se dispersam ao longo dos ambientes (fluxo gênico).
+
+III. Perda de variantes genéticas (deriva / seleção).
+
+IV. Organização da variação ao longo de um gradiente ambiental / geográfico (seleção).
+
+
 ## Evolução dos polimorfismos em diferentes escalas
 
-Microevolução = Polimorfismos dizem respeito a variantes encontradas em populações de uma mesma espécie, e são utilizadas em genética de populações.
+Na microevolução, marcadores moleculares dizem respeito a variantes genéticas encontradas em populações de uma mesma espécie, sendo utilizadas em genética de populações. 
 
-Evolução dentro de um ramo evolutivo (Anagênese)
+Na macroevolução, esses marcadores correspodem a regiões gênicas homólogas  (ortólogas) de diferentes espécies, que acúmulam mutações ao longo do tempo, e podem ser utilizados em filogenética.
 
-Macroevolução = Polimorfismos encontrados em regiões gênicas homólogas de diferentes espécies (ortólogas) podem ser utilizados em filogenética.
+<br>
 
-Evolução entre ramos evolutivos (Cladogênese)
+:::quote 
+
+**Anagênese** -- Evolução dentro de um ramo evolutivo.
+
+**Cladogênese** -- Evolução entre ramos evolutivos.
+
+::: 
+
+<br>
+
+```{r genearvore, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="As mudanças evolutivas ao longo das gerações (anagênese) em relação ao processo de diversificação (cladogênese)."}
+knitr::include_graphics("figs/genealogy_concepts.svg")
+```
+
+<br>
 
 A evolução de sequências de DNA, e dos produtos por elas codificados, é produto dos padrões e taxas de mudança ao longo do tempo evolutivo.
 
-Assim, diferentes questões podem e devem ser abordadas por diferentes regiões gênicas. 
+Assim, diferentes questões podem e devem ser abordadas por diferentes marcadores moleculares. 
 
 Estudos multi-loci evidenciam conflitos e corroboram congruências entre as histórias evolutivas das diferentes regiões gênicas.
+
+```{r geneconflito, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="Diferentes marcadores 'contam' diferentes histórias evolutivas, que nem sempre estão de acordo com o processo de diversificação."}
+knitr::include_graphics("figs/genealogy_conflict.svg")
+```
+
+<br>
 
 ## Padrões de herança
 
 A localização genômica de uma região gênica pode determinar diferentes padrões de herança.
 
-### Herança biparental
+- Herança biparental
 
 Autossomos
 Regiões pseudo-autossômicas
 Co-dominantes
 
-### Herança uniparental
+- Herança uniparental
 
 DNAmt (matrilinear)
 Cromossomo Y (patrilinear)
@@ -76,9 +130,18 @@ Regiões codificantes ou funcionais sofrem uma alta pressão seletiva sobre muta
 
 Regiões não-codificantes ou não-funcionais tendem a apresentar um rápido acúmulo de mutações devido às baixas pressões seletivas (neutros).
 
-Regiões que apresentam sequências repetidas in tandem podem evoluir por slippage na replicacão.
+Regiões que apresentam sequências repetidas _in tandem_ podem evoluir por derrapagem (_slippage_) da replicacão.
 
 ## Marcadores moleculares
+
+A seguir são apresentados os principais marcadores utilizados em genética de populações.
+
+Sua popularidade ao longo dos anos está diretamente relacionado ao custo das metodologias de análise.
+
+```{r markeryear, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="Popularidade ao longo dos anos de diferentes marcadores moleculares na genética de populações desde o surgimento da biologia molecular, no século XX, até o início do século XXI. Ver Schlötterer ([2004](https://doi.org/10.1038/nrg1249)) e Seeb et al. ([2011](https://doi.org/10.1111/j.1755-0998.2010.02979.x))"}
+knitr::include_graphics("figs/markers_year.svg")
+```
+
 
 ### Aloenzimas e Isoenzimas
 

@@ -39,42 +39,351 @@ knitr::include_graphics('https://maestrovirtuale.com/wp-content/uploads/2019/10/
   </div>
 </div>
 
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1831--1836**
+  </div>
+  <div class="flex-item-mid">
+  Charles Darwin serve como naturalista a bordo do **HMS Beagle**.
+  </div>
+  <div class="flex-item-right">
+```{r TLbeagle, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/PSM_V57_D097_Hms_beagle_in_the_straits_of_magellan.png/1920px-PSM_V57_D097_Hms_beagle_in_the_straits_of_magellan.png')
+```
+  </div>
+</div>
 
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1836--1858**
+  </div>
+  <div class="flex-item-mid">
+  Darwin desenvolve suas idéias de que a evolução pode explicar a **descendência com modificação** por seleção natural.
+  </div>
+  <div class="flex-item-right">
+```{r TLithink, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('http://darwin-online.org.uk/converted/scans/manuscript%20scans/1837-9_TransmutationNotebooks/DarwinArchive_1837_NotebookB_CUL-DAR121.-_038.jpg')
+```
+  </div>
+</div>
 
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1842--1844**
+  </div>
+  <div class="flex-item-mid">
+  O primeiro [ensaio](http://darwin-online.org.uk/content/frameset?itemID=F1556&viewtype=text&pageseq=1) de Darwin sobre seleção natural.
+  </div>
+  <div class="flex-item-right">
+ 
+  </div>
+</div>
 
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1858**
+  </div>
+  <div class="flex-item-mid">
+  Darwin e **Alfred Russel Wallace** publicam artigos sobre seleção natural.
+  </div>
+  <div class="flex-item-right">
+```{r TLwallace, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Alfred-Russel-Wallace-c1895.jpg/800px-Alfred-Russel-Wallace-c1895.jpg')
+```
+  </div>
+</div>
 
-<br>
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1859**
+  </div>
+  <div class="flex-item-mid">
+  Darwin publica **_On the Origin of Species_**.
+  </div>
+  <div class="flex-item-right">
+```{r TLorigins, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('http://darwin-online.org.uk/graphics/1859_Origin_Carroll.png')
+```
+  </div>
+</div>
 
-| Ano        | Evento |
-| :--:       | :---   |
-| 1809       | **Jean-Baptiste Lamarck** publica _Philosophie Zoologique_, apresentando novas idéias sobre o processo de evolução. |
-| 1830--1833 | **Charles Lyell** publica _Principles of Geology_, popularizando a idéia de que a Terra foi moldada por frças de ação lenta que ainda operam hoje em dia. |
-| 1831--1836 | **Charles Darwin** serve como naturalista a bordo do HMS Beagle. |
-| 1836--1858 | Darwin desenvolve suas idéias de que a evolução pode explicar a descendência com modificação por seleção natural. |
-| 1844       | O primeiro ensaio de Darwin sobre seleção natural. |
-| 1858       | Darwin e **Alfred Russel Wallace** publicam artigos sobre seleção natural. |
-| 1859       | Darwin publica _On the Origin of Species_ |
-| 1858--1900 | O estudo da evolução dominado por estudos de palentologia, desenvolvimento e morfologia |
-| 1866       | **Gregor Mendel** publica seu artigo sobre a genética das ervilhas. Haeckel publica seu diagrama da Árvore da Vida. |
-| 1900       | Redescoberta do trabalho de Mendel por múltiplos pesquisadores. |
-| 1900--1918 | Os princícios básica da herança genética são estabelecidos. |
-| 1908       | **T. H. Morgan** estabelece seus laboratório de _Drosophila_ na Universidade da Colúmbia; esclarece o papel dos cromossomos na herança. |
-| 1918--1936 | Fundação da genética de populações por **R. A. Fisher**, **J. B. S. Haldane** e **S. Wright**. |
-| 1936--1947 | "Síntese Moderna" da genética e evolução. |
-| 1937       | **Theodosius Dobzhansky** publica _Genetics and the Origin of Species_. |
-| 1942       | **Ernst Mayr** publica _Systematics and the Origin of Species_. |
-| 1944       | **G. G. Simpson** publica _Tempo and Mode in Evolution_. |
-| 1947--1960 | Êmfase ne evolução dos cromossomos, modelos de especiação, variação geográfica, continuação do desenvolvimento da genética de populações. |
-| 1950       | **Willi Hennig** publica _Grundzüge einer Theorie der phylogenetischen Systematik_. **G. L. Stebbins** publica _Variation and Evolution in Plants_. |
-| 1953       | **James Watson** e **Francis Crick** publicam seu artigo sobre a estrutura do DNA. |
-| 1959       | **Bernhard Rensch** publica _Evolution above the Species Level_. |
-| 1960--1980 | Introdução dos estudos moleculares da variação; desenvolvimento de métodos quantitativos explícitos para análise filogenética; avanços no conhecimento sobre seleção sexual, evolução do comportamento e co-evolução. |
-| 1962       | **Emile Zuckerkandl** e **Linus Pauling** publicam sua hipótese de relógio molecular. |
-| 1968       | **Motoo Kimura** publica sua teoria neutra da evolução molecular. |
-| 1970       | **Susumu Ohno** publica _Evolution by Gene Duplication_. |
-| 1975       | **E. O. Wilson** publica _Sociobiology_. |
-| 1975--1979 | Desenvolvimento métodos rápidos para o sequênciamento de DNA. |
-| 1980--Presente | Aumento exponencial dos estudos de evolução, especialmente evolução molecular, aplicações filogenéticas, estudos experimentais e processos evolutivos do  desenvolvimento. |
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1858--1900**
+  </div>
+  <div class="flex-item-mid">
+  O estudo da evolução dominado por estudos de palentologia, desenvolvimento e morfologia
+  </div>
+  <div class="flex-item-right">
+ 
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1866**
+  </div>
+  <div class="flex-item-mid">
+  Gregor Mendel publica seu artigo sobre a genética das ervilhas. **Ernst Haeckel** publica seu diagrama da Árvore da Vida.
+  </div>
+  <div class="flex-item-right">
+```{r TLhaeckel, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/8/8d/Ernst_Haeckel.jpg')
+```
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1900**
+  </div>
+  <div class="flex-item-mid">
+  Redescoberta do trabalho de Mendel por múltiplos pesquisadores.
+  </div>
+  <div class="flex-item-right">
+ 
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1900--1918**
+  </div>
+  <div class="flex-item-mid">
+  Os princícios básica da herança genética são estabelecidos.
+  </div>
+  <div class="flex-item-right">
+ 
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1908**
+  </div>
+  <div class="flex-item-mid">
+  **T. H. Morgan** estabelece seus laboratório de _Drosophila_ na Universidade da Colúmbia; esclarece o papel dos cromossomos na herança.
+  </div>
+  <div class="flex-item-right">
+```{r TLmorgan, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Thomas_Hunt_Morgan.jpg/800px-Thomas_Hunt_Morgan.jpg')
+```
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1918--1936**
+  </div>
+  <div class="flex-item-mid">
+  Fundação da genética de populações por R. A. Fisher, J. B. S. Haldane e S. Wright.
+  </div>
+  <div class="flex-item-right">
+ 
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1936--1947**
+  </div>
+  <div class="flex-item-mid">
+  "Síntese Moderna" da genética e evolução.
+  </div>
+  <div class="flex-item-right">
+ 
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1937**
+  </div>
+  <div class="flex-item-mid">
+  **Theodosius Dobzhansky** publica _Genetics and the Origin of Species_.
+  </div>
+  <div class="flex-item-right">
+```{r TLdobzhansky, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://static.wikia.nocookie.net/totalwar-ar/images/2/2f/Theodosius_Dobzhansky.jpg/revision/latest?cb=20190207151144')
+```
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1942**
+  </div>
+  <div class="flex-item-mid">
+  **Ernst Mayr** publica _Systematics and the Origin of Species_.
+  </div>
+  <div class="flex-item-right">
+```{r TLmayr, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://www.science.org/cms/10.1126/science.1100561/asset/69100ea6-49f5-447a-86b9-11e9d4a5f544/assets/graphic/46-1.gif')
+```
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1944**
+  </div>
+  <div class="flex-item-mid">
+  **G. G. Simpson** publica _Tempo and Mode in Evolution_.
+  </div>
+  <div class="flex-item-right">
+```{r TLsimpson, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/en/c/c3/George_Gaylord_Simpson-en.jpg')
+```
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1947--1960**
+  </div>
+  <div class="flex-item-mid">
+  Ênfase ne evolução dos cromossomos, modelos de especiação, variação geográfica, continuação do desenvolvimento da genética de populações.
+  </div>
+  <div class="flex-item-right">
+ 
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1950**
+  </div>
+  <div class="flex-item-mid">
+  Willi Hennig publica _Grundzüge einer Theorie der phylogenetischen Systematik_. **G. L. Stebbins** publica _Variation and Evolution in Plants_.
+  </div>
+  <div class="flex-item-right">
+```{r TLstebbins, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/en/f/fa/G_Ledyard_Stebbins.jpg')
+```
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1953**
+  </div>
+  <div class="flex-item-mid">
+  **James Watson** e **Francis Crick** publicam seu artigo sobre a estrutura do DNA.
+  </div>
+  <div class="flex-item-right">
+```{r TLwatsoncrick, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://www.sciencehistory.org/sites/default/files/styles/rte_full_width/public/watson-crick-dna-model.jpg')
+```
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1959**
+  </div>
+  <div class="flex-item-mid">
+  **Bernhard Rensch** publica _Evolution above the Species Level_.
+  </div>
+  <div class="flex-item-right">
+```{r TLrensch, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/en/f/f2/Bernhard_Rensch.jpg')
+```
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1960--1980**
+  </div>
+  <div class="flex-item-mid">
+  Introdução dos estudos moleculares da variação; desenvolvimento de métodos quantitativos explícitos para análise filogenética; avanços no conhecimento sobre seleção sexual, evolução do comportamento e co-evolução.
+  </div>
+  <div class="flex-item-right">
+ 
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1962**
+  </div>
+  <div class="flex-item-mid">
+  **Emile Zuckerkandl** e **Linus Pauling** publicam sua hipótese de relógio molecular.
+  </div>
+  <div class="flex-item-right">
+```{r TLzuckerpauling, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://www.darwinthenandnow.com/wp-content/uploads/2010/01/zuckerkandlpauling-300x199.jpg')
+```
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1968**
+  </div>
+  <div class="flex-item-mid">
+  **Motoo Kimura** publica sua teoria neutra da evolução molecular.
+  </div>
+  <div class="flex-item-right">
+```{r TLkimura, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/en/4/48/Motoo_Kimura.jpg')
+```
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1970**
+  </div>
+  <div class="flex-item-mid">
+  **Susumu Ohno** publica _Evolution by Gene Duplication_.
+  </div>
+  <div class="flex-item-right">
+```{r TLohno, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://nap.nationalacademies.org/openbook/0309084768/xhtml/images/p20005c54g234001.jpg')
+```
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1975**
+  </div>
+  <div class="flex-item-mid">
+  **E. O. Wilson** publica _Sociobiology_.
+  </div>
+  <div class="flex-item-right">
+```{r TLwilson, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://citacoes.in/media/authors/edward-o-wilson_0vIfONC.jpeg')
+```
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1975--1979**
+  </div>
+  <div class="flex-item-mid">
+  Desenvolvimento métodos rápidos para o sequênciamento de DNA.
+  </div>
+  <div class="flex-item-right">
+```{r TLsequencing, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://iiif.wellcomecollection.org/image/B0004963/full/880%2C/0/default.jpg')
+```
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  **1980--presente**
+  </div>
+  <div class="flex-item-mid">
+  Aumento exponencial dos estudos de evolução, especialmente evolução molecular, aplicações filogenéticas, estudos experimentais e processos evolutivos do  desenvolvimento.
+  </div>
+  <div class="flex-item-right">
+ 
+  </div>
+</div>
 
 <br> 
 
@@ -92,11 +401,11 @@ knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/thumb/2/
 
 <br>
 
-Charles Darwin (1809-1882)
-
-Sobre a Origem das Espécies por Meio da Seleção Natural, ou a Preservação de Raças Favorecidas na Luta pela Vida (1859).
+Sobre a Origem das Espécies por Meio da Seleção Natural, ou a Preservação de Raças Favorecidas na Luta pela Vida (1859) -- [_On the Origin of Species_](http://darwin-online.org.uk/content/frameset?itemID=F373&viewtype=side&pageseq=1).
 
 As espécies evoluem gradualmente por seleção natural.
+
+Herança por miscigenação
 
 <br> 
 
@@ -110,11 +419,11 @@ knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/thumb/b/
 
 <br>
 
-Gregor Mendel (1822-1884)
-
 Experimentos em Hibridização de Plantas (1865)
 
-Leis da hereditariedade.
+Leis da hereditariedade. 
+
+Herança particulada.
 
 <br> 
 
@@ -124,13 +433,61 @@ Redescoberta do trabalho de Mendel no início do século XX.
 
 Confirmação da hereditariedade particulada 30 anos depois.
 
-- Erich von Tschermak (1871-1962)
+<div class="flex-container">
+  <div class="flex-item-left">
+```{r Tschermak, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/6/6c/Acta_Horti_berg._-_1905_-_tafl._124._-_Erich_Tschermak.jpg')
+```
+  </div>
+  <div class="flex-item-mid">
+  [Erich von Tschermak](https://en.wikipedia.org/wiki/Erich_von_Tschermak) (1871--1962), agrônomo austríaco.
+  </div>
+  <div class="flex-item-right">
 
-- Hugo de Vries (1848-1935)
+  </div>
+</div>
 
-- Carl Correns (1864-1933)
+<div class="flex-container">
+  <div class="flex-item-left">
+```{r DeVries, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hugo_de_Vries.jpg/800px-Hugo_de_Vries.jpg')
+```
+  </div>
+  <div class="flex-item-mid">
+  [Hugo de Vries](https://en.wikipedia.org/wiki/Hugo_de_Vries) (1848--1935), botânico holandês.
+  </div>
+  <div class="flex-item-right">
 
-- William J. Spillman (1863-1931)
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+```{r Correns, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Carl_Correns_1910s.jpg/448px-Carl_Correns_1910s.jpg')
+```
+  </div>
+  <div class="flex-item-mid">
+  [Carl Correns](https://en.wikipedia.org/wiki/Carl_Correns) (1864--1933), botânico alemão.
+  </div>
+  <div class="flex-item-right">
+
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+```{r Spillman, echo = FALSE, fig.align = 'left', out.width="80px"}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/William_Jasper_Spillman_%281863-1931%29.jpg/414px-William_Jasper_Spillman_%281863-1931%29.jpg')
+```
+  </div>
+  <div class="flex-item-mid">
+  [William J. Spillman](https://en.wikipedia.org/wiki/William_Jasper_Spillman) (1863--1931), agrônomo estadunidense.
+  </div>
+  <div class="flex-item-right">
+
+  </div>
+</div>
 
 <br>
 
@@ -143,8 +500,6 @@ knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/a/aa/You
 ```
 
 <br>
-
-Sir Ronald A. Fisher (1890-1962)
 
 A teoria genética da seleção natural (1930)
 
@@ -162,13 +517,17 @@ knitr::include_graphics('https://www.marxists.org/portugues/haldane/img/haldane.
 
 <br>
 
-J. B. S. Haldane (1892-1964)
-
 Uma teoria matemática da seleção natural e artificial (1924)
 
-Melanismo industrial em Biston betularia
+Melanismo industrial em _Biston betularia_.
 
-“Na consideração da evolução, uma teoria matemática pode ser considerada como um tipo de andaime dentro do qual uma teoria razoavelmente segura, expressável em palavras, pode ser construída.” (Perspect Biol Med 1964; 7:343-359)
+;;;quote
+
+_Na consideração da evolução, uma teoria matemática pode ser considerada como um tipo de andaime dentro do qual uma teoria razoavelmente segura, expressável em palavras, pode ser construída_. ([Haldane 1964](https://doi.org/10.1093/ije/dyn056))
+
+:::
+
+
 
 <br> 
 
@@ -181,8 +540,6 @@ knitr::include_graphics('https://cdn.britannica.com/78/41278-004-5D2683FD/Sewall
 ```
 
 <br>
-
-Sewall Wright (1889-1988)
 
 Evolução em populações mendelianas (1931)
 

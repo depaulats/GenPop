@@ -15,6 +15,12 @@ fig:mendel
 fig:fischer
 fig:haldane
 fig:wright
+fig:Erythrura
+fig:polymarker
+fig:evodinamica
+fig:genearvore
+fig:geneconflito
+fig:markeryear
 fig:liguus
 fig:mendeliano
 eq:freqp
@@ -84,13 +90,10 @@ ronald-a.-fisher
 j.-b.-s.-haldane
 sewall-wright
 polimorfismo-genéticos-e-marcadores-moleculares
-genética-mendeliana
-genética-molecular
+mutações-times-polimorfismos
 dinâmica-evolutiva-e-ecológica-dos-polimorfismos
 evolução-dos-polimorfismos-em-diferentes-escalas
 padrões-de-herança
-herança-biparental
-herança-uniparental
 taxas-de-mutação
 marcadores-moleculares
 aloenzimas-e-isoenzimas
