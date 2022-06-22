@@ -20,7 +20,12 @@ fig:polymarker
 fig:evodinamica
 fig:genearvore
 fig:geneconflito
+fig:tiposheranca
+fig:relogiomolecular
 fig:markeryear
+fig:allozymes
+fig:rflp
+fig:DNAhaplotypes
 fig:liguus
 fig:mendeliano
 eq:freqp
@@ -96,7 +101,7 @@ evolução-dos-polimorfismos-em-diferentes-escalas
 padrões-de-herança
 taxas-de-mutação
 marcadores-moleculares
-aloenzimas-e-isoenzimas
+aloenzimas
 rflp
 sequência-de-nucleotídeos
 snps

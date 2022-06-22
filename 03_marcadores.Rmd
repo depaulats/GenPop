@@ -110,53 +110,70 @@ knitr::include_graphics("figs/genealogy_conflict.svg")
 
 A localização genômica de uma região gênica pode determinar diferentes padrões de herança.
 
-- Herança biparental
+- Herança biparental -- genes co-dominantes (contribuição de ambos os sexos) em regiões gênicas nucleares autossômicas e pseudo-autossômicas; essas regiões sofrem recombinação na meiose.
 
-Autossomos
-Regiões pseudo-autossômicas
-Co-dominantes
+- Herança uniparental -- genes dominantes (contribuiçao de somente um dos sexos) em regiões gênicas nucleares no cromossomo Y (herança patrilinear) e extra-nucleares no DNA mitocondrial (herança matrilinear); essas regiões não sofrem recombinação.
 
-- Herança uniparental
+<br>
 
-DNAmt (matrilinear)
-Cromossomo Y (patrilinear)
-Dominantes
+```{r tiposheranca, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="Os padrões de herança biparental e uniparental em regiões gênicas autossômicas (nuclear) e mitocondriais (extra-nuclear)."}
+knitr::include_graphics("figs/inheritance_types_genealogy.svg")
+```
+
+<br>
 
 ## Taxas de mutação
 
 A função ou estrutura de uma região gênica pode determinar diferentes taxas de mutação.
 
-Regiões codificantes ou funcionais sofrem uma alta pressão seletiva sobre mutações dependente da importância de sua função (positivo ou negativo).
+- Regiões funcionais ou codificantes  -- baicas taxas mutacionais pois sofrem uma pressão de seleção (positivas ou negativas) dependente da importância da função para a célula/organismo. 
 
-Regiões não-codificantes ou não-funcionais tendem a apresentar um rápido acúmulo de mutações devido às baixas pressões seletivas (neutros).
+- Regiões não-funcionais ou não-codificantes -- apresentam acúmulo de mutações devido às baixas pressões seletivas (neutras).
 
-Regiões que apresentam sequências repetidas _in tandem_ podem evoluir por derrapagem (_slippage_) da replicacão.
+- Regiões de repetição _in tandem_ -- evolução por derrapagem (_slippage_) da replicacão; mutações dinâmicas a cada ciclo replicativo. 
+
+<br>
+
+```{r relogiomolecular, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="As taxas de mutação em genes codificantes de proteínas estão relacionadas à função desses genes devido a diferentes pressões de seleção."}
+knitr::include_graphics("figs/molecular_clock.svg")
+```
+
+<br>
 
 ## Marcadores moleculares
 
 A seguir são apresentados os principais marcadores utilizados em genética de populações.
 
-Sua popularidade ao longo dos anos está diretamente relacionado ao custo das metodologias de análise.
+A popularidade desses marcadores ao longo dos anos está diretamente relacionado a relação custo-benefício das metodologias de análise associadas. Com o desenvolvimento de novas metodologias ocorre o barateamento dos custos de análise de última geração, capazes de analisar múltiplos marcadores ao mesmo tempo, e gerar estudos mais compreensivos.
+
+<br>
 
 ```{r markeryear, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="Popularidade ao longo dos anos de diferentes marcadores moleculares na genética de populações desde o surgimento da biologia molecular, no século XX, até o início do século XXI. Ver Schlötterer ([2004](https://doi.org/10.1038/nrg1249)) e Seeb et al. ([2011](https://doi.org/10.1111/j.1755-0998.2010.02979.x))"}
 knitr::include_graphics("figs/markers_year.svg")
 ```
 
+<br>
 
-### Aloenzimas e Isoenzimas
+### Aloenzimas
 
-A análise baseia-se na migração diferencial em eletroforese de enzimas de uma mesma espécie mas com cargas e tamanhos diferentes (devido a modificações na sequência de bases do gene). 
+A análise de aloenzimas (ou alozimas) baseia-se na migração diferencial em eletroforese de enzimas com cargas e tamanhos diferentes devido as modificações subjacentes nas sequências de bases desses genes. 
 
-Enzimas de um mesmo tipo são reveladas por coloração histoquímica, pois catalisam o mesmo substrato.
+Esses marcadores geralmente envolvem enzimas que desempenham funções muito básicas, podendo ser encontradas em quase todas as formas de vida, sendo asism um método de análise universal.
 
-Aloenzimas = enzimas de diferentes alelos do mesmo gene
-Isoenzimas = enzimas de diferentes genes que processam ou catalisam a mesma reação.
+A detecção da variação genética se baseia na revelação por coloração histoquímica, a partir da qual podem ser visualizadas bandas correspondentes aos fenótipos bioquímicos dessas enzimas.
 
-A análise baseia-se na migração diferencial em eletroforese de enzimas de uma mesma espécie mas com cargas e tamanhos diferentes (devido a modificações na sequência de bases do gene). 
+Como marcadores moleculares, as aloenzimas são co-dominantes.
 
-Como marcadores moleculares, são co-dominantes.
+Os polimorfismos ocorrem necessariamente em regiões codificantes, podendo ser neutros ou com efeitos positivos ou negativos no fenótipo do indivíduo. 
 
-Estes polimorfismos podem ou não ocorrer em regiões codificantes, podendo ser neutros ou com efeitos positivos ou negativos no fenótipo do indivíduo. 
+<br>
+
+```{r allozymes, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="Esquema da eletroforese de marcadores de aloenzimas monoméricas e diméricas e seus genótipos associados. Isoenzimas estão identificadas por cores diferentes. Ver Wendt et al ([2009](https://doi.org/10.1590/S1516-89132009000600016))."}
+knitr::include_graphics("figs/allozymes.svg")
+```
+
+
+<br>
 
 ### RFLP
 
@@ -170,6 +187,16 @@ Diferentes endonucleases apresentam sítios de ligação e corte do DNA diferent
 
 Análise direta de mutações nos sítios de reconhecimento de endonucleases por meio de mudanças no tamanho dos fragmentos gerados em padrões eletroforéticos
 
+<br>
+
+```{r rflp, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="Polimorfismos de tamanho de fragmentos de restrição (RFLPs). Na esquerda, o mecanismo de clivagem da enzima de Restrição _Eco_RI. Na direita, a digestão _in silico_ do gene 16S do DNA ribossomal de um fitoplasma do subgrupo 16SrII-C usando diferentes enzimas de restrição (PM, marcador de peso molecular)."}
+knitr::include_graphics("figs/restriction_enzyme.svg")
+```
+
+
+<br>
+
+
 ### Sequência de nucleotídeos
 
 Cada posição da sequência pode ser informacional.
@@ -178,17 +205,19 @@ As sequências de DNA são marcadores tipicamente neutros e dominantes, que pode
 
 Estas podem definir alelos ou haplótipos, e as posições podem ser usadas para tabular caractéres, onde cada nucleotídeo corresponde a um estado de caráter.
 
-Sequenciamento de DNA
+<br>
 
-Sequenciamento de última geração (NGS)
+```{r DNAhaplotypes, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="Sequência de nucleotídeos de DNA alinhados entre sete indivíduos. "}
+knitr::include_graphics("figs/DNAseq_haplotypes.svg")
+```
+
+<br>
 
 ### SNPs
 
 Polimorfismos de nucleotídeo único ou Polimorfismos de um único nucleotídeo
 
-Representam uma variação de um único* par de base em uma região gênica específica. 
-
-alguns autores consideram substituições de poucos nucleotídeos ou mesmo inserções e deleções como SNPs.
+Representam uma variação de um único par de base em uma região gênica específica, mas alguns autores consideram substituições de poucos nucleotídeos ou mesmo inserções e deleções como SNPs.
 
 Como marcadores moleculares, são co-dominantes.
 
