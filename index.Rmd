@@ -19,6 +19,7 @@ output:
 header-includes: 
 - \usepackage{caption}
 - \usepackage{multirow}
+- \usepackage{xcolor}
 
 
 ---

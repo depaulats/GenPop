@@ -26,6 +26,9 @@ fig:markeryear
 fig:allozymes
 fig:rflp
 fig:DNAhaplotypes
+fig:SNPs
+fig:microsatellites
+fig:mainmarkers
 fig:liguus
 fig:mendeliano
 eq:freqp
@@ -106,12 +109,7 @@ rflp
 sequência-de-nucleotídeos
 snps
 microssatelites
-vantagens-e-desvantagens
-principais-marcadores-moleculares
 tipo-de-dados
-sequências-de-dna
-microssatélites
-snps-1
 bancos-de-dados-públicos
 variação-e-diversidade-genética
 genética-mendeliana-times-genética-de-populações

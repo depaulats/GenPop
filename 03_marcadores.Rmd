@@ -172,6 +172,14 @@ Os polimorfismos ocorrem necessariamente em regiões codificantes, podendo ser n
 knitr::include_graphics("figs/allozymes.svg")
 ```
 
+<br>
+
+| Vantagens   | Desvantagens |
+| :--:        | :--:         |
+| Barato      | Requer material fresco ou congelado |
+| Protocolos universais | Alguns loci apresentam proteínas instáveis |
+|             | Número limitado de marcadores disponíveis |
+|             | Potencialmente alvos diretos de seleção (fenótipo bioquímico) |
 
 <br>
 
@@ -193,9 +201,15 @@ Análise direta de mutações nos sítios de reconhecimento de endonucleases por
 knitr::include_graphics("figs/restriction_enzyme.svg")
 ```
 
-
 <br>
 
+| Vantagens   | Desvantagens |
+| :--:        | :--:         |
+| Barato      | Baixa reprodutibilidade |
+| Grande número de informações que podem ser refinadas posteriormente | Majoritariamente dominante |
+|             | Análise, automação e comparações entre estudos difíceis |
+
+<br>
 
 ### Sequência de nucleotídeos
 
@@ -213,6 +227,14 @@ knitr::include_graphics("figs/DNAseq_haplotypes.svg")
 
 <br>
 
+| Vantagens   | Desvantagens |
+| :--:        | :--:         |
+| Maior nível possível de resolução      | Muito caro |
+| Não-tendenciado |   | 
+| Facilidade de comparaÇão entre estudos e formação de bancos de dados  |   |
+
+<br>
+
 ### SNPs
 
 Polimorfismos de nucleotídeo único ou Polimorfismos de um único nucleotídeo
@@ -223,61 +245,122 @@ Como marcadores moleculares, são co-dominantes.
 
 Estes polimorfismos podem ou não ocorrer em regiões codificantes, podendo ser neutros ou com efeitos positivos ou negativos no fenótipo do indivíduo. 
 
-SNPs são muito numerosos no genoma (ca. 1:300 pb em humanos). Estima-se que 90% da variação genética intraespecífica se deva a estes polimorfismos e que cada indivíduo apresente um arranjo genômico único em relação a eles.
+SNPs são ditos causativos quando alteram a quantidade ou a função de proteínas por ocorrerem em regiões regulatórias e codificantes, ou podem estar ligados a estas, sem efeito no fenótipo. 
+
+SNPs são muito numerosos no genoma (_ca._ 1:300 pb em humanos). Estima-se que 90% da variação genética intraespecífica se deva a estes polimorfismos e que cada indivíduo apresente um arranjo genômico único em relação a eles.
+
+<br>
+
+```{r SNPs, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="Polimorfismos de nucleotídeo único em uma região do DNA e sua frequência em uma população. "}
+knitr::include_graphics("figs/SNPs_scheme.svg")
+```
+
+<br>
+
+| Vantagens   | Desvantagens |
+| :--:        | :--:         |
+| Baixa taxa de mutação   | Substancial heterogeidade nas taxas de evolutivas |
+| Abundância | Desenvolvimento caro  | 
+| Fácil caracterização  | Podem estar tendenciados  |
+| Novas abordagens de análise em constante desenvolvimento  |Baixo nível de informação; dependente do número de loci |
+| Facilidade de comparaÇão entre estudos e formação de bancos de dados  |   |
+
+<br>
+
 
 ### Microssatelites
 
 Repetições de Sequências Simples (SSRs) ou 
 Repetições Curtas em Série (STR)
 
-São regiões gênicas polimórficas que consistem de unidades de 2-6 pb repetidas in tandem. 
+São regiões gênicas polimórficas que consistem de unidades de sequências curtas de DNA de 2-6 pb repetidas _in tandem_. 
 
 Como marcadores moleculares, são co-dominantes e geralmente neutros.
 
-As frequências de um locus microssatélite com n repetições geralmente apresentam uma alta variância (evolução por mutações dinâmicas; slippage) e forte caráter populacional. 
+As frequências de um lócus microssatélite com $n$ repetições geralmente apresentam uma alta variância (evolução por mutações dinâmicas; _slippage_ da replicação) e um forte caráter populacional. 
 
-Sendo assim, a análise multi-loci microssatélite permite inferência em nível individual (fingerprinting) e aplicações como marcadores para estudos de parentesco e populacionais.
+<br>
 
-## Vantagens e Desvantagens
+Por exemplo, a sequência:
 
-## Principais marcadores moleculares
+$$\underline{TCCCAAGCTCTTC}CTCTTCCCTAGATCAATACAGACAGAAGACAGGTG\color{red}{GATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA}TCATTGAAAGACAAAACAGAGATGGATGATAGATACATGCT\underline{TACAGATGCACAC}$$
+
+tem $12$ repetições do tetranucleotídeo de DNA $\color{red}{GATA}$, ou $\left( {GATA} \right)_{12}$.
+
+<br>
+
+A depender do número de nucleotídeos na unidade de repetição, os microssatélites são formados por repetições de:
+
+${Dinucleotídeo} \rightarrow \left( {CA} \right)_{n}$
+
+${Trinucleotídeo} \rightarrow \left( {GCC} \right)_{n}$
+
+${Tetranucleotídeo} \rightarrow \left( {AATG} \right)_{n}$
+
+${Pentanucleotídeo} \rightarrow \left( {AGAAA} \right)_{n}$
+
+${Hexanucleotídeo} \rightarrow \left( {AGTACA} \right)_{n}$
+
+<br>
+
+A análise multi-loci de microssatélites permite inferências em nível individual (_fingerprinting_) e possui aplicações como marcadores para estudos de parentesco e populacionais.
+
+<br>
+
+```{r microsatellites, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="Os microssatélites evoluem sobretudo por mutações de derrapagem da replicação (esquerda), o que promove a instabilidade do número de repetições nessas regiões (direita)."}
+knitr::include_graphics("figs/microsatellites.svg")
+```
+
+<br>
+
+<br>
+
+| Vantagens   | Desvantagens |
+| :--:        | :--:         |
+| Altamente informativo   | Alta taxa de mutação |
+| Baixo nível de tendenciamento | Comportamento mutacional complexo  | 
+| Novas abordagens de análise em constante desenvolvimento | Pouco abundantes |
+| Facilidade de comparaÇão entre estudos e formação de bancos de dados | Automação e comparações entre estudos difíceis  |
+
+<br>
+
 
 ## Tipo de dados
 
-### Sequências de DNA
+<br>
 
-> 0 ACACCCAACACGGCC
-> 0 ACACAAAACACGGCC
-> 1 ACACAAAACACGGCC
-> 1 ATACCCAGCACGGCC
+```{r mainmarkers, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="Comparação entre os principais marcadores moleculares tradicionalmente usados em genética de populações."}
+knitr::include_graphics("figs/main_markers.svg")
+```
 
-### Microssatélites
+<br>
 
-> 0 6.5 37.31 18.18 
-> 0 6.6 37.33 18.16 
-> 1 4.5 35.?  18.18 
-> 1 4.4 35.31 20.18
-
-### SNPs
-
-> 0 CC TC GG TT 
-> 0 CC TC GG TT
-> 1 CC TC AG TA
-> 1 CC TT AG TA
 
 ## Bancos de dados públicos
 
-GenBank
+**_NCBI - GenBank_**
+
 https://www.ncbi.nlm.nih.gov/genbank/
 
-Barcode of Life Data Systems
+<br>
+
+**_SNP Database_**
+
+https://www.ncbi.nlm.nih.gov/projects/SNP/
+
+<br>
+
+**_Barcode of Life Data Systems_**
+
 http://www.boldsystems.org/
 
-1000 Genomes Project
+<br>
+
+**_1000 Genomes Project_**
+
 http://www.internationalgenome.org/
 
-SNP Database
-https://www.ncbi.nlm.nih.gov/projects/SNP/
+
 
 
 
