@@ -198,6 +198,24 @@ Quando $H_{Obs} \neq H_{Esp}$, forças evolutivas podem estar atuando nas popula
 
 ## Diversidade gênética
 
+<br>
+
+```{r zea, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="O milho (_Zea mays_) foi domesticado pela primeira vez por povos indígenas no sul do México há cerca de 10.000 anos e espalhado para as Américas. A maioria desses grãos tradicionais corre o risco de ser perdido e esquecido. Uma parcela significativa de diversidade no milho é devida à recombinação genética."} 
+knitr::include_graphics('https://pbs.twimg.com/media/DdziLo1U0AEPdfJ.png')
+```
+
+:::reference
+
+Matsuoka et al. 2002. doi: [10.1073/pnas.052125199](https://doi.org/[10.1073/pnas.052125199)
+
+Vigouroux et al. 2003. doi: [10.1093/molbev/msg156](https://doi.org/10.1093/molbev/msg156)
+
+Piperno 2011. doi: [10.1086/659998](https://doi.org/10.1086/659998)
+
+:::
+
+<br>
+
 Na linguagem comum, a variabilidade genética e a diversidade genética são erroneamente consideradas sinônimos entre si. 
 
 A **variabilidade genética** é a variação nos alelos dos genes ou nas sequências de DNA no pool gênico de uma espécie ou população. Isso se expressa em termos de formas alternativas no fenótipo. 
@@ -249,143 +267,514 @@ Assim, se uma população apresenta um excesso de homozigotos para diferentes al
 
 ### Extratégias reprodutivas
 
-Animais estrategistas r são mais polimórficos do que estrategistas K. A correlação negativa apresentada no gráfico reflete uma compensação entre a quantidade e o tamanho da prole. 
+<br>
 
-https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fnrg.2016.58/MediaObjects/41576_2016_Article_BFnrg201658_Fig1_HTML.jpg
+```{r diversitylifestrategy, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="Animais estrategistas r são mais polimórficos do que estrategistas K. A correlação negativa apresentada no gráfico reflete uma compensação entre a quantidade e o tamanho da prole. Ver Ellegreen & Galtier ([2016](https://doi.org/10.1038/nrg.2016.58))."} 
+knitr::include_graphics('https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrg.2016.58/MediaObjects/41576_2016_Article_BFnrg201658_Fig1_HTML.jpg')
+```
+
+<br>
+
+Uma forte correlação foi relatada entre diversidade genética e características da história de vida das espécies, como massa corporal, longevidade e, surpreendentemente, estratégia reprodutiva.
+
+Espécies altamente fecundas que liberam um grande número de ovos pequenos no ambiente (por exemplo, mexilhões, ouriços e minhocas; os chamados **r-estrategistas**) são muito mais polimórficos do que espécies que produzem um pequeno número de descendentes relativamente grandes e fornecem cuidados parentais (por exemplo, pinguins, cupins e cavalos-marinhos; chamados **K-estrategistas**)
+
+<br>
+
+:::reference
+
+Rominguier et al. (2014). doi: [10.1038/nature13685](https://doi.org/10.1038/nature13685)
+
+:::
+
+<br>
 
 ### Ligação gênica
 
-Efeito da seleção ligada na diversidade genética (nucleotídica) em torno dos genes ou outros elementos funcionais. 
+<br>
 
-Nos painéis inferiores, as linhas contínuas indicam a variação local no nível de diversidade nucleotídica, e as linhas tracejadas indicam a diversidade média em toda a região em questão. 
+```{r diversitylinkage, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="Efeito da seleção ligada na diversidade genética (nucleotídica) em torno dos genes ou outros elementos funcionais. As linhas contínuas indicam a variação local no nível de diversidade nucleotídica, e as linhas tracejadas indicam a diversidade média em toda a região em questão.  Ver Ellegreen & Galtier ([2016](https://doi.org/10.1038/nrg.2016.58))."} 
+knitr::include_graphics('https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnrg.2016.58/MediaObjects/41576_2016_Article_BFnrg201658_Fig3_HTML.jpg')
+```
+
+<br>
 
 Em regiões com uma alta densidade de alvos de seleção (a), a seleção ligada é generalizada e reduz significativamente a diversidade em comparação com regiões com uma densidade mais baixa de alvos de seleção (b). Quando a taxa de recombinação é alta (c), o efeito da seleção ligada torna-se menos prevalente, permitindo a manutenção de altos níveis de diversidade naquela região.
 
-https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnrg.2016.58/MediaObjects/41576_2016_Article_BFnrg201658_Fig3_HTML.jpg
+Ambos os aspectos contribuem para a heterogeneidade dentro do genoma ao gerar vales de diversidade reduzida nas proximidades dos loci selecionados.
+
+<br>
+
+:::reference
+
+Cutter & Payseur (2013). doi: [10.1038/nrg3425](https://doi.org/10.1038/nrg3425)
+
+:::
+
+<br>
 
 ## Medidas de Diversidade em loci diplóides
 
+<br>
+
 ### Nível de polimorfismo
 
-Nível de polimorfismo (P)
+Nível de polimorfismo ($P$)
 
-P = np / nt
+\begin{equation} 
+P = \frac{n_p}{K}
+  (\#eq:polimorfism)
+\end{equation} 
+
+<br>
 
 Onde, 
-np = número loci polimórficos observados, e
-nt  = número total de loci examinados.
+$n_p$ é o número de loci gênicos polimórficos observados, e
+$K$ é o número total de loci gênicos examinados.
+
+<br>
 
 Exemplo,
+
+
+|     |Loc 1 |Loc 2 |Loc 3 |Loc 4 |Loc 5 |Loc 6 |Loc 7 |Loc 8 |  
+| :-- | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+|Ind 1|<span style="color: green;">AA</span>|<span style="color: blue;">CC</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">AA</span>|<span style="color: red;">T</span>G|<span style="color: green;">A</span><span style="color: goldenrod;">G</span>|<span style="color: red;">TT</span>|<span style="color: green;">AA</span>|
+|Ind 2|<span style="color: green;">AA</span>|<span style="color: blue;">CC</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">AA</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">A</span><span style="color: goldenrod;">G</span>|<span style="color: red;">TT</span>|<span style="color: green;">AA</span>| 
+|Ind 3|<span style="color: green;">A</span><span style="color: red;">T</span>|<span style="color: blue;">CC</span>|<span style="color: goldenrod;">GG</span>|<span style="color: green;">AA</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: goldenrod;">GG</span>|<span style="color: red;">TT</span>|<span style="color: green;">AA</span>| 
+|Ind 4|<span style="color: green;">A</span><span style="color: red;">T</span>|<span style="color: blue;">CC</span>|<span style="color: goldenrod;">GG</span>|<span style="color: green;">AA</span>|<span style="color: goldenrod;">GG</span>|<span style="color: green;">AA</span>|<span style="color: red;">TT</span>|<span style="color: green;">A</span><span style="color: blue;">C</span>| 
+|Ind 5|<span style="color: red;">TT</span>|<span style="color: blue;">CC</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">AA</span>|<span style="color: blue;">C</span><span style="color: red;">T</span>|<span style="color: green;">AA</span>|<span style="color: red;">TT</span>|<span style="color: green;">A</span><span style="color: blue;">C</span>| 
+|     |  |  |  |  |  |  |  |  |  
+|  | **Poli** | Mono | **Poli** | Mono | **Poli** | **Poli** | Mono | **Poli** |
+
+<br>
+
+$$P = \frac{5}{8} = 0.625$$
+
+<br>
 
 ### Riqueza alélica
 
-Riqueza alélica (A)
+Riqueza alélica ($A$) é o número de alelos polimórficos observados em um locus gênico.
 
-Onde, 
-A = número de alelos polimórficos observados em cada loci.
+<br>
 
 Exemplo,
+
+
+|     |Loc 1 |Loc 2 |Loc 3 |Loc 4 |Loc 5 |Loc 6 |Loc 7 |Loc 8 |  
+| :-- | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+|Ind 1|<span style="color: green;">AA</span>|<span style="color: blue;">CC</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">AA</span>|<span style="color: red;">T</span>G|<span style="color: green;">A</span><span style="color: goldenrod;">G</span>|<span style="color: red;">TT</span>|<span style="color: green;">AA</span>|
+|Ind 2|<span style="color: green;">AA</span>|<span style="color: blue;">CC</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">AA</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">A</span><span style="color: goldenrod;">G</span>|<span style="color: red;">TT</span>|<span style="color: green;">AA</span>| 
+|Ind 3|<span style="color: green;">A</span><span style="color: red;">T</span>|<span style="color: blue;">CC</span>|<span style="color: goldenrod;">GG</span>|<span style="color: green;">AA</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: goldenrod;">GG</span>|<span style="color: red;">TT</span>|<span style="color: green;">AA</span>| 
+|Ind 4|<span style="color: green;">A</span><span style="color: red;">T</span>|<span style="color: blue;">CC</span>|<span style="color: goldenrod;">GG</span>|<span style="color: green;">AA</span>|<span style="color: goldenrod;">GG</span>|<span style="color: green;">AA</span>|<span style="color: red;">TT</span>|<span style="color: green;">A</span><span style="color: blue;">C</span>| 
+|Ind 5|<span style="color: red;">TT</span>|<span style="color: blue;">CC</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">AA</span>|<span style="color: blue;">C</span><span style="color: red;">T</span>|<span style="color: green;">AA</span>|<span style="color: red;">TT</span>|<span style="color: green;">A</span><span style="color: blue;">C</span>|  
+|     |  |  |  |  |  |  |  |  |  
+| $A$ | **2** | **1** | **2** | **1** | **3** | **2** | **1** | **2** |
+
+<br>
 
 ### Número médio de alelos
 
-Número médio de alelos por locus (n)
+Número médio de alelos por locus ($\bar{A}$)
 
-n = ∑ ni / K
+<br>
+
+\begin{equation} 
+\bar{A} = \frac{ \sum_{i=1}^{i} {A_i} }{K}
+  (\#eq:alellemedian)
+\end{equation} 
+
+<br>
 
 Onde,
-K = número de loci gênicos examinados, e
-ni = número de alelos polimórficos observados no i-nésimo locus gênico. 
+$A_i$ é o número de alelos polimórficos observados no $i$-nésimo locus gênico, e
+$k$ é o número de loci gênicos examinados.
+
+<br>
 
 Exemplo,
 
+
+|     |Loc 1 |Loc 2 |Loc 3 |Loc 4 |Loc 5 |Loc 6 |Loc 7 |Loc 8 |  
+| :-- | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+|Ind 1|<span style="color: green;">AA</span>|<span style="color: blue;">CC</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">AA</span>|<span style="color: red;">T</span>G|<span style="color: green;">A</span><span style="color: goldenrod;">G</span>|<span style="color: red;">TT</span>|<span style="color: green;">AA</span>|
+|Ind 2|<span style="color: green;">AA</span>|<span style="color: blue;">CC</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">AA</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">A</span><span style="color: goldenrod;">G</span>|<span style="color: red;">TT</span>|<span style="color: green;">AA</span>| 
+|Ind 3|<span style="color: green;">A</span><span style="color: red;">T</span>|<span style="color: blue;">CC</span>|<span style="color: goldenrod;">GG</span>|<span style="color: green;">AA</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: goldenrod;">GG</span>|<span style="color: red;">TT</span>|<span style="color: green;">AA</span>| 
+|Ind 4|<span style="color: green;">A</span><span style="color: red;">T</span>|<span style="color: blue;">CC</span>|<span style="color: goldenrod;">GG</span>|<span style="color: green;">AA</span>|<span style="color: goldenrod;">GG</span>|<span style="color: green;">AA</span>|<span style="color: red;">TT</span>|<span style="color: green;">A</span><span style="color: blue;">C</span>| 
+|Ind 5|<span style="color: red;">TT</span>|<span style="color: blue;">CC</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">AA</span>|<span style="color: blue;">C</span><span style="color: red;">T</span>|<span style="color: green;">AA</span>|<span style="color: red;">TT</span>|<span style="color: green;">A</span><span style="color: blue;">C</span>| 
+|     |  |  |  |  |  |  |  |  |  
+| $A$ | **2** | **1** | **2** | **1** | **3** | **2** | **1** | **2** |
+
+<br>
+
+$$\bar{A} = \frac{2+1+2+1+3+2+1+2}{8} = \frac{14}{8} = 1.75$$
+
+<br>
+
 ### Número efetivo de alelos
 
-Número efetivo de alelos (Ae)
+O número efetivo de alelos ($A_e$) é O número de alelos igualmente frequentes que seriam necessários para atingir a mesma heterozigosidade esperada na população estudada, de forma que:
 
-Ae  =  1 / (1 − HEsp)  =  1 / ∑ pi2
+<br>
+
+\begin{equation} 
+A_e  =  \frac{1}{1-H_{Esp}}  = \frac{1}{\sum {p_i^2}}
+  (\#eq:alelleeffective)
+\end{equation} 
+
+<br>
 
 Onde,
-pi = frequência do i-nésimo alelo em um locus gênico. 
+$p_i$ é a frequência do $i$-nésimo alelo em um locus gênico. 
+
+<br>
+
+Exemplo,
+
+
+|     |Loc 1 |Loc 2 |Loc 3 |Loc 4 |Loc 5 |Loc 6 |Loc 7 |Loc 8 |  
+| :-- | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+|Ind 1|<span style="color: green;">AA</span>|<span style="color: blue;">CC</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">AA</span>|<span style="color: red;">T</span>G|<span style="color: green;">A</span><span style="color: goldenrod;">G</span>|<span style="color: red;">TT</span>|<span style="color: green;">AA</span>|
+|Ind 2|<span style="color: green;">AA</span>|<span style="color: blue;">CC</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">AA</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">A</span><span style="color: goldenrod;">G</span>|<span style="color: red;">TT</span>|<span style="color: green;">AA</span>| 
+|Ind 3|<span style="color: green;">A</span><span style="color: red;">T</span>|<span style="color: blue;">CC</span>|<span style="color: goldenrod;">GG</span>|<span style="color: green;">AA</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: goldenrod;">GG</span>|<span style="color: red;">TT</span>|<span style="color: green;">AA</span>| 
+|Ind 4|<span style="color: green;">A</span><span style="color: red;">T</span>|<span style="color: blue;">CC</span>|<span style="color: goldenrod;">GG</span>|<span style="color: green;">AA</span>|<span style="color: goldenrod;">GG</span>|<span style="color: green;">AA</span>|<span style="color: red;">TT</span>|<span style="color: green;">A</span><span style="color: blue;">C</span>| 
+|Ind 5|<span style="color: red;">TT</span>|<span style="color: blue;">CC</span>|<span style="color: blue;">C</span><span style="color: goldenrod;">G</span>|<span style="color: green;">AA</span>|<span style="color: blue;">C</span><span style="color: red;">T</span>|<span style="color: green;">AA</span>|<span style="color: red;">TT</span>|<span style="color: green;">A</span><span style="color: blue;">C</span>| 
+|     |  |  |  |  |  |  |  |  |  
+| $f(\color{green}{A})$ | 0.60 | -- | -- | 1.00 | -- | 0.60 | -- | 0.80 |
+| $f(\color{red}{T})$ | 0.40 | -- | -- | -- | 0.20 | -- | 1.00 | -- |
+| $f(\color{blue}{C})$ | -- | 1.00 | 0.30 | -- | 0.30 | -- | -- | 0.20 |
+| $f(\color{goldenrod}{G})$ | -- | -- | 0.70 | -- |0.50 | 0.40 | -- | -- |
+| $H_{Esp}$ | 0.48 | 0.00 | 0.42 | 0.00 | 0.62 | 0.48 | 0.00 | 0.32 |
+| $A_{e}$ | **1.92** | **1.00** | **1.72** | **1.00** | **2.63** | **1.92** | **1.00** | **1.47** |
+
+<br>
 
 ## Medidas de Diversidade em loci haplóides
 
 ### Número de haplótipos
 
-Número de haplótipos (h)
+Número de haplótipos ($h$) é o número de haplótipos diferentes observados.
 
-Onde, 
-h = número de haplótipos diferentes observados.
-
-Exemplo,
-
-### Diversidade haplotípica
-
-Diversidade haplotípica (Hd)
-
-Hd = (N / N − 1) * (1 − ∑pi2)
-
-Onde, 
-N = tamanho da amostra, e
-pi = frequência do i-nésimo haplótipo.
+<br>
 
 Exemplo,
+
+||1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|
+|:-- |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:
+|1.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|2.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|3.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
+|4.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|5.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+
+<br>
+
+Desta forma, temos:
+
+- **Haplótipo X** -- Haplótipo observado nos indivíduos 1 e 2;
+
+- **Haplótipo Y** -- Haplótipo observado no indivíduo 3; e
+
+- **Haplótipo Z** -- Haplótipo observado nos indivíduos 4 e 5;
+
+<br>
+
+E assim,
+
+$$h = 3$$
+<br>
 
 ### Número de sítios segregantes
 
-Número de sítios segregantes ou polimórficos (S)
+Número de sítios segregantes ($S$) é o número de sítios observados que apresentam variação (polimórficos).
 
-Onde, 
-S = número de sítios polimórficos observados.
+<br>
+
+Exemplo,
+
+||1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|
+|:-- |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:
+|1.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|2.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|3.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
+|4.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|5.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|$S$|0|**1**|0|0|**1**|0|0|0|**1**|0|**1**|**1**|0|0|0|**1**|**1**|**1**|
+
+
+E assim,
+
+$$S = 8$$
+
+<br>
+
+### Número de sítios invariáveis
+
+Número de sítios invariáveis ($I$) é o número de sítios observados que não apresentam variação (constantes). 
+
+<br>
 
 Exemplo,
 
-### Número de sítios invariantes
+||1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|
+|:-- |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:
+|1.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|2.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|3.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
+|4.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|5.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|$I$|**1**|0|**1**|**1**|0|**1**|**1**|**1**|0|**1**|0|0|**1**|**1**|**1**|0|0|0|
 
-Número de sítios invariantes (I)
+<br>
 
-Onde, 
-I = número de sítios invariantes observados.
+E assim,
 
-Exemplo,
+$$I = 10$$
+
+<br>
+
 
 ### Número total de mutações
 
-Número total de mutações (η; Eta)
+Número total de mutações ($\eta$; ${Eta}$}) ([Fu & Li 1993](https://doi.org/10.1093/genetics/133.3.693)), também referido como o número mínimo de mutações ([Tajima 1996](https://doi.org/10.1093/genetics/143.3.1457)), é definido como:
 
-Onde, 
-η = número de sítios de nucleotídeos nos quais as bases menos frequentes são observadas.
+<br>
+
+\begin{equation} 
+\eta  =  \sum_i^m s_i
+  (\#eq:eta)
+\end{equation} 
+
+<br>
+
+Onde,
+$s_i$ é o número de diferentes nucleotídeos no $i$-nésimo sítio menos um.
+
+<br>
 
 Exemplo,
+
+||1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|
+|:-- |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:
+|1.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|2.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|3.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
+|4.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|5.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|   | | | | | | | | | | | | | | | | | | |
+|$s$|0|**1**|0|0|**1**|0|0|0|**2**|0|**1**|**1**|0|0|0|**1**|**1**|**1**|
+
+<br>
+
+E assim,
+
+$$\eta = 10$$
+
+<br>
+
+### Diversidade haplotípica
+
+Diversidade haplotípica ($Hd$) representa a probabilidade de que dois alelos amostrados aleatoriamente sejam diferentes, de forma que:
+
+<br>
+
+\begin{equation} 
+Hd  =  \frac{N}{N-1} \left( 1 - \sum{p_i^2} \right)
+  (\#eq:haplotypediversity)
+\end{equation} 
+
+<br>
+
+Onde, 
+$N$ é o tamanho da amostra, e 
+$p_i$ é a frequência do $i$-nésimo haplótipo.
+
+<br>
+
+Exemplo,
+
+Dados os haplótipos observados no exemplo anterior, temos que:
+
+| | Hap X | Hap Y | Hap z |
+| :-- | :--: | :--: | :--: |
+|Ind 1|$\checkmark$|--|--| 
+|Ind 2|$\checkmark$|--|--|
+|Ind 3|--|$\checkmark$|--|
+|Ind 4|--|--|$\checkmark$|
+|Ind 5|--|--|$\checkmark$|
+| | | | | 
+|$p$ |**0.4**|**0.2**|**0.4**| 
+
+<br>
+
+E assim,
+
+$$Hd = \frac{5}{4-1} \left( 1 - 0.4^2 + 0.2^2 + 0.4^2 \right) = 1.25 \cdot 0.64 = 0.8$$
+
+<br>
+
 
 ### Número médio de diferenças nucleotídicas
 
-Número médio de diferenças nucleotídicas (k)
+Número médio de diferenças nucleotídicas (k) ([Tajima 1983](https://doi.org/10.1093/genetics/105.2.437)) é definido como:
 
-k = ∑ ∑ kij / (  )
+\begin{equation} 
+k = \frac { \sum_{i<j}^{} k_{ij} } { \binom{n}{2} }
+  (\#eq:nucleotidedifferences)
+\end{equation}
+
+<br> 
 
 Onde, 
-kij = número de nucleotídeos diferentes entre as i-nésima e j-nésima sequência de nucleotídeos.
+$k_{ij}$ é o número de nucleotídeos diferentes entre as $i$-nésima e $j$-nésima sequência de nucleotídeos, e 
+$n$ é o número de sequências sendo comparadas.
+
+<br>
 
 Exemplo,
+
+Dadas as $n=5$ sequências do exemplo anterior, as comparações par-a-par entre elas serão:
+
+|     | Ind 1 | Ind 2 | Ind 3 | Ind 4 | Ind 5 |
+| :-- | :--:  | :--:  | :--:  | :--:  | :--:  |
+|**Ind 1**|--     |       |       |       |       |
+|**Ind 2**|$k_{12}$|--     |       |       |       |
+|**Ind 3**|$k_{13}$|$k_{23}$|--     |       |       |
+|**Ind 4**|$k_{14}$|$k_{24}$|$k_{34}$|--     |       |
+|**Ind 5**|$k_{15}$|$k_{25}$|$k_{35}$|$k_{45}$|--     |
+
+<br>
+
+De forma que o número total de comparações será:
+
+$$\binom{5}{2}=10$$
+
+<br>
+
+Assim, tomemos como exemplo a comparação entre as sequências dos indivíduos 2 e 3.
+
+Onde,
+
+||1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|
+|:-- |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|2.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|3.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
+|   | | | | | | | | | | | | | | | | | | |
+|$k$|0|**1**|0|0|**1**|0|0|0|**1**|0|**1**|0|0|0|0|0|**1**|**1**|
+
+<br>
+
+Logo,
+
+$$k_{23} = 6$$
+
+<br>
+
+Desta forma, as diferenças de nucleotídeos entre os pares de sequências serão:
+
+|     | Ind 1 | Ind 2 | Ind 3 | Ind 4 | Ind 5 |
+| :-- | :--:  | :--:  | :--:  | :--:  | :--:  |
+|**Ind 1**|--     |       |       |       |       |
+|**Ind 2**|0|--     |       |       |       |
+|**Ind 3**|6|6|--     |       |       |
+|**Ind 4**|6|6|5|--     |       |
+|**Ind 5**|6|6|5|0|--     |
+
+<br>
+
+E assim
+
+$$k = \frac{\left( 0+6+6+6+6+6+6+5+5+0 \right)}{10}=4.6$$
+
+<br>
 
 ### Diversidade nucleotídica 
 
-Diversidade nucleotídica ou número médio de substituições por sítio de nucleotídeo (π; pi) 
+Diversidade nucleotídica  ($\pi$; $Pi$) ou número médio de substituições por sítio de nucleotídeo, é definida como:
 
-π = ∑ ∑ πij / (n_2)
+<br>
+
+\begin{equation} 
+\pi = \frac { \sum_{i<j}^{} \pi_{ij} } { \binom{n}{2} }
+  (\#eq:nucleotidediversity)
+\end{equation}
+
+<br> 
 
 Onde, 
-πij = proporção de nucleotídeos diferentes entre as i-nésima e j-nésima sequência de nucleotídeos.
+$\pi_{ij}$ é a proporção de nucleotídeos diferentes entre as $i$-nésima e $j$-nésima sequência de nucleotídeos, e 
+$n$ é o número de sequências sendo comparadas.
 
+<br>
+
+A diversidade nucleotídica pode ser estimada a partir do número médio de diferenças nucleotídicas ($k$) de forma que:
+
+<br>
+
+$$ \pi = \frac {k} {L} $$
+
+<br>
+
+Onde, 
+$L$ é o tamanho do haplótipo em pares de bases.
+
+<br>
 
 Exemplo,
 
-Note que a diversidade nucleotídica (π) pode ser estimada da seguinte forma:
+Dadas as $n=5$ sequências do exemplo anterior, as comparações par-a-par entre elas serão:
 
-π = k / L
+|     | Ind 1 | Ind 2 | Ind 3 | Ind 4 | Ind 5 |
+| :-- | :--:  | :--:  | :--:  | :--:  | :--:  |
+|**Ind 1**|--     |       |       |       |       |
+|**Ind 2**|$\pi_{12}$|--     |       |       |       |
+|**Ind 3**|$\pi_{13}$|$\pi_{23}$|--     |       |       |
+|**Ind 4**|$\pi_{14}$|$\pi_{24}$|$\pi_{34}$|--     |       |
+|**Ind 5**|$\pi_{15}$|$\pi_{25}$|$\pi_{35}$|$\pi_{45}$|--     |
 
-Onde, 
-k = número médio de diferenças nucleotídicas
-L = o tamanho, em pares de bases, do haplótipo (se todos indivíduos apresentarem sequências com o mesmo tamanho)
+<br>
 
+De forma que o número total de comparações será:
+
+$$\binom{5}{2}=10$$
+
+<br>
+
+Assim, tomemos como exemplo a comparação entre as sequências dos indivíduos 2 e 3.
+
+Onde,
+
+||1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|
+|:-- |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|2.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|3.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
+|   | | | | | | | | | | | | | | | | | | |
+|$\pi$|0|$\frac{1}{18}$|0|0|$\frac{1}{18}$|0|0|0|$\frac{1}{18}$|0|$\frac{1}{18}$|0|0|0|0|0|$\frac{1}{18}$|$\frac{1}{18}$|
+
+<br>
+
+Logo,
+
+$$\pi_{23} = \frac {6}{18} = 0.333$$
+
+<br>
+
+Desta forma, as diferenças de nucleotídeos entre os pares de sequências serão:
+
+|     | Ind 1 | Ind 2 | Ind 3 | Ind 4 | Ind 5 |
+| :-- | :--:  | :--:  | :--:  | :--:  | :--:  |
+|**Ind 1**|--     |       |       |       |       |
+|**Ind 2**|0|--     |       |       |       |
+|**Ind 3**|0.333|0.333|--     |       |       |
+|**Ind 4**|0.333|0.333|0.277|--     |       |
+|**Ind 5**|0.333|0.333|0.277|0|--     |
+
+<br>
+
+E assim
+
+$$\pi = \frac{\left( 0+0.333+0.333+0.333+0.333+0.333+0.333+0.277+0.277+0 \right)}{10} \approx 0.255$$
+
+<br>
 
