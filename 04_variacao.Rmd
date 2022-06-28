@@ -575,7 +575,7 @@ $$\eta = 10$$
 
 ### Diversidade haplotípica
 
-Diversidade haplotípica ($Hd$) representa a probabilidade de que dois alelos amostrados aleatoriamente sejam diferentes, de forma que:
+Diversidade haplotípica ($Hd$) representa a probabilidade de que dois indivíduos amostrados aleatoriamente apresentam haplótipos diferentes, de forma que:
 
 <br>
 
@@ -611,9 +611,27 @@ Dados os haplótipos observados no exemplo anterior, temos que:
 E assim,
 
 $$Hd = \frac{5}{4-1} \left( 1 - 0.4^2 + 0.2^2 + 0.4^2 \right) = 1.25 \cdot 0.64 = 0.8$$
+<br>
+
+Observe que a probabilidade de um par de indivíduos amostrados aleatoriamente na população apresentar uma dada combinação haplotípica é dada pela matrix:
 
 <br>
 
+| | Hap X | Hap Y | Hap z |
+| :-- | :--: | :--: | :--: |
+|**Hap X**|$\color{red}{p_X^2}$|$p_Xp_Y$|$p_Xp_Z$| 
+|**Hap Y**|$p_Xp_Y$|$\color{red}{p_Y^2}$|$p_Yp_Z$|
+|**Hap Z**|$p_Xp_Z$|$p_Yp_Z$|$\color{red}{p_Z^2}$|
+
+<br>
+
+Assim, as chances de dois indivíduos quaisquer apresentarem:
+
+- Haplótipos iguais $\rightarrow$ $\color{red}{p_X^2 + p_Y^2 + p_Z^2}$; e
+
+- Haplótipos diferentes $\rightarrow$ $2p_Xp_Y + 2p_Xp_Z + 2p_Yp_Z = 1 - \left( \color{red}{p_X^2 + p_Y^2 + p_Z^2} \right)$.
+
+<br>
 
 ### Número médio de diferenças nucleotídicas
 

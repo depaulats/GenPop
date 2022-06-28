@@ -216,7 +216,7 @@ knitr::kable(chi_table, align = "cccccccccc", booktabs = TRUE, caption = "Tabela
 ```
 .\linebreak
 
-### Testando a significância do Princípio de Hardy-Weinberg
+## Testando a significância do Princípio de Hardy-Weinberg
 
 O teste de ajuste do qui-quadrado pode ser utilizado para saber se uma população segue o Princípio de Hardy-Weinberg, _i.e._, para saber se esta está em equilíbrio.
 
@@ -430,7 +430,7 @@ $$gl=1$$
 .\linebreak
 
 
-#### Alternativa: Teste exato de Fisher
+### Alternativa: Teste exato de Fisher
 
 O teste exato de Fisher é válido para todos os tamanhos de amostra, e se torna exato no limite à medida que o tamanho da amostra cresce até o infinito, como acontece com muitos testes estatísticos.
 
