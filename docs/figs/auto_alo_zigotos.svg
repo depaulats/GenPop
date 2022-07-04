@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.1893044"
-     inkscape:cx="354.40885"
-     inkscape:cy="181.61877"
+     inkscape:zoom="2.3786088"
+     inkscape:cx="520.68251"
+     inkscape:cy="235.85215"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -1016,84 +1016,81 @@
            x="-309.99713"
            y="43.437229">(</tspan></text>
     </g>
-    <g
-       id="g3755">
-      <path
-         d="m 890.5,200.5 49.134,0.167"
-         stroke="#ffffff"
-         stroke-width="2.66667"
-         stroke-linejoin="round"
-         stroke-miterlimit="10"
-         fill="none"
-         fill-rule="evenodd"
-         id="path365"
-         transform="matrix(0.2063177,0,0,0.2063177,-23.911067,-19.576851)"
-         clip-path="url(#clipPath693)"
-         style="stroke:#000000" />
-      <text
-         xml:space="preserve"
-         style="font-size:6.35px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-         x="161.14502"
-         y="28.042658"
-         id="text3300"><tspan
-           sodipodi:role="line"
-           id="tspan3298"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Cambria;-inkscape-font-specification:'Cambria Italic';stroke-width:0.264583"
-           x="161.14502"
-           y="28.042658">2<tspan
+    <path
+       d="m 890.5,200.5 49.134,0.167"
+       stroke="#ffffff"
+       stroke-width="2.66667"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path365"
+       transform="matrix(0.2063177,0,0,0.2063177,-23.911067,-19.576851)"
+       clip-path="url(#clipPath693)"
+       style="stroke:#000000" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="159.89043"
+       y="28.042658"
+       id="text3300"><tspan
+         sodipodi:role="line"
+         id="tspan3298"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Cambria;-inkscape-font-specification:'Cambria Italic';stroke-width:0.264583"
+         x="159.89043"
+         y="28.042658">2<tspan
    style="font-style:italic"
-   id="tspan3333">N</tspan></tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:6.35px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+   id="tspan3333">N<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan485">e</tspan></tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="163.09468"
+       y="20.152615"
+       id="text3300-7-2"><tspan
+         sodipodi:role="line"
+         id="tspan3298-0-1"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math Italic';stroke-width:0.264583"
          x="163.09468"
-         y="20.152615"
-         id="text3300-7-2"><tspan
-           sodipodi:role="line"
-           id="tspan3298-0-1"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math Italic';stroke-width:0.264583"
-           x="163.09468"
-           y="20.152615">1</tspan></text>
-    </g>
-    <g
-       id="g3755-7"
-       transform="translate(5.3736027,48.391969)">
-      <path
-         d="m 890.5,200.5 49.134,0.167"
-         stroke="#ffffff"
-         stroke-width="2.66667"
-         stroke-linejoin="round"
-         stroke-miterlimit="10"
-         fill="none"
-         fill-rule="evenodd"
-         id="path365-0"
-         transform="matrix(0.2063177,0,0,0.2063177,-23.911067,-19.576851)"
-         clip-path="url(#clipPath693-8)"
-         style="stroke:#000000" />
-      <text
-         xml:space="preserve"
-         style="font-size:6.35px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-         x="161.14502"
-         y="28.042658"
-         id="text3300-3"><tspan
-           sodipodi:role="line"
-           id="tspan3298-4"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Cambria;-inkscape-font-specification:'Cambria Italic';stroke-width:0.264583"
-           x="161.14502"
-           y="28.042658">2<tspan
+         y="20.152615">1</tspan></text>
+    <path
+       d="m 890.5,200.5 49.134,0.167"
+       stroke="#ffffff"
+       stroke-width="2.66667"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path365-0"
+       transform="matrix(0.2063177,0,0,0.2063177,-18.537464,28.815118)"
+       clip-path="url(#clipPath693-8)"
+       style="stroke:#000000" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="165.26402"
+       y="76.434624"
+       id="text3300-3"><tspan
+         sodipodi:role="line"
+         id="tspan3298-4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Cambria;-inkscape-font-specification:'Cambria Italic';stroke-width:0.264583"
+         x="165.26402"
+         y="76.434624">2<tspan
    style="font-style:italic"
-   id="tspan3333-5">N</tspan></tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:6.35px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-         x="163.09468"
-         y="20.152615"
-         id="text3300-7-2-7"><tspan
-           sodipodi:role="line"
-           id="tspan3298-0-1-9"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math Italic';stroke-width:0.264583"
-           x="163.09468"
-           y="20.152615">1</tspan></text>
-    </g>
+   id="tspan3333-5">N<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan487">e</tspan></tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="168.46828"
+       y="68.544586"
+       id="text3300-7-2-7"><tspan
+         sodipodi:role="line"
+         id="tspan3298-0-1-9"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math Italic';stroke-width:0.264583"
+         x="168.46828"
+         y="68.544586">1</tspan></text>
   </g>
 </svg>

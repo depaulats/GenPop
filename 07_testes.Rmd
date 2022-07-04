@@ -170,6 +170,7 @@ Cada grau de liberdade apresenta um função densidade de probabilidade, onde os
 .\linebreak
 ```{r glgraph, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade."} 
 library("ggplot2")
+library("latex2exp")
 ggplot(data.frame(x = c(0, 15)), aes(x = x)) + 
   stat_function(fun = dchisq, args = list(df = 1), color = "firebrick2", lwd = 1) +
   stat_function(fun = dchisq, args = list(df = 2), color = "chocolate", lwd = 1) +
