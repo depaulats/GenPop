@@ -1,6 +1,12 @@
 # Estruturação Populacional
 
+<br>
 
+```{r Aphelocoma, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="A integração de dados detalhados de dispersão, linhagem e genômica possibilitou uma compreensão bastante completa de como a dispersão molda os padrões de diversidade genética em escalas espaciais curtas em gaio-dos-arbustos da Flórida (Aphelocoma coerulescens), em que o isolamento por distância ocorre como resultado da dispersão limitada sobre escalas de tempo contemporâneas. Veja [Aguillon et al. 2017](https://doi.org/10.1371/journal.pgen.1006911)."}
+knitr::include_graphics('https://gcbias.files.wordpress.com/2017/09/plos_cover_image.jpg')
+```
+
+<br>
 
 ## Variação genética em populações subdivididas
 
@@ -210,6 +216,12 @@ $\bar{p}$ e $\bar{q}$ são as frequências alélicas médias entre todos os $k$ 
 
 <br>
 
+```{r fixationindex, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="A heterozigosidade em populações subdivididas.."}
+knitr::include_graphics("figs/heterozigosity.svg")
+```
+
+<br>
+
 Assim, se os padrões subjacentes de acasalamento entre populações subdivididas restringirem o fluxo gênico, então essas estimativas de heterozigosidade irão mudar. 
 
 <br>
@@ -265,18 +277,15 @@ As estatísticas $F$ (também conhecidas como **índices de fixação**) foram d
 
 No próximo nível demográfico, pode-se examinar a heterozigosidade da subpopulação ($H_S$) em relação ao conjunto total de dados ($H_T$), de forma que:
 
-$$F_{FT} = \frac{H_T-H_S}{H_T}=1-\frac{H_S}{H_T}$$
+$$F_{ST} = \frac{H_T-H_S}{H_T}=1-\frac{H_S}{H_T}$$
 
 <br>
 
 Este parâmetro mede a redução na heterozigosidade da subpopulação em relação a todo o conjunto de dados, onde teremos:
 
-**Ausência de isolamento ...**
+- **Ausência de isolamento** -- Quando as subpopulações foram geneticamente idênticas; e
 
-... quando as subpopulações foram geneticamente idênticas, e assim:
-
-<br>
-
+- 
 $$F_{ST}=1$$.
 
 <br>
@@ -288,6 +297,12 @@ $$F_{ST}=1$$.
 <br>
 
 $F_{ST}=1$.
+
+<br>
+
+```{r fixationindex, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="A estrutura das populações e o índice de fixação ($F_{ST}$) em populações panmíticas e isoladas."}
+knitr::include_graphics("figs/fixation_index.svg")
+```
 
 <br>
 
@@ -386,6 +401,13 @@ ${\sigma_X}$ e ${\sigma_Y}$ são os valores de desvio-padrão dos parâmetros de
 <br>
 
 A estatística varia de $-1 \leq r_M \leq +1$, 
+
+
+<br>
+
+```{r mantelcorrel, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="A correlação de Mantel entre matrizes de distâncias genéticas e geográficas permite avaliar se as populações se diferenciam por isolamento por distância (IBD)."}
+knitr::include_graphics("figs/mantel_correlation.svg")
+```
 
 <br>
 
