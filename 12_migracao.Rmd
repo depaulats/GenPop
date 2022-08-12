@@ -258,13 +258,13 @@ Assim:
 library("ggplot2")
 library("latex2exp")
 ggplot(data.frame(x = c(0, 50)), aes(x = x)) + 
-  stat_function(fun = function(x) 1 - (1-(1*(1-(2*0.05))^x))/2, color = "firebrick2", lwd = 1) +
-  stat_function(fun = function(x) 0 + (1-(1*(1-(2*0.05))^x))/2, color = "royalblue3", lwd = 1) +
+  stat_function(fun = function(x) 1 - (1-(1*(1-(2*0.05))^x))/2, color = "royalblue3", lwd = 1) +
+  stat_function(fun = function(x) 0 + (1-(1*(1-(2*0.05))^x))/2, color = "green4", lwd = 1) +
   labs(x = "Geração", y = "Frequência alélica") + 
   xlim(0, 50) +
   ylim(0, 1) +
-  annotate(geom='text', x=25, y=0.7, parse = TRUE, color="firebrick2", label=TeX("$População \\ 1$")) +
-  annotate(geom='text', x=25, y=0.3, parse = TRUE, color="royalblue3", label=TeX("$População \\ 2$"))
+  annotate(geom='text', x=25, y=0.7, parse = TRUE, color="royalblue3", label=TeX("$População \\ 1$")) +
+  annotate(geom='text', x=25, y=0.3, parse = TRUE, color="green4", label=TeX("$População \\ 2$"))
 ```
 
 <br>
@@ -329,13 +329,13 @@ De forma que $p_t \to P$, quando $t \to \infty$.
 library("ggplot2")
   library("latex2exp")
 ggplot(data.frame(x = c(0, 50)), aes(x = x)) + 
-  stat_function(fun = function(x) 0.2, color = "firebrick2", lwd = 1) +
-  stat_function(fun = function(x) 0.2 + (1 - 0.2)*(1 - 0.1)^x, color = "royalblue3", lwd = 1) +
+  stat_function(fun = function(x) 0.2, color = "royalblue3", lwd = 1) +
+  stat_function(fun = function(x) 0.2 + (1 - 0.2)*(1 - 0.1)^x, color = "green4", lwd = 1) +
   labs(x = "Geração", y = "Frequência alélica") + 
   xlim(0, 50) +
   ylim(0, 1) +
-  annotate(geom='text', x=25, y=0.10, parse = TRUE, color="firebrick2", label=TeX("$População \\ fonte$")) +
-  annotate(geom='text', x=25, y=0.40, parse = TRUE, color="royalblue3", label=TeX("$População \\ dreno$"))
+  annotate(geom='text', x=25, y=0.10, parse = TRUE, color="royalblue3", label=TeX("$População \\ fonte$")) +
+  annotate(geom='text', x=25, y=0.40, parse = TRUE, color="green4", label=TeX("$População \\ dreno$"))
 ```
 
 <br>
@@ -458,7 +458,7 @@ Assim:
 library("ggplot2")
 library("latex2exp")
 ggplot(data.frame(x = c(0, 20)), aes(x = x)) + 
-  stat_function(fun = function(x) 1/(x+1), color = "royalblue3", lwd = 2) +
+  stat_function(fun = function(x) 1/(x+1), color = "black", lwd = 2) +
   labs(x = "Número efetivo de migrantes", y = "Índice de fixação") + 
   xlim(0, 20) +
   ylim(0, 1)
