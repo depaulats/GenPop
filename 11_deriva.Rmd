@@ -223,7 +223,7 @@ Por outro lado, uma população que permanece com um locus segregante (e.g., $0<
 
 Em populações maiores, o espalhamento progressivo das freqüências alélicas e o acúmulo de locos fixados ocorrem mais lentamente. 
 
-```{r binomial, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "800px", fig.cap="Probabilidade binomial da mudança na frequência alélica ($p$) em uma geração por deriva dos alelos dado diferentes tamanhos populacionals ($N$). Note que a amplitude da distribuição diminui à medida que o tamanho da população aumenta."} 
+```{r binomialpopsize, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "800px", fig.cap="Probabilidade binomial da mudança na frequência alélica ($p$) em uma geração por deriva dos alelos dado diferentes tamanhos populacionals ($N$). Note que a amplitude da distribuição diminui à medida que o tamanho da população aumenta."} 
 library("ggplot2")
 library("latex2exp")
 library("patchwork")
@@ -391,8 +391,8 @@ knitr::kable(data1101, "html", align = "cccccc", col.names = c("$t_1$", "$t_2$",
 
 <br>
 
-```{r amerindios, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="Índios sul e centro-americanos colonizaram essas áreas a partir do norte desde a Sibéria, até o final da última Idade do Gelo. A maioria dessas pessoas descende de um pequeno grupo de “fundadores" intimamente relacionado, e são em quase totalidade pertencentes ao tipo sanguíneo O+. Retirado de Meyers Großes Konversations, Lexikon 6, Auflage.."}
-knitr::include_graphics('https://cs10.pikabu.ru/post_img/2020/03/14/11/1584214552158435370.jpg')
+```{r amerindios, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap= "Índios sul e centro-americanos colonizaram essas áreas a partir do norte desde a Sibéria, até o final da última Idade do Gelo. A maioria dessas pessoas descende de um pequeno grupo de fundadores intimamente relacionado, e são em quase totalidade pertencentes ao tipo sanguíneo O+. Retirado de Meyers Großes Konversations, Lexikon 6, Auflage."}
+knitr::include_graphics("figs/amerindios.jpg")
 ```
 
 <br>

@@ -136,7 +136,7 @@ $$ q_t = 1 - p_t$$
 
 <br>
 
-```{r mutation1graph, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "600px", fig.cap="A mutação do alelo $A$ para o alelo $a$ promoverá uma mudança evolutiva cuja direção é a diminuiçãao da frequência alélica $p$ (e aumento da frequência alélica $q$) proporcionalmente à taxa de mutação $\mu$."} 
+```{r mutation1graph, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "600px", fig.cap="A mutação do alelo $A$ para o alelo $a$ promoverá uma mudança evolutiva cuja direção é a diminuiçãao da frequência alélica $p$, e aumento da frequência alélica $q$,  proporcionalmente à taxa de mutação $μ$."} 
 library("ggplot2")
   library("latex2exp")
 ggplot(data.frame(x = c(0, 1000000)), aes(x = x)) + 

@@ -294,7 +294,7 @@ $$p_1 = (1 – m)p_0 + mP$$
 
 <br>
 
-```{r migration2way, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A frequência alélica $p$ após uma geração com uma taxa de migração unidirecional $m$ pa população fonte para a população dreno."}
+```{r migration1way, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A frequência alélica $p$ após uma geração com uma taxa de migração unidirecional $m$ pa população fonte para a população dreno."}
 knitr::include_graphics("figs/migration_unidirectional.svg")
 ```
 

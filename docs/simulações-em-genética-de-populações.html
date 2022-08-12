@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 15 Simulações em genética de populações | Notas de Aula em Genética de Populações</title>
+  <meta name="description" content="Este livro foi desenvolvido para estudantes de cursos de Genética de Populações da Graduação e Pós-Graduação." />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 15 Simulações em genética de populações | Notas de Aula em Genética de Populações" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Este livro foi desenvolvido para estudantes de cursos de Genética de Populações da Graduação e Pós-Graduação." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 15 Simulações em genética de populações | Notas de Aula em Genética de Populações" />
+  
+  <meta name="twitter:description" content="Este livro foi desenvolvido para estudantes de cursos de Genética de Populações da Graduação e Pós-Graduação." />
+  
+
+<meta name="author" content="Thiago S. de Paula" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="seleção-natural.html"/>
+<link rel="next" href="resolução-dos-exercícios.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">GenPop</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section" id="toc-section"></a></li>
+<li class="chapter" data-level="" data-path="prefácio.html"><a href="prefácio.html"><i class="fa fa-check"></i>Prefácio</a>
+<ul>
+<li class="chapter" data-level="" data-path="prefácio.html"><a href="prefácio.html#licença-de-uso"><i class="fa fa-check"></i>Licença de uso</a></li>
+<li class="chapter" data-level="" data-path="prefácio.html"><a href="prefácio.html#por-que-ler-este-livro"><i class="fa fa-check"></i>Por que ler este livro</a></li>
+<li class="chapter" data-level="" data-path="prefácio.html"><a href="prefácio.html#estrutura-do-livro"><i class="fa fa-check"></i>Estrutura do Livro</a></li>
+<li class="chapter" data-level="" data-path="prefácio.html"><a href="prefácio.html#agradecimentos"><i class="fa fa-check"></i>Agradecimentos</a></li>
+<li class="chapter" data-level="" data-path="prefácio.html"><a href="prefácio.html#sobre-o-autor"><i class="fa fa-check"></i>Sobre o autor</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introdução.html"><a href="introdução.html"><i class="fa fa-check"></i><b>1</b> Introdução</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introdução.html"><a href="introdução.html#o-dna-pode-replicar"><i class="fa fa-check"></i><b>1.1</b> O DNA pode replicar</a></li>
+<li class="chapter" data-level="1.2" data-path="introdução.html"><a href="introdução.html#o-dna-pode-mutar-e-recombinar"><i class="fa fa-check"></i><b>1.2</b> O DNA pode mutar e recombinar</a></li>
+<li class="chapter" data-level="1.3" data-path="introdução.html"><a href="introdução.html#o-dna-interage-com-o-ambiente-e-produz-fenótipos"><i class="fa fa-check"></i><b>1.3</b> O DNA interage com o ambiente e produz fenótipos</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="histórico.html"><a href="histórico.html"><i class="fa fa-check"></i><b>2</b> Histórico</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="histórico.html"><a href="histórico.html#evolução-do-pensamento-evolutivo"><i class="fa fa-check"></i><b>2.1</b> Evolução do pensamento evolutivo</a></li>
+<li class="chapter" data-level="2.2" data-path="histórico.html"><a href="histórico.html#linha-do-tempo"><i class="fa fa-check"></i><b>2.2</b> Linha do tempo</a></li>
+<li class="chapter" data-level="2.3" data-path="histórico.html"><a href="histórico.html#principais-pensadores"><i class="fa fa-check"></i><b>2.3</b> Principais pensadores</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="histórico.html"><a href="histórico.html#charles-darwin"><i class="fa fa-check"></i><b>2.3.1</b> Charles Darwin</a></li>
+<li class="chapter" data-level="2.3.2" data-path="histórico.html"><a href="histórico.html#gregor-mendel"><i class="fa fa-check"></i><b>2.3.2</b> Gregor Mendel</a></li>
+<li class="chapter" data-level="2.3.3" data-path="histórico.html"><a href="histórico.html#a-redescoberta-de-mendel"><i class="fa fa-check"></i><b>2.3.3</b> A redescoberta de Mendel</a></li>
+<li class="chapter" data-level="2.3.4" data-path="histórico.html"><a href="histórico.html#ronald-a.-fisher"><i class="fa fa-check"></i><b>2.3.4</b> Ronald A. Fisher</a></li>
+<li class="chapter" data-level="2.3.5" data-path="histórico.html"><a href="histórico.html#j.-b.-s.-haldane"><i class="fa fa-check"></i><b>2.3.5</b> J. B. S. Haldane</a></li>
+<li class="chapter" data-level="2.3.6" data-path="histórico.html"><a href="histórico.html#sewall-wright"><i class="fa fa-check"></i><b>2.3.6</b> Sewall Wright</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="polimorfismo-genéticos-e-marcadores-moleculares.html"><a href="polimorfismo-genéticos-e-marcadores-moleculares.html"><i class="fa fa-check"></i><b>3</b> Polimorfismo Genéticos e Marcadores Moleculares</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="polimorfismo-genéticos-e-marcadores-moleculares.html"><a href="polimorfismo-genéticos-e-marcadores-moleculares.html#mutações-times-polimorfismos"><i class="fa fa-check"></i><b>3.1</b> Mutações <span class="math inline">\(\times\)</span> Polimorfismos</a></li>
+<li class="chapter" data-level="3.2" data-path="polimorfismo-genéticos-e-marcadores-moleculares.html"><a href="polimorfismo-genéticos-e-marcadores-moleculares.html#dinâmica-evolutiva-e-ecológica-dos-polimorfismos"><i class="fa fa-check"></i><b>3.2</b> Dinâmica evolutiva e ecológica dos polimorfismos</a></li>
+<li class="chapter" data-level="3.3" data-path="polimorfismo-genéticos-e-marcadores-moleculares.html"><a href="polimorfismo-genéticos-e-marcadores-moleculares.html#evolução-dos-polimorfismos-em-diferentes-escalas"><i class="fa fa-check"></i><b>3.3</b> Evolução dos polimorfismos em diferentes escalas</a></li>
+<li class="chapter" data-level="3.4" data-path="polimorfismo-genéticos-e-marcadores-moleculares.html"><a href="polimorfismo-genéticos-e-marcadores-moleculares.html#padrões-de-herança"><i class="fa fa-check"></i><b>3.4</b> Padrões de herança</a></li>
+<li class="chapter" data-level="3.5" data-path="polimorfismo-genéticos-e-marcadores-moleculares.html"><a href="polimorfismo-genéticos-e-marcadores-moleculares.html#taxas-de-mutação"><i class="fa fa-check"></i><b>3.5</b> Taxas de mutação</a></li>
+<li class="chapter" data-level="3.6" data-path="polimorfismo-genéticos-e-marcadores-moleculares.html"><a href="polimorfismo-genéticos-e-marcadores-moleculares.html#marcadores-moleculares"><i class="fa fa-check"></i><b>3.6</b> Marcadores moleculares</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="polimorfismo-genéticos-e-marcadores-moleculares.html"><a href="polimorfismo-genéticos-e-marcadores-moleculares.html#aloenzimas"><i class="fa fa-check"></i><b>3.6.1</b> Aloenzimas</a></li>
+<li class="chapter" data-level="3.6.2" data-path="polimorfismo-genéticos-e-marcadores-moleculares.html"><a href="polimorfismo-genéticos-e-marcadores-moleculares.html#rflp"><i class="fa fa-check"></i><b>3.6.2</b> RFLP</a></li>
+<li class="chapter" data-level="3.6.3" data-path="polimorfismo-genéticos-e-marcadores-moleculares.html"><a href="polimorfismo-genéticos-e-marcadores-moleculares.html#sequência-de-nucleotídeos"><i class="fa fa-check"></i><b>3.6.3</b> Sequência de nucleotídeos</a></li>
+<li class="chapter" data-level="3.6.4" data-path="polimorfismo-genéticos-e-marcadores-moleculares.html"><a href="polimorfismo-genéticos-e-marcadores-moleculares.html#snps"><i class="fa fa-check"></i><b>3.6.4</b> SNPs</a></li>
+<li class="chapter" data-level="3.6.5" data-path="polimorfismo-genéticos-e-marcadores-moleculares.html"><a href="polimorfismo-genéticos-e-marcadores-moleculares.html#microssatelites"><i class="fa fa-check"></i><b>3.6.5</b> Microssatelites</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="polimorfismo-genéticos-e-marcadores-moleculares.html"><a href="polimorfismo-genéticos-e-marcadores-moleculares.html#tipo-de-dados"><i class="fa fa-check"></i><b>3.7</b> Tipo de dados</a></li>
+<li class="chapter" data-level="3.8" data-path="polimorfismo-genéticos-e-marcadores-moleculares.html"><a href="polimorfismo-genéticos-e-marcadores-moleculares.html#bancos-de-dados-públicos"><i class="fa fa-check"></i><b>3.8</b> Bancos de dados públicos</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html"><i class="fa fa-check"></i><b>4</b> Variação e Diversidade Genética</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#genética-mendeliana-times-genética-de-populações"><i class="fa fa-check"></i><b>4.1</b> Genética mendeliana <span class="math inline">\(\times\)</span> Genética de populações</a></li>
+<li class="chapter" data-level="4.2" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#frequências-genotípicas"><i class="fa fa-check"></i><b>4.2</b> Frequências genotípicas</a></li>
+<li class="chapter" data-level="4.3" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#frequências-alélicas"><i class="fa fa-check"></i><b>4.3</b> Frequências alélicas</a></li>
+<li class="chapter" data-level="4.4" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#generalização-das-frequências-genotípicas-e-alélicas"><i class="fa fa-check"></i><b>4.4</b> Generalização das frequências genotípicas e alélicas</a></li>
+<li class="chapter" data-level="4.5" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#heterozigoside"><i class="fa fa-check"></i><b>4.5</b> Heterozigoside</a></li>
+<li class="chapter" data-level="4.6" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#diversidade-gênética"><i class="fa fa-check"></i><b>4.6</b> Diversidade gênética</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#exemplo"><i class="fa fa-check"></i><b>4.6.1</b> Exemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#determinantes-da-diversidade-genética"><i class="fa fa-check"></i><b>4.7</b> Determinantes da diversidade genética</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#extratégias-reprodutivas"><i class="fa fa-check"></i><b>4.7.1</b> Extratégias reprodutivas</a></li>
+<li class="chapter" data-level="4.7.2" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#ligação-gênica"><i class="fa fa-check"></i><b>4.7.2</b> Ligação gênica</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#medidas-de-diversidade-em-loci-diplóides"><i class="fa fa-check"></i><b>4.8</b> Medidas de Diversidade em loci diplóides</a>
+<ul>
+<li class="chapter" data-level="4.8.1" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#nível-de-polimorfismo"><i class="fa fa-check"></i><b>4.8.1</b> Nível de polimorfismo</a></li>
+<li class="chapter" data-level="4.8.2" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#riqueza-alélica"><i class="fa fa-check"></i><b>4.8.2</b> Riqueza alélica</a></li>
+<li class="chapter" data-level="4.8.3" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#número-médio-de-alelos"><i class="fa fa-check"></i><b>4.8.3</b> Número médio de alelos</a></li>
+<li class="chapter" data-level="4.8.4" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#número-efetivo-de-alelos"><i class="fa fa-check"></i><b>4.8.4</b> Número efetivo de alelos</a></li>
+</ul></li>
+<li class="chapter" data-level="4.9" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#medidas-de-diversidade-em-loci-haplóides"><i class="fa fa-check"></i><b>4.9</b> Medidas de Diversidade em loci haplóides</a>
+<ul>
+<li class="chapter" data-level="4.9.1" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#número-de-haplótipos"><i class="fa fa-check"></i><b>4.9.1</b> Número de haplótipos</a></li>
+<li class="chapter" data-level="4.9.2" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#número-de-sítios-segregantes"><i class="fa fa-check"></i><b>4.9.2</b> Número de sítios segregantes</a></li>
+<li class="chapter" data-level="4.9.3" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#número-de-sítios-invariáveis"><i class="fa fa-check"></i><b>4.9.3</b> Número de sítios invariáveis</a></li>
+<li class="chapter" data-level="4.9.4" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#número-total-de-mutações"><i class="fa fa-check"></i><b>4.9.4</b> Número total de mutações</a></li>
+<li class="chapter" data-level="4.9.5" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#diversidade-haplotípica"><i class="fa fa-check"></i><b>4.9.5</b> Diversidade haplotípica</a></li>
+<li class="chapter" data-level="4.9.6" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#número-médio-de-diferenças-nucleotídicas"><i class="fa fa-check"></i><b>4.9.6</b> Número médio de diferenças nucleotídicas</a></li>
+<li class="chapter" data-level="4.9.7" data-path="variação-e-diversidade-genética.html"><a href="variação-e-diversidade-genética.html#diversidade-nucleotídica"><i class="fa fa-check"></i><b>4.9.7</b> Diversidade nucleotídica</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="princípio-de-hardy-weinberg.html"><a href="princípio-de-hardy-weinberg.html"><i class="fa fa-check"></i><b>5</b> Princípio de Hardy-Weinberg</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="princípio-de-hardy-weinberg.html"><a href="princípio-de-hardy-weinberg.html#histórico-e-premissas"><i class="fa fa-check"></i><b>5.1</b> HIstórico e premissas</a></li>
+<li class="chapter" data-level="5.2" data-path="princípio-de-hardy-weinberg.html"><a href="princípio-de-hardy-weinberg.html#modelando-o-princípio-de-hardy-weinberg"><i class="fa fa-check"></i><b>5.2</b> Modelando o princípio de Hardy-Weinberg</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="princípio-de-hardy-weinberg.html"><a href="princípio-de-hardy-weinberg.html#segundo-os-cruzamentos"><i class="fa fa-check"></i><b>5.2.1</b> Segundo os cruzamentos</a></li>
+<li class="chapter" data-level="5.2.2" data-path="princípio-de-hardy-weinberg.html"><a href="princípio-de-hardy-weinberg.html#segundo-o-pool-gênico"><i class="fa fa-check"></i><b>5.2.2</b> Segundo o <em>pool</em> gênico</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="princípio-de-hardy-weinberg.html"><a href="princípio-de-hardy-weinberg.html#generalizações-do-modelo"><i class="fa fa-check"></i><b>5.3</b> Generalizações do modelo</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="princípio-de-hardy-weinberg.html"><a href="princípio-de-hardy-weinberg.html#generalização-para-três-alelos"><i class="fa fa-check"></i><b>5.3.1</b> Generalização para três alelos</a></li>
+<li class="chapter" data-level="5.3.2" data-path="princípio-de-hardy-weinberg.html"><a href="princípio-de-hardy-weinberg.html#generalização-para-quatro-alelos"><i class="fa fa-check"></i><b>5.3.2</b> Generalização para quatro alelos</a></li>
+<li class="chapter" data-level="5.3.3" data-path="princípio-de-hardy-weinberg.html"><a href="princípio-de-hardy-weinberg.html#generalização-para-n-alelos"><i class="fa fa-check"></i><b>5.3.3</b> Generalização para <span class="math inline">\(n\)</span> alelos</a></li>
+<li class="chapter" data-level="5.3.4" data-path="princípio-de-hardy-weinberg.html"><a href="princípio-de-hardy-weinberg.html#generalização-para-triploidia"><i class="fa fa-check"></i><b>5.3.4</b> Generalização para triploidia</a></li>
+<li class="chapter" data-level="5.3.5" data-path="princípio-de-hardy-weinberg.html"><a href="princípio-de-hardy-weinberg.html#hardy-weinberg-em-genes-ligados-ao-sexo"><i class="fa fa-check"></i><b>5.3.5</b> Hardy-Weinberg em genes ligados ao sexo</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="princípio-de-hardy-weinberg.html"><a href="princípio-de-hardy-weinberg.html#exercícios"><i class="fa fa-check"></i><b>5.4</b> Exercícios</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="princípio-de-hardy-weinberg.html"><a href="princípio-de-hardy-weinberg.html#exercício-1"><i class="fa fa-check"></i><b>5.4.1</b> Exercício 1 – ???</a></li>
+<li class="chapter" data-level="5.4.2" data-path="princípio-de-hardy-weinberg.html"><a href="princípio-de-hardy-weinberg.html#exercício-2-tremoço-anão"><i class="fa fa-check"></i><b>5.4.2</b> Exercício 2 – Tremoço-anão</a></li>
+<li class="chapter" data-level="5.4.3" data-path="princípio-de-hardy-weinberg.html"><a href="princípio-de-hardy-weinberg.html#exercício-3-albinismo-em-humanos"><i class="fa fa-check"></i><b>5.4.3</b> Exercício 3 – Albinismo em humanos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="desequilíbrio-de-ligação.html"><a href="desequilíbrio-de-ligação.html"><i class="fa fa-check"></i><b>6</b> Desequilíbrio de Ligação</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="desequilíbrio-de-ligação.html"><a href="desequilíbrio-de-ligação.html#ligação-gênica-1"><i class="fa fa-check"></i><b>6.1</b> Ligação gênica</a></li>
+<li class="chapter" data-level="6.2" data-path="desequilíbrio-de-ligação.html"><a href="desequilíbrio-de-ligação.html#frequências-haplotípicas"><i class="fa fa-check"></i><b>6.2</b> Frequências haplotípicas</a></li>
+<li class="chapter" data-level="6.3" data-path="desequilíbrio-de-ligação.html"><a href="desequilíbrio-de-ligação.html#coeficiente-de-desequilíbrio-de-ligação"><i class="fa fa-check"></i><b>6.3</b> coeficiente de desequilíbrio de ligação</a></li>
+<li class="chapter" data-level="6.4" data-path="desequilíbrio-de-ligação.html"><a href="desequilíbrio-de-ligação.html#coeficiente-de-desequilíbrio-de-ligação-normalizado"><i class="fa fa-check"></i><b>6.4</b> coeficiente de desequilíbrio de ligação normalizado</a></li>
+<li class="chapter" data-level="6.5" data-path="desequilíbrio-de-ligação.html"><a href="desequilíbrio-de-ligação.html#coeficiente-de-correlação"><i class="fa fa-check"></i><b>6.5</b> Coeficiente de correlação</a></li>
+<li class="chapter" data-level="6.6" data-path="desequilíbrio-de-ligação.html"><a href="desequilíbrio-de-ligação.html#exercícios-1"><i class="fa fa-check"></i><b>6.6</b> Exercícios</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="desequilíbrio-de-ligação.html"><a href="desequilíbrio-de-ligação.html#exercício-1-ligação-gênica-em-snps"><i class="fa fa-check"></i><b>6.6.1</b> Exercício 1 – Ligação gênica em SNPs</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="testes-de-significância.html"><a href="testes-de-significância.html"><i class="fa fa-check"></i><b>7</b> Testes de Significância</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="testes-de-significância.html"><a href="testes-de-significância.html#significância-estatística"><i class="fa fa-check"></i><b>7.1</b> Significância estatística</a></li>
+<li class="chapter" data-level="7.2" data-path="testes-de-significância.html"><a href="testes-de-significância.html#testes-de-ajuste-do-chi-quadrado"><i class="fa fa-check"></i><b>7.2</b> Testes de ajuste do chi-quadrado</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="testes-de-significância.html"><a href="testes-de-significância.html#um-exemplo-simples"><i class="fa fa-check"></i><b>7.2.1</b> Um exemplo simples</a></li>
+<li class="chapter" data-level="7.2.2" data-path="testes-de-significância.html"><a href="testes-de-significância.html#teste-do-qui-quadrado-de-pearson"><i class="fa fa-check"></i><b>7.2.2</b> Teste do qui-quadrado de Pearson</a></li>
+<li class="chapter" data-level="7.2.3" data-path="testes-de-significância.html"><a href="testes-de-significância.html#graus-de-liberdade"><i class="fa fa-check"></i><b>7.2.3</b> Graus de liberdade</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="testes-de-significância.html"><a href="testes-de-significância.html#testando-a-significância-do-princípio-de-hardy-weinberg"><i class="fa fa-check"></i><b>7.3</b> Testando a significância do Princípio de Hardy-Weinberg</a></li>
+<li class="chapter" data-level="7.4" data-path="testes-de-significância.html"><a href="testes-de-significância.html#tabela-de-contingência-rxc"><i class="fa fa-check"></i><b>7.4</b> Tabela de contingência (RxC)</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="testes-de-significância.html"><a href="testes-de-significância.html#razão-de-chances"><i class="fa fa-check"></i><b>7.4.1</b> Razão de chances</a></li>
+<li class="chapter" data-level="7.4.2" data-path="testes-de-significância.html"><a href="testes-de-significância.html#frequências-haplotípicas-observadas"><i class="fa fa-check"></i><b>7.4.2</b> Frequências haplotípicas observadas</a></li>
+<li class="chapter" data-level="7.4.3" data-path="testes-de-significância.html"><a href="testes-de-significância.html#frequências-haplotípicas-esperadas"><i class="fa fa-check"></i><b>7.4.3</b> Frequências haplotípicas esperadas</a></li>
+<li class="chapter" data-level="7.4.4" data-path="testes-de-significância.html"><a href="testes-de-significância.html#testado-a-significância-de-tabelas-de-contingência"><i class="fa fa-check"></i><b>7.4.4</b> Testado a significância de tabelas de contingência</a></li>
+<li class="chapter" data-level="7.4.5" data-path="testes-de-significância.html"><a href="testes-de-significância.html#alternativa-teste-exato-de-fisher"><i class="fa fa-check"></i><b>7.4.5</b> Alternativa: Teste exato de Fisher</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="testes-de-significância.html"><a href="testes-de-significância.html#exercícios-e-atividades"><i class="fa fa-check"></i><b>7.5</b> Exercícios e Atividades</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="testes-de-significância.html"><a href="testes-de-significância.html#exercício-1-ervilhas-de-mendel"><i class="fa fa-check"></i><b>7.5.1</b> Exercício 1 – Ervilhas de Mendel</a></li>
+<li class="chapter" data-level="7.5.2" data-path="testes-de-significância.html"><a href="testes-de-significância.html#exercício-2-traça-de-tigre-escarlate"><i class="fa fa-check"></i><b>7.5.2</b> Exercício 2 – Traça de tigre escarlate</a></li>
+<li class="chapter" data-level="7.5.3" data-path="testes-de-significância.html"><a href="testes-de-significância.html#exercício-3-urso-de-kermode"><i class="fa fa-check"></i><b>7.5.3</b> Exercício 3 – Urso de Kermode</a></li>
+<li class="chapter" data-level="7.5.4" data-path="testes-de-significância.html"><a href="testes-de-significância.html#exercício-4-equilíbrio-de-ligação"><i class="fa fa-check"></i><b>7.5.4</b> Exercício 4 – Equilíbrio de LIgação</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="tamanho-efetivo-da-população.html"><a href="tamanho-efetivo-da-população.html"><i class="fa fa-check"></i><b>8</b> Tamanho efetivo da população</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="tamanho-efetivo-da-população.html"><a href="tamanho-efetivo-da-população.html#razão-sexual-desigual"><i class="fa fa-check"></i><b>8.1</b> Razão sexual desigual</a></li>
+<li class="chapter" data-level="8.2" data-path="tamanho-efetivo-da-população.html"><a href="tamanho-efetivo-da-população.html#flutuação-no-tamanho-populaconal"><i class="fa fa-check"></i><b>8.2</b> Flutuação no tamanho populaconal</a></li>
+<li class="chapter" data-level="8.3" data-path="tamanho-efetivo-da-população.html"><a href="tamanho-efetivo-da-população.html#variância-no-número-de-descendentes"><i class="fa fa-check"></i><b>8.3</b> Variância no número de descendentes</a></li>
+<li class="chapter" data-level="8.4" data-path="tamanho-efetivo-da-população.html"><a href="tamanho-efetivo-da-população.html#tamanho-efetivo-em-populações-subdivididas"><i class="fa fa-check"></i><b>8.4</b> Tamanho efetivo em populações subdivididas</a></li>
+<li class="chapter" data-level="8.5" data-path="tamanho-efetivo-da-população.html"><a href="tamanho-efetivo-da-população.html#section-1"><i class="fa fa-check"></i><b>8.5</b> </a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="endogamia.html"><a href="endogamia.html"><i class="fa fa-check"></i><b>9</b> Endogamia</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="endogamia.html"><a href="endogamia.html#endocruzamentos-times-exocruzamentos"><i class="fa fa-check"></i><b>9.1</b> Endocruzamentos <span class="math inline">\(\times\)</span> exocruzamentos</a></li>
+<li class="chapter" data-level="9.2" data-path="endogamia.html"><a href="endogamia.html#causas-de-endogamia"><i class="fa fa-check"></i><b>9.2</b> Causas de endogamia</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="endogamia.html"><a href="endogamia.html#endogamia-intencional"><i class="fa fa-check"></i><b>9.2.1</b> Endogamia intencional</a></li>
+<li class="chapter" data-level="9.2.2" data-path="endogamia.html"><a href="endogamia.html#endogamia-acidental"><i class="fa fa-check"></i><b>9.2.2</b> Endogamia acidental</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="endogamia.html"><a href="endogamia.html#freqüências-genotípicas-sob-endogamia"><i class="fa fa-check"></i><b>9.3</b> Freqüências genotípicas sob endogamia</a></li>
+<li class="chapter" data-level="9.4" data-path="endogamia.html"><a href="endogamia.html#coeficiente-de-endogamia"><i class="fa fa-check"></i><b>9.4</b> Coeficiente de endogamia</a></li>
+<li class="chapter" data-level="9.5" data-path="endogamia.html"><a href="endogamia.html#freqüências-genotípicas-sob-endogamia-1"><i class="fa fa-check"></i><b>9.5</b> Freqüências genotípicas sob endogamia</a></li>
+<li class="chapter" data-level="9.6" data-path="endogamia.html"><a href="endogamia.html#autozigotos-e-alozigotos"><i class="fa fa-check"></i><b>9.6</b> Autozigotos e alozigotos</a></li>
+<li class="chapter" data-level="9.7" data-path="endogamia.html"><a href="endogamia.html#endogamia-em-genealogias"><i class="fa fa-check"></i><b>9.7</b> Endogamia em genealogias</a></li>
+<li class="chapter" data-level="9.8" data-path="endogamia.html"><a href="endogamia.html#endogamia-ao-longo-das-gerações"><i class="fa fa-check"></i><b>9.8</b> Endogamia ao longo das gerações</a></li>
+<li class="chapter" data-level="9.9" data-path="endogamia.html"><a href="endogamia.html#depressão-endogâmica"><i class="fa fa-check"></i><b>9.9</b> Depressão endogâmica</a></li>
+<li class="chapter" data-level="9.10" data-path="endogamia.html"><a href="endogamia.html#evitando-a-endogamia"><i class="fa fa-check"></i><b>9.10</b> Evitando a endogamia</a>
+<ul>
+<li class="chapter" data-level="9.10.1" data-path="endogamia.html"><a href="endogamia.html#reconhecimento-de-parentesco"><i class="fa fa-check"></i><b>9.10.1</b> Reconhecimento de parentesco</a></li>
+<li class="chapter" data-level="9.10.2" data-path="endogamia.html"><a href="endogamia.html#dispersão"><i class="fa fa-check"></i><b>9.10.2</b> Dispersão</a></li>
+<li class="chapter" data-level="9.10.3" data-path="endogamia.html"><a href="endogamia.html#maturação-sexual-tardia"><i class="fa fa-check"></i><b>9.10.3</b> Maturação sexual tardia</a></li>
+<li class="chapter" data-level="9.10.4" data-path="endogamia.html"><a href="endogamia.html#cópulas-extra-par"><i class="fa fa-check"></i><b>9.10.4</b> Cópulas extra-par</a></li>
+</ul></li>
+<li class="chapter" data-level="9.11" data-path="endogamia.html"><a href="endogamia.html#exercícios-2"><i class="fa fa-check"></i><b>9.11</b> Exercícios</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="estruturação-populacional.html"><a href="estruturação-populacional.html"><i class="fa fa-check"></i><b>10</b> Estruturação Populacional</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="estruturação-populacional.html"><a href="estruturação-populacional.html#variação-genética-em-populações-subdivididas"><i class="fa fa-check"></i><b>10.1</b> Variação genética em populações subdivididas</a></li>
+<li class="chapter" data-level="10.2" data-path="estruturação-populacional.html"><a href="estruturação-populacional.html#efeito-wahlund"><i class="fa fa-check"></i><b>10.2</b> Efeito Wahlund</a></li>
+<li class="chapter" data-level="10.3" data-path="estruturação-populacional.html"><a href="estruturação-populacional.html#heterozigosidade-em-níveis-demográficos"><i class="fa fa-check"></i><b>10.3</b> Heterozigosidade em níveis demográficos</a></li>
+<li class="chapter" data-level="10.4" data-path="estruturação-populacional.html"><a href="estruturação-populacional.html#estatísticas-f-de-wright"><i class="fa fa-check"></i><b>10.4</b> Estatísticas <span class="math inline">\(F\)</span> de Wright</a></li>
+<li class="chapter" data-level="10.5" data-path="estruturação-populacional.html"><a href="estruturação-populacional.html#isolamento-por-distância"><i class="fa fa-check"></i><b>10.5</b> Isolamento por distância</a>
+<ul>
+<li class="chapter" data-level="10.5.1" data-path="estruturação-populacional.html"><a href="estruturação-populacional.html#teste-de-mantel"><i class="fa fa-check"></i><b>10.5.1</b> Teste de Mantel</a></li>
+<li class="chapter" data-level="10.5.2" data-path="estruturação-populacional.html"><a href="estruturação-populacional.html#correlação-de-mantel-estandardizada"><i class="fa fa-check"></i><b>10.5.2</b> Correlação de Mantel estandardizada</a></li>
+<li class="chapter" data-level="10.5.3" data-path="estruturação-populacional.html"><a href="estruturação-populacional.html#significância-do-teste-de-mantel"><i class="fa fa-check"></i><b>10.5.3</b> Significância do teste de Mantel</a></li>
+</ul></li>
+<li class="chapter" data-level="10.6" data-path="estruturação-populacional.html"><a href="estruturação-populacional.html#exercícios-3"><i class="fa fa-check"></i><b>10.6</b> Exercícios</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="deriva-genética.html"><a href="deriva-genética.html"><i class="fa fa-check"></i><b>11</b> Deriva Genética</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="deriva-genética.html"><a href="deriva-genética.html#deriva-genética-aleatória"><i class="fa fa-check"></i><b>11.1</b> Deriva genética aleatória</a></li>
+<li class="chapter" data-level="11.2" data-path="deriva-genética.html"><a href="deriva-genética.html#prevendo-o-acaso"><i class="fa fa-check"></i><b>11.2</b> Prevendo o acaso</a></li>
+<li class="chapter" data-level="11.3" data-path="deriva-genética.html"><a href="deriva-genética.html#a-magnitude-do-acaso"><i class="fa fa-check"></i><b>11.3</b> A magnitude do acaso</a></li>
+<li class="chapter" data-level="11.4" data-path="deriva-genética.html"><a href="deriva-genética.html#gargalo-populacional"><i class="fa fa-check"></i><b>11.4</b> Gargalo populacional</a></li>
+<li class="chapter" data-level="11.5" data-path="deriva-genética.html"><a href="deriva-genética.html#efeito-fundador"><i class="fa fa-check"></i><b>11.5</b> Efeito fundador</a></li>
+<li class="chapter" data-level="11.6" data-path="deriva-genética.html"><a href="deriva-genética.html#simulando-a-deriva-genética"><i class="fa fa-check"></i><b>11.6</b> Simulando a deriva genética</a></li>
+<li class="chapter" data-level="11.7" data-path="deriva-genética.html"><a href="deriva-genética.html#exercícios-4"><i class="fa fa-check"></i><b>11.7</b> Exercícios</a>
+<ul>
+<li class="chapter" data-level="11.7.1" data-path="deriva-genética.html"><a href="deriva-genética.html#exercício-1-1"><i class="fa fa-check"></i><b>11.7.1</b> Exercício 1</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="migração-e-fluxo-gênico.html"><a href="migração-e-fluxo-gênico.html"><i class="fa fa-check"></i><b>12</b> Migração e Fluxo Gênico</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="migração-e-fluxo-gênico.html"><a href="migração-e-fluxo-gênico.html#migração-times-fluxo-gênico"><i class="fa fa-check"></i><b>12.1</b> Migração <span class="math inline">\(\times\)</span> Fluxo gênico</a></li>
+<li class="chapter" data-level="12.2" data-path="migração-e-fluxo-gênico.html"><a href="migração-e-fluxo-gênico.html#modelando-a-migração"><i class="fa fa-check"></i><b>12.2</b> Modelando a migração</a></li>
+<li class="chapter" data-level="12.3" data-path="migração-e-fluxo-gênico.html"><a href="migração-e-fluxo-gênico.html#migração-ao-longo-do-tempo"><i class="fa fa-check"></i><b>12.3</b> Migração ao longo do tempo</a></li>
+<li class="chapter" data-level="12.4" data-path="migração-e-fluxo-gênico.html"><a href="migração-e-fluxo-gênico.html#o-modelo-fonte-dreno"><i class="fa fa-check"></i><b>12.4</b> O modelo fonte-dreno</a></li>
+<li class="chapter" data-level="12.5" data-path="migração-e-fluxo-gênico.html"><a href="migração-e-fluxo-gênico.html#o-modelo-de-ilhas"><i class="fa fa-check"></i><b>12.5</b> O modelo de ilhas</a></li>
+<li class="chapter" data-level="12.6" data-path="migração-e-fluxo-gênico.html"><a href="migração-e-fluxo-gênico.html#equilíbrio-entre-fluxo-gênico-e-deriva-gênica"><i class="fa fa-check"></i><b>12.6</b> Equilíbrio entre fluxo gênico e deriva gênica</a></li>
+<li class="chapter" data-level="12.7" data-path="migração-e-fluxo-gênico.html"><a href="migração-e-fluxo-gênico.html#exercícios-5"><i class="fa fa-check"></i><b>12.7</b> Exercícios</a>
+<ul>
+<li class="chapter" data-level="12.7.1" data-path="migração-e-fluxo-gênico.html"><a href="migração-e-fluxo-gênico.html#exercício-1-duas-subpopulações-quaisquer"><i class="fa fa-check"></i><b>12.7.1</b> Exercício 1 – Duas subpopulações quaisquer</a></li>
+<li class="chapter" data-level="12.7.2" data-path="migração-e-fluxo-gênico.html"><a href="migração-e-fluxo-gênico.html#exercício-2-aranha-do-deserto"><i class="fa fa-check"></i><b>12.7.2</b> Exercício 2 – Aranha do deserto</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="mutação.html"><a href="mutação.html"><i class="fa fa-check"></i><b>13</b> Mutação</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="mutação.html"><a href="mutação.html#modelando-as-mutações"><i class="fa fa-check"></i><b>13.1</b> Modelando as mutações</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="mutação.html"><a href="mutação.html#mutação-direta"><i class="fa fa-check"></i><b>13.1.1</b> Mutação direta</a></li>
+<li class="chapter" data-level="13.1.2" data-path="mutação.html"><a href="mutação.html#mutaçao-reversa"><i class="fa fa-check"></i><b>13.1.2</b> Mutaçao reversa</a></li>
+<li class="chapter" data-level="13.1.3" data-path="mutação.html"><a href="mutação.html#equilíbrio-das-taxas-de-mutação"><i class="fa fa-check"></i><b>13.1.3</b> Equilíbrio das taxas de mutação</a></li>
+<li class="chapter" data-level="13.1.4" data-path="mutação.html"><a href="mutação.html#mutações-ao-longo-do-tempo"><i class="fa fa-check"></i><b>13.1.4</b> Mutações ao longo do tempo</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="mutação.html"><a href="mutação.html#mutação-e-endogamia"><i class="fa fa-check"></i><b>13.2</b> Mutação e Endogamia</a></li>
+<li class="chapter" data-level="13.3" data-path="mutação.html"><a href="mutação.html#exercícios-6"><i class="fa fa-check"></i><b>13.3</b> Exercícios</a>
+<ul>
+<li class="chapter" data-level="13.3.1" data-path="mutação.html"><a href="mutação.html#exercício-1-mudança-evolutiva-em-t-gerações"><i class="fa fa-check"></i><b>13.3.1</b> Exercício 1 – Mudança evolutiva em <span class="math inline">\(t\)</span> gerações</a></li>
+<li class="chapter" data-level="13.3.2" data-path="mutação.html"><a href="mutação.html#exercício-2-componente-flagelar-em-salmonella"><i class="fa fa-check"></i><b>13.3.2</b> Exercício 2 – Componente flagelar em <em>Salmonella</em></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="seleção-natural.html"><a href="seleção-natural.html"><i class="fa fa-check"></i><b>14</b> Seleção Natural</a></li>
+<li class="chapter" data-level="15" data-path="simulações-em-genética-de-populações.html"><a href="simulações-em-genética-de-populações.html"><i class="fa fa-check"></i><b>15</b> Simulações em genética de populações</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="simulações-em-genética-de-populações.html"><a href="simulações-em-genética-de-populações.html#capítulo-1"><i class="fa fa-check"></i><b>15.1</b> Capítulo 1</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="simulações-em-genética-de-populações.html"><a href="simulações-em-genética-de-populações.html#exercício-1-2"><i class="fa fa-check"></i><b>15.1.1</b> Exercício 1</a></li>
+<li class="chapter" data-level="15.1.2" data-path="simulações-em-genética-de-populações.html"><a href="simulações-em-genética-de-populações.html#exercício-2"><i class="fa fa-check"></i><b>15.1.2</b> Exercício 2</a></li>
+<li class="chapter" data-level="15.1.3" data-path="simulações-em-genética-de-populações.html"><a href="simulações-em-genética-de-populações.html#exercício-3"><i class="fa fa-check"></i><b>15.1.3</b> Exercício 3</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="resolução-dos-exercícios.html"><a href="resolução-dos-exercícios.html"><i class="fa fa-check"></i><b>16</b> Resolução dos Exercícios</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="resolução-dos-exercícios.html"><a href="resolução-dos-exercícios.html#capítulo-1-1"><i class="fa fa-check"></i><b>16.1</b> Capítulo 1</a>
+<ul>
+<li class="chapter" data-level="16.1.1" data-path="resolução-dos-exercícios.html"><a href="resolução-dos-exercícios.html#exercício-1-3"><i class="fa fa-check"></i><b>16.1.1</b> Exercício 1</a></li>
+<li class="chapter" data-level="16.1.2" data-path="resolução-dos-exercícios.html"><a href="resolução-dos-exercícios.html#exercício-2-1"><i class="fa fa-check"></i><b>16.1.2</b> Exercício 2</a></li>
+<li class="chapter" data-level="16.1.3" data-path="resolução-dos-exercícios.html"><a href="resolução-dos-exercícios.html#exercício-3-1"><i class="fa fa-check"></i><b>16.1.3</b> Exercício 3</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Notas de Aula em Genética de Populações</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="simulações-em-genética-de-populações" class="section level1 hasAnchor" number="15">
+<h1><span class="header-section-number">Capítulo 15</span> Simulações em genética de populações<a href="simulações-em-genética-de-populações.html#simulações-em-genética-de-populações" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>.</p>
+<div id="capítulo-1" class="section level2 hasAnchor" number="15.1">
+<h2><span class="header-section-number">15.1</span> Capítulo 1<a href="simulações-em-genética-de-populações.html#capítulo-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>.</p>
+<div id="exercício-1-2" class="section level3 hasAnchor" number="15.1.1">
+<h3><span class="header-section-number">15.1.1</span> Exercício 1<a href="simulações-em-genética-de-populações.html#exercício-1-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>xxx</p>
+<p>.</p>
+</div>
+<div id="exercício-2" class="section level3 hasAnchor" number="15.1.2">
+<h3><span class="header-section-number">15.1.2</span> Exercício 2<a href="simulações-em-genética-de-populações.html#exercício-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>xxx</p>
+<p>.</p>
+</div>
+<div id="exercício-3" class="section level3 hasAnchor" number="15.1.3">
+<h3><span class="header-section-number">15.1.3</span> Exercício 3<a href="simulações-em-genética-de-populações.html#exercício-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>xxx</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="seleção-natural.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="resolução-dos-exercícios.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/depaulats/GenPop/edit/master/15_populus.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/depaulats/GenPop/blob/master/15_populus.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
