@@ -3,7 +3,7 @@
 <br>
 
 ```{r neutraltheory, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="Os padrões de polimorfismo de proteínas vistos na natureza são consistentes com a visão de que a maioria dos polimorfismos e diferenças fixas entre as espécies são fortemente deletérios ou seletivamente neutros. Esta proposta foi chamada de teoria neutra da evolução molecular. Retirado de Casillas & Barbadilla ([2017](https://doi.org/10.1534/genetics.119.302623))"}
-knitr::include_graphics('https://academic.oup.com/view-large/figure/326573189/1003fig2.jpeg')
+knitr::include_graphics("figs/neutral_theory.jpeg")
 ```
 
 <br>
@@ -535,9 +535,13 @@ $$
 
 ## Exercícios
 
+<br>
+
 ### Exercício 1 -- Mudança evolutiva em $t$ gerações
 
 Se partirmos de uma população sem mutações na qual $p_0 = 0.5$, quantas gerações $t$ são necessárias para alcançar $p_t = 0.4$, assumindo uma taxa de mutação direta $\mu = 10^{-6}$ e uma taxa de mutação reversa $\nu = 10^{-9}$.
+
+<br>
 
 :::quote
 
@@ -550,6 +554,8 @@ Logaritmo do quociente -- $ \log_\color{red}{a} \left( \frac {\color{blue}{b}}{\
 Logaritmo da potência -- $ \log_\color{red}{a} \left( \color{blue}{b}^\color{green}{c} \right) = \color{green}{c} \cdot \log_\color{red}{a} \left( \color{blue}{b} \right) $
 
 :::
+
+<br>
 
 ### Exercício 2 -- Componente flagelar em _Salmonella_
 
@@ -565,4 +571,34 @@ a. Calcule a frequência de equilíbrio $\hat{p}$ esperada para o alelo $A$.
 
 b. O valores observados por Stocker ([1949](https://doi.org/10.1017/s002217240001473x)) concordam com os estimados a partir das taxas de mutações de Simon e colaboradores ([1980](https://doi.org/10.1126/science.6251543))? 
 
+<br>
+
+### Exercício 3 -- Variação genética em _Drosophila_
+
+Ayala e Tracey ([1974](https://doi.org/10.1073/pnas.71.3.999), estudando variantes proteícas por eletroforese em uma população caribenha de _Drosophila willistoni_, obtiveram as estimativas abaixo de frequências alélicas para os loci gênicos da adenilato quinase 1 (Adk-1), leucina amino peptidade 5 (Lap-5) e xantina desidrogenase (Xdh).
+
+<br>
+
+| Alelo | Adk-1 | Lap-5 | Xdh  |
+| :--   | :--:  | :--:  | :--: |
+| 1     | 0.574 | 0.801 | 0.446|
+| 2     | 0.309 | 0.177 | 0.406|
+| 3     | 0.114 | 0.014 | 0.092|
+| 4     | 0.003 | 0.004 | 0.034|
+| 5     | -     | 0.004 | 0.014|
+| 6     | -     | -     | 0.004|
+| 7     | -     | -     | 0.002|
+| 8     | -     | -     | 0.002|
+
+<br>
+
+Com base nesses dados, estime, para cada gene:
+
+a. a homozigosidade;
+
+b. a heterozigosidade esperada; e
+
+c. a variação genética molecular ($\theta$).
+
+<br>
 
