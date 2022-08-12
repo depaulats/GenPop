@@ -42,6 +42,8 @@ Assim, teremos que:
 
 ... quando $q_1 = q_0$, com probabilidade igual a $\frac{6}{16}$.
 
+<br>
+
 **Haverá evolução ...**
 
 .. quando $q_1 \ne q_0$, com probabilidade $1-\frac{6}{16}$, sendo a chance de aumento ou diminuição da frequência alélica proporcionalmente igual, $\frac{5}{16}$ cada, uma vez que a distribuição é simétrica.
@@ -51,7 +53,7 @@ Assim, teremos que:
 Se uma população é infinita, não haverá erros de amostragem, e assim a frequência alélica de um determinado alelo na geração inicial $p_0$ será igual a frequência desse alelo na geração seguinte $p_1$, e permanecerá constante por conta do princípio de Hardy-Weinberg. 
 
 
-Assim, a mudança na frequência alélica geracional em populações infinitas ($\Delta p$) será:
+E a mudança na frequência alélica geracional em populações infinitas ($\Delta p$) será:
 
 <br>
 
@@ -61,19 +63,17 @@ $$\Delta p = p_1 - p_0 = 0$$
 
 Contudo, Se uma população é finita, nem todos os cruzamentos possíveis de serem obsarvados no _pool_ gênico irão de fato ocorrer por conta de efeitos estocásticos, de forma que a frequência alélica $p_0$ em uma geração não será igual a frequência $p_1$ da próxima geração. 
 
-Assim, a mudança na frequência alélica geracional em populações finitas ($\Delta p$) será:
+E a mudança na frequência alélica geracional em populações finitas ($\Delta p$) será:
 
 <br>
 
 $$\Delta p = p_1 - p_0 \ne 0$$
 
-será igual a swero ($\Delta p$)
-
 <br>
 
 Como a deriva genética decorre de erros de amostragem, cada população irá evoluir de forma diferente (considerando tamanhos populacionais iguais). 
 
-
+<br>
 
 ## Prevendo o acaso 
 
@@ -97,53 +97,62 @@ Hollfelder et al. 2020. doi: [10.1186/s12915-020-0746-1](https://doi.org/10.1186
 
 <br>
 
+A deriva genética resulta de erros de amostragem que surgem sobretudo quando os gametas se unem para produzir descendentes, sobretudo quando a população é pequena, onde um número limitado de gametas se unem para produzir os indivíduos da próxima geração. O acaso influencia quais alelos estão presentes nesta amostra limitada e, desta forma, os erros de amostragem podem levar a mudanças na frequência alélica. 
+
+Como os desvios das razões esperadas são aleatórios, a direção do acaso é imprevisível. 
+
+<br>
+
+Considere um locus gênico com dois alelos, $A$ e $a$, com frequências alélicas $p+q=1$, uma geração $t$ qualquer de uma população de tamanho $N$, com $2N$ gametas em seu _pool_ gênico, de forma que o número de alelos $A$ na população seja igual $2pN$.
+
+A probabilidade exata de que o número de alelos $A$ permaneça igual a $2pN$ após uma geração de amostragem aleatória pode ser estimada pela fórmula geral para a distribuição binomial, onde $P$ é a probabilidade de $k$ sucessos dado a probabilidade $p$ de sucesso em $n$ eventos, de forma que:
+
+<br>
+
+\begin{equation} 
+  P \left( k | p, n\right) = \binom{n}{k} \cdot p^k \cdot q^{n-k}
+  (\#eq:binomial)
+\end{equation} 
+
+<br>
+
+O parâmetro $\binom{n}{k}$ é o número total de combinações que os $k$ sucessos podem se apresentar no universo $n$ de eventos, de forma que:
+
+<br>
+
+\begin{equation} 
+  \binom{n}{k} = \ ^nC_k =  \frac {n!}{k! \left( n-k \right)!}
+  (\#eq:combinacao)
+\end{equation} 
 
 
+De forma geral,  
+$n!$ é o fator que inicia a contagem do número de maneiras pelas quais o evento pode ocorrer, 
+$k!$ é o fator que encerra a contagem do número de maneiras pelas quais o evento pode ocorrer, e 
+$\left( n-k \right)!$ é o fator que remove eventos duplicados (_i. e._, em diferentes arranjos).
 
+Perceba que, na formulação da probabilidade binomial, $q$ é a probabilidade de fracasso, onde $q = 1-p$.
 
-O erro de amostragem surge sobretudo quando os gametas se unem para produzir descendentes. 
+<br>
 
-Muitos organismos produzem vários gametas, mas quando a população é pequena, um número limitado de gametas se une para produzir os indivíduos da próxima geração. 
+Assim, em uma população de tamanho amostral $N=10$, e logo um _pool_ gênico com $2N=20$ gametas, com uma frequência alélica $p=0.8$...
 
-O acaso influencia quais alelos estão presentes nesta amostra limitada e, desta forma, o erro de amostragem pode levar a mudanças na frequência alélica. 
+... a probabilidade de que a frequência do alelo $A$ permaneça inalterada na próxima geração, _i. e._, que seja igual à $2pN = 16$, será:
 
-Isso é a deriva genética!
+<br>
 
-Como os desvios das razões esperadas são aleatórios, a direção do acasoé imprevisível. 
+$$
+\begin{aligned}
+P \left( 16 | 0.8, 20\right)
+&= \binom{20}{16} \cdot 0.8^{16} \cdot0.2^{4} \\
+&= \frac {20!}{16! \cdot 4!} \cdot 0.8^{16} \cdot0.2^{4}  \\
+&\approx \frac {2.43290 \times 10^{18}}{2.09228 \times 10^{13} \cdot 24} \cdot 0.02815 \cdot 0.00160 \\
+&\approx 4845 \cdot ×0,000045 \\
+&\approx 0,21820 
+\end{aligned}
+$$ 
 
-
-Considerando um locus gênico com dois alelos, “A” e “a”, com frequências alélicas 𝑝+𝑞=1, uma geração qualquer de uma população de tamanho 𝑁 é formada por uma amostra de 2𝑁 gametas da geração precedente.
-
-Assim, o número de alelos A é igual a 2𝑝𝑁
-
-A probabilidade exata de que o número de alelos “A” permaneça igual a 2𝑝𝑁 após uma geração de amostragem aleatória pode ser calculado com a  fórmula geral para a distribuição binomial.
-
-
-
-Probabilidade de k sucessos dado a probabilidade p de sucesso em n eventos
-
-
-Fator que inicia a contagem do número de maneiras pelas quais o evento pode ocorrer.
-
-Fator que encerra a contagem do número de maneiras pelas quais o evento pode ocorrer.
-
-Fator que remove eventos duplicados
-
-
-
-Probabilidade de sucesso para as 𝒌 tentativas
-
-
-Probabilidade de fracasso para as 𝒌 tentativas
-
-
-Em uma população de tamanho amostral .........	𝑁=10
-contendo um número de alelos ..........................	2𝑁=20
-sendo o número de alelos do tipo “A” ................	2𝑝𝑁=16
-i.e., com frequência alélica .................................	𝑝=16/20=0,8
-
-... a probabilidade na próxima geração de que a frequência do alelo “A” permaneça igual à geração anterior, i.e., 2𝑝𝑁=16, é:
-
+<br>
 
 ## A magnitude do acaso
 
@@ -219,6 +228,8 @@ Assim, a cada geração, uma população que tenha um alelo fixado (e.g., $p=1$)
 
 Por outro lado, uma população que permanece com um locus segregante (e.g., $0<p<1$) irá produzir uma dispersão nas freqüências alélicas na geração seguinte, que por sua vez terão novamente alelos fixados para locos alternativos, enquanto outros permanecerão segregantes. 
 
+<br>
+
 À medida que passa o tempo, uma fração cada vez menor de locos continuarão segregantes. E após um número suficiente de gerações, a maioria dos locos terão um alelo fixado. 
 
 Em populações maiores, o espalhamento progressivo das freqüências alélicas e o acúmulo de locos fixados ocorrem mais lentamente. 
@@ -263,6 +274,7 @@ ggplot(drift, aes(x=generation)) +
 
 ```
 
+<br>
 
 O tempo médio necessário para a fixação de um alelo, como mostrado por Kimura e Ohta ([1969](https://doi.org/10.1093%2Fgenetics%2F61.3.763)), depende do tamanho da população e da frequência do alelo, de forma que:
 
@@ -279,7 +291,7 @@ $$\bar{t}_1\left(p \rightarrow 0\right) = 4N_e $$
 
 <br>
 
-```{r fixationtime, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="O tempo médio necessário para a fixação de um alelo depende do tamanho da população e da frequência do alelo, como mostrado por Kimura e Ohta ([1969](https://doi.org/10.1093%2Fgenetics%2F61.3.763))."}
+```{r fixationtime, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="O tempo médio necessário para a fixação de um alelo depende do tamanho da população e da frequência do alelo, como mostrado por Kimura e Ohta ([1969](https://doi.org/10.1093%2Fgenetics%2F61.3.763))."}
 knitr::include_graphics("figs/birth_to_fixation.svg")
 ```
 
@@ -301,7 +313,7 @@ Assim, quanto menor o tamanho efetivo ($N_e$) da população, mais rápida a het
 
 <br>
 
-```{r heterodrift, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "600px", fig.cap="A heterozigosidade de uma população finita tende a diminuir a cada geração em uma fração $\frac{1}{2N_e}$."} 
+```{r heterodrift, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "600px", fig.cap="A heterozigosidade de uma população finita tende a diminuir a cada geração."} 
 library("ggplot2")
 library("latex2exp")
 ggplot(data.frame(x = c(0, 200)), aes(x = x)) + 
@@ -367,6 +379,9 @@ Assim o tamanho efetivo da população ($N_e$) é a média harmônica dos tamanh
 <br>
 
 $$N_e = \frac{t}{ \sum_{i=1}^t \frac{1}{N_i} } $$
+
+<br>
+
 Onde 
 $N_i$ é o tamanho da população na $i$-nésima geração, e
 $t$ é o número de gerações decorridas.
@@ -407,6 +422,8 @@ Bégat et al. 2015. doi: [10.1371/journal.pone.0132211](https://doi.org/10.1002/
 
 :::
 
+<br>
+
 O efeito fundador é a perda de variação genética que ocorre quando uma nova população é estabelecida por um número muito pequeno de indivíduos de uma população maior.
 
 Nestes casos um pequeno grupo de migrantes que não é geneticamente representativo da população da qual eles vieram se estabelece em uma nova área. 
@@ -425,16 +442,20 @@ Veja como simular a deriva genética passo-a-passo [aqui][Simulações em genét
 
 <br>
 
-### Exercício 1
+### Exercício 1 -- O camundongo e o elefante
 
 <br>
 
 Uma espécie animal diplóide, que se reproduz sexuadamente, apresenta uma população com 1000 indivíduos. A análise de um locus gênico autossômico revelou que a população se encontra atualmente em equilíbrio de Hardy-Weinberg. Na ausência de forças evolutivas, qual seria o coeficiente de endogamia desta população daqui a dez mill anos se esta espécie fosse:
 
-- o camundongo doméstico (_Mus musculus_), com um tempo médio de geração de 1 a 2 anos?
+<br>
 
-- o elefante africano (_Loxodonta africana_), com um tempo médio de geração de 25 anos?
+a. o camundongo doméstico (_Mus musculus_), com um tempo médio de geração de 1 a 2 anos?
 
-Se essas populações tivessem passado por um gargalo populacional, que tenha reduzido o tamanho das populações em 80% nos últimos 200  anos, qual seria a endogamia estimada, em contraste com a endogamia estimada previamente, sem o gargalo populacional?
+b. o elefante africano (_Loxodonta africana_), com um tempo médio de geração de 25 anos?
+
+<br>
+
+Ainda, quanto maior seria a endogamia nessas populações se elas tivessem passado por um gargalo populacional que tivesse reduzido o tamanho das populações em 80% nos últimos 200 anos?
 
 

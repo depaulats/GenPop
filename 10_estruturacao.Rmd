@@ -216,7 +216,7 @@ $\bar{p}$ e $\bar{q}$ são as frequências alélicas médias entre todos os $k$ 
 
 <br>
 
-```{r hetrozigosedemography, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A heterozigosidade em populações subdivididas.."}
+```{r hetrozigosedemography, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="A heterozigosidade em populações subdivididas.."}
 knitr::include_graphics("figs/heterozigosity.svg")
 ```
 

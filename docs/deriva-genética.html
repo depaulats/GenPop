@@ -269,7 +269,7 @@
 <li class="chapter" data-level="11.6" data-path="deriva-genética.html"><a href="deriva-genética.html#simulando-a-deriva-genética"><i class="fa fa-check"></i><b>11.6</b> Simulando a deriva genética</a></li>
 <li class="chapter" data-level="11.7" data-path="deriva-genética.html"><a href="deriva-genética.html#exercícios-4"><i class="fa fa-check"></i><b>11.7</b> Exercícios</a>
 <ul>
-<li class="chapter" data-level="11.7.1" data-path="deriva-genética.html"><a href="deriva-genética.html#exercício-1-1"><i class="fa fa-check"></i><b>11.7.1</b> Exercício 1</a></li>
+<li class="chapter" data-level="11.7.1" data-path="deriva-genética.html"><a href="deriva-genética.html#exercício-1-o-camundongo-e-o-elefante"><i class="fa fa-check"></i><b>11.7.1</b> Exercício 1 – O camundongo e o elefante</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="migração-e-fluxo-gênico.html"><a href="migração-e-fluxo-gênico.html"><i class="fa fa-check"></i><b>12</b> Migração e Fluxo Gênico</a>
@@ -308,7 +308,7 @@
 <ul>
 <li class="chapter" data-level="15.1" data-path="simulações-em-genética-de-populações.html"><a href="simulações-em-genética-de-populações.html#capítulo-1"><i class="fa fa-check"></i><b>15.1</b> Capítulo 1</a>
 <ul>
-<li class="chapter" data-level="15.1.1" data-path="simulações-em-genética-de-populações.html"><a href="simulações-em-genética-de-populações.html#exercício-1-2"><i class="fa fa-check"></i><b>15.1.1</b> Exercício 1</a></li>
+<li class="chapter" data-level="15.1.1" data-path="simulações-em-genética-de-populações.html"><a href="simulações-em-genética-de-populações.html#exercício-1-1"><i class="fa fa-check"></i><b>15.1.1</b> Exercício 1</a></li>
 <li class="chapter" data-level="15.1.2" data-path="simulações-em-genética-de-populações.html"><a href="simulações-em-genética-de-populações.html#exercício-2"><i class="fa fa-check"></i><b>15.1.2</b> Exercício 2</a></li>
 <li class="chapter" data-level="15.1.3" data-path="simulações-em-genética-de-populações.html"><a href="simulações-em-genética-de-populações.html#exercício-3"><i class="fa fa-check"></i><b>15.1.3</b> Exercício 3</a></li>
 </ul></li>
@@ -317,7 +317,7 @@
 <ul>
 <li class="chapter" data-level="16.1" data-path="resolução-dos-exercícios.html"><a href="resolução-dos-exercícios.html#capítulo-1-1"><i class="fa fa-check"></i><b>16.1</b> Capítulo 1</a>
 <ul>
-<li class="chapter" data-level="16.1.1" data-path="resolução-dos-exercícios.html"><a href="resolução-dos-exercícios.html#exercício-1-3"><i class="fa fa-check"></i><b>16.1.1</b> Exercício 1</a></li>
+<li class="chapter" data-level="16.1.1" data-path="resolução-dos-exercícios.html"><a href="resolução-dos-exercícios.html#exercício-1-2"><i class="fa fa-check"></i><b>16.1.1</b> Exercício 1</a></li>
 <li class="chapter" data-level="16.1.2" data-path="resolução-dos-exercícios.html"><a href="resolução-dos-exercícios.html#exercício-2-1"><i class="fa fa-check"></i><b>16.1.2</b> Exercício 2</a></li>
 <li class="chapter" data-level="16.1.3" data-path="resolução-dos-exercícios.html"><a href="resolução-dos-exercícios.html#exercício-3-1"><i class="fa fa-check"></i><b>16.1.3</b> Exercício 3</a></li>
 </ul></li>
@@ -373,21 +373,22 @@ Figure 11.2: Probabilidade de mudança na frequência alélica em uma populaçã
 <p>Assim, teremos que:</p>
 <p><strong>Não haverá evolução …</strong></p>
 <p>… quando <span class="math inline">\(q_1 = q_0\)</span>, com probabilidade igual a <span class="math inline">\(\frac{6}{16}\)</span>.</p>
+<p><br></p>
 <p><strong>Haverá evolução …</strong></p>
 <p>.. quando <span class="math inline">\(q_1 \ne q_0\)</span>, com probabilidade <span class="math inline">\(1-\frac{6}{16}\)</span>, sendo a chance de aumento ou diminuição da frequência alélica proporcionalmente igual, <span class="math inline">\(\frac{5}{16}\)</span> cada, uma vez que a distribuição é simétrica.</p>
 <p><br></p>
 <p>Se uma população é infinita, não haverá erros de amostragem, e assim a frequência alélica de um determinado alelo na geração inicial <span class="math inline">\(p_0\)</span> será igual a frequência desse alelo na geração seguinte <span class="math inline">\(p_1\)</span>, e permanecerá constante por conta do princípio de Hardy-Weinberg.</p>
-<p>Assim, a mudança na frequência alélica geracional em populações infinitas (<span class="math inline">\(\Delta p\)</span>) será:</p>
+<p>E a mudança na frequência alélica geracional em populações infinitas (<span class="math inline">\(\Delta p\)</span>) será:</p>
 <p><br></p>
 <p><span class="math display">\[\Delta p = p_1 - p_0 = 0\]</span></p>
 <p><br></p>
 <p>Contudo, Se uma população é finita, nem todos os cruzamentos possíveis de serem obsarvados no <em>pool</em> gênico irão de fato ocorrer por conta de efeitos estocásticos, de forma que a frequência alélica <span class="math inline">\(p_0\)</span> em uma geração não será igual a frequência <span class="math inline">\(p_1\)</span> da próxima geração.</p>
-<p>Assim, a mudança na frequência alélica geracional em populações finitas (<span class="math inline">\(\Delta p\)</span>) será:</p>
+<p>E a mudança na frequência alélica geracional em populações finitas (<span class="math inline">\(\Delta p\)</span>) será:</p>
 <p><br></p>
 <p><span class="math display">\[\Delta p = p_1 - p_0 \ne 0\]</span></p>
-<p>será igual a swero (<span class="math inline">\(\Delta p\)</span>)</p>
 <p><br></p>
 <p>Como a deriva genética decorre de erros de amostragem, cada população irá evoluir de forma diferente (considerando tamanhos populacionais iguais).</p>
+<p><br></p>
 </div>
 <div id="prevendo-o-acaso" class="section level2 hasAnchor" number="11.2">
 <h2><span class="header-section-number">11.2</span> Prevendo o acaso<a href="deriva-genética.html#prevendo-o-acaso" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -405,25 +406,43 @@ Figure 11.3: A Doença de Huntington, uma desordem neurodegenerativa herdada por
 <p>Hollfelder et al. 2020. doi: <a href="https://doi.org/10.1186/s12915-020-0746-1">10.1186/s12915-020-0746-1</a></p>
 </div>
 <p><br></p>
-<p>O erro de amostragem surge sobretudo quando os gametas se unem para produzir descendentes.</p>
-<p>Muitos organismos produzem vários gametas, mas quando a população é pequena, um número limitado de gametas se une para produzir os indivíduos da próxima geração.</p>
-<p>O acaso influencia quais alelos estão presentes nesta amostra limitada e, desta forma, o erro de amostragem pode levar a mudanças na frequência alélica.</p>
-<p>Isso é a deriva genética!</p>
-<p>Como os desvios das razões esperadas são aleatórios, a direção do acasoé imprevisível.</p>
-<p>Considerando um locus gênico com dois alelos, “A” e “a”, com frequências alélicas 𝑝+𝑞=1, uma geração qualquer de uma população de tamanho 𝑁 é formada por uma amostra de 2𝑁 gametas da geração precedente.</p>
-<p>Assim, o número de alelos A é igual a 2𝑝𝑁</p>
-<p>A probabilidade exata de que o número de alelos “A” permaneça igual a 2𝑝𝑁 após uma geração de amostragem aleatória pode ser calculado com a fórmula geral para a distribuição binomial.</p>
-<p>Probabilidade de k sucessos dado a probabilidade p de sucesso em n eventos</p>
-<p>Fator que inicia a contagem do número de maneiras pelas quais o evento pode ocorrer.</p>
-<p>Fator que encerra a contagem do número de maneiras pelas quais o evento pode ocorrer.</p>
-<p>Fator que remove eventos duplicados</p>
-<p>Probabilidade de sucesso para as 𝒌 tentativas</p>
-<p>Probabilidade de fracasso para as 𝒌 tentativas</p>
-<p>Em uma população de tamanho amostral ……… 𝑁=10
-contendo um número de alelos …………………….. 2𝑁=20
-sendo o número de alelos do tipo “A” ……………. 2𝑝𝑁=16
-i.e., com frequência alélica …………………………… 𝑝=16/20=0,8</p>
-<p>… a probabilidade na próxima geração de que a frequência do alelo “A” permaneça igual à geração anterior, i.e., 2𝑝𝑁=16, é:</p>
+<p>A deriva genética resulta de erros de amostragem que surgem sobretudo quando os gametas se unem para produzir descendentes, sobretudo quando a população é pequena, onde um número limitado de gametas se unem para produzir os indivíduos da próxima geração. O acaso influencia quais alelos estão presentes nesta amostra limitada e, desta forma, os erros de amostragem podem levar a mudanças na frequência alélica.</p>
+<p>Como os desvios das razões esperadas são aleatórios, a direção do acaso é imprevisível.</p>
+<p><br></p>
+<p>Considere um locus gênico com dois alelos, <span class="math inline">\(A\)</span> e <span class="math inline">\(a\)</span>, com frequências alélicas <span class="math inline">\(p+q=1\)</span>, uma geração <span class="math inline">\(t\)</span> qualquer de uma população de tamanho <span class="math inline">\(N\)</span>, com <span class="math inline">\(2N\)</span> gametas em seu <em>pool</em> gênico, de forma que o número de alelos <span class="math inline">\(A\)</span> na população seja igual <span class="math inline">\(2pN\)</span>.</p>
+<p>A probabilidade exata de que o número de alelos <span class="math inline">\(A\)</span> permaneça igual a <span class="math inline">\(2pN\)</span> após uma geração de amostragem aleatória pode ser estimada pela fórmula geral para a distribuição binomial, onde <span class="math inline">\(P\)</span> é a probabilidade de <span class="math inline">\(k\)</span> sucessos dado a probabilidade <span class="math inline">\(p\)</span> de sucesso em <span class="math inline">\(n\)</span> eventos, de forma que:</p>
+<p><br></p>
+<p><span class="math display" id="eq:binomial">\[\begin{equation}
+  P \left( k | p, n\right) = \binom{n}{k} \cdot p^k \cdot q^{n-k}
+  \tag{11.1}
+\end{equation}\]</span></p>
+<p><br></p>
+<p>O parâmetro <span class="math inline">\(\binom{n}{k}\)</span> é o número total de combinações que os <span class="math inline">\(k\)</span> sucessos podem se apresentar no universo <span class="math inline">\(n\)</span> de eventos, de forma que:</p>
+<p><br></p>
+<p><span class="math display" id="eq:combinacao">\[\begin{equation}
+  \binom{n}{k} = \ ^nC_k =  \frac {n!}{k! \left( n-k \right)!}
+  \tag{11.2}
+\end{equation}\]</span></p>
+<p>De forma geral,<br />
+<span class="math inline">\(n!\)</span> é o fator que inicia a contagem do número de maneiras pelas quais o evento pode ocorrer,
+<span class="math inline">\(k!\)</span> é o fator que encerra a contagem do número de maneiras pelas quais o evento pode ocorrer, e
+<span class="math inline">\(\left( n-k \right)!\)</span> é o fator que remove eventos duplicados (<em>i. e.</em>, em diferentes arranjos).</p>
+<p>Perceba que, na formulação da probabilidade binomial, <span class="math inline">\(q\)</span> é a probabilidade de fracasso, onde <span class="math inline">\(q = 1-p\)</span>.</p>
+<p><br></p>
+<p>Assim, em uma população de tamanho amostral <span class="math inline">\(N=10\)</span>, e logo um <em>pool</em> gênico com <span class="math inline">\(2N=20\)</span> gametas, com uma frequência alélica <span class="math inline">\(p=0.8\)</span>…</p>
+<p>… a probabilidade de que a frequência do alelo <span class="math inline">\(A\)</span> permaneça inalterada na próxima geração, <em>i. e.</em>, que seja igual à <span class="math inline">\(2pN = 16\)</span>, será:</p>
+<p><br></p>
+<p><span class="math display">\[
+\begin{aligned}
+P \left( 16 | 0.8, 20\right)
+&amp;= \binom{20}{16} \cdot 0.8^{16} \cdot0.2^{4} \\
+&amp;= \frac {20!}{16! \cdot 4!} \cdot 0.8^{16} \cdot0.2^{4}  \\
+&amp;\approx \frac {2.43290 \times 10^{18}}{2.09228 \times 10^{13} \cdot 24} \cdot 0.02815 \cdot 0.00160 \\
+&amp;\approx 4845 \cdot ×0,000045 \\
+&amp;\approx 0,21820
+\end{aligned}
+\]</span></p>
+<p><br></p>
 </div>
 <div id="a-magnitude-do-acaso" class="section level2 hasAnchor" number="11.3">
 <h2><span class="header-section-number">11.3</span> A magnitude do acaso<a href="deriva-genética.html#a-magnitude-do-acaso" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -454,6 +473,7 @@ Figure 11.5: Probabilidade binomial da mudança na frequência alélica (<span c
 <p>Como em um jogo com dados, em qualquer locus, a deriva pode sortir alelos a partir de uma geração para a seguinte até um alelo ser totalmente fixado ou perdido. O tempo necessário para que isso ocorra depende das freqüências iniciais dos alelos e, é claro, do tamanho da população.</p>
 <p>Assim, a cada geração, uma população que tenha um alelo fixado (e.g., <span class="math inline">\(p=1\)</span>) ou perdido (e.g., <span class="math inline">\(p=0\)</span>) permanecerá desta forma uma vez que a variação genética foi exaurida (<span class="math inline">\(q = 1-p = 0\)</span> ou <span class="math inline">\(q = 1-p = 1\)</span>, respectivamente), a menos que novos alelos surjam por mutação ou entrem na população por migração.</p>
 <p>Por outro lado, uma população que permanece com um locus segregante (e.g., <span class="math inline">\(0&lt;p&lt;1\)</span>) irá produzir uma dispersão nas freqüências alélicas na geração seguinte, que por sua vez terão novamente alelos fixados para locos alternativos, enquanto outros permanecerão segregantes.</p>
+<p><br></p>
 <p>À medida que passa o tempo, uma fração cada vez menor de locos continuarão segregantes. E após um número suficiente de gerações, a maioria dos locos terão um alelo fixado.</p>
 <p>Em populações maiores, o espalhamento progressivo das freqüências alélicas e o acúmulo de locos fixados ocorrem mais lentamente.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:binomialpopsize"></span>
@@ -462,6 +482,7 @@ Figure 11.5: Probabilidade binomial da mudança na frequência alélica (<span c
 Figure 11.6: Probabilidade binomial da mudança na frequência alélica (<span class="math inline">\(p\)</span>) em uma geração por deriva dos alelos dado diferentes tamanhos populacionals (<span class="math inline">\(N\)</span>). Note que a amplitude da distribuição diminui à medida que o tamanho da população aumenta.
 </p>
 </div>
+<p><br></p>
 <p>O tempo médio necessário para a fixação de um alelo, como mostrado por Kimura e Ohta (<a href="https://doi.org/10.1093%2Fgenetics%2F61.3.763">1969</a>), depende do tamanho da população e da frequência do alelo, de forma que:</p>
 <p><br></p>
 <p><span class="math display">\[\bar{t}_1\left(p\right) = - \frac{1}{p} \left[ 4N_e \left( 1-p \right) \ln \left( 1-p \right) \right] \]</span>
@@ -471,7 +492,7 @@ Figure 11.6: Probabilidade binomial da mudança na frequência alélica (<span c
 <p><span class="math display">\[\bar{t}_1\left(p \rightarrow 0\right) = 4N_e \]</span></p>
 <p><br></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:fixationtime"></span>
-<img src="figs/birth_to_fixation.svg" alt="O tempo médio necessário para a fixação de um alelo depende do tamanho da população e da frequência do alelo, como mostrado por Kimura e Ohta ([1969](https://doi.org/10.1093%2Fgenetics%2F61.3.763))." width="600px" />
+<img src="figs/birth_to_fixation.svg" alt="O tempo médio necessário para a fixação de um alelo depende do tamanho da população e da frequência do alelo, como mostrado por Kimura e Ohta ([1969](https://doi.org/10.1093%2Fgenetics%2F61.3.763))." width="800px" />
 <p class="caption">
 Figure 11.7: O tempo médio necessário para a fixação de um alelo depende do tamanho da população e da frequência do alelo, como mostrado por Kimura e Ohta (<a href="https://doi.org/10.1093%2Fgenetics%2F61.3.763">1969</a>).
 </p>
@@ -486,9 +507,9 @@ Figure 11.7: O tempo médio necessário para a fixação de um alelo depende do 
 <p>Assim, quanto menor o tamanho efetivo (<span class="math inline">\(N_e\)</span>) da população, mais rápida a heterozigosidade será perdida.</p>
 <p><br></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:heterodrift"></span>
-<img src="bookdownproj_files/figure-html/heterodrift-1.png" alt="A heterozigosidade de uma população finita tende a diminuir a cada geração em uma fração $rac{1}{2N_e}$." width="600px" />
+<img src="bookdownproj_files/figure-html/heterodrift-1.png" alt="A heterozigosidade de uma população finita tende a diminuir a cada geração." width="600px" />
 <p class="caption">
-Figure 11.8: A heterozigosidade de uma população finita tende a diminuir a cada geração em uma fração $rac{1}{2N_e}$.
+Figure 11.8: A heterozigosidade de uma população finita tende a diminuir a cada geração.
 </p>
 </div>
 <p><br></p>
@@ -522,8 +543,9 @@ Figure 11.9: Os guepardos africanos (<em>Acinonyx jubatus</em>) passaram por doi
 <p>Como a população pode se recuperar após o gargalo, precisamos levar em conta essa mudança ao longo do tempo na medida de N, principalmente devido a perda de heterozigotos por deriva gênica.</p>
 <p>Assim o tamanho efetivo da população (<span class="math inline">\(N_e\)</span>) é a média harmônica dos tamanhos populacionais a cada geração, de forma que:</p>
 <p><br></p>
-<p><span class="math display">\[N_e = \frac{t}{ \sum_{i=1}^t \frac{1}{N_i} } \]</span>
-Onde
+<p><span class="math display">\[N_e = \frac{t}{ \sum_{i=1}^t \frac{1}{N_i} } \]</span></p>
+<p><br></p>
+<p>Onde
 <span class="math inline">\(N_i\)</span> é o tamanho da população na <span class="math inline">\(i\)</span>-nésima geração, e
 <span class="math inline">\(t\)</span> é o número de gerações decorridas.</p>
 <p><br></p>
@@ -644,6 +666,7 @@ Figure 11.10: Índios sul e centro-americanos colonizaram essas áreas a partir 
 <p>Estrada-Mena et al. 2009. doi: <a href="https://doi.org/10.1002/ajpa.20887">10.1002/ajpa.21204</a></p>
 <p>Bégat et al. 2015. doi: <a href="https://doi.org/10.1002/ajpa.20887">10.1371/journal.pone.0132211</a></p>
 </div>
+<p><br></p>
 <p>O efeito fundador é a perda de variação genética que ocorre quando uma nova população é estabelecida por um número muito pequeno de indivíduos de uma população maior.</p>
 <p>Nestes casos um pequeno grupo de migrantes que não é geneticamente representativo da população da qual eles vieram se estabelece em uma nova área.</p>
 <p><br></p>
@@ -657,15 +680,17 @@ Figure 11.10: Índios sul e centro-americanos colonizaram essas áreas a partir 
 <div id="exercícios-4" class="section level2 hasAnchor" number="11.7">
 <h2><span class="header-section-number">11.7</span> Exercícios<a href="deriva-genética.html#exercícios-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><br></p>
-<div id="exercício-1-1" class="section level3 hasAnchor" number="11.7.1">
-<h3><span class="header-section-number">11.7.1</span> Exercício 1<a href="deriva-genética.html#exercício-1-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="exercício-1-o-camundongo-e-o-elefante" class="section level3 hasAnchor" number="11.7.1">
+<h3><span class="header-section-number">11.7.1</span> Exercício 1 – O camundongo e o elefante<a href="deriva-genética.html#exercício-1-o-camundongo-e-o-elefante" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><br></p>
 <p>Uma espécie animal diplóide, que se reproduz sexuadamente, apresenta uma população com 1000 indivíduos. A análise de um locus gênico autossômico revelou que a população se encontra atualmente em equilíbrio de Hardy-Weinberg. Na ausência de forças evolutivas, qual seria o coeficiente de endogamia desta população daqui a dez mill anos se esta espécie fosse:</p>
-<ul>
+<p><br></p>
+<ol style="list-style-type: lower-alpha">
 <li><p>o camundongo doméstico (<em>Mus musculus</em>), com um tempo médio de geração de 1 a 2 anos?</p></li>
 <li><p>o elefante africano (<em>Loxodonta africana</em>), com um tempo médio de geração de 25 anos?</p></li>
-</ul>
-<p>Se essas populações tivessem passado por um gargalo populacional, que tenha reduzido o tamanho das populações em 80% nos últimos 200 anos, qual seria a endogamia estimada, em contraste com a endogamia estimada previamente, sem o gargalo populacional?</p>
+</ol>
+<p><br></p>
+<p>Ainda, quanto maior seria a endogamia nessas populações se elas tivessem passado por um gargalo populacional que tivesse reduzido o tamanho das populações em 80% nos últimos 200 anos?</p>
 
 </div>
 </div>

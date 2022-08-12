@@ -111,6 +111,8 @@ fig:mantelcorrel
 fig:sealhunt
 fig:driftN2
 fig:hungtington
+eq:binomial
+eq:combinacao
 fig:buri1956
 fig:binomial
 fig:binomialpopsize
@@ -275,7 +277,7 @@ gargalo-populacional
 efeito-fundador
 simulando-a-deriva-genética
 exercícios-4
-exercício-1-1
+exercício-1-o-camundongo-e-o-elefante
 migração-e-fluxo-gênico
 migração-times-fluxo-gênico
 modelando-a-migração
@@ -300,11 +302,11 @@ exercício-3-variação-genética-em-drosophila
 seleção-natural
 simulações-em-genética-de-populações
 capítulo-1
-exercício-1-2
+exercício-1-1
 exercício-2
 exercício-3
 resolução-dos-exercícios
 capítulo-1-1
-exercício-1-3
+exercício-1-2
 exercício-2-1
 exercício-3-1
