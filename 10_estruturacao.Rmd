@@ -83,20 +83,20 @@ Contudo, podemos considerar que as subpopulações A e B integram uma única pop
 
 <br>
 
-$N_{Obs}(AA) = x_A + x_B = 65$
+$$N_{Obs}(AA) = x_A + x_B = 65$$
 
-$N_{Obs}(Aa) = y_A + y_B = 90$
+$$N_{Obs}(Aa) = y_A + y_B = 90$$
 
-$N_{Obs}(aa) = z_A + z_B = 45$
+$$N_{Obs}(aa) = z_A + z_B = 45$$
 
 <br>
 
 E suas frequências alélicas na população M serão:
 
 
-$\bar{p} = \frac{p_A + p_B}{2} = 0.55$
+$$\bar{p} = \frac{p_A + p_B}{2} = 0.55$$
 
-$\bar{q} = \frac{q_A + q_B}{2} = 0.45$
+$$\bar{q} = \frac{q_A + q_B}{2} = 0.45$$
 
 <br>
 
@@ -104,11 +104,11 @@ Assim, dada a expectativa do princípio de Hardy-Weinberg, o número de indivíd
 
 <br>
 
-$N_{Esp}(AA) = N_M\cdot p_M^2 = 200 \cdot 0.55^2 \approx 60.5$
+$$N_{Esp}(AA) = N_M\cdot p_M^2 = 200 \cdot 0.55^2 \approx 60.5$$
 
-$N_{Esp}(Aa) = N_M\cdot 2p_Mq_M = 2 \cdot 0.55 \cdot 0.45 \approx 99$
+$$N_{Esp}(Aa) = N_M\cdot 2p_Mq_M = 2 \cdot 0.55 \cdot 0.45 \approx 99$$
 
-$N_{Esp}(aa) = N_M\cdot q_M^2 = 200 \cdot 0.45^2 \approx 40.5$
+$$N_{Esp}(aa) = N_M\cdot q_M^2 = 200 \cdot 0.45^2 \approx 40.5$$
 
 <br>
 
@@ -142,7 +142,7 @@ $$H = p_1q_1 + p_2q_2$$
 
 <br>
 
-Sendo $q = 1-p$, teremo:
+Sendo $q = 1-p$, teremos:
 
 <br>
 
@@ -162,7 +162,7 @@ Supondo que os indivíduos sejam amostrados a partir de um número $k$ de locais
 
 <br>
 
-- **Heterozigosidade individual ($H_I$)**
+**Heterozigosidade individual ($H_I$)**
 
 Também chamada de heterozigosidade observada ($H_{Obs}$), a heterozigosidade individual é estimada como a fração de heterozigotos na amostra em uma determinada localidade, de forma que:
 
@@ -182,7 +182,7 @@ A heterozigosidade individual pode ser interpretada como uma medida da _heterozi
 
 <br>
 
-- **Heterozigose subpopulacional ($H_S$)**
+**Heterozigose subpopulacional ($H_S$)**
 
 A heterozigose subpopulacional é a proporção de heterozigosidade esperada em uma subpopulação amostrada específica, e pode ser estimada como a heterozigosidade esperada ($H_{Esp}$) média em todos os $k$ locais amostrados, de forma que:
 
@@ -201,7 +201,7 @@ Para tal, assume-se que cada uma das localidades amostradas sigam o princípio d
 
 <br>
 
-- **Heterozigosidade total ($H_T$)**
+**Heterozigosidade total ($H_T$)**
 
 A heterozigosidade total é a heterozigosidade em todo o conjunto de dados; é a heterozigosidade esperada se todos os dados fossem mesclados e acasalados como uma única população panmítica, definida como:
 
@@ -216,7 +216,7 @@ $\bar{p}$ e $\bar{q}$ são as frequências alélicas médias entre todos os $k$ 
 
 <br>
 
-```{r hetrozigosedemography, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="A heterozigosidade em populações subdivididas.."}
+```{r hetrozigosedemography, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A heterozigosidade em populações subdivididas.."}
 knitr::include_graphics("figs/heterozigosity.svg")
 ```
 
@@ -256,7 +256,7 @@ As estatísticas $F$ (também conhecidas como índices de fixação) foram desen
 
 <br>
 
-Assim, o coeficiente de endogamia $F$ visto anteriormente (Equação \@ref(eq:edogamia)) corresponde ao primeiro nível demográfico, uma vez que a heterozigose dos indivíduos ($H_I$) é examinada em relação a heterozigosidade da subpopulação ($H_S$), de forma que:
+Assim, o coeficiente de endogamia $F$ visto anteriormente (Equação \@ref(eq:endogamia)) corresponde ao primeiro nível demográfico, uma vez que a heterozigose dos indivíduos ($H_I$) é examinada em relação a heterozigosidade da subpopulação ($H_S$), de forma que:
 
 <br>
 
@@ -266,27 +266,28 @@ $$F_{IS} = \frac{H_S-H_I}{H_S}=1-\frac{H_I}{H_S}$$
 
 Os valores desse parâmetro são:
 
-- positivos ($F_{IS}>0$) quando observa-se menos heterozigotos do que a expectativa de Hardy-Weinberg; e
+- positivos ($F_{IS}>0$), quando observa-se menos heterozigotos do que a expectativa de Hardy-Weinberg; e
 
-- negativos ($F_{IS}<0$) quando observa-se mais heterozigotos do que a expectativa de Hardy-Weinberg.
+- negativos ($F_{IS}<0$), quando observa-se mais heterozigotos do que a expectativa de Hardy-Weinberg.
 
-
-As estatísticas $F$ (também conhecidas como **índices de fixação**) foram desenvolvidas por Sewall Wright que estava interessado em endogamia em gado. 
 
 <br>
 
-No próximo nível demográfico, pode-se examinar a heterozigosidade da subpopulação ($H_S$) em relação ao conjunto total de dados ($H_T$), de forma que:
+No próximo nível demográfico, pode-se examinar a heterozigosidade das subpopulações ($H_S$) em relação ao conjunto total de dados ($H_T$), de forma que:
 
 $$F_{ST} = \frac{H_T-H_S}{H_T}=1-\frac{H_S}{H_T}$$
 
 <br>
 
-Este parâmetro mede a redução na heterozigosidade da subpopulação em relação a todo o conjunto de dados, onde teremos:
+Este parâmetro mede a redução na heterozigosidade das subpopulações caso não houve subdivisão populacional em relação à metapopulação, _i. e._, caso os cruzamentos entre todos os indivíduos fosse de fato aleatório, onde teremos:
 
-- **Ausência de isolamento** -- Quando as subpopulações foram geneticamente idênticas; e
+**Ausência de isolamento ...**
 
-- 
-$$F_{ST}=1$$.
+... quando as subpopulações foram geneticamente idênticas; e:
+
+<br>
+
+$$F_{ST}=0$$
 
 <br>
 
@@ -296,7 +297,7 @@ $$F_{ST}=1$$.
 
 <br>
 
-$F_{ST}=1$.
+$$F_{ST}=1$$
 
 <br>
 
@@ -318,16 +319,18 @@ Este parâmetro não é usado com frequência, pois os indivíduos são endogâm
 
 <br>
 
-Os três parâmetros têm a seguinte relação:
+Os três parâmetros têm a seguinte relação matemática:
 
-$$1-F_{IT} = \left( 1-F_{IS} \right ) \left( 1-F_{ST} \right)$$
+<br>
+
+$$\left( 1-F_{IT} \right) = \left( 1-F_{IS} \right ) \left( 1-F_{ST} \right)$$
 
 <br>
 
 Onde 
-$1-F_{IT}$ corresponde a probabilidade geral de identidade por descendência (IBD), ou o desvio geral do princípio de Hardy-Weinberg (PHW), 
-$1-F_{IS}$ corresponde a probabilidade de IBD dentro de um indivíduo, ou o desvio do PHW devido à endogamia dentro das populações, e
-$1-F_{ST}$ corresponde probabilidade de IDB entre dois indivíduos em uma subpopulação, ou desvio do PHW devido à diferenciação subpopulacional.
+$\left( 1-F_{IT} \right)$ corresponde a probabilidade geral de identidade por descendência (IBD), ou o desvio geral do princípio de Hardy-Weinberg (PHW), 
+$\left( 1-F_{IS} \right )$ corresponde a probabilidade de IBD dentro de um indivíduo, ou o desvio do PHW devido à endogamia dentro das populações, e
+$\left( 1-F_{ST} \right)$ corresponde probabilidade de IDB entre dois indivíduos em uma subpopulação, ou desvio do PHW devido à diferenciação subpopulacional.
 
 <br>
 
@@ -339,9 +342,11 @@ Como populações locais são pequenas em comparação com a população total, 
 
 Indivíduos dentro da subpopulação são vizinhos no sentido de que seus gametas tendem a se unir com maior probabilidade, aumentando a endogamia dentro da subpopulação. 
 
-* *Note que a mesma sigla IBD também é usada para outro conceito importante em genética de populações* viz., *identidade por descendência*.
+:::quote
 
-<br>
+Note que a sigla **IBD** também é usada para outro conceito importante em genética de populações, _viz._, **identidade por descendência**.
+
+:::
 
 O isolamento por distância é geralmente o modelo mais simples para a causa do isolamento genético entre as populações. 
 

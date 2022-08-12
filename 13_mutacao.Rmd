@@ -543,9 +543,7 @@ Se partirmos de uma população sem mutações na qual $p_0 = 0.5$, quantas gera
 
 <br>
 
-:::quote
-
-Você lembra como trabalhar com logaritmos?
+Para isso, você lembra como trabalhar com logaritmos?
 
 Logaritmo do produto -- $ \log_\color{red}{a} \left( \color{blue}{b}\cdot \color{green}{c} \right) = \log_\color{red}{a} \left( \color{blue}{b} \right) + \log_\color{red}{a} \left( \color{green}{c} \right)$
 
@@ -553,7 +551,6 @@ Logaritmo do quociente -- $ \log_\color{red}{a} \left( \frac {\color{blue}{b}}{\
 
 Logaritmo da potência -- $ \log_\color{red}{a} \left( \color{blue}{b}^\color{green}{c} \right) = \color{green}{c} \cdot \log_\color{red}{a} \left( \color{blue}{b} \right) $
 
-:::
 
 <br>
 
