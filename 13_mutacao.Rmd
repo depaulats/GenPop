@@ -436,6 +436,7 @@ Assim, enquanto o endocruzamento reduz a heterozigosidade, as mutações em popu
 
 Ao longo do tempo, espera-se que seja alcançado um equilíbrio na endogamia, promovido pelo antagonismo entre o endocruzamento e as mutações.
 
+<br>
 
 ```{r inbreedingmutation, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Uma vez que as mutações introduzem alelos novos na população, a probabilidade de encontro de alelos idênticos por descendência será menor nessas populações, e a endogamia ao longo das gerações irá crescer em uma taxa menor do que se não houvesse mutações."} 
 ## Dependências
@@ -469,6 +470,7 @@ ggplot(data = data1301, aes(x = T)) +
   annotate(geom='text', x=50, y=0.8, parse = TRUE, color="green4", label=TeX("$μ = 10^{-4}$"))
 ```
 
+<br>
 
 Dada a expectativa de equilíbrio em relação à endogamia com base no tamanho efetivo da população ($N_e$) e na taxa de mutação ($\mu$) podemos verificar o nível de endogamia no equilíbrio ($\hat{F}$) como:
 
