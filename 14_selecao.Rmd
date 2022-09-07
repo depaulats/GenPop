@@ -206,10 +206,30 @@ Assim, a adaptabilidade reprodutiva pode ser expressa em função do coeficiente
 <br>
 
 $$w=1-s$$
-
 <br>
 
 ## Tipos de de seleção gênica
+
+<br>
+
+```{r HbS, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="Hemácias com traços falcêmicos, promovidos pelo alelo HbS da cadeia da beta-globina, apresentam maior resistência à infecções por malária. Este é um polimorfismo balanceado, no qual a seleção natural favorece uma frequência de alelo intermediária devido a um equilíbrio estável de contribuições de aptidão positivas (resistência a malária) e negativas (anemia) para os excessos médios dos alelos polimórficos."}
+knitr::include_graphics("figs/HbS_structure_frequency.svg")
+```
+
+<br>
+
+:::reference
+
+Grosse et al 2011. doi: [10.1016/j.amepre.2011.09.013](https://doi.org/10.1016/j.amepre.2011.09.013)
+
+Elguero et al 2015. doi: [10.1073/pnas.1505665112](https://doi.org/10.1073/pnas.1505665112)
+
+Kato et al 2018. doi: [10.1038/nrdp.2018.10](https://doi.org/10.1038/nrdp.2018.10)
+
+:::
+
+<br>
+
 
 A depender da adaptabilidade reprodutiva relativa de cada genótipo, quatro tipos de seleção gênica poderão ocorrer:
 
@@ -221,7 +241,7 @@ A depender da adaptabilidade reprodutiva relativa de cada genótipo, quatro tipo
 
 - [Seleção contra o heterozigoto][]
 
-Perceba que independentemente dos genótipos favorecidos ou desvantajosos, a seleção natural irá promover o aumento da adaptabilidade reprodutiva média da população, e com o passar das gerações, $\bar{w} \to 1$.
+Perceba que, independentemente dos genótipos favorecidos ou desvantajosos, a seleção natural irá promover o aumento da adaptabilidade reprodutiva média da população, e com o passar das gerações, $\bar{w} \to 1$.
 
 <br>
 
@@ -229,6 +249,13 @@ Perceba que independentemente dos genótipos favorecidos ou desvantajosos, a sel
 
 Também chamada de **seleção negativa** ou **seleção purificadora**, esse tipo de seleção elimina
 polimorfismos deletérios (tipicamente recessivos).
+
+Neste tipo de seleção, a adaptabilidade reprodutiva dos genótipos é expressa como:
+
+$$ \color{green}{w_{11} = w_{12} = 1}$$
+
+$$ \color{red}{w_{22} = 1-s}$$
+
 
 Em uma grande parte dos casos, envolve alelos letais ou estéreis ($s=1$).
 
@@ -292,18 +319,237 @@ ggplot(data = data1401, aes(x = T)) +
   ylim(0.85, 1)
 ```
 
-
 <br>
 
 ### Seleção a favor do dominante
+
+Também chamada de **seleção positiva** ou **seleção direcional**, esse tipo de seleção favorece o
+aumento de um determinado alelo na população (tipicamente dominante ou co-dominante).
+
+Neste tipo de seleção, a adaptabilidade reprodutiva dos genótipos pode ser expressa como:
+
+$$ \color{green}{w_{11} = 1}$$
+
+$$ \color{goldenrod}{w_{12} = 1-hs}$$
+
+$$ \color{red}{w_{22} = 1-s}$$
+
+onde $h$ é o grau de dominância entre os alelos, de forma que o alelo $1$ será dominante quando $h=0$, o alelo $2$ será dominante quando $h=1$, e os alelos serão codominantes para todo $0<h<1$.
+
+Perceba que em um locus gênico bialélico com dominãncia completa, a seleção contra o recessivo e a seleção a favor do dominante levarão praticamente ao mesmo tipo de seleção; contudo, em um locus multialélico, a seleção a favor do dominante irá favorecer um determinado alelo em detrimento de outros alelos dominantes e/ou codominantes, fazendo que a a frequência alélica mude em direção ao aumento daquele alelo mais vantajoso.
+
+O aumento da frequência de alelos vantajosos arrasta com ele polimorfismos neutros que estão em regiões gênicas ligadas, promovendo um tipo especial de seleção de fundo conhecido como **carona genética** (do inglês, _genetic hitchhiking_; [Maynard-Smith & Haigh 1974](https://doi.org/10.1017/S0016672300014634), [Gillespie 2000](https://doi.org/10.1093/genetics/155.2.909)).
+
+Casos de forte ou rápida seleção positiva são conhecidos como **varredura seletiva** (do inglês, _selective sweep_; ver também [Hermisson & Pennings 2005](https://doi.org/10.1534/genetics.104.036947) e [Pennings & Hermisson 2006](https://doi.org/10.1093/molbev/msj117)).
+
+Assim, na seleção a favor do dominante:
+
+- a frequência  do alelo dominante ($p$) aumenta rapidamente nas primeiras gerações de seleção, e com o tempo, $p \to 1$.
+
+- a quantidade de mudança evolutiva ($\Delta p$) é positiva ao longo das gerações, porque a frequência alélica $p$ está aumentando, mas com o tempo, ($\Delta p \to 0$); e
+
+- a adaptabilidade reprodutiva média $\bar{w}$ da população aumenta a cada geração, de forma que $\bar{w} \to 1$.
+
+<br>
+
+```{r positiveselection, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "800px", fig.cap="A frequência  do alelo dominate (esquerda), a quantidade de mudança evolutiva (centro) e a adaptabilidade reprodutiva média (direita) na seleção a favor do dominante."} 
+## Dependências
+library("ggplot2")
+library("latex2exp")
+library("patchwork")
+
+## Parâmetros
+T <- 1:50           ## Gerações
+p <- 0.5            ## Frequência inicial do alelo dominante
+w11 <- 1            ## Adaptabilidade reprodutiva do genótipo homozigoto dominante
+w12 <- 0.75            ## Adaptabilidade reprodutiva do genótipo heterozigoto
+w22 <- 0.5          ## Adaptabilidade reprodutiva do genótipo homozigoto recessivo
+p0 <- rep(0.5,50)   ## Frequência do alelo recessivo ao longo das gerações
+Dp <- rep(p0[2]-p0[1],49)   ## A mudança evolutiva ao longo das gerações
+wbar <- rep(w11*p0[1]^2 + w12*2*p0[1]*(1-p0[1]) + w22*(1-p0[1])^2,50)   ## A adaptabilidade reprodutiva média ao longo das gerações
+
+## Modelos
+for( t in 2:max(T)){
+  p0[t] <- ( w11*p0[t-1]^2 + w12*(p0[t-1]*(1-p0[t-1])) ) / ( w11*p0[t-1]^2 + w12*2*p0[t-1]*(1-p0[t-1]) + w22*(1-p0[t-1])^2)
+}
+
+Dp[T] <- p0[T+1] - p0[T]
+
+wbar[T] <- w11*p0[T]^2 + w12*2*p0[T]*(1-p0[T]) + w22*(1-p0[T])^2
+
+
+## Gráficos
+data1402 <- data.frame(T, p0, Dq, wbar)
+ggplot(data = data1402, aes(x = T)) +
+  geom_line(aes(y = p0), color = "royalblue3", lwd = 1) +
+  labs(x = "Geração", y = "Frequência do alelo dominante") +
+  xlim(0, 50) +
+  ylim(0.5, 1) +
+  annotate(geom='text', x=25, y=0.60, parse = TRUE, color="green4", label=TeX("$ w_{11} = 1$")) +
+  annotate(geom='text', x=25, y=0.55, parse = TRUE, color="goldenrod", label=TeX("$w_{12} = 0.75$")) +
+  annotate(geom='text', x=25, y=0.50, parse = TRUE, color="firebrick2", label=TeX("$w_{22} = 0.5$")) +
+ggplot(data = data1401, aes(x = T)) +
+  geom_line(aes(y = Dp), color = "deepskyblue3", lwd = 1) +
+  labs(x = "Geração", y = "Mudança evolutiva") +
+  xlim(0, 50) +
+  ylim(0, 0.08) +
+ggplot(data = data1401, aes(x = T)) +
+  geom_line(aes(y = wbar), color = "goldenrod", lwd = 1) +
+  labs(x = "Geração", y = "Adaptabilidade reprodutiva média") +
+  xlim(0, 50) +
+  ylim(0.85, 1)
+```
+
+<br>
+
 
 <br>
 
 ### Seleção a favor do heterozigoto 
 
+Também chamada de **sobredominância**, ocorre quando heterozigotos têm uma aptidão maior do que os
+homozigotos, de forma que a adaptabilidade reprodutiva dos genótipos sejam:
+
+$$ \color{red}{w_{11} = 1-s_1}$$
+
+$$ \color{green}{w_{12} = 1}$$
+
+$$ \color{red}{w_{22} = 1-s_2}$$
+
+Este processo promove a conservação de polimorfismos genéticos, impedindo que alelos sejam perdidos por deriva genética, sendo assim um processo de **seleção balanceadora** (do inglês, _balancing selection_) que leva a um equilíbrio estável das frequências alélicas.
+
+A vantagem do heterozigoto é o principal mecanismo subjacente da **heterose** (do inglês, _heterosis_), ou "vigor híbrido", que é a função melhorada ou aumentada de qualquer qualidade biológica em uma prole híbrida, geralmente por conta do o mascaramento de alelos recessivos deletérios em linhagens puras ou isoladas.
+
+<br>
+
+```{r overdominance, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "800px", fig.cap="A frequência  do alelo dominante na seleção a favor do heterozigoto, mostrando o processo de seleção balanceadora estável."} 
+## Dependências
+library("ggplot2")
+library("latex2exp")
+library("patchwork")
+
+## Parâmetros
+T <- 1:50           ## Gerações
+p <- 0.5            ## Frequência inicial do alelo dominante
+w11 <- 0.75         ## Adaptabilidade reprodutiva do genótipo homozigoto dominante
+w12 <- 1            ## Adaptabilidade reprodutiva do genótipo heterozigoto
+w22 <- 0.75         ## Adaptabilidade reprodutiva do genótipo homozigoto recessivo
+p0 <- rep(0.95,50)  ## Frequência do alelo dominante ao longo das gerações
+p1 <- rep(0.75,50)  ## Frequência do alelo dominante ao longo das gerações
+p2 <- rep(0.55,50)  ## Frequência do alelo dominante ao longo das gerações
+p3 <- rep(0.45,50)  ## Frequência do alelo dominante ao longo das gerações
+p4 <- rep(0.25,50)  ## Frequência do alelo dominante ao longo das gerações
+p5 <- rep(0.05,50)  ## Frequência do alelo dominante ao longo das gerações
+
+Dp <- rep(p0[2]-p0[1],49)   ## A mudança evolutiva ao longo das gerações
+wbar <- rep(w11*p0[1]^2 + w12*2*p0[1]*(1-p0[1]) + w22*(1-p0[1])^2,50)   ## A adaptabilidade reprodutiva média ao longo das gerações
+
+## Modelos
+for( t in 2:max(T)){
+  p0[t] <- ( w11*p0[t-1]^2 + w12*(p0[t-1]*(1-p0[t-1])) ) / ( w11*p0[t-1]^2 + w12*2*p0[t-1]*(1-p0[t-1]) + w22*(1-p0[t-1])^2)
+  p1[t] <- ( w11*p1[t-1]^2 + w12*(p1[t-1]*(1-p1[t-1])) ) / ( w11*p1[t-1]^2 + w12*2*p1[t-1]*(1-p1[t-1]) + w22*(1-p1[t-1])^2)
+  p2[t] <- ( w11*p2[t-1]^2 + w12*(p2[t-1]*(1-p2[t-1])) ) / ( w11*p2[t-1]^2 + w12*2*p2[t-1]*(1-p2[t-1]) + w22*(1-p2[t-1])^2)
+  p3[t] <- ( w11*p3[t-1]^2 + w12*(p3[t-1]*(1-p3[t-1])) ) / ( w11*p3[t-1]^2 + w12*2*p3[t-1]*(1-p3[t-1]) + w22*(1-p3[t-1])^2)
+  p4[t] <- ( w11*p4[t-1]^2 + w12*(p4[t-1]*(1-p4[t-1])) ) / ( w11*p4[t-1]^2 + w12*2*p4[t-1]*(1-p4[t-1]) + w22*(1-p4[t-1])^2)
+  p5[t] <- ( w11*p5[t-1]^2 + w12*(p5[t-1]*(1-p5[t-1])) ) / ( w11*p5[t-1]^2 + w12*2*p5[t-1]*(1-p5[t-1]) + w22*(1-p5[t-1])^2)
+}
+
+## Gráficos
+data1403 <- data.frame(T, p0, p1, p2, p3)
+ggplot(data = data1403, aes(x = T)) +
+  geom_line(aes(y = p0), color = "royalblue3", lwd = 1) +
+  geom_line(aes(y = p1), color = "deepskyblue3", lwd = 1) +
+  geom_line(aes(y = p2), color = "green4", lwd = 1) +
+  geom_line(aes(y = p3), color = "goldenrod", lwd = 1) +
+  geom_line(aes(y = p4), color = "chocolate", lwd = 1) +
+  geom_line(aes(y = p5), color = "firebrick2", lwd = 1) +
+  labs(x = "Geração", y = "Frequência do alelo dominante") +
+  xlim(0, 50) +
+  ylim(0, 1) +
+  annotate(geom='text', x=25, y=1, parse = TRUE, color="firebrick2", label=TeX("$ w_{11} = w_{22} = 0.75$")) +
+  annotate(geom='text', x=25, y=0.9, parse = TRUE, color="green4", label=TeX("$w_{12} = 1$"))
+```
+
 <br>
 
 ### Seleção contra o heterozigoto 
+
+Também chamada de **subdominância**, ocorre quando heterozigotos têm uma aptidão menor do que os
+homozigotos, de forma que a adaptabilidade reprodutiva dos genótipos sejam, por exemplo:
+
+$$ \color{green}{w_{11} = 1}$$
+
+$$ \color{red}{w_{12} = 1-s}$$
+
+$$ \color{green}{w_{22} = 1}$$
+
+Esse tipo de seleção também promove seleção balanceadora, mas que resulta em um equilíbrio instável das frequências alélicas.
+
+Envolve muitas vezes polimorfismos adaptados a condições locais de diferentes subpopulações, e desta froma, hidridos, ao apresentar fenótipos intermediários, irão ter menor adaptabilidade nos ambientes dos parentais. 
+
+O acúmulo dessas incompatibilidades ao longo do tempo pode levar à especiação, como previsto pelo modelo Bateson–Dobzhansky–Muller de isolamento pós-zigótico ([Orr 1996](https://doi.org/10.1093/genetics/144.4.1331)).
+
+<br>
+
+```{r underdominance, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "800px", fig.cap="A frequência  do alelo dominante na seleção contra o heterozigoto, mostrando o processo de seleção balanceadora instável."} 
+## Dependências
+library("ggplot2")
+library("latex2exp")
+library("patchwork")
+
+## Parâmetros
+T <- 1:50           ## Gerações
+p <- 0.5            ## Frequência inicial do alelo dominante
+w11 <- 1            ## Adaptabilidade reprodutiva do genótipo homozigoto dominante
+w12 <- 0.75         ## Adaptabilidade reprodutiva do genótipo heterozigoto
+w22 <- 1            ## Adaptabilidade reprodutiva do genótipo homozigoto recessivo
+p0 <- rep(0.95,50)  ## Frequência do alelo dominante ao longo das gerações
+p1 <- rep(0.75,50)  ## Frequência do alelo dominante ao longo das gerações
+p2 <- rep(0.55,50)  ## Frequência do alelo dominante ao longo das gerações
+p3 <- rep(0.45,50)  ## Frequência do alelo dominante ao longo das gerações
+p4 <- rep(0.25,50)  ## Frequência do alelo dominante ao longo das gerações
+p5 <- rep(0.05,50)  ## Frequência do alelo dominante ao longo das gerações
+
+Dp <- rep(p0[2]-p0[1],49)   ## A mudança evolutiva ao longo das gerações
+wbar <- rep(w11*p0[1]^2 + w12*2*p0[1]*(1-p0[1]) + w22*(1-p0[1])^2,50)   ## A adaptabilidade reprodutiva média ao longo das gerações
+
+## Modelos
+for( t in 2:max(T)){
+  p0[t] <- ( w11*p0[t-1]^2 + w12*(p0[t-1]*(1-p0[t-1])) ) / ( w11*p0[t-1]^2 + w12*2*p0[t-1]*(1-p0[t-1]) + w22*(1-p0[t-1])^2)
+  p1[t] <- ( w11*p1[t-1]^2 + w12*(p1[t-1]*(1-p1[t-1])) ) / ( w11*p1[t-1]^2 + w12*2*p1[t-1]*(1-p1[t-1]) + w22*(1-p1[t-1])^2)
+  p2[t] <- ( w11*p2[t-1]^2 + w12*(p2[t-1]*(1-p2[t-1])) ) / ( w11*p2[t-1]^2 + w12*2*p2[t-1]*(1-p2[t-1]) + w22*(1-p2[t-1])^2)
+  p3[t] <- ( w11*p3[t-1]^2 + w12*(p3[t-1]*(1-p3[t-1])) ) / ( w11*p3[t-1]^2 + w12*2*p3[t-1]*(1-p3[t-1]) + w22*(1-p3[t-1])^2)
+  p4[t] <- ( w11*p4[t-1]^2 + w12*(p4[t-1]*(1-p4[t-1])) ) / ( w11*p4[t-1]^2 + w12*2*p4[t-1]*(1-p4[t-1]) + w22*(1-p4[t-1])^2)
+  p5[t] <- ( w11*p5[t-1]^2 + w12*(p5[t-1]*(1-p5[t-1])) ) / ( w11*p5[t-1]^2 + w12*2*p5[t-1]*(1-p5[t-1]) + w22*(1-p5[t-1])^2)
+}
+
+## Gráficos
+data1404 <- data.frame(T, p0, p1, p2, p3)
+ggplot(data = data1404, aes(x = T)) +
+  geom_line(aes(y = p0), color = "royalblue3", lwd = 1) +
+  geom_line(aes(y = p1), color = "deepskyblue3", lwd = 1) +
+  geom_line(aes(y = p2), color = "green4", lwd = 1) +
+  geom_line(aes(y = p3), color = "goldenrod", lwd = 1) +
+  geom_line(aes(y = p4), color = "chocolate", lwd = 1) +
+  geom_line(aes(y = p5), color = "firebrick2", lwd = 1) +
+  labs(x = "Geração", y = "Frequência do alelo dominante") +
+  xlim(0, 50) +
+  ylim(0, 1) +
+  annotate(geom='text', x=25, y=0.55, parse = TRUE, color="firebrick2", label=TeX("$ w_{11} = w_{22} = 0.75$")) +
+  annotate(geom='text', x=25, y=0.45, parse = TRUE, color="green4", label=TeX("$w_{12} = 1$"))
+```
+
+<br>
+
+:::reference 
+
+Bateson 1909. doi: [10.1017/CBO9780511693953.007](https://doi.org/10.1017/CBO9780511693953.007)
+
+Dobzhansky 1934. doi: [10.1007/BF00374056](https://doi.org/10.1007/BF00374056)
+
+Muller 1942. [Biology Symposium 6, 71–125](https://www.ucl.ac.uk/taxome/lit/muller%201942%20new%20enh.pdf)
+
+:::
 
 <br>
 

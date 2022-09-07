@@ -308,7 +308,7 @@
 <li class="chapter" data-level="14.1" data-path="seleção-natural.html"><a href="seleção-natural.html#adaptabilidade-reprodutiva-absoluta"><i class="fa fa-check"></i><b>14.1</b> adaptabilidade reprodutiva absoluta</a></li>
 <li class="chapter" data-level="14.2" data-path="seleção-natural.html"><a href="seleção-natural.html#adaptabilidade-reprodutiva-relativa"><i class="fa fa-check"></i><b>14.2</b> Adaptabilidade reprodutiva relativa</a></li>
 <li class="chapter" data-level="14.3" data-path="seleção-natural.html"><a href="seleção-natural.html#modelando-uma-geração-de-seleção"><i class="fa fa-check"></i><b>14.3</b> Modelando uma geração de seleção</a></li>
-<li class="chapter" data-level="14.4" data-path="seleção-natural.html"><a href="seleção-natural.html#tipode-de-seleção-gênica"><i class="fa fa-check"></i><b>14.4</b> Tipode de seleção gênica</a>
+<li class="chapter" data-level="14.4" data-path="seleção-natural.html"><a href="seleção-natural.html#tipos-de-de-seleção-gênica"><i class="fa fa-check"></i><b>14.4</b> Tipos de de seleção gênica</a>
 <ul>
 <li class="chapter" data-level="14.4.1" data-path="seleção-natural.html"><a href="seleção-natural.html#seleção-contra-o-recessivo"><i class="fa fa-check"></i><b>14.4.1</b> Seleção contra o recessivo</a></li>
 <li class="chapter" data-level="14.4.2" data-path="seleção-natural.html"><a href="seleção-natural.html#seleção-a-favor-do-dominante"><i class="fa fa-check"></i><b>14.4.2</b> Seleção a favor do dominante</a></li>
@@ -564,7 +564,6 @@ da população (<span class="math inline">\(\bar{w}\)</span>), de forma que:</p>
 <p>Assim, a cada geração de seleção natural, é necessário estimar a contribuição ponderada de cada genótipo para a geração seguinte, que dependerá das frequências alélicas que seguem evoluindo ao longo das gerações. E como a adaptabilidade reprodutiva média da população, que relativiza as frequências alélicas após uma geração de seleção, também irá mudar de geração para geração, um modelo geral para estimar as frequências alélicas em uma dada geração <span class="math inline">\(t\)</span> não é possível de ser estabelecido.</p>
 <p>Contudo essa modelagem da seleção natural de uma geração para a outra pode ser repetido passo-a-passo por várias gerações, algoritmo esse que é facilmente calculado em uma planilha eletrônica (ver <a href="link%20para%20a%20planilha">aqui</a>).</p>
 <p><br></p>
-<p>Perceba que, quando $ t $, <span class="math inline">\(\bar{w} \to 1\)</span>.</p>
 <p>Modelos de seleção natural são melhor compreendidos usando uma medida conhecida como coeficiente de seleção (<span class="math inline">\(s\)</span>), que é o oposto de adaptabilidade (<span class="math inline">\(w\)</span>).</p>
 <p>Como a adaptabilidade reprodutiva representa o sucesso reprodutivo de um genótipo, enquanto que o coeficiente de seleção corresponde a parcela dos indivíduos que não sobreviveram ou se reproduziram.</p>
 <p>O valores de <span class="math inline">\(w\)</span> e <span class="math inline">\(s\)</span> podem também ser interpretados como:</p>
@@ -584,18 +583,41 @@ da população (<span class="math inline">\(\bar{w}\)</span>), de forma que:</p>
 <p><br></p>
 <p><span class="math display">\[w=1-s\]</span></p>
 <p><br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:HbS"></span>
+<img src="figs/HbS_structure_frequency.svg" alt="Hemácias com traços falcêmicos, promovidos pelo alelo HbS da cadeia da beta-globina, apresentam maior resistência à infecções por malária. Este é um polimorfismo balanceado, no qual a seleção natural favorece uma frequência de alelo intermediária devido a um equilíbrio estável de contribuições de aptidão positivas (resistência a malária) e negativas (anemia) para os excessos médios dos alelos polimórficos." width="600px" />
+<p class="caption">
+Figure 14.4: Hemácias com traços falcêmicos, promovidos pelo alelo HbS da cadeia da beta-globina, apresentam maior resistência à infecções por malária. Este é um polimorfismo balanceado, no qual a seleção natural favorece uma frequência de alelo intermediária devido a um equilíbrio estável de contribuições de aptidão positivas (resistência a malária) e negativas (anemia) para os excessos médios dos alelos polimórficos.
+</p>
 </div>
-<div id="tipode-de-seleção-gênica" class="section level2 hasAnchor" number="14.4">
-<h2><span class="header-section-number">14.4</span> Tipode de seleção gênica<a href="seleção-natural.html#tipode-de-seleção-gênica" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>A depender da adaptabilidade reprodutiva relativa de cada genótipo, os seguintes tipos de seleção gênica poderão ocorrer:</p>
+<p><br></p>
+<div class="reference">
+<p>Grosse et al 2011. doi: <a href="https://doi.org/10.1016/j.amepre.2011.09.013">10.1016/j.amepre.2011.09.013</a></p>
+<p>Elguero et al 2015. doi: <a href="https://doi.org/10.1073/pnas.1505665112">10.1073/pnas.1505665112</a></p>
+<p>Kato et al 2018. doi: <a href="https://doi.org/10.1038/nrdp.2018.10">10.1038/nrdp.2018.10</a></p>
+</div>
+<p><br></p>
+</div>
+<div id="tipos-de-de-seleção-gênica" class="section level2 hasAnchor" number="14.4">
+<h2><span class="header-section-number">14.4</span> Tipos de de seleção gênica<a href="seleção-natural.html#tipos-de-de-seleção-gênica" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A depender da adaptabilidade reprodutiva relativa de cada genótipo, quatro tipos de seleção gênica poderão ocorrer:</p>
+<ul>
+<li><p><a href="seleção-natural.html#seleção-contra-o-recessivo">Seleção contra o recessivo</a></p></li>
+<li><p><a href="seleção-natural.html#seleção-a-favor-do-dominante">Seleção a favor do dominante</a></p></li>
+<li><p><a href="seleção-natural.html#seleção-a-favor-do-heterozigoto">Seleção a favor do heterozigoto</a></p></li>
+<li><p><a href="seleção-natural.html#seleção-contra-o-heterozigoto">Seleção contra o heterozigoto</a></p></li>
+</ul>
+<p>Perceba que, independentemente dos genótipos favorecidos ou desvantajosos, a seleção natural irá promover o aumento da adaptabilidade reprodutiva média da população, e com o passar das gerações, <span class="math inline">\(\bar{w} \to 1\)</span>.</p>
 <p><br></p>
 <div id="seleção-contra-o-recessivo" class="section level3 hasAnchor" number="14.4.1">
 <h3><span class="header-section-number">14.4.1</span> Seleção contra o recessivo<a href="seleção-natural.html#seleção-contra-o-recessivo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Também chamada de <strong>seleção negativa</strong> ou <strong>seleção purificadora</strong>, esse tipo de seleção elimina
 polimorfismos deletérios (tipicamente recessivos).</p>
+<p>Neste tipo de seleção, a adaptabilidade reprodutiva dos genótipos é expressa como:</p>
+<p><span class="math display">\[ \color{green}{w_{11} = w_{12} = 1}\]</span></p>
+<p><span class="math display">\[ \color{red}{w_{22} = 1-s}\]</span></p>
 <p>Em uma grande parte dos casos, envolve alelos letais ou estéreis (<span class="math inline">\(s=1\)</span>).</p>
 <p>Casos de forte seleção negativa produzem uma diminuição no nível de variação em torno do locus sob seleção. A eliminação incidental de alelos não deletérios devido a ligação genética com alelos deletérios é chamada
-de seleção de fundo (do inglês, <em>backgound selection</em>; <a href="https://doi.org/10.1093/genetics/134.4.1289">Charlesworth et al 1993</a>, Charlesworth <a href="https://doi.org/10.1534/genetics.111.134288">2012</a>), <a href="https://doi.org/10.1093/jhered/ess136">2013</a>).</p>
+de seleção de fundo (do inglês, <em>backgound selection</em>; Charlesworth et al <a href="https://doi.org/10.1093/genetics/134.4.1289">1993</a>; Charlesworth <a href="https://doi.org/10.1534/genetics.111.134288">2012</a>, <a href="https://doi.org/10.1093/jhered/ess136">2013</a>).</p>
 <p>Na seleção contra o recessivo:</p>
 <ul>
 <li><p>a frequência do alelo recessivo (<span class="math inline">\(q\)</span>) diminui rapidamente nas primeiras gerações de seleção, e com o tempo, <span class="math inline">\(q \to 0\)</span>.</p></li>
@@ -606,21 +628,80 @@ de seleção de fundo (do inglês, <em>backgound selection</em>; <a href="https:
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:negativeselection"></span>
 <img src="bookdownproj_files/figure-html/negativeselection-1.png" alt="A frequência  do alelo recessivo (esquerda), a quantidade de mudança evolutiva (centro) e a adaptabilidade reprodutiva média (direita) na seleção contra o recessivo." width="800px" />
 <p class="caption">
-Figure 14.4: A frequência do alelo recessivo (esquerda), a quantidade de mudança evolutiva (centro) e a adaptabilidade reprodutiva média (direita) na seleção contra o recessivo.
+Figure 14.5: A frequência do alelo recessivo (esquerda), a quantidade de mudança evolutiva (centro) e a adaptabilidade reprodutiva média (direita) na seleção contra o recessivo.
 </p>
 </div>
 <p><br></p>
 </div>
 <div id="seleção-a-favor-do-dominante" class="section level3 hasAnchor" number="14.4.2">
 <h3><span class="header-section-number">14.4.2</span> Seleção a favor do dominante<a href="seleção-natural.html#seleção-a-favor-do-dominante" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Também chamada de <strong>seleção positiva</strong> ou <strong>seleção direcional</strong>, esse tipo de seleção favorece o
+aumento de um determinado alelo na população (tipicamente dominante ou co-dominante).</p>
+<p>Neste tipo de seleção, a adaptabilidade reprodutiva dos genótipos pode ser expressa como:</p>
+<p><span class="math display">\[ \color{green}{w_{11} = 1}\]</span></p>
+<p><span class="math display">\[ \color{goldenrod}{w_{12} = 1-hs}\]</span></p>
+<p><span class="math display">\[ \color{red}{w_{22} = 1-s}\]</span></p>
+<p>onde <span class="math inline">\(h\)</span> é o grau de dominância entre os alelos, de forma que o alelo <span class="math inline">\(1\)</span> será dominante quando <span class="math inline">\(h=0\)</span>, o alelo <span class="math inline">\(2\)</span> será dominante quando <span class="math inline">\(h=1\)</span>, e os alelos serão codominantes para todo <span class="math inline">\(0&lt;h&lt;1\)</span>.</p>
+<p>Perceba que em um locus gênico bialélico com dominãncia completa, a seleção contra o recessivo e a seleção a favor do dominante levarão praticamente ao mesmo tipo de seleção; contudo, em um locus multialélico, a seleção a favor do dominante irá favorecer um determinado alelo em detrimento de outros alelos dominantes e/ou codominantes, fazendo que a a frequência alélica mude em direção ao aumento daquele alelo mais vantajoso.</p>
+<p>O aumento da frequência de alelos vantajosos arrasta com ele polimorfismos neutros que estão em regiões gênicas ligadas, promovendo um tipo especial de seleção de fundo conhecido como <strong>carona genética</strong> (do inglês, <em>genetic hitchhiking</em>; <a href="https://doi.org/10.1017/S0016672300014634">Maynard-Smith &amp; Haigh 1974</a>, <a href="https://doi.org/10.1093/genetics/155.2.909">Gillespie 2000</a>).</p>
+<p>Casos de forte ou rápida seleção positiva são conhecidos como <strong>varredura seletiva</strong> (do inglês, <em>selective sweep</em>; ver também <a href="https://doi.org/10.1534/genetics.104.036947">Hermisson &amp; Pennings 2005</a> e <a href="https://doi.org/10.1093/molbev/msj117">Pennings &amp; Hermisson 2006</a>).</p>
+<p>Assim, na seleção a favor do dominante:</p>
+<ul>
+<li><p>a frequência do alelo dominante (<span class="math inline">\(p\)</span>) aumenta rapidamente nas primeiras gerações de seleção, e com o tempo, <span class="math inline">\(p \to 1\)</span>.</p></li>
+<li><p>a quantidade de mudança evolutiva (<span class="math inline">\(\Delta p\)</span>) é positiva ao longo das gerações, porque a frequência alélica <span class="math inline">\(p\)</span> está aumentando, mas com o tempo, (<span class="math inline">\(\Delta p \to 0\)</span>); e</p></li>
+<li><p>a adaptabilidade reprodutiva média <span class="math inline">\(\bar{w}\)</span> da população aumenta a cada geração, de forma que <span class="math inline">\(\bar{w} \to 1\)</span>.</p></li>
+</ul>
+<p><br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:positiveselection"></span>
+<img src="bookdownproj_files/figure-html/positiveselection-1.png" alt="A frequência  do alelo dominate (esquerda), a quantidade de mudança evolutiva (centro) e a adaptabilidade reprodutiva média (direita) na seleção a favor do dominante." width="800px" />
+<p class="caption">
+Figure 14.6: A frequência do alelo dominate (esquerda), a quantidade de mudança evolutiva (centro) e a adaptabilidade reprodutiva média (direita) na seleção a favor do dominante.
+</p>
+</div>
+<p><br></p>
 <p><br></p>
 </div>
 <div id="seleção-a-favor-do-heterozigoto" class="section level3 hasAnchor" number="14.4.3">
 <h3><span class="header-section-number">14.4.3</span> Seleção a favor do heterozigoto<a href="seleção-natural.html#seleção-a-favor-do-heterozigoto" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Também chamada de <strong>sobredominância</strong>, ocorre quando heterozigotos têm uma aptidão maior do que os
+homozigotos, de forma que a adaptabilidade reprodutiva dos genótipos sejam:</p>
+<p><span class="math display">\[ \color{red}{w_{11} = 1-s_1}\]</span></p>
+<p><span class="math display">\[ \color{green}{w_{12} = 1}\]</span></p>
+<p><span class="math display">\[ \color{red}{w_{22} = 1-s_2}\]</span></p>
+<p>Este processo promove a conservação de polimorfismos genéticos, impedindo que alelos sejam perdidos por deriva genética, sendo assim um processo de <strong>seleção balanceadora</strong> (do inglês, <em>balancing selection</em>) que leva a um equilíbrio estável das frequências alélicas.</p>
+<p>A vantagem do heterozigoto é o principal mecanismo subjacente da <strong>heterose</strong> (do inglês, <em>heterosis</em>), ou “vigor híbrido”, que é a função melhorada ou aumentada de qualquer qualidade biológica em uma prole híbrida, geralmente por conta do o mascaramento de alelos recessivos deletérios em linhagens puras ou isoladas.</p>
+<p><br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:overdominance"></span>
+<img src="bookdownproj_files/figure-html/overdominance-1.png" alt="A frequência  do alelo dominante na seleção a favor do heterozigoto, mostrando o processo de seleção balanceadora estável." width="800px" />
+<p class="caption">
+Figure 14.7: A frequência do alelo dominante na seleção a favor do heterozigoto, mostrando o processo de seleção balanceadora estável.
+</p>
+</div>
 <p><br></p>
 </div>
 <div id="seleção-contra-o-heterozigoto" class="section level3 hasAnchor" number="14.4.4">
 <h3><span class="header-section-number">14.4.4</span> Seleção contra o heterozigoto<a href="seleção-natural.html#seleção-contra-o-heterozigoto" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Também chamada de <strong>subdominância</strong>, ocorre quando heterozigotos têm uma aptidão menor do que os
+homozigotos, de forma que a adaptabilidade reprodutiva dos genótipos sejam, por exemplo:</p>
+<p><span class="math display">\[ \color{green}{w_{11} = 1}\]</span></p>
+<p><span class="math display">\[ \color{red}{w_{12} = 1-s}\]</span></p>
+<p><span class="math display">\[ \color{green}{w_{22} = 1}\]</span></p>
+<p>Esse tipo de seleção também promove seleção balanceadora, mas que resulta em um equilíbrio instável das frequências alélicas.</p>
+<p>Envolve muitas vezes polimorfismos adaptados a condições locais de diferentes subpopulações, e desta froma, hidridos, ao apresentar fenótipos intermediários, irão ter menor adaptabilidade nos ambientes dos parentais.</p>
+<p>O acúmulo dessas incompatibilidades ao longo do tempo pode levar à especiação, como previsto pelo modelo Bateson–Dobzhansky–Muller de isolamento pós-zigótico (<a href="https://doi.org/10.1093/genetics/144.4.1331">Orr 1996</a>).</p>
+<p><br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:underdominance"></span>
+<img src="bookdownproj_files/figure-html/underdominance-1.png" alt="A frequência  do alelo dominante na seleção contra o heterozigoto, mostrando o processo de seleção balanceadora instável." width="800px" />
+<p class="caption">
+Figure 14.8: A frequência do alelo dominante na seleção contra o heterozigoto, mostrando o processo de seleção balanceadora instável.
+</p>
+</div>
+<p><br></p>
+<div class="reference">
+<p>Bateson 1909. doi: <a href="https://doi.org/10.1017/CBO9780511693953.007">10.1017/CBO9780511693953.007</a></p>
+<p>Dobzhansky 1934. doi: <a href="https://doi.org/10.1007/BF00374056">10.1007/BF00374056</a></p>
+<p>Muller 1942. <a href="https://www.ucl.ac.uk/taxome/lit/muller%201942%20new%20enh.pdf">Biology Symposium 6, 71–125</a></p>
+</div>
 <p><br></p>
 </div>
 </div>

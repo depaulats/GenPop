@@ -137,7 +137,11 @@ fig:inbreedingmutation
 fig:aedesresistance
 fig:bettlesprey
 fig:bettlescycle
+fig:HbS
 fig:negativeselection
+fig:positiveselection
+fig:overdominance
+fig:underdominance
 introdução
 o-dna-pode-replicar
 o-dna-pode-mutar-e-recombinar
@@ -307,7 +311,7 @@ seleção-natural
 adaptabilidade-reprodutiva-absoluta
 adaptabilidade-reprodutiva-relativa
 modelando-uma-geração-de-seleção
-tipode-de-seleção-gênica
+tipos-de-de-seleção-gênica
 seleção-contra-o-recessivo
 seleção-a-favor-do-dominante
 seleção-a-favor-do-heterozigoto
