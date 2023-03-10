@@ -5,25 +5,62 @@
 
 © 2022 Thiago S. de Paula
 
-Este livro de notas está licenciado sob a Licença _Creative Commons_ Atribuição-NãoComercial-CompartilhaIgual 4.0 (CC BY-NC-SA 4.0). Para ver uma cópia desta licença, visite https://creativecommons.org/licenses/by-nc-sa/4.0/.
+Este livro está licenciado sob a Licença _Creative Commons_ Atribuição-NãoComercial-CompartilhaIgual 4.0 (CC BY-NC-SA 4.0). Para ver uma cópia desta licença, visite https://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 ```{r copyright, echo = FALSE, fig.align = 'left', out.width="100px"}
 knitr::include_graphics("https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png")
 ```
-\linebreak
+
+<br>
+
 
 ## Por que ler este livro {-}
 
-xxx
+:::quote
+
+_Corremos o risco de enviar jovens altamente treinados e inteligentes para o mundo com tabelas de números errados debaixo do braço e com uma densa névoa no local onde seus cérebros deveriam estar._
+
+Ronald A. Fisher
+
+:::
+
+<br>
+
+Este livro foi escrito para dar suporte a disciplina _**Genética de Populações**_ (IBRAG14-12174 e IBRAG14-12329) para os cursos de bacharelo e licenciatura em Ciências Biológicas, coordenado pelo Departamento de Genética ([DGen](https://sites.google.com/view/dgen-uerj)), do Instituto de Biologia Roberto Alcantara Gomes ([IBRAG](http://www.ibrag.uerj.br/)), da Universidade do Estado do Rio de Janeiro ([UERJ](https://www.uerj.br/)). 
+
+É da natureza dos cursos de Ciências Biológicas da UERJ que os alunos tenham origens variadas. Isso pode não incluir necessariamente o domínio de conteúdos prévios do Ensino Médio e Superior. Esta disciplina tem como pré-requisito a disciplina “Genética Básica” (IBRAG14-12173 e IBRAG14-12328), dependendo assim de conhecimentos prévios na área. Além disso, os conteúdos da disciplina dependerão de conceitos e operações básicos de Matemática, e para aqueles que quiserem revisar tais conteúdos, existem muitos livros excelentes na biblioteca da universidade, ou mesmo disponíveis publicamente na internet, como por exemplo o livro “Matemática”, de Lopes e colaboradores ([2006](http://www.educadores.diaadia.pr.gov.br/arquivos/File/livro_didatico/matematica.pdf)). 
+
+<br>
 
 ## Estrutura do Livro {-}
 
-xxx
+Este livro contém versões estendidas do conteúdo apresentado em sala de aula, além de exercícios de fixação e material contextual, e está organizado em capítulos de acordo com os temas das aulas semanais. 
+
+Os alunos são encorajados a lerem os capítulos relevantes antes das aulas presenciais, e também a realizarem as atividades e exercícios em seu tempo livre, a fim de “botar à prova” seu aprendizado. 
+
+Como muitas outras habilidades, a prática é essencial!
+
+<br>
 
 ## Agradecimentos {-}
 
-xxx
+Gostaria de agradecer aos meus colegas da Universidade do Estado do Rio de Janeiro (UERJ), especialmente aos colegas do Departamento de Genética e do Instituto de Biologia Roberto Alcantara Gomes. É realmente um prazer trabalhar com vocês.
+
+Espero que você ache _**Notas de Aula em Genética de Populações**_ uma experiência desafiadora e gratificante, e que o livro seja útil. Se você encontrar algum erro ou tiver sugestões de melhoria, envie-me um e-mail para [depaula_ts@uerj.br](mailto:depaula_ts@uerj.br). Eu serei grato!
+
+Este livro foi escrito usando [bookdown](https://bookdown.org/), que é baseado em markdown, knitr e Pandoc, o que permite que ele seja renderizado em uma ampla variedade de formatos, incluindo html e pdf, usando $\LaTeX$. Ele também suporta a incorporação de códigos, neste caso R. O pacote R bookdown pode ser instalado a partir do [CRAN](https://cran.r-project.org/web/packages/bookdown/index.html) ou do [GitHub](https://github.com/rstudio/bookdown).
+
+<br>
 
 ## Sobre o autor {-}
 
-xxx
+```{r autor, echo = FALSE, fig.align = 'left', out.width="300px"}
+knitr::include_graphics("figs/the_author.jpg")
+```
+
+<br>
+
+Thiago S. de Paula é doutor em Ecologia e Evolução e professor associado da Universidade do Estado do Rio de Janeiro (UERJ). É coordenador do Laboratório de Biologia Integrativa e Evolutiva (LABIE) da UERJ, além de pesquisador colaborador do Laboratório de Genética Marinha (LGMar) da UERJ e do Laboratório de Taxonomia de Porifera (TAXPO) do Museu Nacional do Rio de Janeiro (MN/UFRJ). Tem experiência nas áreas de Zoologia e Genética, com ênfase em Sistemática Molecular e Morfológica, atuando principalmente nos seguintes temas: Biologia Evolutiva; Filogenia; Evolução Molecular; Genética de Populações; e Invertebrados Marinhos. [CV Lattes](http://lattes.cnpq.br/7695365364430438).
+
+
+

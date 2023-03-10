@@ -13,6 +13,12 @@
 
 (You will need to repeat steps 2 and 4 every time you wish to update the book online.)
 
+- To compile the book as a PDF (Not working!!)
+
+- Use 'bookdown::render_book("index.Rmd", "bookdown::pdf_book")'
+
+- To parse any errors, use 'tinytex::parse_install('bookdownproj.log')'
+
 ### Edit README
 
 Once you've completed these steps, delete the content of this **README** and add a short description of your project with a link to the book URL. It would be appreciated if you add the following to the end:

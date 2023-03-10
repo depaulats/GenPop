@@ -63,21 +63,6 @@
 \usepackage{caption}
 \usepackage{multirow}
 \usepackage{xcolor}
-\usepackage{mathrm}
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{array}
-\usepackage{multirow}
-\usepackage{wrapfig}
-\usepackage{float}
-\usepackage{colortbl}
-\usepackage{pdflscape}
-\usepackage{tabu}
-\usepackage{threeparttable}
-\usepackage{threeparttablex}
-\usepackage[normalem]{ulem}
-\usepackage{makecell}
-\usepackage{xcolor}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -3473,11 +3458,6 @@ gl=k-1-p
 
 .\linebreak
 
-\begin{verbatim}
-## Warning in !is.null(rmarkdown::metadata$output) && rmarkdown::metadata$output %in% : 'length(x) = 4 > 1' in
-## coercion to 'logical(1)'
-\end{verbatim}
-
 \label{tab:unnamed-chunk-1}Tabela de distribuição de qui-quadrado
 
 Grau de liberdade (gl)
@@ -4089,18 +4069,25 @@ Esses ursos não são híbridos com ursos polares, nem são albinos, eles são h
 
 .\linebreak
 
-\begin{table}
+\label{tab:tableB09}Frequências dos genótipos para o polimorfismo MC1R em populações das ilhas da Colúmbia Britânica do urso de Kermode (\emph{Ursus americanus kermodei}).
 
-\caption{\label{tab:tableB09}Frequências dos genótipos para o polimorfismo MC1R em populações das ilhas da Colúmbia Britânica do urso de Kermode (_Ursus americanus kermodei_).}
-\centering
-\begin{tabular}[t]{lcccc}
-\toprule
-  & AA & AG & GG & N\\
-\midrule
-**Indivíduos** & 83 & 28 & 21 & 132\\
-\bottomrule
-\end{tabular}
-\end{table}
+AA
+
+AG
+
+GG
+
+N
+
+\textbf{Indivíduos}
+
+83
+
+28
+
+21
+
+132
 
 .\linebreak
 
@@ -5847,7 +5834,7 @@ Desta forma, para que ocorra mudança nas frequências alélicas de uma geraçã
 
 Sendo \(\mu\) a taxa de mutação do alelo \(A\) para um alelo \(a\), temos também agora a probabilidade de um alelo \(a\) mutar para o alelo \(A\), que irá depender de uma nova taxa de mutação \(\nu\), de forma que:
 
-\[A \mathrel{\mathop{\rightleftharpoons}^{\mathrm{\mu}}_{\mathrm{\nu}}} a\]
+\[A \mathrel{\mathop{\rightleftharpoons}^{\mu}_{\nu}} a\]
 
 Logo, de uma geração \(t_0\) para a outra \(t_1\), assumindo que \(f(A, t_0) = p_0\) e \$ f(a, t\_0) = q\_0\$, e \$ f(A, t\_1) = p\_1\$ e \$ f(a, t\_1) = q\_1\$,teremos:
 

@@ -20,20 +20,16 @@ header-includes:
 - \usepackage{caption}
 - \usepackage{multirow}
 - \usepackage{xcolor}
-- \usepackage{mathrm}
-
 
 ---
 
 
 # {-}
 
-<br
 
 ```{r capa, echo = FALSE, fig.align = 'center', out.width="600px"}
 knitr::include_graphics("figs/capa_v.2022.svg")
 ```
 
-<br>
 
 

@@ -167,7 +167,7 @@ Sendo $\mu$ a taxa de mutação do alelo $A$ para um alelo $a$, temos também ag
 
 <br>
 
-$$A \mathrel{\mathop{\rightleftharpoons}^{\mathrm{\mu}}_{\mathrm{\nu}}} a$$
+$$A \mathrel{\mathop{\rightleftharpoons}^{\mu}_{\nu}} a$$
 
 <br>
 

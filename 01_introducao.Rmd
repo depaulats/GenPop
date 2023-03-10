@@ -1,23 +1,9 @@
 # Introdução
 
-A **Genética de Populações** é uma subárea da Genética que lida com as diferenças dentro e entre as populações.
-
-Compreende a origem, quantidade e distribuição da variação genética presente em populações de organismos, ao longo do tempo e do espaço.
-
-A variação dos genes no tempo e no espaço constitui a base fundamental da mudança evolutiva (microevolução).
-
-Para tal, se baseia em três premissas básicas:
-
-- O DNA pode replicar
-
-- O DNA pode mutar e recombinar
-
-- O DNA interage com o ambiente e produz fenótipos
-
 <br>
 
-```{r microevolucao, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="A genética de populações estuda a microevolução - mudanças na frequência de um gene em uma população"} 
-knitr::include_graphics("figs/microevolution_scheme.svg")
+```{r livrogenpop, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="O livro _Princípios de Genética de Populações_, dos professores Daniel L. Hartl e Andrew G. Clark, apresenta os princípios básicos da genética e estatística que são relevantes para estudos populacionais e examina as forças evolutivas que afetam a variação genética dos nível molecular ao orgânico"} 
+knitr::include_graphics("figs/hartl_clark.jpg")
 ```
 
 <br>
@@ -27,6 +13,28 @@ knitr::include_graphics("figs/microevolution_scheme.svg")
 Hartl DL, Clark AG. 2010. Princípios de Genética de Populações. 4ª Ed. Artmed, Porto Alegre. 660 p. ISBN: 978-0-87893-3082
 
 :::
+
+<br>
+
+A **Genética de Populações** é uma subárea da Genética que lida com as diferenças dentro e entre as populações.
+
+Compreende a origem, quantidade e distribuição da variação genética presente em populações de organismos, ao longo do tempo e do espaço.
+
+A variação dos genes no tempo e no espaço constitui a base fundamental da mudança evolutiva (microevolução).
+
+Para tal, se baseia em três premissas básicas:
+
+1) O DNA pode replicar
+
+2) O DNA pode mutar e recombinar
+
+3) O DNA interage com o ambiente e produz fenótipos
+
+<br>
+
+```{r microevolucao, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="A genética de populações estuda a microevolução - mudanças na frequência de um gene em uma população"} 
+knitr::include_graphics("figs/microevolution_scheme.svg")
+```
 
 <br>
 
