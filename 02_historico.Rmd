@@ -401,11 +401,15 @@ knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/thumb/2/
 
 <br>
 
-Sobre a Origem das Espécies por Meio da Seleção Natural, ou a Preservação de Raças Favorecidas na Luta pela Vida (1859) -- [_On the Origin of Species_](http://darwin-online.org.uk/content/frameset?itemID=F373&viewtype=side&pageseq=1).
+_On the origin of species by means of natural selection, or the preservation of favoured races in the struggle for life_ [1859](http://darwin-online.org.uk/content/frameset?itemID=F373&viewtype=side&pageseq=1).
 
 As espécies evoluem gradualmente por seleção natural.
 
-Herança por miscigenação
+:::warning
+
+A teoria evolutiva de Darwin se baseou na teoria obsoleta da **pangenia** (_pangenesis_), um mecanismo de herança hipotético no qual cada parte do corpo dos pais emitia minúsculas partículas chamadas gêmulas, que migravam pelo corpo para contribuir com os gametas dos pais, seus óvulos ou espermatozoides. Tal mecanismo implicava não só na herança lamarckiana das características adquiridas como também na **herança por miscegenação** (_blending_). Tal teoria era tão problemática para o processo evolutivo que levantou já há época fortes críticas ([Holterhoff 2014](https://doi.org/10.1007/s10739-014-9377-0); [Porter 2014](https://doi.org/10.1016/j.shpsc.2014.02.003)). A pangenia e a herança por miscegenação foram rejeitadas pela eventual aceitação generalizada da teoria da herança particulada de Gregor Mendel.
+
+:::
 
 <br> 
 
@@ -419,7 +423,7 @@ knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/thumb/b/
 
 <br>
 
-Experimentos em Hibridização de Plantas (1865)
+_Versuche über Pflanzen-Hybriden_ ([1865](http://www.mendelweb.org/Mendel.html))
 
 Leis da hereditariedade. 
 
@@ -501,7 +505,7 @@ knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/a/aa/You
 
 <br>
 
-A teoria genética da seleção natural (1930)
+_The Genetical Theory of Natural Selection_ ([1930](https://www.google.com.br/books/edition/The_Genetical_Theory_of_Natural_Selectio/t3jwAAAAMAAJ))
 
 Genética quantitativa
 
@@ -517,17 +521,27 @@ knitr::include_graphics('https://www.marxists.org/portugues/haldane/img/haldane.
 
 <br>
 
-Uma teoria matemática da seleção natural e artificial (1924)
+:::quote
 
-Melanismo industrial em _Biston betularia_.
+_Na consideração da evolução, uma teoria matemática pode ser considerada como um tipo de andaime dentro do qual uma teoria razoavelmente segura, expressável em palavras, pode ser construída_. 
 
-;;;quote
-
-_Na consideração da evolução, uma teoria matemática pode ser considerada como um tipo de andaime dentro do qual uma teoria razoavelmente segura, expressável em palavras, pode ser construída_. ([Haldane 1964](https://doi.org/10.1093/ije/dyn056))
+[Haldane 1964](https://doi.org/10.1093/ije/dyn056)
 
 :::
 
+<br>
 
+_A Mathematical Theory of Natural and Artificial Selection_. 
+Parte I ([1924](https://doi.org/10.1007/BF02459574));
+Parte II ([1924](https://doi.org/10.1111/j.1469-185X.1924.tb00546.x));
+Parte III ([1926](https://doi.org/10.1017/S0305004100015176));
+Parte IV ([1927](https://doi.org/10.1017/S0305004100011750));
+Parte V ([1927](https://doi.org/10.1017/S0305004100015644));
+Parte VI ([1930](https://doi.org/10.1017/S0305004100015450));
+Parte VII ([1931](https://doi.org/10.1017/S0305004100009427));
+Parte VIII ([1932](https://doi.org/10.1017/S0305004100009439));
+Parte IX ([1932](https://doi.org/10.1017/S0305004100010914));
+Parte X ([1934](https://doi.org/10.1093/genetics/19.5.412)).
 
 <br> 
 
@@ -541,9 +555,37 @@ knitr::include_graphics('https://cdn.britannica.com/78/41278-004-5D2683FD/Sewall
 
 <br>
 
-Evolução em populações mendelianas (1931)
+_Evolution in Mendelian Populations_ ([1931](https://doi.org/10.1093/genetics/16.2.97))
 
 Deriva gênica > Seleção natural
 
 Paisagem adaptativa.
 
+
+## Exemplos notáveis do processo microevolutivo
+
+<br>
+
+### Melanismo industrial
+
+<br>
+
+```{r biston, echo = FALSE, fig.align = 'center', out.width="300px", fig.cap="O caso do melanismo industrial na mariposa salpicada (_Biston betularia_) tem sido usado como exemplo didático da seleção natural darwiniana em ação há meio século."} 
+knitr::include_graphics("figs/Biston_betularia.jpg")
+```
+
+<br>
+
+:::reference
+
+Majerus 2009. doi: [10.1007/s12052-008-0107-y](https://doi.org/10.1007/s12052-008-0107-y)
+
+Cook & Saccheri 2012. doi: [10.1038/hdy.2012.92](https://doi.org/10.1038/hdy.2012.92)
+
+van't Hof et al. 2016. doi: [10.1038/nature17951](https://doi.org/10.1038/nature17951)
+
+van't Hof et al. 2019. doi: [10.1098/rsbl.2019.0582](https://doi.org/10.1098/rsbl.2019.0582)
+
+:::
+
+<br>
