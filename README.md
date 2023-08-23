@@ -1,37 +1,23 @@
 
-### Render the book
+Acesse o livro 
 
-- [ ] 1. Install **bookdown** with `install.packages("bookdown")`. If you already have it, update to the [latest version](https://CRAN.R-project.org/package=bookdown).
+### Como renderizar o livro
 
-- [ ] 2. Render locally with `bookdown::render_book("index.Rmd")`.
+- [ ] 1. Instale **bookdown** com o comando `install.packages("bookdown")`. Se você já o tem, atualize-o para a [última versão](https://CRAN.R-project.org/package=bookdown).
 
-- [ ] 3. Use `browseURL("docs/index.html")` to view your book locally (or just open `index.html` in a browser).
+- [ ] 2. Renderize (*render*) localmente com o comando `bookdown::render_book("index.Rmd")`.
 
-- [ ] 4. If it looks good, commit and push all changed files to GitHub. 
+- [ ] 3. Use o comando `browseURL("docs/index.html")` para ver o livro localmente (ou simplesmente abra o arquivo `index.html` em um navegador).
 
-- [ ] 5. Go to GitHub, using 'usethis::browse_github()'
+- [ ] 4. Se a versão renderizada lhe agrada, comprometa (*commit*) e envie (*push*) todos os arquivos modificados para o GitHub. 
 
-(You will need to repeat steps 2 and 4 every time you wish to update the book online.)
+- [ ] 5. Vá ao GitHub, usando o comando `usethis::browse_github()`.
 
-- To compile the book as a PDF (Not working!!)
+Você precisará repetir os passos 2 e 4 todas as vezes que quiser atualizar o livro online.
 
-- Use 'bookdown::render_book("index.Rmd", "bookdown::pdf_book")'
+### Informações adicionais
 
-- To parse any errors, use 'tinytex::parse_install('bookdownproj.log')'
+Este repositório foi inicialmente gerado a partir de um modelo disponível [aqui](https://github.com/jtr13/bookdown-template).
 
-### Edit README
-
-Once you've completed these steps, delete the content of this **README** and add a short description of your project with a link to the book URL. It would be appreciated if you add the following to the end:
-
-*This repo was initially generated from a bookdown template available here: https://github.com/jtr13/bookdown-template.*
-
-(And starring the repo would be nice too so I can see if this is getting used or not!)
-
-### Demo Video
-
-A demo video showing how to create a **bookdown book** following these instructions: http://bit.ly/fiveminutebookdown
-
-### Additional features
-
-Please consult the official guide to **bookdown**: https://bookdown.org/yihui/bookdown
+Por favor consulte o vídeo demostrativo de [como criar um livro **bookdown**](http://bit.ly/fiveminutebookdown) e o [guia oficial do **bookdown**](https://bookdown.org/yihui/bookdown). 
 
