@@ -3,7 +3,7 @@
 
 ## Licença de uso {-}
 
-© 2022 Thiago S. de Paula
+© 2022-2023 Thiago S. de Paula
 
 Este livro está licenciado sob a Licença _Creative Commons_ Atribuição-NãoComercial-CompartilhaIgual 4.0 (CC BY-NC-SA 4.0). Para ver uma cópia desta licença, visite https://creativecommons.org/licenses/by-nc-sa/4.0/.
 
