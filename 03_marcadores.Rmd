@@ -2,9 +2,19 @@
 
 <br>
 
-```{r Erythrura, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="Uma pequena região gênica controla as mudanças de cor na cabeça dos tentilhões de Gould (_Erythrura gouldiae_). Ilustrado em Des Murs ([1849](https://www.biodiversitylibrary.org/item/109479#page/9/mode/1up)). Ver também Toomey et al. ([2018](https://doi.org/10.1098/rspb.2018.1788)) e Kim et al. ([2019](https://doi.org/10.1038/s41467-019-09806-6))"}
-knitr::include_graphics('https://ia800502.us.archive.org/BookReader/BookReaderImages.php?id=Iconographieorn00DesMA&itemPath=%2F26%2Fitems%2FIconographieorn00DesMA&server=ia800502.us.archive.org&page=n318_w525')
+```{r Erythrura, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="Uma pequena região gênica controla as mudanças de cor na cabeça dos tentilhões de Gould (_Erythrura gouldiae_). Ilustrado em Des Murs ([1849](https://www.biodiversitylibrary.org/item/109479#page/9/mode/1up))."}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/7/7d/Erythrura_gouldiae_1849.jpg')
 ```
+
+<br>
+
+:::reference
+
+Toomey et al. 2018. doi: [10.1098/rspb.2018.1788](https://doi.org/10.1098/rspb.2018.1788)
+
+Kim et al. 2019. doi: [10.1038/s41467-019-09806-6](https://doi.org/10.1038/s41467-019-09806-6)"
+
+:::
 
 <br>
 
@@ -359,14 +369,4 @@ http://www.boldsystems.org/
 **_1000 Genomes Project_**
 
 http://www.internationalgenome.org/
-
-
-
-
-
-
-
-
-
-
 
