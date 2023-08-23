@@ -33,9 +33,22 @@ knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/3/35/Ghh
 ```{r weinberg, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="[Wilhelm Weinberg]() (1862-1937), médico alemão."} 
 knitr::include_graphics('https://assets.sutori.com/user-uploads/image/5ebbe88a-0058-4307-bf1b-8236eb3793ca/0d0f9915fa3e3b8b91c7584f4b7fe06c.jpeg')
 ```
+
 <br>
 
-Desenvolvido independentemente por G. H. Hardy e Wilhelm Weinberg, no início de 1900, o **princípio de Hardy-Weinberg** (PHW) é a pedra angular da genética de populações, e consiste em um modelo matemático que relaciona frequências alélicas a frequências genotípicas.
+Desenvolvido independentemente por G. H. Hardy ([1908](https://doi.org/10.1126/science.28.706.49)) e Wilhelm Weinberg ([1908](https://wellcomecollection.org/works/ek48psze)), o **princípio de Hardy-Weinberg** (PHW) é a pedra angular da genética de populações, e consiste em um modelo matemático que relaciona frequências alélicas a frequências genotípicas.
+
+<br>
+
+:::reference
+
+Stern 1943. doi: [10.1126/science.97.2510.137](https://doi.org/10.1126/science.97.2510.137)
+
+Crow 1999. doi: [10.1093/genetics/152.3.821](https://doi.org/10.1093/genetics/152.3.821)
+
+:::
+
+<br>
 
 De acordo com o princípio (ou equilíbrio, modelo, teorema e lei) de Hardy-Weinberg, as freqüências gênicas e genótípicas em uma população permanecerão constantes, de geração em geração, desde que respeitadas suas premissas teóricas.
 
@@ -58,6 +71,7 @@ As premissas subjacentes ao princípio de Hardy-Weinberg são:
 - Ausência de forças evolutivas 
 
 <br>
+
 :::quote
 
 **Força evolutiva** -- Incluindo, mas não limitado a, deriva genética, escolha de parceiro, acasalamento seletivo, seleção natural, seleção sexual, mutação, fluxo gênico, impulso meiótico, carona genética, gargalo populacional, efeito fundador e endogamia.
@@ -453,5 +467,3 @@ Assumindo que esta deficiência seja devida a um único gene autossômico recess
 - Qual a proporção esperada de pessoas portadoras? 
 
 <br>
-
-
