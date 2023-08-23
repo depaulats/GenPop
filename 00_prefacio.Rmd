@@ -42,13 +42,47 @@ Como muitas outras habilidades, a prática é essencial!
 
 <br>
 
+Este livro utiliza diversos recursos visuais e interativos, os quais foram pensados a não só engajar o leitor como a facilitar a descoberta de informações relevantes.
+
+:::quote
+
+**Citações de autores, destaques textuais e definições** são mostrados assim.
+
+:::
+
+:::reference
+
+**Referências e publicações** são mostrados assim.
+
+:::
+
+:::hint
+
+**Dicas e sugestões de aprendizagem** são mostrados assim.
+
+:::
+
+:::success
+
+**Avanços e conquistas no aprendizado** são mostrados assim.
+
+:::
+
+:::warning
+
+**Comentários importantes e cautela ao leitor** são mostrados assim.
+
+:::
+
+<br>
+
 ## Agradecimentos {-}
 
 Gostaria de agradecer aos meus colegas da Universidade do Estado do Rio de Janeiro (UERJ), especialmente aos colegas do Departamento de Genética e do Instituto de Biologia Roberto Alcantara Gomes. É realmente um prazer trabalhar com vocês.
 
 Espero que você ache _**Notas de Aula em Genética de Populações**_ uma experiência desafiadora e gratificante, e que o livro seja útil. Se você encontrar algum erro ou tiver sugestões de melhoria, envie-me um e-mail para [depaula_ts@uerj.br](mailto:depaula_ts@uerj.br). Eu serei grato!
 
-Este livro foi escrito usando [bookdown](https://bookdown.org/), que é baseado em markdown, knitr e Pandoc, o que permite que ele seja renderizado em uma ampla variedade de formatos, incluindo html e pdf, usando $\LaTeX$. Ele também suporta a incorporação de códigos, neste caso R. O pacote R bookdown pode ser instalado a partir do [CRAN](https://cran.r-project.org/web/packages/bookdown/index.html) ou do [GitHub](https://github.com/rstudio/bookdown).
+Este livro foi escrito usando [**bookdown**](https://bookdown.org/), que é baseado em *markdown*, *knitr* e *Pandoc*, o que permite que ele seja renderizado em uma ampla variedade de formatos, incluindo html e pdf, usando $\LaTeX$. Ele também suporta a incorporação de códigos, neste caso R. O pacote R bookdown pode ser instalado a partir do [CRAN](https://cran.r-project.org/web/packages/bookdown/index.html) ou do [GitHub](https://github.com/rstudio/bookdown).
 
 <br>
 
@@ -61,6 +95,4 @@ knitr::include_graphics("figs/the_author.jpg")
 <br>
 
 Thiago S. de Paula é doutor em Ecologia e Evolução e professor associado da Universidade do Estado do Rio de Janeiro (UERJ). É coordenador do Laboratório de Biologia Integrativa e Evolutiva (LABIE) da UERJ, além de pesquisador colaborador do Laboratório de Genética Marinha (LGMar) da UERJ e do Laboratório de Taxonomia de Porifera (TAXPO) do Museu Nacional do Rio de Janeiro (MN/UFRJ). Tem experiência nas áreas de Zoologia e Genética, com ênfase em Sistemática Molecular e Morfológica, atuando principalmente nos seguintes temas: Biologia Evolutiva; Filogenia; Evolução Molecular; Genética de Populações; e Invertebrados Marinhos. [CV Lattes](http://lattes.cnpq.br/7695365364430438).
-
-
 
