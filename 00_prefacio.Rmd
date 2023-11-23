@@ -99,11 +99,12 @@ Thiago S. de Paula é doutor em Ecologia e Evolução e professor associado da U
 
 ## Capas das versões anteriores {-}
 
-### Capa de 2022
+### Capa de 2022 {-}
 
 ```{r capa2022, echo = FALSE, fig.align = 'center', out.width="300px"}
-knitr::include_graphics("figs/capa_v.2023.svg")
+knitr::include_graphics("figs/capa_v.2022.svg")
 ```
 
 © 2010 Thiago S. de Paula
-Copa da mata sobre a vila de Dois Rios, Ilha Grande, Rio de Janeiro, Brazil. Junho de 2010.
+
+Copa da mata sobre a vila de Dois Rios, Ilha Grande, Rio de Janeiro, Brasil. Junho de 2010.

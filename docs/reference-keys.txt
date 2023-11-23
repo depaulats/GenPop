@@ -144,7 +144,6 @@ fig:negativeselection
 fig:positiveselection
 fig:overdominance
 fig:underdominance
-capa-de-2022
 introdução
 o-dna-pode-replicar
 o-dna-pode-mutar-e-recombinar
