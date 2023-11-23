@@ -96,3 +96,14 @@ knitr::include_graphics("figs/the_author.jpg")
 
 Thiago S. de Paula é doutor em Ecologia e Evolução e professor associado da Universidade do Estado do Rio de Janeiro (UERJ). É coordenador do Laboratório de Biologia Integrativa e Evolutiva (LABIE) da UERJ, além de pesquisador colaborador do Laboratório de Genética Marinha (LGMar) da UERJ e do Laboratório de Taxonomia de Porifera (TAXPO) do Museu Nacional do Rio de Janeiro (MN/UFRJ). Tem experiência nas áreas de Zoologia e Genética, com ênfase em Sistemática Molecular e Morfológica, atuando principalmente nos seguintes temas: Biologia Evolutiva; Filogenia; Evolução Molecular; Genética de Populações; e Invertebrados Marinhos. [CV Lattes](http://lattes.cnpq.br/7695365364430438).
 
+
+## Capas das versões anteriores {-}
+
+### Capa de 2022
+
+```{r capa, echo = FALSE, fig.align = 'center', out.width="300px"}
+knitr::include_graphics("figs/capa_v.2023.svg")
+```
+
+© 2010 Thiago S. de Paula
+Copa da mata sobre a vila de Dois Rios, Ilha Grande, Rio de Janeiro, Brazil. Junho de 2010.

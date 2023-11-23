@@ -27,9 +27,11 @@ header-includes:
 # {-}
 
 
-```{r capa, echo = FALSE, fig.align = 'center', out.width="600px"}
-knitr::include_graphics("figs/capa_v.2022.svg")
+```{r capa, echo = FALSE, fig.align = 'center', out.width="400px"}
+knitr::include_graphics("figs/capa_v.2023.svg")
 ```
 
+© 2010 Thiago S. de Paula
+Anêmona sol (_Stichodactyla helianthus_), Bocas del Toro, Panamá. Julho de 2010.
 
 
