@@ -1,13 +1,13 @@
 --- 
-title: <center> Notas de Aula em Genética de Populações </center>
-author: <center> Thiago S. de Paula </center>
+title: "Notas de Aula em <br /> Genética de Populações"
+author: "**Thiago S. de Paula**"
 date: '`r paste("Iniciado em junho de 2022. <br /> Última atualização em", format(Sys.Date(),"%B de %Y", locale = "pt_BR"))`'
+description: "Este livro foi desenvolvido para estudantes de cursos de Genética de Populações da Graduação e Pós-Graduação."
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "Este livro foi desenvolvido para estudantes de cursos de Genética de Populações da Graduação e Pós-Graduação."
 output:
   html_document:
     number_sections: true
@@ -23,11 +23,9 @@ header-includes:
 
 ---
 
-
 # {-}
 
-
-```{r capa, echo = FALSE, fig.align = 'center', out.width="400px"}
+```{r capa, echo = FALSE, fig.align = 'center', out.width="500px"}
 knitr::include_graphics("figs/capa_v.2023.svg")
 ```
 
