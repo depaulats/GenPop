@@ -101,7 +101,7 @@ Thiago S. de Paula é doutor em Ecologia e Evolução e professor associado da U
 
 ### Capa de 2022
 
-```{r capa, echo = FALSE, fig.align = 'center', out.width="300px"}
+```{r capa2022, echo = FALSE, fig.align = 'center', out.width="300px"}
 knitr::include_graphics("figs/capa_v.2023.svg")
 ```
 

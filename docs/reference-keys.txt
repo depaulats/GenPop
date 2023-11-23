@@ -16,6 +16,7 @@ fig:mendel
 fig:fischer
 fig:haldane
 fig:wright
+fig:biston
 fig:Erythrura
 fig:polymarker
 fig:evodinamica
@@ -143,6 +144,7 @@ fig:negativeselection
 fig:positiveselection
 fig:overdominance
 fig:underdominance
+capa-de-2022
 introdução
 o-dna-pode-replicar
 o-dna-pode-mutar-e-recombinar
@@ -157,6 +159,8 @@ a-redescoberta-de-mendel
 ronald-a.-fisher
 j.-b.-s.-haldane
 sewall-wright
+exemplos-notáveis-do-processo-microevolutivo
+melanismo-industrial
 polimorfismo-genéticos-e-marcadores-moleculares
 mutações-times-polimorfismos
 dinâmica-evolutiva-e-ecológica-dos-polimorfismos

@@ -1,10 +1,10 @@
 # Testes de Significância
 
-.\linebreak
+<br>
 ```{r infestat, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="A inferência estatística é o ato de generalizar de uma amostra para uma população, a partir de dados obtidos desta, com um calculado nível de certeza."} 
 knitr::include_graphics("figs/inferencia_estatistica.svg")
 ```
-.\linebreak
+<br>
 
 ## Significância estatística
 
@@ -47,12 +47,12 @@ Fazendo analogia à um tribunal, onde todos são inocentes ($H_0$) até que se p
 
 Esses dois tipos de erro são compensados entre si: para qualquer conjunto de amostra, o esforço para reduzir um tipo de erro geralmente resulta no aumento do outro tipo de erro.
 
-.\linebreak
+<br>
 ```{r errostipos, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="Relações entre verdade/falsidade da hipótese nula e resultados de um teste statístico."} 
 knitr::include_graphics("figs/erro_estatistico.svg")
 ```
 
-.\linebreak
+<br>
 
 :::reference
 Sokal & Rohlf 2011. ISBN: 978-0716786047
@@ -62,7 +62,7 @@ Dancey et al. 2012. ISBN: 978-1849203364
 Herzog et al. 2019. doi: [10.1007/978-3-030-03499-3](https://doi.org/10.1007/978-3-030-03499-3)
 :::
 
-.\linebreak
+<br>
 
 
 ## Testes de ajuste do chi-quadrado
@@ -73,25 +73,25 @@ Ele testa uma hipótese nula declarando que a distribuição de freqüência de 
 
 Os eventos considerados devem ser mutuamente exclusivos e ter probabilidade total igual a 1.
 
-.\linebreak
+<br>
 
 ### Um exemplo simples
 
 Um exemplo simples é a hipótese de que um dado comum de seis lados é "justo" (ou seja, todos os seis resultados são igualmente prováveis de ocorrer).
 
-.\linebreak
+<br>
 ```{r dados, echo = FALSE, fig.align = 'center', out.width="200px", fig.cap="Em um dado perfeito (sem viés), a chance de cada lado cair com a face para cima é igual a $1/6$."} 
 knitr::include_graphics("figs/dice.svg")
 ```
-.\linebreak
+<br>
 
 #### Os dados de Weldon
 
-.\linebreak
+<br>
 ```{r weldon, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="[W. F. Raphael Weldon](https://en.wikipedia.org/wiki/Raphael_Weldon) (1860-1906), biólogo evolucionista inglês."} 
 knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/c/c7/Weldon_Walter_F_R.jpg')
 ```
-.\linebreak
+<br>
 
 Raphael Weldon foi um dos fundadores da biometria, e editor e co-fundador do periódico Biometrika (juntamente com Francis Galton e Karl Pearson).
 
@@ -103,15 +103,15 @@ Weldon observou que 5s ou 6s ocorreram com mais frequência do que o esperado*.
 
 Os dados de dados de Weldon foram usados por Karl Pearson em seu artigo pioneiro sobre a estatística qui-quadrado, e ele hipotetizou que o desvio se devia à  construção dos dados da época (a face com 6 e 5 pontos seria mais leve do que as faces opostas, que tem apenas 1e 2 pontos).
 
-.\linebreak
+<br>
 
 #### Os dados de Labby
 
-.\linebreak
+<br>
 ```{r labbym, echo = FALSE, fig.align = 'right', out.width = "300px", fig.cap="Zacariah Labby e [máquina de rolar dados](https://ehttps://www.youtube.com/watch?v=95EErdouO2w)."} 
 knitr::include_graphics("figs/Zacariah_Labby.png")
 ```
-.\linebreak
+<br>
 
 Em [2009](https://doi.org/10.1007/s00144-009-0036-8), Zacariah Labby da Universidade de Chicago, repetiu o experimento de Weldon.
 
@@ -128,11 +128,11 @@ Labby não observou o mesmo fenômeno que Weldon observou (frequência mais alta
 
 A automação permitiu que Labby coletasse mais dados do que Weldon em 1894, em vez de registrar “sucessos” e “falhas”, Labby registrou o número individual de pontos em cada dado.
 
-.\linebreak
+<br>
 ```{r labbyg, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Probabilidade de observar cada face de um dado em 12 ralagens, em um total de 26.306 rolagens ([Labby 2009](https://doi.org/10.1007/s00144-009-0036-8))."} 
 knitr::include_graphics("figs/Labby_results.svg")
 ```
-.\linebreak
+<br>
 
 ### Teste do qui-quadrado de Pearson
 
@@ -147,7 +147,7 @@ Onde, $n$ é o número total de observações, $O_i$ é o número de observaçõ
 
 A estatística do qui-quadrado pode então ser usada para calcular um valor-p comparando o valor da estatística a uma distribuição qui-quadrada. 
 
-.\linebreak
+<br>
 
 ### Graus de liberdade
 
@@ -159,15 +159,15 @@ Em outras palavras, o número de graus de liberdade pode ser definido como o nú
 
 Matematicamente, grau de liberdade é o número de dimensões do domínio de um vetor aleatório, ou essencialmente o número de componentes "livres“, isto é, quantos componentes precisam ser conhecidos antes que o vetor seja totalmente determinado.
 
-.\linebreak
+<br>
 ```{r gl, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Os graus de liberdade ($gl$) de um corpo rígido são definidos como o número de movimentos independentes que ele possui."} 
 knitr::include_graphics("figs/gl_mecanismo.svg")
 ```
-.\linebreak
+<br>
 
 Cada grau de liberdade apresenta um função densidade de probabilidade, onde os valores de $\chi^2$ (eixo x) apresentam diferentes frequências (eixo y).
 
-.\linebreak
+<br>
 ```{r glgraph, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade."} 
 library("ggplot2")
 library("latex2exp")
@@ -185,11 +185,11 @@ ggplot(data.frame(x = c(0, 15)), aes(x = x)) +
   annotate(geom='text', x=7.5, y=0.15, parse = TRUE, color="deepskyblue3", label=TeX("$gl=10$"))
   
 ```
-.\linebreak
+<br>
 
 A partir da função densidade de probabilidade, é possível calcular a probabilidade p de um evento cujo valor de $\chi^2$  é conhecido.
 
-.\linebreak
+<br>
 ```{r glprob, echo = FALSE, warning = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Função densidade de probabilidade de cinco distribuições de qui-quadrado com diferentes graus de liberdade."} 
 library("ggplot2")
 library("latex2exp")
@@ -200,7 +200,7 @@ ggplot(data.frame(x = c(0, 15)), aes(x = x)) +
   annotate(geom='text', x=9, y=.015, parse = TRUE, color="black", label=TeX("$p = Pr \\left [ X \\geq \\chi^2 \\right ]$"))
 
 ```
-.\linebreak
+<br>
 
 No teste de ajuste do qui-quadrado o número de graus de liberdade é igual ao número classes de observações ($k$) menos 1 menos o número parâmetros independentes estimados para o modelo ($p$).
 
@@ -209,13 +209,13 @@ gl=k-1-p
   (\#eq:gl)
 \end{equation} 
 
-.\linebreak
+<br>
 ```{r, echo = FALSE}
 library(kableExtra)
 chi_table <- read.csv("tables/chi_square.csv", sep=",", check.names = FALSE)
 knitr::kable(chi_table, align = "cccccccccc", booktabs = TRUE, caption = "Tabela de distribuição de qui-quadrado", "html")
 ```
-.\linebreak
+<br>
 
 ## Testando a significância do Princípio de Hardy-Weinberg
 
@@ -231,17 +231,17 @@ E o número de graus de liberdade dependerá do número de genótipos e alelos p
 
 De forma que, para um dado locus gênicos,$k$ é o número de genótipos, e $p$ é o número de alelos, diminuído em um.
 
-.\linebreak
+<br>
 
 #### Graus de liberdade com dois alelos
 
 Considerando um lócus gênico com dois alelos $A$ e $B$, cujas frequências $p+q=1$.
 
-.\linebreak
+<br>
 ```{r gl2alelos, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Quadrado de Punnett para 2 alelos"} 
 knitr::include_graphics("figs/punnett_2alelles.svg")
 ```
-.\linebreak
+<br>
 
 Temos:
 
@@ -249,29 +249,29 @@ Temos:
 
 $$k=3$$
 
-.\linebreak
+<br>
 
 **Parâmetros independentes** -- A frequência alélica independente $F(A)=p$, pois $F(a)=q=1-p$.
 
 $$p=1$$
 
-.\linebreak
+<br>
 
 **Graus de liberdade** -- Considerando que $gl=3-1-1$.
 
 $$gl=1$$
 
-.\linebreak
+<br>
 
 #### Graus de liberdade com três alelos
 
 Considerando um lócus gênico com três alelos $A$, $B$ e $C$, cujas frequências $p+q+r=1$.
 
-.\linebreak
+<br>
 ```{r gl3alelos, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Quadrado de Punnett para 3 alelos"} 
 knitr::include_graphics("figs/punnett_3alelles.svg")
 ```
-.\linebreak
+<br>
 
 Temos:
 
@@ -279,30 +279,30 @@ Temos:
 
 $$k=6$$
 
-.\linebreak
+<br>
 
 **Parâmetros independentes** -- As frequências alélicas independentes $F(A)=p$ e $F(B)=q$, pois $F(C)=r=1-p-q$.
 
 $$p=2$$
 
-.\linebreak
+<br>
 
 **Graus de liberdade** -- Considerando que $gl=6-1-2$.
 
 $$gl=3$$
 
 
-.\linebreak
+<br>
 
 #### Graus de liberdade com quatro alelos
 
 Considerando um lócus gênico com três alelos $A$, $B$, $C$ e $D$ cujas frequências $p+q+r+s=1$.
 
-.\linebreak
+<br>
 ```{r gl4alelos, echo = FALSE, fig.align = 'center', out.width = "400px", fig.cap="Quadrado de Punnett para 4 alelos"} 
 knitr::include_graphics("figs/punnett_4alelles.svg")
 ```
-.\linebreak
+<br>
 
 Temos:
 
@@ -310,18 +310,18 @@ Temos:
 
 $$k=10$$
 
-.\linebreak
+<br>
 
 **Parâmetros independentes** -- As frequências alélicas independentes $F(A)=p$, $F(B)=q$ e $F(C)=r$, pois $F(D)=s=1-p-q-r$.
 
 $$p=3$$
 
-.\linebreak
+<br>
 
 **Graus de liberdade** -- Considerando que $gl=6-1-3$.
 
 $$gl=6$$
-.\linebreak
+<br>
 
 #### Graus de liberdade com $i$ alelos
 
@@ -333,14 +333,14 @@ Temos:
 
 $$k=\binom{i}{2} = \frac{n!}{k!\left ( n-k \right )!}$$
 
-.\linebreak
+<br>
 
 
 **Parâmetros independentes** -- O número de alelos $i$ menos um. 
 
 $$p=i-1$$
 
-.\linebreak
+<br>
 
 **Graus de liberdade** -- Considerando que $gl=\binom{i}{2}-1-(i-1)$.
 
@@ -348,7 +348,7 @@ $$p=i-1$$
 gl = (\text{# genótipos}) - (\text{# alelos})
 \end{equation} 
 
-.\linebreak
+<br>
 
 ## Tabela de contingência (RxC)
 
@@ -356,11 +356,11 @@ Uma tabela de contingência (também conhecida como tabulação cruzada) é um t
 
 Elas fornecem uma imagem básica da inter-relação entre duas variáveis e podem ajudar a encontrar interações entre elas. 
 
-.\linebreak
+<br>
 ```{r tabelarc, echo = FALSE, fig.align = 'center', out.width = "300px", fig.cap="Tabela de contingência (2x2)"} 
 knitr::include_graphics("figs/tabela_rc.svg")
 ```
-.\linebreak
+<br>
 
 
 ### Razão de chances
@@ -383,21 +383,21 @@ OR = \frac{p_00\cdot p_11}{p_01\cdot p_10}
 As relações entre as frequências haplotípicas e as frequências alélicas podem ser ilustradas por uma tabela de contingência entre pares de alelos de dois loci gênicos:
 
 
-.\linebreak
+<br>
 ```{r freqhapobs, echo = FALSE, fig.align = 'center', out.width = "350px", fig.cap="Relação entre frequências haplotípicas e alélicas"} 
 knitr::include_graphics("figs/freq_haplotipica_observada.svg")
 ```
-.\linebreak
+<br>
 
 ### Frequências haplotípicas esperadas
 
 A expectativa, de acordo com o princípio de Hardy-Weinberg, é que os alelos nos dois loci gênicos se combinem aleatoriamente, e assim, as frequências dos haplótipos seriam igual ao produto das frequências alélicas individuais.
 
-.\linebreak
+<br>
 ```{r freqhapesp, echo = FALSE, fig.align = 'center', out.width = "350px", fig.cap="Relação entre frequências haplotípicas e alélicas"} 
 knitr::include_graphics("figs/freq_haplotipica_esperada.svg")
 ```
-.\linebreak
+<br>
 
 
 ### Testado a significância de tabelas de contingência
@@ -415,20 +415,20 @@ Assim, temos:
 
 $$k=4$$
 
-.\linebreak
+<br>
 
 **Parâmetros independentes** -- As duas frequências alélicas independentes $F(A)=p_A$ e $F(B)=p_B$, pois $F(a)=p_a=1-p_A$ e $F(b)=p_b=1-p_B$.
 
 
 $$p=2$$
 
-.\linebreak
+<br>
 
 **Graus de liberdade** -- Considerando que $gl=4-1-2$.
 
 $$gl=1$$
 
-.\linebreak
+<br>
 
 
 ### Alternativa: Teste exato de Fisher
@@ -450,37 +450,37 @@ Agora, $p = p ( a )$ é a probabilidade de que $a$ elementos sejam positivos em 
 
 Apesar do teste de Fisher fornecer valores de $p$ exatos, alguns autores argumentam que este é conservador, ou seja, que sua taxa de rejeição real está abaixo do nível de significância nominal.
 
-.\linebreak
+<br>
 
 ## Exercícios e Atividades
 
-.\linebreak
+<br>
 
 ### Exercício 1 -- Ervilhas de Mendel
 
 Considere as frequências fenotípicas dos traços das ervilhas ervilhas (_Pisum_ spp.) estudadas por Mendel mostradas na Figura \@ref(fig:peatrait).
 
-.\linebreak
+<br>
 ```{r peatrait, echo = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Os sete traços fenotípicos das ervilhas (_Pisum_ spp.) cujos padrões de herança foram estudados por Mendel ([1865](http://www.mendelweb.org/Mendel.html))."} 
 knitr::include_graphics("figs/mendel_pea_traits.svg")
 ```
-.\linebreak
+<br>
 
 - Os traços fenotípicos das ervilhas de Mendel seguem as esperadas frequências mendelianas ($3:1$)?
 
-.\linebreak
+<br>
 
 ### Exercício 2 -- Traça de tigre escarlate
 
-.\linebreak
+<br>
 ```{r callimorpha, echo = FALSE, fig.align = 'center', out.width = "800px", fig.cap="Polimorfismo de cor na asa da traça de tigre escarlate (_Callimorpha dominula_)."} 
 knitr::include_graphics('https://slideplayer.com/slide/13126368/79/images/7/Figure+26.2+Early+evolutionary+geneticists+were+forced+to+rely+on+the+phenotypic+traits+that+had+a+simple+genetic+basis..jpg')
 ```
-.\linebreak
+<br>
 
 Considere os dados abaixo:
 
-.\linebreak
+<br>
 ```{r tableA09, echo = FALSE}
 A09BB <- c(1469)
 A09Bb <- c(138)
@@ -490,26 +490,26 @@ data0901 <- data.frame(A09BB, A09Bb, A09bb, A09N)
 rownames(data0901) <- c("**Indivíduos**")
 knitr::kable(data0901, align = "cccc", booktabs = TRUE, col.names = c("BB", "Bb", "bb", "N"), caption = "Frequências genotípicas observadas em uma população de traça de tigre escarlate (_Callimorpha dominula_) para o polimorfismos de cor das asas.", "html")
 ```
-.\linebreak
+<br>
 
 - Essa população segue o princípio de Hardy-Weinberg?
 
-.\linebreak
+<br>
 
 ### Exercício 3 -- Urso de Kermode
 
-.\linebreak
+<br>
 ```{r kermode, echo = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Um filhote de urso de Kermode se aconchegando com seu irmão (Colúmbia Britânica)."} 
 knitr::include_graphics('https://img.peapix.com/eeb011ee41bc4e618088779e9a966227.jpg?attachment&modal')
 ```
-.\linebreak
+<br>
 
 
 Nas ilhas costeiras da Colúmbia Britânica, muitos membros da subespécie urso de preto, urso de Kermode (_Ursus americanus kermodei_), são brancos (tradicionalmente chamados de ursos espirituais). 
 
 Esses ursos não são híbridos com ursos polares, nem são albinos, eles são homozigotos para uma mudança recessiva no gene $MC1R$, com indivíduos homozigotos mutantes ($GG$) sendo brancos e indivíduos portando o alelo selvagem ($AA$ e $AG$) sendo negros. Considere as frequências genotípicas observadas abaixo:
 
-.\linebreak
+<br>
 ```{r tableB09, echo = FALSE}
 B09AA <- c(83)
 B09AG <- c(28)
@@ -519,17 +519,17 @@ data0902 <- data.frame(B09AA, B09AG, B09GG, B09N)
 rownames(data0902) <- c("**Indivíduos**")
 knitr::kable(data0902, align = "cccc", booktabs = TRUE, col.names = c("AA", "AG", "GG", "N"), caption = "Frequências dos genótipos para o polimorfismo MC1R em populações das ilhas da Colúmbia Britânica do urso de Kermode (_Ursus americanus kermodei_).")
 ```
-.\linebreak
+<br>
 
 - Este polimorfismo segue o princípio de Hardy-Weinberg?
 
-.\linebreak
+<br>
 
 ### Exercício 4 -- Equilíbrio de LIgação
 
 O estudo de uma variação em um sítio de restrição na região do gene álcool desidrogenase ($Adh$) em moscas-da-fruta capturadas em um mercado na Holanda ([Cross & Birley 1986](https://doi.org/10.1007/BF00499097)) revelou os seguintes dados:
 
-.\linebreak
+<br>
 ```{r tableC09, echo = FALSE}
 C09Ecoplus <- c(22, 4)
 C09Ecominus <- c(3, 5)
@@ -537,7 +537,7 @@ data0903 <- data.frame(C09Ecoplus, C09Ecominus)
 rownames(data0903) <- c("$Adh^F$", "$Adh^S$")
 knitr::kable(data0903, "html", align = "cc", col.names = c("$EcoRI^+$", "$EcoRI^-$"), booktabs = TRUE, escape = FALSE, caption = "Frequências dos haplótipos entre o gene álcool desidrogenase ($Adh$) e um sítio de restrição ($EcoRI$) 3.5 kb à jusante do mesmo.")
 ```
-.\linebreak
+<br>
 
 - Qual o coeficiente de desequilíbrio de ligação normalizado (D’) entre os dois pares de alelos?
 
