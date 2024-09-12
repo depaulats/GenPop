@@ -1,14 +1,385 @@
 # Tamanho efetivo da população
 
-Hartl & Clark p. 135
+<br>
 
-## Razão sexual desigual
+```{r elephant_seal, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="O elefante marinho do norte (_Mirounga angustirostris_) foi intensamente caçado e declarado extinto no século XIX. No entanto, uma colônia permaneceu na remota Ilha Guadalupe, no México, e a espécie desde então repovoou a maior parte de sua distribuição histórica. Crédito da ilustração: H. Filatova, 2007"}
+knitr::include_graphics("figs/elephant_seal_colony.jpg")
+```
 
-## Flutuação no tamanho populaconal
+<br>
 
-## Variância no número de descendentes
+:::reference
 
-## Tamanho efetivo em populações subdivididas
+Bonnel & Selander 1974. doi: [10.1126/science.184.4139.908](https://doi.org/10.1126/science.184.4139.908)
 
-##
+Hoelzel et al. 1993. doi: [10.1093/oxfordjournals.jhered.a111370](https://doi.org/10.1093/oxfordjournals.jhered.a111370)
 
+Hoelzel et al. 2002 doi: [10.1046/j.1420-9101.2002.00419.x](https://doi.org/10.1046/j.1420-9101.2002.00419.x)
+
+Abadía-Cardoso et al. 2017. doi: [10.1093/jhered/esx053](https://doi.org/10.1093/jhered/esx053)
+
+:::
+
+Revisar conteúdo a partir do livro 
+
+http://samples.jbpub.com/9780763757373/57373_CH04_FINAL.pdf
+
+
+
+
+O tamanho efetivo da população ($N_e$) é um conceito crucial na genética de populações que reflete o número de indivíduos em uma população que contribuem com descendentes para a próxima geração. 
+
+O tamanho efetivo da população leva em consideração vários fatores que influenciam a contribuição genética, como proporção sexual, número de descendentes por indivíduo e o número de indivíduos reprodutores ao longo das gerações. Isso o torna uma medida mais precisa do que simplesmente contar o número total de indivíduos em uma população. 
+
+Para tal faz-se uso do modelo Wright-Fisher, que descreve uma população ideal onde todos os indivíduos têm uma chance igual de contribuir para a próxima geração. Este modelo se assemalha é semelhante ao Princípio de Hardy-Weinberg, mas difere por assumir tamanhos finitos de população. Desta forma, enquanto o modelo de Hardy-Weinberg é determinístico para estimar as frequências alélicas na população, o modelo Wright-Fisher é um modelo estocástico, que contempla a evolução por deriva genética (ver [Crow 2010](https://doi.org/10.1534%2Fgenetics.109.110023)). 
+
+O tamanho efetivo da população é particularmente importante na biologia evolutiva e nos esforços de conservação. Ele ajuda a prever a perda de variação genética e o potencial de endogamia, o que pode levar à redução da aptidão em populações pequenas. Isso é especialmente relevante para espécies ameaçadas, onde a deriva genética pode ter impactos significativos.
+
+A relevância do tamanho efetivo da população ($N_e$) se mostra evidente, por exemplo, quando estudamos colônias de abelhas ou cupins, onde dezenas de milhares de indivíduos da população são fêmeas operárias não-reprodutivas, e somente uma fêmea reprodutora que acasala com uns poucos machos para produzir toda a colônia.
+
+
+## Estimando o tamanho efetivo da população
+
+A estimativa do tamanho efetivo da população ($N_e$) pode ser feito usando várias abordagens, dependendo dos fatores que influenciam a população.
+
+
+:::reference
+
+Wright 1931. doi: [10.1093/genetics/16.2.97](https://doi.org/10.1093/genetics/16.2.97)
+
+Caballero 1994. doi: [10.1038/hdy.1994.174](https://doi.org/10.1038/hdy.1994.174)
+
+Kimura & Crow 1963. doi: [10.1111/j.1558-5646.1963.tb03281.x](https://doi.org/10.1111/j.1558-5646.1963.tb03281.x)
+
+Wang et al. 2016. doi: [10.1038/hdy.2016.43](https://doi.org/10.1038/hdy.2016.43)
+
+:::
+
+
+### Efeito da proporção sexual
+
+Em populações dióicas, onde os indivíduos são machos ou fêmeas, a proporção sexual pode impactar significativamente o tamanho efetivo da população ($N_e$). Se a proporção sexual for distorcida, com mais indivíduos de um sexo, o tamanho efetivo da população pode ser reduzido. Isso ocorre porque menos indivíduos reprodutores de um sexo limitam a contribuição genética para a próxima geração, o que pode levar a uma perda mais rápida da diversidade genética por deriva genética.
+
+
+#### Genes autossômicos
+
+Para genes autossômicos, quando a proporção sexual é desigual, o tamanho efetivo da população ($N_{eA}$) é dado por:
+
+$$
+N_{eA} = \frac{4 N_m N_f}{N_m + N_f}​
+$$
+
+Onde:
+
+$N_m$ é o número de machos reprodutores.
+
+$N_f$ é o número de fêmeas reprodutoras.
+
+Esta fórmula mostra que $N_e$ é sempre menor ou igual ao número total de indivíduos na população, com a diferença sendo mais pronunciada quando a proporção sexual é distorcida.
+
+
+- quando a razão sexual é balanceada, $N_m = N_f = \frac{1}{2}N$:
+
+$$
+\begin{aligned}
+N_{eA}
+&= \frac{4 \cdot \frac{1}{2}N \cdot \frac{1}{2}N}{\frac{1}{2}N + \frac{1}{2}N} \\
+&= \frac{ \frac{4}{4} \cdot N^2} {N} \\
+&= N
+\end{aligned}
+$$ 
+
+O tamanho efetivo da população é igual ao tamanho do censo, indicando que a diversidade genética é mantida efetivamente, e a população é menos suscetível à deriva genética.
+
+- quando há uma distorção extrema na proporção sexual, por exemplo, se $N_m = 1$ e $N_f = 99$:
+
+$$
+\begin{aligned}
+N_{eA}
+&= \frac{4 \cdot 1 \cdot 99}{1+99} \\
+&= \frac{396}{100} \\
+&= 3.96
+\end{aligned}
+$$ 
+O $N_e$ é muito menor do que o tamanho real do censo $N = 100$, mostrando que a diversidade genética na população está sendo efetivamente mantida por somente cerca de quatro indivíduos, tornando a população extremamente vulnerável à deriva genética.
+
+
+#### Genes ligados ao sexo
+
+
+Em mamíferos, o tamanho efetivo da população para genes que estão ligados aos cromossomos sexuais X ($N_{eX}$) é dado por:
+
+$$
+N_{eX} = \frac{9 N_m N_f}{4N_m + 2N_f}​
+$$
+Se há um número igual de machos e fêmeas na população ($N_m = N_f = \frac{1}{2}N$), então $N_e = \frac{3}{4}N$.
+
+Essa mesma relação é usada para **organismos haplo-diplóides**, como as abelhas e cupins mencionados anteriormente.
+
+No caso de aves, onde as fêmeas são heterogaméticas ZW e os machos homogaméticos ZZ, a relação entre machos é fêmeas é invertida, e o tamanho efetivo da população para genes ligados aos cromossomos sexuais Z $N_{eZ}$ será dado por:
+
+$$
+N_{eZ} = \frac{9 N_m N_f}{4N_f + 2N_m}​
+$$
+
+Para genes que são herdados por apenas um dos sexos, como o DNA extranuclear, de mitocondrias (mtDNA) e cloroplastos (cpDNA), e os cromossomos sexuais Y, de mamíferos machos, e W, de aves fêmeas, respectivamente), o tamanho efetivo da população para o sexo apropriado determina o efeito da deriva genética nesses genes.
+
+Nesses casos, quando houver uma proporção sexual igual, o tamanho populacional efetivo esperado é $N_e/4$ porque esses genes são transmitidos em apenas um dos dois sexos, e nesse sexo, eles são de apenas um dos dois tipos, *i.e.*, haploides.
+
+
+#### Genes de herança unipatrental
+
+Para genes haplóides de herança uniparental, como é o caso do cromossomo sexual Y, transmitido somente entre organismos machos, o tamanho efetivo da população ($N_{eY}$) é dado por:
+
+$$
+N_{eY} = \frac{N_{em}}{2}​
+$$
+
+Da mesma forma, o DNA mitocondrial, herdado somente de fêmeas, o tamanho efetivo da população ($N_{eMT}$) será:
+
+$$
+N_{eMT} = \frac{N_{ef}}{2}​
+$$
+
+
+### Efeito da flutuação dos tamanhos populacionais
+
+Quando o tamanho de uma população flutua ao longo do tempo, a média harmônica dos tamanhos populacionais é usada para estimar $N_e$. Este método enfatiza a importância de tamanhos populacionais pequenos na determinação de $N_e$, pois tamanhos populacionais menores têm um impacto desproporcionalmente grande na deriva genética.
+
+
+Desta forma, o cálculo do tamanho efetivo da população ($N_e$) é dado por:
+
+$$ \frac{1}{Ne} = \frac{1}{t} \left( \frac{1}{N_1} + \frac{1}{N_2} + \frac{1}{N_3} + \dots +   \frac{1}{N_t} \right) = \frac{1}{t} \sum_{i=1}^{t} $$
+Ou de forma mais direta:
+
+$$ N_e = \frac{t}{\sum_{i=1}^{t}\frac{1}{N_i}} $$
+
+Onde:
+
+$t$ é o número total de períodos de tempo (gerações) considerados.
+
+$N_t$ é o tamanho da população no tempo $t$.
+
+
+Exemplo:
+
+Se uma população experimentar os seguintes tamanhos ao longo de 4 gerações: 100, 50, 20 e 200, o $N_e$ seria:
+
+
+$$
+\frac{1}{N_e} = \frac{1}{4}\left( \frac{1}{100}+\frac{1}{50}+\frac{1}{20}+\frac{1}{200} \right)
+$$ 
+
+$$
+\begin{aligned}
+N_e
+&= \frac{4}{\left( \frac{1}{100}+\frac{1}{50}+\frac{1}{20}+\frac{1}{200} \right)} \\
+&= \frac{4}{\left( \frac{2}{200}+\frac{4}{200}+\frac{10}{200}+\frac{1}{200} \right)} \\
+&= \frac{4}{\frac{17}{200} } \\
+&= \frac{4 \times 200}{17} \\
+&\approx 47.05
+\end{aligned}
+$$ 
+
+O que mostra que o tamanho efetivo da população é fortemente influenciado pelos tamanhos menores da população durante os gargalos.
+
+
+:::reference
+
+:::
+
+
+### Efeito do sucesso reprodutivo diferencial
+
+Se o sucesso reprodutivo varia entre os indivíduos, essa variância pode reduzir $N_e$. Isso ocorre porque nem todos os indivíduos contribuem igualmente para a próxima geração, levando a uma diminuição na diversidade genética.
+
+Assim, o cálculo do tamanho efetivo da população ($N_e$) pode ser dado por:
+
+$$
+Ne = \frac{4N - 2}{\sigma^2 + 2}
+$$
+Onde:
+
+$N$ é o tamanho da população do censo.
+$\sigma^2$ é a variância no número de descendentes por indivíduo.
+
+
+Exemplo:
+
+Se $N = 100$ e a variância no sucesso reprodutivo $\sigma^2 = 4$, então temos que:
+
+$$
+\begin{aligned}
+N_e
+&= \frac{4 \times 100 - 2}{4 + 2} \\
+&= \frac{398}{6} \\
+&\approx 66.33
+\end{aligned}
+$$ 
+
+Isso mostra que, à medida que a variância no sucesso reprodutivo aumenta, o tamanho efetivo da população diminui.
+
+:::reference
+Crow J.F., Morton N.E. 1955. Measurement of gene frequency drift in small populations. Evolution 9(2):202-214.
+:::
+
+
+### Efeito da sobreposição de gerações
+
+Quando as gerações se sobrepõem, o cálculo de $N_e$ se torna mais complexo porque indivíduos de diferentes gerações contribuem para o *pool* genético simultaneamente.
+
+De forma que:
+
+
+
+Fórmula:
+
+$$
+Ne = \frac{N}{1 + \frac{\sigma^2}{\bar{L}}}
+$$
+
+Onde:
+
+$N$ é o tamanho da população do censo.
+
+$\sigma^2$ é a variância no número de descendentes por indivíduo por geração.
+
+$\bar{L}$ é a expectativa de vida média de um indivíduo na população em gerações.
+
+
+Exemplo:
+
+Se uma população de 200 indivíduos tem uma variância no número de descendentes $\sigma^2 = 3$ e uma expectativa de vida média $\bar{L} = 2$, então teríamos que:
+
+$$
+\begin{aligned}
+N_e
+&= \frac{200}{1+\frac{3}{2}} \\
+&= \frac{200}{2.5} \\
+&= 80
+\end{aligned}
+$$ 
+
+Mostrando que gerações sobrepostas apresentam um $N_e$ menor em comparação a uma população onde as gerações são discretas.
+
+
+:::reference
+Felsenstein J. 1971. Inbreeding and variance effective numbers in populations with overlapping generations. Genetics 68(4):581-597.
+:::
+
+
+### Efeito do padrão de distribuição espacial
+
+Outro fator que afeta o tamanmho efetivo da população $N_e$ é a dispersão espacial da população. Para muitos organismos, a distância geográfica influencia a escolha do parceiro, levando a padrões de estrutura espacial contínua. Quando a dispersão é baixa, indivíduos próximos têm mais probabilidade de reproduzir entre si do que um par de indivíduos selecionados aleatoriamente da população (com relação à geografia). 
+
+Um parâmetro importante que rege a força do isolamento por distância é o tamanho da vizinhança de Wright ($\mathcal{N}$) (Wright [1943](https://doi.org/10.1093/genetics/28.2.114), [1946](https://doi.org/10.1093/genetics/31.1.39)), ma quantidade teórica que descreve o número de indivíduos reprodutores potenciais dentro de um dado raio de dispersão, definido como:
+
+
+$$
+\mathcal{N} = 4 \pi \rho \sigma^2
+$$
+Onde:
+
+$\pi$ é a constante matemática que é a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159.
+
+$\rho$ é a densidade populacional.
+
+$\sigma^2$ é a variância da distância de dispersão.
+
+Esta formulação assume uma distribuição normal de distâncias com média zero a partir de um centro de origem de dispersão, em forma de círculo de raio $2\sigma^2$ e média zero (por isso temos $\pi$ na formulação).
+
+Note que as unidades de área nos parâmetros $\rho$ (medido em indivíduos por área) e $\sigma^2$ (distância ao quadrado = área) serão canceladas no produto final, retornando o número total de indivíduos na população. 
+
+O tamanho da vizinhança de Wright ($\mathcal{N}$) descreve o número de parceiros potenciais dentro de uma área, na qual a reprodução ocorre aproximadamente aleatoriamente com relação à posição geográfica. 
+
+($\mathcal{N}$) também pode ser pensado como o "conjunto de possíveis pais" de um indivíduo focal (ou seja, o número de indivíduos reprodutivamente maduros dentro de duas distâncias de dispersão efetivas do indivíduo focal em qualquer direção).
+
+O tamanho populacional efetivo ($N_e$) está vinculado ao tamanho da vizinhança de Wright ($\mathcal{N}$) pela dispersão. Mudanças na variância do tamanho de dispersão podem afetar o tamanho efetivo da população, onde populações "viscosas" (com baixa dispersão) terão menor $N_e$, de forma que:
+
+
+$$
+N_e = N \left( 1+ \frac {2 \log\left(k \frac{L}{\sigma} \right)} {\mathcal{N}} \right)
+$$
+
+Onde:
+
+$k = 0.24$ quando a distribuição de distâncias é normal (Gaussiana).
+$L$ é o comprimento de eixo maior, *i.e.*, o eixo mais longo do elipsóide de distribuição espacial.
+$\sigma$ é o desvio-padrao da distância de dispersão, ou $\sqrt{\sigma^2}$.
+
+
+:::reference
+
+Hancock et al. 2024. doi: [10.1093/genetics/iyae094](https://doi.org/10.1093/genetics/iyae094)
+
+:::
+
+
+## Exemplos
+
+O Tamanho Efetivo da População ($N_e$) tem sido fundamental na solução de vários problemas em genética, biologia da conservação e estudos evolutivos. Abaixo estão alguns exemplos da vida real em que a estimativa do $N_e$ foi empregada para abordar desafios específicos.
+
+
+### Conservação da Pantera da Flórida
+
+A pantera da Flórida (*Puma concolor coryi*) é uma subespécie ameaçada de puma que enfrentou um declínio populacional severo devido à perda de habitat, caça e depressão por endogamia. Na década de 1990, apenas cerca de 20 indivíduos permaneceram na natureza.
+
+Johnson e colaboradores ([2010](https://doi.org/10.1126/science.1192891)) usaram o $N_e$ para estimar a diversidade genética dentro da pequena população. O pequeno $N_e$ indicou um alto risco de depressão por endogamia, que se manifestou como baixa fertilidade, defeitos cardíacos e caudas torcidas na população.
+
+Para aumentar o $N_e$ e reduzir a endogamia, oito pumas fêmeas do Texas (uma subespécie relacionada) foram introduzidas na população. Esse resgate genético aumentou o fluxo gênico, aumentando efetivamente o $N_e$ A diversidade genética melhorou, e a população mostrou sinais de recuperação, incluindo aumento nas taxas de natalidade e redução de problemas de saúde relacionados à endogamia.
+
+
+### Gestão das populações de salmão do Pacífico
+
+O salmão do Pacífico (*Oncorhynchus* spp.) é econômica e ecologicamente importante, mas muitas populações estão em declínio devido à pesca excessiva, destruição de habitat e mudanças climáticas.
+
+Waples ([1990](https://doi.org/10.1093/oxfordjournals.jhered.a110989)) usou $N_e$ para avaliar a saúde genética de várias populações de salmão. Ao comparar $N_e$ com o tamanho da população do censo, eles identificaram populações em risco de perder diversidade genética.
+
+As estimativas de $N_e$ informaram estratégias de conservação, como definição de cotas de pesca, restauração de habitat e criação de reservas genéticas. Essas medidas visavam manter ou aumentar $N_e$ para garantir a sobrevivência e adaptabilidade a longo prazo das populações de salmão.
+
+
+### Reintrodução do condor da Califórnia
+
+O condor da Califórnia (*Gymnogyps californianus*) é uma das espécies de aves mais ameaçadas do mundo. Na década de 1980, a população selvagem havia diminuído para menos de 30 indivíduos.
+
+Ralls e colaboradores ([1988](https://doi.org/10.1111/j.1523-1739.1988.tb00169.x)) usaram o $N_e$ para entender os desafios genéticos enfrentados pela espécie. O pequeno $N_e$ destacou o risco de depressão por endogamia e deriva genética, o que poderia reduzir ainda mais a diversidade genética da população.
+
+Um programa de reprodução em cativeiro foi iniciado, com esforços focados em maximizar a diversidade genética, garantindo representação igual de todos os indivíduos reprodutores no pool genético. O programa aumentou o $N_e$ com sucesso, e mais de 200 condores foram reintroduzidos na natureza, com monitoramento contínuo para manter um $N_e$ saudável.
+
+
+### Conservação do guepardo africano
+
+O guepardo africano (*Acinonyx jubatus*) sofreu declínios populacionais significativos devido à perda de habitat, conflito entre humanos e animais selvagens e gargalos genéticos. A espécie tem baixa diversidade genética, em parte devido a um gargalo histórico.
+
+O´Brien e colaboradores ([1985](https://doi.org/10.1126/science.2983425)) usaram o $N_e$ para avaliar o impacto do gargalo genético nas populações atuais de guepardos. O baixo $N_e$ indicou que a espécie tinha diversidade genética limitada, aumentando o risco de endogamia e reduzindo a adaptabilidade a mudanças ambientais.
+
+Estratégias de conservação foram desenvolvidas para aumentar o $N_e$, incluindo restauração de habitat, redução de conflitos entre humanos e animais selvagens e aumento do fluxo gênico entre populações fragmentadas. Esses esforços visam aumentar a diversidade genética e garantir a viabilidade a longo prazo da espécie.
+
+
+### Diversidade genética humana em populações isoladas
+
+Populações humanas isoladas, como aquelas em ilhas remotas ou em pequenas comunidades, geralmente têm $N_e$ mais baixo devido ao fluxo gênico limitado e ao pequeno tamanho populacional. Isso pode levar ao aumento das taxas de distúrbios genéticos devido à endogamia.
+
+Jorgensen e colaboradores ([2004](https://doi.org/10.1007/s00439-004-1117-7)) estudaram a população das Ilhas Faroé, que acredita-se ter sua origem em várias regiões diferentes ao redor do Oceano Atlântico Norte. Usando dados do cromossomo Y, os pesquisadores estimaram por análise coalescente bayesiana o $N_e$ da população de Faroé concluindo que o *pool* gênico original dos colonos foi influenciado por um pequeno evento fundador e/ou de deriva genética. Para os autores, os primeiros colonos do sexo masculino no arquipélago eram originários da Noruega ou da Suécia, em concordância com registros históricos, arqueológicos e linguísticos das Ilhas Faroé.
+
+De acordo com Wallace & Bean ([2019](https://www.ncbi.nlm.nih.gov/books/NBK551090/)), as Ilhas Faroé apresentam 13 variantes fundadoras em genes codificantes de proteínas. Uma variantes fundadora é uma variante patogênica observada em alta frequência em uma população específica devido à presença da variante em um único ancestral ou em um pequeno número de ancestrais. A alta incidência de variantes fundadoras requer iniciativas de saúde pública específicas para combater essas questões, incluindo aconselhamento genético, introdução de novo material genético por meio de migração controlada e intervenções de saúde direcionadas para gerenciar distúrbios genéticos.
+
+## Exercícios
+
+### Exercício 1
+
+As populações reais muitas vezes desviam-se das populações ideais em cada uma das formas descritas acima, e geralmente requerem modelos complexos para a estimativa de seus tamanhos efetivos. Desta forma, podemos combinar os modelos apresentados acima para estimar o tamanho efetivo de uma população variando tanto na proporção sexual quanto em seu tamanho populacional entre gerações ([Kalinowski & Waples, 2002](https://doi.org/10.1046/j.1523-1739.2002.00134.x)).
+
+<br>
+```{r tableA08X, echo = FALSE}
+A08Xmale <- c(19, 3, 18, 71)
+A08Xfemale <- c(32, 19, 89, 201)
+data08X01 <- data.frame(A08Xmale, A08Xfemale)
+rownames(data08X01) <- c("Geração 1", "Geração 2", "Geração 3", "Geração 4")
+knitr::kable(data08X01, "html", align = "cc", col.names = c("Machos", "Fêmeas"), booktabs = TRUE, escape = FALSE, caption = "Número de machos e fêmeas em uma população ao longo de quatro gerações.")
+```
+<br>
+
+- Qual o tamanho efetivo da população em cada geração?
+
+- Qual o tamanho efetivo da população nas quatros gerações?

@@ -80,6 +80,8 @@ Este livro utiliza diversos recursos visuais e interativos, os quais foram pensa
 
 Gostaria de agradecer aos meus colegas da Universidade do Estado do Rio de Janeiro, especialmente aos colegas do Departamento de Genética e do Instituto de Biologia Roberto Alcantara Gomes. É realmente um prazer trabalhar com vocês!
 
+Agradecimentos especiais à Prof. Dra. Haydée Cunha por suas sugestões e contribuições para a versão de 2024.  
+
 Espero que você ache _**Notas de Aula em Genética de Populações**_ uma experiência desafiadora e gratificante, e que o livro seja útil. Se você encontrar algum erro ou tiver sugestões de melhoria, envie-me um e-mail para [depaula_ts@uerj.br](mailto:depaula_ts@uerj.br). Não só eu serei muito grato mas você também poderá contribuir para o aprendizado de colegas e alunos.
 
 Este livro foi escrito usando [**bookdown**](https://bookdown.org/), que é baseado em *markdown*, *knitr* e *Pandoc*, o que permite que ele seja renderizado em uma ampla variedade de formatos, incluindo html e pdf, usando $\LaTeX$. Ele também suporta a incorporação de códigos, neste caso R. O pacote R bookdown pode ser instalado a partir do [CRAN](https://cran.r-project.org/web/packages/bookdown/index.html) ou do [GitHub](https://github.com/rstudio/bookdown).
@@ -99,7 +101,7 @@ Thiago S. de Paula é doutor em Ecologia e Evolução e Professor Associado da U
 
 ## Capas das versões anteriores {-}
 
-### Capa de 2022 {-}
+### v. 2022 {-}
 
 ```{r capa2022, echo = FALSE, fig.align = 'center', out.width="300px"}
 knitr::include_graphics("figs/capa_v.2022.svg")
@@ -108,3 +110,13 @@ knitr::include_graphics("figs/capa_v.2022.svg")
 © 2010 Thiago S. de Paula
 
 Copa da mata sobre a vila de Dois Rios, Ilha Grande, Rio de Janeiro, Brasil. Junho de 2010.
+
+### v. 2023 {-}
+
+```{r capa2023, echo = FALSE, fig.align = 'center', out.width="300px"}
+knitr::include_graphics("figs/capa_v.2023.svg")
+```
+
+© 2010 Thiago S. de Paula
+
+Anêmona sol (_Stichodactyla helianthus_), Bocas del Toro, Panamá. Julho de 2010.

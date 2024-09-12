@@ -478,3 +478,46 @@ Petrie & Kempenaers 1998. doi: [10.1016/S0169-5347(97)01232-9](https://doi.org/1
 <br>
 
 ## Exercícios
+
+### Exercício 1 - Coeficiente de endogamia
+
+Considere as três populações abaixo. 
+
+<br>
+```{r tableA09X, echo = FALSE}
+A09XA1A1 <- c(125, 50, 100)
+A09XA1A2 <- c(250, 30, 500)
+A09XA2A2 <- c(125, 20, 400)
+dataA09X <- data.frame(A09XA1A1, A09XA1A2, A09XA2A2)
+rownames(dataA09X) <- c("População 1", "População 2", "População 3")
+knitr::kable(dataA09X, "html", align = "cc", col.names = c("$A_{1}A_{1}$", "$A_{1}A_{2}$", "$A_{2}A_{2}$"), booktabs = TRUE, escape = FALSE, caption = "Frequências genotípicas em três populações hipotéticas.")
+```
+<br>
+
+- Qual o coeficiente de endogamia ($F$):
+
+    - Na população 1?
+
+    - Na população 2?
+
+    - Na população 3?
+
+- Qual população apresenta maior nível de endocruzamento?
+
+
+### Exercício 2 - Endogamia na genealogia
+
+O heredograma abaixo mostra um indivíduo X produzido por um cruzamento de "meio-primos de terceiro grau" (os pais são primos completos pela parte materna, e meio-primos pela parte paterna). 
+
+```{r inbreedingexercise, echo = FALSE, fig.align = 'center', out.width="300px", fig.cap="Heredograma hipotético da paciente X."}
+knitr::include_graphics("figs/inbreeding_exercise.svg")
+```
+
+Calcule o coeficiente de endogamia da paciente X, considerando que:
+
+- Nenhum dos ascedentes diretos é fruto de um casamento cosanguíneo.
+
+- Seu avô A, por parte de mãe, é filho de um casamento entre primos de primeiro grau.
+
+Qual é o risco relativo de X apresentar uma doença autossômica recessiva, como anemia falciforme, cuja prevalência pode chegar a 1:500 indivíduos em populações africanas ([Xiao & Lauschke, 2021](https://doi.org/10.1038/s41525-021-00203-x)).
+

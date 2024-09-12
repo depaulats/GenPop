@@ -329,7 +329,28 @@ Smith 2020. doi: [10.1016/j.tpb.2020.02.005](https://doi.org/10.1016/j.tpb.2020.
 
 <br>
 
-### Exercício 1 -- Ligação gênica em SNPs
+### Exercício 1 -- Ligação gênica em *Drosophila*
+
+O estudo de uma variação em um sítio de restrição $EcoRI$ na região do gene álcool desidrogenase ($Adh$) em moscas-da-fruta capturadas em um mercado na Holanda ([Cross & Birley 1986](https://doi.org/10.1007/BF00499097)) revelou os seguintes dados:
+
+<br>
+```{r tableA06X, echo = FALSE}
+A06XEcoplus <- c(22, 4)
+A06XEcominus <- c(3, 5)
+dataA06X <- data.frame(A06XEcoplus, A06XEcominus)
+rownames(dataA06X) <- c("$Adh^F$", "$Adh^S$")
+knitr::kable(dataA06X, "html", align = "cc", col.names = c("$EcoRI^+$", "$EcoRI^-$"), booktabs = TRUE, escape = FALSE, caption = "Frequências dos haplótipos entre o gene álcool desidrogenase ($Adh$) e um sítio de restrição ($EcoRI$) 3.5 kb à jusante do mesmo.")
+```
+<br>
+
+onde $Adh^F$ e $Adh^S$ são alelos da alozima $Adh$ e $Eco$RI$^+$ e $Eco$RI$^-$ indicam, respectivamente, a presença ou ausência de um sítio de restrição $Eco$RI 3.5 kb à jusante do gene $Adh$. 
+
+- As duas regiões gênicas estão em equilíbrio de ligação?
+
+- Qual o coeficiente de desequilíbrio de ligação normalizado ($D'$).
+
+
+### Exercício 2 -- Ligação gênica em SNPs
 
 Considere os sequintes Polimorfismos de nucleotídeo único (SNPs) abaixo:
 

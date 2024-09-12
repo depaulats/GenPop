@@ -432,6 +432,7 @@ $p_i$ é a frequência do $i$-nésimo alelo em um locus gênico.
 
 Exemplo,
 
+:::table
 
 |     |Loc 1 |Loc 2 |Loc 3 |Loc 4 |Loc 5 |Loc 6 |Loc 7 |Loc 8 |  
 | :-- | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
@@ -448,6 +449,8 @@ Exemplo,
 | $H_{Esp}$ | 0.48 | 0.00 | 0.42 | 0.00 | 0.62 | 0.48 | 0.00 | 0.32 |
 | $A_{e}$ | **1.92** | **1.00** | **1.72** | **1.00** | **2.63** | **1.92** | **1.00** | **1.47** |
 
+:::
+
 <br>
 
 ## Medidas de Diversidade em loci haplóides
@@ -460,13 +463,17 @@ Número de haplótipos ($h$) é o número de haplótipos diferentes observados.
 
 Exemplo,
 
+:::table
+
 ||1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|
 |:-- |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:
-|1.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
-|2.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
-|3.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
-|4.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
-|5.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|Ind 1|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|Ind 2|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|Ind 3|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
+|Ind 4|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|Ind 5|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+
+:::
 
 <br>
 
@@ -493,15 +500,18 @@ Número de sítios segregantes ($S$) é o número de sítios observados que apre
 
 Exemplo,
 
+:::table
+
 ||1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|
 |:-- |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:
-|1.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
-|2.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
-|3.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
-|4.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
-|5.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|Ind 1|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|Ind 2|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|Ind 3|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
+|Ind 4|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|Ind 5|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
 |$S$|0|**1**|0|0|**1**|0|0|0|**1**|0|**1**|**1**|0|0|0|**1**|**1**|**1**|
 
+:::
 
 E assim,
 
@@ -517,14 +527,18 @@ Número de sítios invariáveis ($I$) é o número de sítios observados que nã
 
 Exemplo,
 
+:::table
+
 ||1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|
 |:-- |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:
-|1.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
-|2.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
-|3.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
-|4.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
-|5.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|Ind 1|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|Ind 2|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|Ind 3|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
+|Ind 4|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|Ind 5|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
 |$I$|**1**|0|**1**|**1**|0|**1**|**1**|**1**|0|**1**|0|0|**1**|**1**|**1**|0|0|0|
+
+:::
 
 <br>
 
@@ -555,15 +569,19 @@ $s_i$ é o número de diferentes nucleotídeos no $i$-nésimo sítio menos um.
 
 Exemplo,
 
+:::table
+
 ||1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|
 |:-- |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:
-|1.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
-|2.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
-|3.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
-|4.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
-|5.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|Ind 1|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|Ind 2|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|Ind 3|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
+|Ind 4|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|Ind 5|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
 |   | | | | | | | | | | | | | | | | | | |
 |$s$|0|**1**|0|0|**1**|0|0|0|**2**|0|**1**|**1**|0|0|0|**1**|**1**|**1**|
+
+:::
 
 <br>
 
@@ -674,12 +692,16 @@ Assim, tomemos como exemplo a comparação entre as sequências dos indivíduos 
 
 Onde,
 
+:::table
+
 ||1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|
 |:-- |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|2.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
-|3.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
+|Ind 2|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|Ind 3|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
 |   | | | | | | | | | | | | | | | | | | |
 |$k$|0|**1**|0|0|**1**|0|0|0|**1**|0|**1**|0|0|0|0|0|**1**|**1**|
+
+:::
 
 <br>
 
@@ -763,12 +785,16 @@ Assim, tomemos como exemplo a comparação entre as sequências dos indivíduos 
 
 Onde,
 
+:::table
+
 ||1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|
 |:-- |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|2.|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
-|3.|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
+|Ind 2|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|
+|Ind 3|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: red;"> T </span>|
 |   | | | | | | | | | | | | | | | | | | |
 |$\pi$|0|$\frac{1}{18}$|0|0|$\frac{1}{18}$|0|0|0|$\frac{1}{18}$|0|$\frac{1}{18}$|0|0|0|0|0|$\frac{1}{18}$|$\frac{1}{18}$|
+
+:::
 
 <br>
 
@@ -795,4 +821,82 @@ E assim
 $$\pi = \frac{\left( 0+0.333+0.333+0.333+0.333+0.333+0.333+0.277+0.277+0 \right)}{10} \approx 0.255$$
 
 <br>
+
+## Exercícios
+
+### Exercício 1 - Frequências gênicas e genotípicas
+
+O gene [$CCR5$](https://www.ncbi.nlm.nih.gov/gene/1234) codifica um membro da família de receptores de beta quimiocina. Esta proteína é expressa por células T e macrófagos, e é conhecida por ser um importante co-receptor para vírus macrófagos-trópicos, incluindo HIV, para entrar nas células hospedeiras. Alelos defeituosos deste gene, como o alelo $\Delta 32$ que porta uma deleção, foram associados à resistência à infecção pelo HIV-1, em contraste com alelos selvagens ($wt$) funcionais ([Solloch et al., 2017](https://doi.org/10.1016/j.humimm.2017.10.001)). 
+
+<br>
+
+```{r tableA04X, echo = FALSE}
+A04Xwtwt <- c(96, 510, 81, 215, 77, 176, 56)
+A04Xwtdel <- c(20, 58, 21, 20, 6, 18, 6)
+A04Xdeldel <- c(1, 2, 2, 2, 0, 0, 0)
+dataA04X <- data.frame(A04Xwtwt, A04Xwtdel, A04Xdeldel)
+rownames(dataA04X) <- c("Argentina", "Brasil", "Chile", "Colômbia", "Equador", "Peru", "Venezuela")
+knitr::kable(dataA04X, align = "ccc", booktabs = TRUE, col.names = c("$wt/wt$", "$wt/$Δ32", "Δ32$/$Δ32"), caption = "Número de indivíduos dos genótipos envolvendo alelos selvagem ($wt$) e mutante (Δ32) do gene $CCR5$ em países da América do Sul", "html")
+```
+
+<br>
+
+Preencha a tabela abaixo com os valores das frequências genotípicas observadas e das frequências alélicas ($p$ e $q$) nas populações estudadas.
+
+
+|População|$f(wt/wt)$|$f(wt/\Delta32)$|$f(\Delta32/\Delta32)$|$p = f(wt)$|$q = f(\Delta32)$|
+|:--|:--:|:--:|:--:|:--:|:--:|
+|Argentina||||||
+|Brasil||||||
+|Chile||||||
+|Colômbia||||||
+|Equador||||||
+|Peru||||||
+|Venezuela||||||
+
+<br>
+
+
+### Exercício 2 - Haplótipos mitocondriais
+
+<br>
+```{r vermetid, echo = FALSE, fig.align = 'center', out.width = "600px", fig.cap="Colônia do gastrópode vermetídeo *Petaloconchus varians*."} 
+knitr::include_graphics('https://live.staticflickr.com/3113/2896274877_aca485064d_b.jpg')
+```
+<br>
+
+
+A comparação de uma região de 636 pares de bases (pb) do gene citocromo c oxidase, subunidade 1 do DNA mitocondrial (*cox1*) do gastrópode vermetídeo formador de recifes *Petaloconchus varians*, entre indivíduos (IND) de duas populações da Venezuela (VEN) e do Rio de Janeiro (RIO), produziu a seguinte matriz de dados de sequência de nucleotídeos ([Breves et al., 2022](https://doi.org/10.1093/mollus/eyac030)):
+
+<br>
+
+:::table
+
+|IND|POP|21|54|109|162|204|222|228|264|276|324|336|342|390|427|465|477|489|492|499|522|525|552|556|585|630|
+|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|01|VEN|<span style="color: goldenrod;"> G </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: green;"> A </span>|<span style="color: goldenrod;"> G </span>|<span style="color: blue;"> C </span>|<span style="color: red;"> T </span>|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: red;"> T </span>|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|
+|02|VEN|.|.|.|.|.|.|.|.|<span style="color: blue;"> C </span>|.|.|.|<span style="color: blue;"> C </span>|.|.|.|.|.|.|.|<span style="color: blue;"> C </span>|.|.|.|.|
+|03|VEN|.|.|.|<span style="color: goldenrod;"> G </span>|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|
+|04|VEN|.|<span style="color: red;"> T </span>|.|.|.|.|<span style="color: goldenrod;"> G </span>|.|.|.|.|<span style="color: blue;"> C </span>|.|.|.|.|.|.|<span style="color: red;"> T </span>|.|.|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|.|
+|05|VEN|.|<span style="color: red;"> T </span>|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|.|
+|06|RIO|.|<span style="color: red;"> T </span>|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|.|
+|07|RIO|.|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|.|.|.|.|.|.|.|.|.|.|.|<span style="color: goldenrod;"> G </span>|.|<span style="color: goldenrod;"> G </span>|.|.|.|.|<span style="color: red;"> T </span>|.|<span style="color: goldenrod;"> G </span>|.|
+|08|RIO|.|<span style="color: red;"> T </span>|.|.|.|.|.|<span style="color: green;"> A </span>|.|<span style="color: red;"> T </span>|.|.|.|.|.|.|.|.|.|.|.|.|.|.|<span style="color: green;"> A </span>|
+|09|RIO|<span style="color: green;"> A </span>|<span style="color: red;"> T </span>|.|.|<span style="color: blue;"> C </span>|<span style="color: red;"> T </span>|.|.|.|.|.|.|.|.|.|<span style="color: blue;"> C </span>|.|.|.|.|.|.|.|<span style="color: goldenrod;"> G </span>|.|
+|10|RIO|.|<span style="color: red;"> T </span>|.|.|.|.|.|.|.|.|<span style="color: blue;"> C </span>|.|.|<span style="color: red;"> T </span>|.|.|.|<span style="color: green;"> A </span>|.|<span style="color: blue;"> C </span>|.|<span style="color: red;"> T </span>|<span style="color: blue;"> C </span>|<span style="color: goldenrod;"> G </span>|.|
+
+:::
+
+<br>
+
+
+Preencha a tabela abaixo com os valores de:
+
+
+|População|$h$|$Hd$|$S$|$I$|$η$|$k$|$\pi$|
+|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|Venezuela||||||||
+|Rio de Janeiro||||||||
+|**Total**||||||||
+
 

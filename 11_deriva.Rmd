@@ -442,20 +442,42 @@ Veja como simular a deriva genética passo-a-passo [aqui][Simulações em genét
 
 <br>
 
-### Exercício 1 -- O camundongo e o elefante
+### Exercício 1 -- Probabilidades
 
 <br>
 
-Uma espécie animal diplóide, que se reproduz sexuadamente, apresenta uma população com 1000 indivíduos. A análise de um locus gênico autossômico revelou que a população se encontra atualmente em equilíbrio de Hardy-Weinberg. Na ausência de forças evolutivas, qual seria o coeficiente de endogamia desta população daqui a dez mill anos se esta espécie fosse:
+Em uma pequena população com 20 indivíduos foi verificado que quatro indivíduos eram portadores de um alelo recessivo $a$ em um determinado lócus gênico autossômico.
+
+Qual a probabilidade de que, na próxima geração, o alelo $a$:
+
+- Matenha a sua frequência atual?
+
+- Seja perdido?
+
+- Seja completamente fixado?
+
+- Seja ainda menos frequente do que o alelo dominante $A$?  
 
 <br>
 
-a. o camundongo doméstico (_Mus musculus_), com um tempo médio de geração de 1 a 2 anos?
-
-b. o elefante africano (_Loxodonta africana_), com um tempo médio de geração de 25 anos?
+### Exercício 2 -- O camundongo e o elefante
 
 <br>
 
-Ainda, quanto maior seria a endogamia nessas populações se elas tivessem passado por um gargalo populacional que tivesse reduzido o tamanho das populações em 80% nos últimos 200 anos?
+Uma espécie animal diplóide, que se reproduz sexuadamente, apresenta uma população com 1000 indivíduos. A análise de um locus gênico autossômico revelou a presença de dois alelos polimórficos igualmente frequentes e que a população se encontra atualmente em equilíbrio de Hardy-Weinberg. 
 
+Na ausência de forças evolutivas, qual seria o coeficiente de endogamia desta população daqui a dez mill anos se esta espécie fosse:
 
+- O camundongo doméstico (_Mus musculus_), com um tempo médio de geração de 1 a 2 anos?
+
+- O elefante africano (_Loxodonta africana_), com um tempo médio de geração de 25 anos?
+
+<br>
+
+Ainda, quanto maior seria a endogamia nessas populações se elas tivessem passado por um gargalo populacional que tivesse reduzido o tamanho das populações em 90%:
+
+- Nos últimos 20 anos?
+
+- Nos últimos 200 anos?
+
+- Nos últimos 2000 anos?

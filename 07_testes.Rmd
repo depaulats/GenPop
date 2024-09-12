@@ -452,7 +452,7 @@ Apesar do teste de Fisher fornecer valores de $p$ exatos, alguns autores argumen
 
 <br>
 
-## Exercícios e Atividades
+## Exercícios
 
 <br>
 
@@ -527,7 +527,7 @@ knitr::kable(data0902, align = "cccc", booktabs = TRUE, col.names = c("AA", "AG"
 
 ### Exercício 4 -- Equilíbrio de LIgação
 
-O estudo de uma variação em um sítio de restrição na região do gene álcool desidrogenase ($Adh$) em moscas-da-fruta capturadas em um mercado na Holanda ([Cross & Birley 1986](https://doi.org/10.1007/BF00499097)) revelou os seguintes dados:
+O estudo de uma variação em um sítio de restrição $EcoRI$ na região do gene álcool desidrogenase ($Adh$) em moscas-da-fruta capturadas em um mercado na Holanda ([Cross & Birley 1986](https://doi.org/10.1007/BF00499097)) revelou os seguintes dados:
 
 <br>
 ```{r tableC09, echo = FALSE}
@@ -539,9 +539,7 @@ knitr::kable(data0903, "html", align = "cc", col.names = c("$EcoRI^+$", "$EcoRI^
 ```
 <br>
 
-- Qual o coeficiente de desequilíbrio de ligação normalizado (D’) entre os dois pares de alelos?
-
-- As duas regiões gênicas estão em equilíbrio de ligação?
+- As regiões gênicas $EcoRI$ e $Adh$ estão em equilíbrio de ligação?
 
 
 

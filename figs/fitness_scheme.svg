@@ -2,20 +2,20 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="60mm"
    height="65mm"
    viewBox="0 0 60 65"
    version="1.1"
    id="svg18306"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="fitness_scheme.svg">
+   inkscape:version="1.3.1 (91b66b0783, 2023-11-16)"
+   sodipodi:docname="fitness_scheme.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs18300">
     <marker
@@ -537,8 +537,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="127.25572"
-     inkscape:cy="131.06103"
+     inkscape:cx="127.27922"
+     inkscape:cy="130.56222"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -547,7 +547,10 @@
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
   <metadata
      id="metadata18303">
     <rdf:RDF>
@@ -567,15 +570,10 @@
      transform="translate(0,-232)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="50.647575"
        y="97.750565"
-       id="text23332"><tspan
-         sodipodi:role="line"
-         id="tspan23330"
-         x="50.647575"
-         y="100.92822"
-         style="stroke-width:0.26458332" /></text>
+       id="text23332" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 48.119493,284.14256 -36.238987,-4.49363 36.238988,13.48093"
@@ -653,7 +651,7 @@
        ry="2" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="22.280151"
        y="272.43542"
        id="text22228-0"><tspan
@@ -661,44 +659,39 @@
          id="tspan22226-3"
          x="22.280151"
          y="272.43542"
-         style="font-size:2.82222223px;stroke-width:0.26458332">Fecundidade</tspan></text>
+         style="font-size:2.82222px;stroke-width:0.264583">Fecundidade</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:0.75;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;line-height:0.75;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="30.446404"
        y="282.46906"
        id="text22228-6-9"><tspan
          sodipodi:role="line"
          x="30.446404"
          y="282.46906"
-         style="font-size:2.82222223px;line-height:0.75;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         style="font-size:2.82222px;line-height:0.75;text-align:center;text-anchor:middle;stroke-width:0.264583"
          id="tspan22248-9">Fertilidade</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:0.75;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;line-height:0.75;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="30.564232"
        y="290.82767"
        id="text22228-6-98-4"><tspan
          sodipodi:role="line"
          x="30.564232"
          y="290.82767"
-         style="font-size:2.82222223px;line-height:1;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
-         id="tspan22248-0-2">Adaptabilidade</tspan><tspan
-         sodipodi:role="line"
-         x="30.564232"
-         y="293.64987"
-         style="font-size:2.82222223px;line-height:1;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
-         id="tspan22886">reprodutiva</tspan></text>
+         style="font-size:2.82222px;line-height:1;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.264583"
+         id="tspan22886">Aptidão</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:0.75;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;line-height:0.75;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="30.555958"
        y="252.36813"
        id="text22228-6-98"><tspan
          sodipodi:role="line"
          x="30.555958"
          y="252.36813"
-         style="font-size:2.82222223px;line-height:0.75;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         style="font-size:2.82222px;line-height:0.75;text-align:center;text-anchor:middle;stroke-width:0.264583"
          id="tspan22248-0">Viabilidade</tspan></text>
     <path
        style="fill:#2c89a0;fill-opacity:1;stroke-width:0.01972272"
@@ -747,7 +740,7 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="21.628338"
        y="262.41833"
        id="text22228"><tspan
@@ -755,6 +748,6 @@
          id="tspan22226"
          x="21.628338"
          y="262.41833"
-         style="font-size:2.82222223px;stroke-width:0.26458332">Sobrevivência</tspan></text>
+         style="font-size:2.82222px;stroke-width:0.264583">Sobrevivência</tspan></text>
   </g>
 </svg>

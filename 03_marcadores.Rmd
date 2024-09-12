@@ -293,8 +293,17 @@ As frequências de um lócus microssatélite com $n$ repetições geralmente apr
 
 Por exemplo, a sequência:
 
+<<<<<<< HEAD
 $$\underline{TCCCAAGCTCTTC}CTCTTCCCTAGATCAATACAGACAGAAGACAGGTG\color{red}{GA \\ TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA}TCAT \\ TGAAAGACAAAACAGAGATGGATGATAGATACATGCT\underline{TACAGATGCACAC}$$
 
+=======
+$$\underline{TCCCAAGCTCTTC}CTCTTCCCTAGATCAAT \\
+ACAGACAGAAGACAGGTG\color{red}{GATAGATAGATA \\
+GATAGATAGATAGATAGATAGATAGATAGA \\
+TAGATA}TCATTGAAAGACAAAACAGAGATG \\
+GATGATAGATACATGCT\underline{TACAGATGCACAC}$$
+   
+>>>>>>> d551132 (v.2024)
 tem $12$ repetições do tetranucleotídeo de DNA $\color{red}{GATA}$, ou $\left( {GATA} \right)_{12}$.
 
 <br>
@@ -370,3 +379,43 @@ http://www.boldsystems.org/
 
 http://www.internationalgenome.org/
 
+## Exercícios
+
+### Exercício 1 - Genotipagem por PCR-RFLP
+
+Um polimorfismo do gene DNMT3B foi genotipado por análise de PCR-RFLP ([Moura et al., 2018](https://doi.org/10.1016/j.sjbs.2017.09.008)), de modo que um fragmento de 380 pares de bases (pb) contendo a região polimórfica (C/T) foi amplificado e digeridos com uma enzima de restrição XmaJI, que reconhece e cliva a sequência contendo o polimorfismo T ([rs2424913](https://www.ncbi.nlm.nih.gov/snp/rs2424913)), produzindo dois fragmentos de 207 pb  e 173 pb. 
+
+<br>
+
+```{r DNMT3B_PCR-RFLP, echo = FALSE, fig.align = 'center', out.width="600px", fig.cap="Visualização dos padrões de digestão com XmaJI dos produtos amplificados do gene DNMT3B a partir da amostra de sangue de 10 indivíduos (#1-10). Padrão de de peso molecular (PM)."}
+knitr::include_graphics("figs/DNMT3B_PCR-RFLP.svg")
+```
+
+<br>
+
+Em relação ao polimorfismo, responda:
+
+- Quais são os alelos?
+
+- Quais são os genótipos?
+
+- Quantos genótipos de cada tipo são observados dentre os indivíduos?
+
+
+### Genotipagem por sequenciamento de DNA
+
+MicroRNAs (miRNAs) são uma classe de RNAs endógenos, pequenos e não codificantes que são inicialmente transcritos do DNA genômico para transcritos primários longos e então são clivados em RNAs precursores em forma de grampo de cabelo. O SNP [rs895819](https://www.ncbi.nlm.nih.gov/snp/rs895819) está localizado na alça do pré-miRNA [MIR23AHG](https://www.ncbi.nlm.nih.gov/gene/284454), abrangendo uma transição de nucleotídeo T>C. Produtos de PCR do SNP com diferentes genótipos foram selecionados e verificados por sequenciamento direto de DNA ([Shi et al., 2012](https://doi.org/10.1371/journal.pone.0046566)).
+
+```{r eletroferogramas3, echo = FALSE, fig.align = 'center', out.width="800px", fig.cap="Eletroferogramas do sequenciamento de DNA de três amostras diferentes (A-C) do polimorfismo da região gênica MIR23AHG."}
+knitr::include_graphics("figs/eletroferogramas3.jpg")
+```
+
+- Qual é a sequência de nucleotídeos na amostra:
+
+    - A?
+
+    - B?
+
+    - C?
+
+    - Qual é o genôtipo de cada amostra?

@@ -1,0 +1,27 @@
+# Fundamentos de Matemática
+
+<br>
+
+## XX
+
+<br>
+
+### XX1
+
+xxx
+
+<br>
+
+### XX2
+
+xxx
+
+<br>
+
+## Logaritmo
+
+Logaritmo do produto -- $ \log_\color{red}{a} \left( \color{blue}{b}\cdot \color{green}{c} \right) = \log_\color{red}{a} \left( \color{blue}{b} \right) + \log_\color{red}{a} \left( \color{green}{c} \right)$
+
+Logaritmo do quociente -- $ \log_\color{red}{a} \left( \frac {\color{blue}{b}}{\color{green}{c}} \right) = \log_\color{red}{a} \left( \color{blue}{b} \right) - \log_\color{red}{a} \left( \color{green}{c} \right)$
+
+Logaritmo da potência -- $ \log_\color{red}{a} \left( \color{blue}{b}^\color{green}{c} \right) = \color{green}{c} \cdot \log_\color{red}{a} \left( \color{blue}{b} \right) $

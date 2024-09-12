@@ -438,6 +438,32 @@ $$valor\text{-}p = \frac{n(r_M^* \geq r_M)}{n+1}$$
 
 ## Exercícios
 
+### Exercício 1 - Extruturação global e pareada
+
+Considere as três populações abaixo. 
+
+<br>
+```{r tableA10X, echo = FALSE}
+A10XA1A1 <- c(125, 50, 100)
+A10XA1A2 <- c(250, 30, 500)
+A10XA2A2 <- c(125, 20, 400)
+dataA10X <- data.frame(A10XA1A1, A10XA1A2, A10XA2A2)
+rownames(dataA10X) <- c("População 1", "População 2", "População 3")
+knitr::kable(dataA10X, "html", align = "cc", col.names = c("$A_{1}A_{1}$", "$A_{1}A_{2}$", "$A_{2}A_{2}$"), booktabs = TRUE, escape = FALSE, caption = "Frequências genotípicas em três populações hipotéticas.")
+```
+<br>
+
+- Qual o nível global de estruturação genética nas populações?
+
+- Qual o nível de estruturação genética entre as populações:
+
+    - 1 $\times$ 2?
+    
+    - 1 $\times$ 3?
+    
+    - 2 $\times$ 3?
+
+- Quais populações estão mais isoladas geneticamente uma da outra?
 
 
 

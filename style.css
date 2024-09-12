@@ -49,6 +49,10 @@ pre code {
 
 
 
+
+
+
+
 /* -----------divs------------- */
 
 
@@ -121,4 +125,13 @@ pre code {
     border-left: 7px solid #c83737;
     background-image: url("figs/css_warning.svg")
   }
+
+  div.table {
+    display: block; /* Ensure it's a block-level element */
+    overflow-x: scroll;; /* Force horizontal scrolling */
+    max-width: 100%; /* Restrict the container's max width */
+    white-space: nowrap; /* Prevent content wrapping */
+    margin-bottom: 1em;
+  }
+  
   

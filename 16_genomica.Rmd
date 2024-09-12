@@ -1,0 +1,11 @@
+# Conceitos e aplicações na genômica
+
+
+<br>
+
+:::reference
+
+Kanaka et al. 2023. doi: [10.1016/j.cpb.2023.100278](https://doi.org/10.1016/j.cpb.2023.100278)
+
+:::
+

@@ -26,11 +26,9 @@ header-includes:
 # {-}
 
 ```{r capa, echo = FALSE, fig.align = 'center', out.width="500px"}
-knitr::include_graphics("figs/capa_v.2023.svg")
+knitr::include_graphics("figs/capa_v.2024.svg")
 ```
 
-© 2010 Thiago S. de Paula
+© 2011 Thiago S. de Paula
 
-Anêmona sol (_Stichodactyla helianthus_), Bocas del Toro, Panamá. Julho de 2010.
-
-
+Polipodia dourada rastejante (_Phlebodium decumanum_), Rio de Janeiro, Brasil, Abril de 2011.
