@@ -3,7 +3,7 @@
 <br>
 
 ```{r liguus, echo = FALSE, fig.align = 'center', out.width="400px", fig.cap="A distribuição de alelos e a baixa diversidade genética no caramujo da Flórida (_Liguus fasciatus_) apóia a visão de uma única espécie parcialmente autofecundante que se diversificou na Flórida após um único evento fundador. Ver Hillis et al ([1991](https://doi.org/10.1093/oxfordjournals.jhered.a111087))"} 
-knitr::include_graphics("figs/Liguus_fasciatus_Hillis.png")
+knitr::include_graphics("figs/Liguus_fasciatus_Hillis.jpg")
 ```
 
 <br>
